@@ -1,0 +1,6 @@
+{
+  "name": "NariNexus",
+  "description": "AI-Enabled Multilingual Hybrid Skill Development & Women Empowerment Platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

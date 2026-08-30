@@ -1,0 +1,190 @@
+{
+  "test_bce298bf@example.com": {
+    "otp": "774308",
+    "purpose": "password_reset"
+  },
+  "test_4f2a2772@example.com": {
+    "otp": "485256",
+    "purpose": "password_reset"
+  },
+  "test_1cf4ebb1@example.com": {
+    "otp": "122228",
+    "purpose": "password_reset"
+  },
+  "shwetaningappa2004@gmail.com": {
+    "otp": "873300",
+    "purpose": "verification"
+  },
+  "test_2f6fce0b@example.com": {
+    "otp": "794845",
+    "purpose": "password_reset"
+  },
+  "test_24d1154a@example.com": {
+    "otp": "450866",
+    "purpose": "password_reset"
+  },
+  "learner1_7deaec@example.com": {
+    "otp": "955624",
+    "purpose": "verification"
+  },
+  "learner2_a92673@example.com": {
+    "otp": "857966",
+    "purpose": "verification"
+  },
+  "centre_39ba44@example.com": {
+    "otp": "853337",
+    "purpose": "verification"
+  },
+  "learner1_ff997a@example.com": {
+    "otp": "261047",
+    "purpose": "verification"
+  },
+  "learner2_824d44@example.com": {
+    "otp": "383855",
+    "purpose": "verification"
+  },
+  "centre_7a273d@example.com": {
+    "otp": "358727",
+    "purpose": "verification"
+  },
+  "learner_cat_de23db@example.com": {
+    "otp": "514039",
+    "purpose": "verification"
+  },
+  "learner1_8ab492@example.com": {
+    "otp": "582824",
+    "purpose": "verification"
+  },
+  "learner2_d9247e@example.com": {
+    "otp": "270947",
+    "purpose": "verification"
+  },
+  "centre_d9151a@example.com": {
+    "otp": "910159",
+    "purpose": "verification"
+  },
+  "learner_cat_7e5792@example.com": {
+    "otp": "175613",
+    "purpose": "verification"
+  },
+  "learner_cat_ce4f97@example.com": {
+    "otp": "263243",
+    "purpose": "verification"
+  },
+  "learner_course_0794be@example.com": {
+    "otp": "614161",
+    "purpose": "verification"
+  },
+  "learner_course_f57a54@example.com": {
+    "otp": "780989",
+    "purpose": "verification"
+  },
+  "learner_a_a4a86e@example.com": {
+    "otp": "268853",
+    "purpose": "verification"
+  },
+  "learner_b_f3c97c@example.com": {
+    "otp": "677899",
+    "purpose": "verification"
+  },
+  "centre_2a3af0@example.com": {
+    "otp": "964861",
+    "purpose": "verification"
+  },
+  "learner_a_fc40ca@example.com": {
+    "otp": "287346",
+    "purpose": "verification"
+  },
+  "learner_b_cc8bf3@example.com": {
+    "otp": "249653",
+    "purpose": "verification"
+  },
+  "centre_47b981@example.com": {
+    "otp": "698776",
+    "purpose": "verification"
+  },
+  "admin_01b769@example.com": {
+    "otp": "764582",
+    "purpose": "verification"
+  },
+  "learner_a_554886@example.com": {
+    "otp": "925826",
+    "purpose": "verification"
+  },
+  "learner_b_3fb479@example.com": {
+    "otp": "309114",
+    "purpose": "verification"
+  },
+  "centre_c9d9ab@example.com": {
+    "otp": "124439",
+    "purpose": "verification"
+  },
+  "admin_86c39c@example.com": {
+    "otp": "282502",
+    "purpose": "verification"
+  },
+  "test_644ee03c@example.com": {
+    "otp": "147359",
+    "purpose": "password_reset"
+  },
+  "learner1_dcb3a1@example.com": {
+    "otp": "606175",
+    "purpose": "verification"
+  },
+  "learner2_040a1c@example.com": {
+    "otp": "897738",
+    "purpose": "verification"
+  },
+  "centre_c98984@example.com": {
+    "otp": "866852",
+    "purpose": "verification"
+  },
+  "learner_cat_5cebed@example.com": {
+    "otp": "492338",
+    "purpose": "verification"
+  },
+  "learner_course_c85913@example.com": {
+    "otp": "132919",
+    "purpose": "verification"
+  },
+  "learner_a_2d0a7f@example.com": {
+    "otp": "561643",
+    "purpose": "verification"
+  },
+  "learner_b_a4785b@example.com": {
+    "otp": "663725",
+    "purpose": "verification"
+  },
+  "centre_6d9bf7@example.com": {
+    "otp": "453280",
+    "purpose": "verification"
+  },
+  "admin_202b32@example.com": {
+    "otp": "101209",
+    "purpose": "verification"
+  },
+  "test_d550a594@example.com": {
+    "otp": "137729",
+    "purpose": "password_reset"
+  },
+  "learner1_1ad9f1@example.com": {
+    "otp": "277460",
+    "purpose": "verification"
+  },
+  "learner2_38e0d7@example.com": {
+    "otp": "544210",
+    "purpose": "verification"
+  },
+  "centre_6e39f6@example.com": {
+    "otp": "578902",
+    "purpose": "verification"
+  },
+  "learner_cat_dabddd@example.com": {
+    "otp": "782700",
+    "purpose": "verification"
+  },
+  "learner_course_955400@example.com": {
+    "otp": "644055",
+    "purpose": "verification"
+  }
+}

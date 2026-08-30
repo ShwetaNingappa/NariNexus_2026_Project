@@ -1,0 +1,22 @@
+[
+  {
+    "id": "c384f21676704fbe90ca801db37470c2",
+    "learner_id": "e37898f9-cfd6-4104-bb49-5db1308e4471",
+    "course_id": "computer-basics-entrepreneurs",
+    "enrollment_date": "2026-08-30T05:57:35.754796",
+    "learning_mode": "online",
+    "status": "cancelled",
+    "created_at": "2026-08-30T05:57:35.754796",
+    "updated_at": "2026-08-30T05:57:35.771767"
+  },
+  {
+    "id": "5cca4b7c92d54e9787fea9f5b78ac964",
+    "learner_id": "869ee8a6-ea07-4ddc-8475-0e1131767881",
+    "course_id": "computer-basics-entrepreneurs",
+    "enrollment_date": "2026-08-30T05:59:30.811739",
+    "learning_mode": "online",
+    "status": "cancelled",
+    "created_at": "2026-08-30T05:59:30.811739",
+    "updated_at": "2026-08-30T05:59:30.826245"
+  }
+]

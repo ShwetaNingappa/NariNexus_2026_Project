@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  --color-primary-gold: #E5A51C;
+  --color-deep-gold: #C8870A;
+  --color-soft-yellow: #FFF4C7;
+  --color-cream: #FFF9F0;
+  
+  --color-light-pink: #FCE4EC;
+  --color-soft-rose: #F8B4C4;
+  --color-primary-pink: #E85D8A;
+  --color-deep-rose: #C83D68;
+  --color-soft-peach: #FFE1D2;
+  --color-sage-green: #EAF3E2;
+}
+
+@layer base {
+  body {
+    background-color: #FFF9F0; /* Cream background for warmth and luxury */
+    color: #3D2D1E;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif-header {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  /* Custom modern gradient layers matching NariNexus vision */
+  .gradient-warm-glow {
+    background: linear-gradient(135deg, #FFF9F0 0%, #FFF4C7 50%, #FFE1D2 100%);
+  }
+  
+  .gradient-gold-rose {
+    background: linear-gradient(135deg, #E5A51C 0%, #E85D8A 100%);
+  }
+
+  .gradient-rose-peach {
+    background: linear-gradient(135deg, #F8B4C4 0%, #FFE1D2 100%);
+  }
+  
+  .gradient-card-overlay {
+    background: linear-gradient(to bottom, rgba(255, 249, 240, 0) 0%, rgba(255, 249, 240, 0.95) 85%);
+  }
+
+  /* Exquisite glass effect */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(229, 165, 28, 0.15);
+  }
+
+  /* Decorative elements */
+  .decorative-dot-pattern {
+    background-image: radial-gradient(#C8870A 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom interactive active state scales */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(200, 135, 10, 0.15);
+}
+
+

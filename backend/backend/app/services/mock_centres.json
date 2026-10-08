@@ -1,0 +1,62 @@
+[
+  {
+    "id": "centre-bengaluru",
+    "name": "Bengaluru Skill Development Centre",
+    "description": "NariNexus flagship hub empowering urban and rural women in Jayanagar and surrounding sub-districts.",
+    "address": "Plot 14, 3rd Block, Jayanagar",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "phone": "9999911111",
+    "email": "blr.hub@narinexus.org",
+    "instructor_name": "Kavitha Shridhar",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "operating_hours": "9:00 AM - 5:00 PM",
+    "is_active": true
+  },
+  {
+    "id": "centre-mysuru",
+    "name": "Mysuru Women Skill Centre",
+    "description": "Providing high-quality tailoring, traditional embroidery, and cottage business training.",
+    "address": "No 45, Devaraj Urs Road",
+    "city": "Mysuru",
+    "state": "Karnataka",
+    "phone": "9999922222",
+    "email": "mys.centre@narinexus.org",
+    "instructor_name": "Shobha Devi",
+    "latitude": 12.2958,
+    "longitude": 76.6394,
+    "operating_hours": "10:00 AM - 6:00 PM",
+    "is_active": true
+  },
+  {
+    "id": "centre-tumakuru",
+    "name": "Tumakuru Rural Training Centre",
+    "description": "Fostering organic agriculture, basic bookkeeping, and digital payments in Tumkur district.",
+    "address": "Siddaganga Layout, B.H. Road",
+    "city": "Tumakuru",
+    "state": "Karnataka",
+    "phone": "9999933333",
+    "email": "tum.rural@narinexus.org",
+    "instructor_name": "Radhamma Hegde",
+    "latitude": 13.3379,
+    "longitude": 77.1173,
+    "operating_hours": "9:00 AM - 4:00 PM",
+    "is_active": true
+  },
+  {
+    "id": "centre-hubballi",
+    "name": "Hubballi Digital & Craft Centre",
+    "description": "Enabling digital entrepreneurship, online storefront setup, and smartphone payment capabilities.",
+    "address": "Koppikar Road, Hubli",
+    "city": "Hubballi",
+    "state": "Karnataka",
+    "phone": "9999944444",
+    "email": "hub.digital@narinexus.org",
+    "instructor_name": "Rupa Kulkarni",
+    "latitude": 15.3647,
+    "longitude": 75.124,
+    "operating_hours": "10:00 AM - 5:00 PM",
+    "is_active": true
+  }
+]

@@ -1,0 +1,4740 @@
+[
+  {
+    "id": "e5da83a9b8f8468098ea32ba3a53d341",
+    "_id": "e5da83a9b8f8468098ea32ba3a53d341",
+    "actor_user_id": "f59eef34-e2b5-4c50-96a7-f8c812c799e6",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "f59eef34-e2b5-4c50-96a7-f8c812c799e6",
+    "timestamp": "2026-10-03T06:40:08.157649",
+    "success": true,
+    "metadata": {
+      "email": "test_09ec2e24@example.com"
+    }
+  },
+  {
+    "id": "d14532b35a4448038eb032fb6fa7b357",
+    "_id": "d14532b35a4448038eb032fb6fa7b357",
+    "actor_user_id": "6f812d3f-9cb5-4fc3-96d1-f44aee9cf405",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "6f812d3f-9cb5-4fc3-96d1-f44aee9cf405",
+    "timestamp": "2026-10-03T06:40:12.593053",
+    "success": true,
+    "metadata": {
+      "email": "centre_an_a_2be2be@naricentre.org"
+    }
+  },
+  {
+    "id": "30dcac6e742f4a1c96ffa036c492cc7d",
+    "_id": "30dcac6e742f4a1c96ffa036c492cc7d",
+    "actor_user_id": "e498e612-157a-47fd-a8bb-249c1041db04",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e498e612-157a-47fd-a8bb-249c1041db04",
+    "timestamp": "2026-10-03T06:40:16.964279",
+    "success": true,
+    "metadata": {
+      "email": "centre_an_b_37f67c@naricentre.org"
+    }
+  },
+  {
+    "id": "5ce8641a9e3747be9436d412cd0027c9",
+    "_id": "5ce8641a9e3747be9436d412cd0027c9",
+    "actor_user_id": "67140590-2460-4395-8c36-7be1d983b5c7",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "67140590-2460-4395-8c36-7be1d983b5c7",
+    "timestamp": "2026-10-03T06:40:20.770601",
+    "success": true,
+    "metadata": {
+      "email": "centre_an_emp_a25895@naricentre.org"
+    }
+  },
+  {
+    "id": "08a77326aa1942239115a26b304430aa",
+    "_id": "08a77326aa1942239115a26b304430aa",
+    "actor_user_id": "5412e3eb-0326-4525-8b8e-c64e6f4ba96b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "5412e3eb-0326-4525-8b8e-c64e6f4ba96b",
+    "timestamp": "2026-10-03T06:40:25.010391",
+    "success": true,
+    "metadata": {
+      "email": "learner_an_8462ed@gmail.com"
+    }
+  },
+  {
+    "id": "1fd0e9c7878340f3969933e1b64fa008",
+    "_id": "1fd0e9c7878340f3969933e1b64fa008",
+    "actor_user_id": "6f812d3f-9cb5-4fc3-96d1-f44aee9cf405",
+    "actor_role": "centre",
+    "action": "CENTRE_COURSE_CREATED",
+    "resource_type": "COURSE",
+    "resource_id": "course-centre-f97a09eb",
+    "timestamp": "2026-10-03T06:40:25.202910",
+    "success": true,
+    "metadata": {
+      "title": "Tailoring Analytics basics"
+    }
+  },
+  {
+    "id": "b3b6e0c8150a4ec283a08ff04358536c",
+    "_id": "b3b6e0c8150a4ec283a08ff04358536c",
+    "actor_user_id": "6065ec28-1689-49cb-a11c-94fef7d68ff3",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "6065ec28-1689-49cb-a11c-94fef7d68ff3",
+    "timestamp": "2026-10-03T06:40:30.049595",
+    "success": true,
+    "metadata": {
+      "email": "progress_a_05ce46@example.com"
+    }
+  },
+  {
+    "id": "fe79fc95526244db93e61f01457b9bf3",
+    "_id": "fe79fc95526244db93e61f01457b9bf3",
+    "actor_user_id": "8bac96ce-31a2-4787-8530-7f686ede7d87",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "8bac96ce-31a2-4787-8530-7f686ede7d87",
+    "timestamp": "2026-10-03T06:40:33.727195",
+    "success": true,
+    "metadata": {
+      "email": "progress_b_f39a06@example.com"
+    }
+  },
+  {
+    "id": "c38412e652c145d1a14e08574b1d6da2",
+    "_id": "c38412e652c145d1a14e08574b1d6da2",
+    "actor_user_id": "0cef1b1c-90b2-44d9-8a47-1d5a9fcf5ae2",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "0cef1b1c-90b2-44d9-8a47-1d5a9fcf5ae2",
+    "timestamp": "2026-10-03T06:40:38.014537",
+    "success": true,
+    "metadata": {
+      "email": "test_bcdcb79a@example.com"
+    }
+  },
+  {
+    "id": "9a3522e7e4674c4f8ef7a1e8524b457e",
+    "_id": "9a3522e7e4674c4f8ef7a1e8524b457e",
+    "actor_user_id": "07a16bb3-61f5-446f-a1ce-02b6dff56c09",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "07a16bb3-61f5-446f-a1ce-02b6dff56c09",
+    "timestamp": "2026-10-03T06:40:42.355619",
+    "success": true,
+    "metadata": {
+      "email": "learner1_9b178b@example.com"
+    }
+  },
+  {
+    "id": "0e5d82fc81fd4a4a845b927d78d1a3bf",
+    "_id": "0e5d82fc81fd4a4a845b927d78d1a3bf",
+    "actor_user_id": "70c99741-a398-4567-88c8-322c7f2354ba",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "70c99741-a398-4567-88c8-322c7f2354ba",
+    "timestamp": "2026-10-03T06:40:46.665789",
+    "success": true,
+    "metadata": {
+      "email": "learner2_91b27c@example.com"
+    }
+  },
+  {
+    "id": "82b6fbfb747f43eba533dc6b5f2a4d68",
+    "_id": "82b6fbfb747f43eba533dc6b5f2a4d68",
+    "actor_user_id": "bd9d7bc6-2922-4135-a5f0-1d86cf4d4fdd",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "bd9d7bc6-2922-4135-a5f0-1d86cf4d4fdd",
+    "timestamp": "2026-10-03T06:40:52.468221",
+    "success": true,
+    "metadata": {
+      "email": "centre_809b6e@example.com"
+    }
+  },
+  {
+    "id": "b96645b05a7242dfbced10a8b838f016",
+    "_id": "b96645b05a7242dfbced10a8b838f016",
+    "actor_user_id": "095d0311-c88c-4795-9d07-82566485fc72",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "095d0311-c88c-4795-9d07-82566485fc72",
+    "timestamp": "2026-10-03T06:40:57.252391",
+    "success": true,
+    "metadata": {
+      "email": "learner_cat_718b03@example.com"
+    }
+  },
+  {
+    "id": "792fcb1f97d2474fb896a80fb828e398",
+    "_id": "792fcb1f97d2474fb896a80fb828e398",
+    "actor_user_id": "d49b2786-f519-41c7-acae-3137132a4c03",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d49b2786-f519-41c7-acae-3137132a4c03",
+    "timestamp": "2026-10-03T06:41:10.981790",
+    "success": true,
+    "metadata": {
+      "email": "learner_course_e42669@example.com"
+    }
+  },
+  {
+    "id": "45f97f33e48143d9ba64324cac9bd649",
+    "_id": "45f97f33e48143d9ba64324cac9bd649",
+    "actor_user_id": "4c0890ce-e773-429c-9fd9-f2e7767d2261",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "4c0890ce-e773-429c-9fd9-f2e7767d2261",
+    "timestamp": "2026-10-03T06:41:31.566835",
+    "success": true,
+    "metadata": {
+      "email": "learner_a_856293@example.com"
+    }
+  },
+  {
+    "id": "2e5496e62bc34bc0a882dcaeeecd05fc",
+    "_id": "2e5496e62bc34bc0a882dcaeeecd05fc",
+    "actor_user_id": "7464520e-a9e9-47e7-998c-e161c912ad38",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "7464520e-a9e9-47e7-998c-e161c912ad38",
+    "timestamp": "2026-10-03T06:41:35.099148",
+    "success": true,
+    "metadata": {
+      "email": "learner_b_93617b@example.com"
+    }
+  },
+  {
+    "id": "c0c788f19f9f4de58588d66cefcf7615",
+    "_id": "c0c788f19f9f4de58588d66cefcf7615",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "safe.test@narinexus.org",
+    "timestamp": "2026-10-03T06:42:06.857926",
+    "success": true,
+    "metadata": {
+      "subject": "Confidential Alert"
+    }
+  },
+  {
+    "id": "90fb63a20f2f44b785e2ebdbf650ac23",
+    "_id": "90fb63a20f2f44b785e2ebdbf650ac23",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "learner@gmail.com",
+    "timestamp": "2026-10-03T06:42:09.991860",
+    "success": true,
+    "metadata": {
+      "subject": "Test Fallback"
+    }
+  },
+  {
+    "id": "a0762dc67fc94649a3864a1eee2d1ff3",
+    "_id": "a0762dc67fc94649a3864a1eee2d1ff3",
+    "actor_user_id": "8ffc3b7c-b13c-4f88-a983-f1a085c1b2e2",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "8ffc3b7c-b13c-4f88-a983-f1a085c1b2e2",
+    "timestamp": "2026-10-03T06:42:14.555996",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_b43db2@gmail.com"
+    }
+  },
+  {
+    "id": "f0b81b6c37604a98bbd1e4ba2d10073a",
+    "_id": "f0b81b6c37604a98bbd1e4ba2d10073a",
+    "actor_user_id": "99f78929-4795-41fb-8534-206bcb2eb05b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "99f78929-4795-41fb-8534-206bcb2eb05b",
+    "timestamp": "2026-10-03T06:42:18.758891",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_b_a891c8@gmail.com"
+    }
+  },
+  {
+    "id": "361aeb7959dd47b68e07ed26da899d53",
+    "_id": "361aeb7959dd47b68e07ed26da899d53",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "notif_learner_a_b43db2@gmail.com",
+    "timestamp": "2026-10-03T06:42:21.922301",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Test Notification Title"
+    }
+  },
+  {
+    "id": "9ef146ac2277459289ed806c773acc5f",
+    "_id": "9ef146ac2277459289ed806c773acc5f",
+    "actor_user_id": "c98af8c5-1e6d-42ab-bbe9-680beec4fa82",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "c98af8c5-1e6d-42ab-bbe9-680beec4fa82",
+    "timestamp": "2026-10-03T06:42:23.898636",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_d4814c@narinexus.org"
+    }
+  },
+  {
+    "id": "7379406c45c549e1a6f4e105d3164ee4",
+    "_id": "7379406c45c549e1a6f4e105d3164ee4",
+    "actor_user_id": "4613ceac-c823-4f71-8dcb-bf3351b562b0",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "4613ceac-c823-4f71-8dcb-bf3351b562b0",
+    "timestamp": "2026-10-03T06:42:29.120849",
+    "success": true,
+    "metadata": {
+      "email": "candidate_learner_6843b8@gmail.com"
+    }
+  },
+  {
+    "id": "f11dcd939f9f47ffa1e605280beb66cb",
+    "_id": "f11dcd939f9f47ffa1e605280beb66cb",
+    "actor_user_id": "c98af8c5-1e6d-42ab-bbe9-680beec4fa82",
+    "actor_role": "admin",
+    "action": "ADMIN_OPPORTUNITY_CREATED",
+    "resource_type": "OPPORTUNITY",
+    "resource_id": "f1f1da62",
+    "timestamp": "2026-10-03T06:42:29.153978",
+    "success": true,
+    "metadata": {
+      "title": "Embroidery Assistant 2bee",
+      "organization": "Sudarshan Handlooms"
+    }
+  },
+  {
+    "id": "2ed61b57b24e4795b06c49e8b78a8859",
+    "_id": "2ed61b57b24e4795b06c49e8b78a8859",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "candidate_learner_6843b8@gmail.com",
+    "timestamp": "2026-10-03T06:42:31.506944",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Application Submitted Successfully"
+    }
+  },
+  {
+    "id": "83324c1ff8e04dcbb53e751c4b1ffe78",
+    "_id": "83324c1ff8e04dcbb53e751c4b1ffe78",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "candidate_learner_6843b8@gmail.com",
+    "timestamp": "2026-10-03T06:42:35.163478",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Application Status Updated"
+    }
+  },
+  {
+    "id": "5f7a5839200c4746aa63655f3dc4c380",
+    "_id": "5f7a5839200c4746aa63655f3dc4c380",
+    "actor_user_id": "c98af8c5-1e6d-42ab-bbe9-680beec4fa82",
+    "actor_role": "admin",
+    "action": "ADMIN_APPLICATION_STATUS_CHANGED",
+    "resource_type": "APPLICATION",
+    "resource_id": "app-43737b",
+    "timestamp": "2026-10-03T06:42:35.165025",
+    "success": true,
+    "metadata": {
+      "status": "Shortlisted",
+      "opportunity_title": "Embroidery Assistant 2bee"
+    }
+  },
+  {
+    "id": "0beec11eae9c4cee9425ab9ba85b28b7",
+    "_id": "0beec11eae9c4cee9425ab9ba85b28b7",
+    "actor_user_id": "0eeb6aee-9758-4aaa-8dc5-b61e58850637",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "0eeb6aee-9758-4aaa-8dc5-b61e58850637",
+    "timestamp": "2026-10-03T06:42:36.856078",
+    "success": true,
+    "metadata": {
+      "email": "opp_admin_851ce2@narinexus.org"
+    }
+  },
+  {
+    "id": "2a26050203574f41a35fefbbbcc72198",
+    "_id": "2a26050203574f41a35fefbbbcc72198",
+    "actor_user_id": "ea732ee9-5573-4dc0-8be5-612813d3dc76",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ea732ee9-5573-4dc0-8be5-612813d3dc76",
+    "timestamp": "2026-10-03T06:42:41.659163",
+    "success": true,
+    "metadata": {
+      "email": "learner_aa3992@gmail.com"
+    }
+  },
+  {
+    "id": "0fda9f2a8bff4be0810060f241c7b71c",
+    "_id": "0fda9f2a8bff4be0810060f241c7b71c",
+    "actor_user_id": "ea732ee9-5573-4dc0-8be5-612813d3dc76",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:42:41.670577",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "74dee1e22c5a4987b1b851e0a0f6ff26",
+    "_id": "74dee1e22c5a4987b1b851e0a0f6ff26",
+    "actor_user_id": "0eeb6aee-9758-4aaa-8dc5-b61e58850637",
+    "actor_role": "admin",
+    "action": "ADMIN_OPPORTUNITY_CREATED",
+    "resource_type": "OPPORTUNITY",
+    "resource_id": "5928d534",
+    "timestamp": "2026-10-03T06:42:41.690750",
+    "success": true,
+    "metadata": {
+      "title": "Cotton Weaving Apprentice de2d",
+      "organization": "Sudarshan Handlooms"
+    }
+  },
+  {
+    "id": "387f5bd75c574ecc94f3f1cd9fb56617",
+    "_id": "387f5bd75c574ecc94f3f1cd9fb56617",
+    "actor_user_id": "0eeb6aee-9758-4aaa-8dc5-b61e58850637",
+    "actor_role": "admin",
+    "action": "ADMIN_OPPORTUNITY_UPDATED",
+    "resource_type": "OPPORTUNITY",
+    "resource_id": "5928d534",
+    "timestamp": "2026-10-03T06:42:41.716229",
+    "success": true,
+    "metadata": {
+      "deadline": "2026-12-15",
+      "compensation": "Stipend of 6,500 INR / month",
+      "updated_at": "2026-10-03T06:42:41.713947"
+    }
+  },
+  {
+    "id": "b360ab958d4148d8ba8f406cf92ba10b",
+    "_id": "b360ab958d4148d8ba8f406cf92ba10b",
+    "actor_user_id": "116021d2-30f9-49d6-a02f-b72bc2ee61c2",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "116021d2-30f9-49d6-a02f-b72bc2ee61c2",
+    "timestamp": "2026-10-03T06:42:43.103512",
+    "success": true,
+    "metadata": {
+      "email": "catalog_admin_baa601@narinexus.org"
+    }
+  },
+  {
+    "id": "4d4bbc0df6fc4b26ace39cab807e36ec",
+    "_id": "4d4bbc0df6fc4b26ace39cab807e36ec",
+    "actor_user_id": "aa5f8c03-b623-4b93-a05b-42045f096536",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "aa5f8c03-b623-4b93-a05b-42045f096536",
+    "timestamp": "2026-10-03T06:42:47.596284",
+    "success": true,
+    "metadata": {
+      "email": "learner_aa9393@gmail.com"
+    }
+  },
+  {
+    "id": "e02631c4f0954b9bbffa7791ae2aa8ce",
+    "_id": "e02631c4f0954b9bbffa7791ae2aa8ce",
+    "actor_user_id": "aa5f8c03-b623-4b93-a05b-42045f096536",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:42:47.609248",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "a30346907364422487bc2f4c00a99441",
+    "_id": "a30346907364422487bc2f4c00a99441",
+    "actor_user_id": "116021d2-30f9-49d6-a02f-b72bc2ee61c2",
+    "actor_role": "admin",
+    "action": "ADMIN_SKILL_CREATED",
+    "resource_type": "SKILL",
+    "resource_id": "739c2394",
+    "timestamp": "2026-10-03T06:42:47.622060",
+    "success": true,
+    "metadata": {
+      "name": "Tailoring Expert 064e"
+    }
+  },
+  {
+    "id": "cfb8966dfeba4c9f986ac8fa5ea7d3c8",
+    "_id": "cfb8966dfeba4c9f986ac8fa5ea7d3c8",
+    "actor_user_id": "116021d2-30f9-49d6-a02f-b72bc2ee61c2",
+    "actor_role": "admin",
+    "action": "ADMIN_SKILL_UPDATED",
+    "resource_type": "SKILL",
+    "resource_id": "739c2394",
+    "timestamp": "2026-10-03T06:42:47.641440",
+    "success": true,
+    "metadata": {
+      "description": "Updated cutting patterns with local South Indian artisan embroideries."
+    }
+  },
+  {
+    "id": "fc186059c9ea42faab0aad2edf371889",
+    "_id": "fc186059c9ea42faab0aad2edf371889",
+    "actor_user_id": "116021d2-30f9-49d6-a02f-b72bc2ee61c2",
+    "actor_role": "admin",
+    "action": "ADMIN_COURSE_CREATED",
+    "resource_type": "COURSE",
+    "resource_id": "249e1b68",
+    "timestamp": "2026-10-03T06:42:47.664385",
+    "success": true,
+    "metadata": {
+      "title": "Professional Kurti Pattern-making 2c5d"
+    }
+  },
+  {
+    "id": "5e8ce371305d4ea0b5d98ae31139df5d",
+    "_id": "5e8ce371305d4ea0b5d98ae31139df5d",
+    "actor_user_id": "116021d2-30f9-49d6-a02f-b72bc2ee61c2",
+    "actor_role": "admin",
+    "action": "ADMIN_COURSE_STATUS_CHANGED",
+    "resource_type": "COURSE",
+    "resource_id": "249e1b68",
+    "timestamp": "2026-10-03T06:42:47.689712",
+    "success": true,
+    "metadata": {
+      "duration": "16 hours",
+      "is_active": false,
+      "updated_at": "2026-10-03T06:42:47.678062"
+    }
+  },
+  {
+    "id": "3c76f2a686dc445b96dadd23e9623fd7",
+    "_id": "3c76f2a686dc445b96dadd23e9623fd7",
+    "actor_user_id": "0549368c-2c88-40fc-b95b-73517137cf8d",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "0549368c-2c88-40fc-b95b-73517137cf8d",
+    "timestamp": "2026-10-03T06:42:48.905468",
+    "success": true,
+    "metadata": {
+      "email": "system_admin_77bdf1@narinexus.org"
+    }
+  },
+  {
+    "id": "fb2fd760d0d2499685f917d633938924",
+    "_id": "fb2fd760d0d2499685f917d633938924",
+    "actor_user_id": "4a055bbc-47f7-46cc-bbde-d8edd2ef13a7",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "4a055bbc-47f7-46cc-bbde-d8edd2ef13a7",
+    "timestamp": "2026-10-03T06:43:02.063540",
+    "success": true,
+    "metadata": {
+      "email": "analytics_admin_798ad5@narinexus.org"
+    }
+  },
+  {
+    "id": "2a686838dca341d281a76454b442dd22",
+    "_id": "2a686838dca341d281a76454b442dd22",
+    "actor_user_id": "6a05387c-18df-40ea-a89d-b787d9fbc4a7",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "6a05387c-18df-40ea-a89d-b787d9fbc4a7",
+    "timestamp": "2026-10-03T06:43:06.616083",
+    "success": true,
+    "metadata": {
+      "email": "learner_1f8ac7@gmail.com"
+    }
+  },
+  {
+    "id": "cd469556079f4b0f93edba86b21cb908",
+    "_id": "cd469556079f4b0f93edba86b21cb908",
+    "actor_user_id": "55d84133-8f8d-4702-8a44-596fd1cc1b8e",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "55d84133-8f8d-4702-8a44-596fd1cc1b8e",
+    "timestamp": "2026-10-03T06:43:10.278164",
+    "success": true,
+    "metadata": {
+      "email": "centre_8e9bf6@naricentre.org"
+    }
+  },
+  {
+    "id": "13ea83e3f7654e949516595971df71a9",
+    "_id": "13ea83e3f7654e949516595971df71a9",
+    "actor_user_id": "6a05387c-18df-40ea-a89d-b787d9fbc4a7",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:43:10.287592",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "d50b7f2f4b2a495f9cdc11edcbd61b08",
+    "_id": "d50b7f2f4b2a495f9cdc11edcbd61b08",
+    "actor_user_id": "55d84133-8f8d-4702-8a44-596fd1cc1b8e",
+    "actor_role": "centre",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:43:10.296951",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "1bf970574e4e4c09a3e1be202e3810e6",
+    "_id": "1bf970574e4e4c09a3e1be202e3810e6",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "safe.test@narinexus.org",
+    "timestamp": "2026-10-03T06:43:13.352913",
+    "success": true,
+    "metadata": {
+      "subject": "Confidential Alert"
+    }
+  },
+  {
+    "id": "bb9eea2568cd477aa4eb6e04cdb0ea47",
+    "_id": "bb9eea2568cd477aa4eb6e04cdb0ea47",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "learner@gmail.com",
+    "timestamp": "2026-10-03T06:43:16.101960",
+    "success": true,
+    "metadata": {
+      "subject": "Test Fallback"
+    }
+  },
+  {
+    "id": "2da7fb58710d4aa7b7fc1eed80533cd1",
+    "_id": "2da7fb58710d4aa7b7fc1eed80533cd1",
+    "actor_user_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "timestamp": "2026-10-03T06:43:20.295493",
+    "success": false,
+    "metadata": {
+      "email": "1ep23cs154.shwetaningappa@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "f52836c16b6b4a8da49b4d6bfefdcc4e",
+    "_id": "f52836c16b6b4a8da49b4d6bfefdcc4e",
+    "actor_user_id": "db6ff1b7-35a8-4fe9-8d1b-27803b1b602b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "db6ff1b7-35a8-4fe9-8d1b-27803b1b602b",
+    "timestamp": "2026-10-03T06:43:21.019088",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_b7c5c4@gmail.com"
+    }
+  },
+  {
+    "id": "5cc947bd62774090a46a92d07671132c",
+    "_id": "5cc947bd62774090a46a92d07671132c",
+    "actor_user_id": "e0b1aa36-6573-4482-ba3c-7c6b133c23b9",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e0b1aa36-6573-4482-ba3c-7c6b133c23b9",
+    "timestamp": "2026-10-03T06:43:24.566103",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_b_f53c7e@gmail.com"
+    }
+  },
+  {
+    "id": "3292ee4c921b44faac6ff14b4a27dbd6",
+    "_id": "3292ee4c921b44faac6ff14b4a27dbd6",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "notif_learner_a_b7c5c4@gmail.com",
+    "timestamp": "2026-10-03T06:43:28.334938",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Test Notification Title"
+    }
+  },
+  {
+    "id": "224b0be9ed7a4a718940ad43958122df",
+    "_id": "224b0be9ed7a4a718940ad43958122df",
+    "actor_user_id": "c085a2c3-674e-4ae6-8eb4-fd12bb0e9f13",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "c085a2c3-674e-4ae6-8eb4-fd12bb0e9f13",
+    "timestamp": "2026-10-03T06:43:29.495417",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_10dbbb@narinexus.org"
+    }
+  },
+  {
+    "id": "8fc803e0e4d3453f8d45f207c60eb809",
+    "_id": "8fc803e0e4d3453f8d45f207c60eb809",
+    "actor_user_id": "237f947e-7ef2-4ba9-a6c8-9b4e0165e6f9",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "237f947e-7ef2-4ba9-a6c8-9b4e0165e6f9",
+    "timestamp": "2026-10-03T06:43:34.016222",
+    "success": true,
+    "metadata": {
+      "email": "candidate_learner_eeec87@gmail.com"
+    }
+  },
+  {
+    "id": "1625203c5f59491fa562daf31566b904",
+    "_id": "1625203c5f59491fa562daf31566b904",
+    "actor_user_id": "c085a2c3-674e-4ae6-8eb4-fd12bb0e9f13",
+    "actor_role": "admin",
+    "action": "ADMIN_OPPORTUNITY_CREATED",
+    "resource_type": "OPPORTUNITY",
+    "resource_id": "acf51e87",
+    "timestamp": "2026-10-03T06:43:34.029196",
+    "success": true,
+    "metadata": {
+      "title": "Embroidery Assistant d242",
+      "organization": "Sudarshan Handlooms"
+    }
+  },
+  {
+    "id": "6fd7bc2704f449939d82c9b5c466f47c",
+    "_id": "6fd7bc2704f449939d82c9b5c466f47c",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "candidate_learner_eeec87@gmail.com",
+    "timestamp": "2026-10-03T06:43:37.282081",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Application Submitted Successfully"
+    }
+  },
+  {
+    "id": "90ce5332e8f9479693d2b8bb7c4f86d9",
+    "_id": "90ce5332e8f9479693d2b8bb7c4f86d9",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "candidate_learner_eeec87@gmail.com",
+    "timestamp": "2026-10-03T06:43:40.083595",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Application Status Updated"
+    }
+  },
+  {
+    "id": "2f9d0dcd0bb444109d528b0b91be30c9",
+    "_id": "2f9d0dcd0bb444109d528b0b91be30c9",
+    "actor_user_id": "c085a2c3-674e-4ae6-8eb4-fd12bb0e9f13",
+    "actor_role": "admin",
+    "action": "ADMIN_APPLICATION_STATUS_CHANGED",
+    "resource_type": "APPLICATION",
+    "resource_id": "app-5b7bec",
+    "timestamp": "2026-10-03T06:43:40.086483",
+    "success": true,
+    "metadata": {
+      "status": "Shortlisted",
+      "opportunity_title": "Embroidery Assistant d242"
+    }
+  },
+  {
+    "id": "633fa57fd4414bab8b6d784aca3baacb",
+    "_id": "633fa57fd4414bab8b6d784aca3baacb",
+    "actor_user_id": "efa4c54a-2c57-4729-9bd9-5633bf96244e",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "efa4c54a-2c57-4729-9bd9-5633bf96244e",
+    "timestamp": "2026-10-03T06:43:41.318996",
+    "success": true,
+    "metadata": {
+      "email": "opp_admin_58c54b@narinexus.org"
+    }
+  },
+  {
+    "id": "8c7b7cfc665c404cbc7935fbe92d96f4",
+    "_id": "8c7b7cfc665c404cbc7935fbe92d96f4",
+    "actor_user_id": "b22631c3-13a4-4dc2-89c7-9c9088b63c9f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b22631c3-13a4-4dc2-89c7-9c9088b63c9f",
+    "timestamp": "2026-10-03T06:43:45.537907",
+    "success": true,
+    "metadata": {
+      "email": "learner_9b796e@gmail.com"
+    }
+  },
+  {
+    "id": "2c724528b0334f3f98646b8582020602",
+    "_id": "2c724528b0334f3f98646b8582020602",
+    "actor_user_id": "b22631c3-13a4-4dc2-89c7-9c9088b63c9f",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:43:45.547011",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "a381bed40f4748e28ff0bbe69774271a",
+    "_id": "a381bed40f4748e28ff0bbe69774271a",
+    "actor_user_id": "efa4c54a-2c57-4729-9bd9-5633bf96244e",
+    "actor_role": "admin",
+    "action": "ADMIN_OPPORTUNITY_CREATED",
+    "resource_type": "OPPORTUNITY",
+    "resource_id": "f6597249",
+    "timestamp": "2026-10-03T06:43:45.558523",
+    "success": true,
+    "metadata": {
+      "title": "Cotton Weaving Apprentice 7a81",
+      "organization": "Sudarshan Handlooms"
+    }
+  },
+  {
+    "id": "b25d82060edb4c578abe92a4ed0202f8",
+    "_id": "b25d82060edb4c578abe92a4ed0202f8",
+    "actor_user_id": "efa4c54a-2c57-4729-9bd9-5633bf96244e",
+    "actor_role": "admin",
+    "action": "ADMIN_OPPORTUNITY_UPDATED",
+    "resource_type": "OPPORTUNITY",
+    "resource_id": "f6597249",
+    "timestamp": "2026-10-03T06:43:45.577295",
+    "success": true,
+    "metadata": {
+      "deadline": "2026-12-15",
+      "compensation": "Stipend of 6,500 INR / month",
+      "updated_at": "2026-10-03T06:43:45.575263"
+    }
+  },
+  {
+    "id": "4455d7763011461baf0ad74f15703f20",
+    "_id": "4455d7763011461baf0ad74f15703f20",
+    "actor_user_id": "e0173a96-faa5-4dcc-8e0c-28c119893cbd",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e0173a96-faa5-4dcc-8e0c-28c119893cbd",
+    "timestamp": "2026-10-03T06:43:46.691528",
+    "success": true,
+    "metadata": {
+      "email": "catalog_admin_9667bc@narinexus.org"
+    }
+  },
+  {
+    "id": "29f98b69b69d49e289fb07f12322da68",
+    "_id": "29f98b69b69d49e289fb07f12322da68",
+    "actor_user_id": "98e633bb-6701-4505-9046-4c91e98f217e",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "98e633bb-6701-4505-9046-4c91e98f217e",
+    "timestamp": "2026-10-03T06:43:50.865730",
+    "success": true,
+    "metadata": {
+      "email": "learner_2b6057@gmail.com"
+    }
+  },
+  {
+    "id": "71ae7fd01d1847debe1388f5f2f0dd8b",
+    "_id": "71ae7fd01d1847debe1388f5f2f0dd8b",
+    "actor_user_id": "98e633bb-6701-4505-9046-4c91e98f217e",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:43:50.875798",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "e3b6de5a27754ec8a47332e1405e4dae",
+    "_id": "e3b6de5a27754ec8a47332e1405e4dae",
+    "actor_user_id": "e0173a96-faa5-4dcc-8e0c-28c119893cbd",
+    "actor_role": "admin",
+    "action": "ADMIN_SKILL_CREATED",
+    "resource_type": "SKILL",
+    "resource_id": "6d8fcb51",
+    "timestamp": "2026-10-03T06:43:50.889381",
+    "success": true,
+    "metadata": {
+      "name": "Tailoring Expert 6781"
+    }
+  },
+  {
+    "id": "4b85039d861f4068b179d7fc28cdbd66",
+    "_id": "4b85039d861f4068b179d7fc28cdbd66",
+    "actor_user_id": "e0173a96-faa5-4dcc-8e0c-28c119893cbd",
+    "actor_role": "admin",
+    "action": "ADMIN_SKILL_UPDATED",
+    "resource_type": "SKILL",
+    "resource_id": "6d8fcb51",
+    "timestamp": "2026-10-03T06:43:50.912390",
+    "success": true,
+    "metadata": {
+      "description": "Updated cutting patterns with local South Indian artisan embroideries."
+    }
+  },
+  {
+    "id": "aba8ed89a00b4e1d9dbd3d6b2ba30b28",
+    "_id": "aba8ed89a00b4e1d9dbd3d6b2ba30b28",
+    "actor_user_id": "e0173a96-faa5-4dcc-8e0c-28c119893cbd",
+    "actor_role": "admin",
+    "action": "ADMIN_COURSE_CREATED",
+    "resource_type": "COURSE",
+    "resource_id": "dfdaef63",
+    "timestamp": "2026-10-03T06:43:50.936475",
+    "success": true,
+    "metadata": {
+      "title": "Professional Kurti Pattern-making 864c"
+    }
+  },
+  {
+    "id": "e04c9c0a99fc4f72b1cc3288de511748",
+    "_id": "e04c9c0a99fc4f72b1cc3288de511748",
+    "actor_user_id": "e0173a96-faa5-4dcc-8e0c-28c119893cbd",
+    "actor_role": "admin",
+    "action": "ADMIN_COURSE_STATUS_CHANGED",
+    "resource_type": "COURSE",
+    "resource_id": "dfdaef63",
+    "timestamp": "2026-10-03T06:43:50.961404",
+    "success": true,
+    "metadata": {
+      "duration": "16 hours",
+      "is_active": false,
+      "updated_at": "2026-10-03T06:43:50.949343"
+    }
+  },
+  {
+    "id": "24d3cd6293784c59bec7e58fb5699c24",
+    "_id": "24d3cd6293784c59bec7e58fb5699c24",
+    "actor_user_id": "2c169a97-1420-4566-b958-ac5b06ef6ccd",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2c169a97-1420-4566-b958-ac5b06ef6ccd",
+    "timestamp": "2026-10-03T06:43:52.121099",
+    "success": true,
+    "metadata": {
+      "email": "system_admin_e2a09e@narinexus.org"
+    }
+  },
+  {
+    "id": "4c0050d4f94e4f31ab18c0ad1f02979a",
+    "_id": "4c0050d4f94e4f31ab18c0ad1f02979a",
+    "actor_user_id": "810e2b95-1665-49f5-b69d-815bace0bbfe",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "810e2b95-1665-49f5-b69d-815bace0bbfe",
+    "timestamp": "2026-10-03T06:43:57.179148",
+    "success": true,
+    "metadata": {
+      "email": "learner_f7cc6a@gmail.com"
+    }
+  },
+  {
+    "id": "b7d88c7156d947c3b49f097a66c5a356",
+    "_id": "b7d88c7156d947c3b49f097a66c5a356",
+    "actor_user_id": "ec8f45b3-324b-4c37-bf3f-d7f5f4e68653",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ec8f45b3-324b-4c37-bf3f-d7f5f4e68653",
+    "timestamp": "2026-10-03T06:44:01.983985",
+    "success": true,
+    "metadata": {
+      "email": "centre_2c9ca9@naricentre.org"
+    }
+  },
+  {
+    "id": "3fd5dd5198724987b977c21170726ea2",
+    "_id": "3fd5dd5198724987b977c21170726ea2",
+    "actor_user_id": "43f292e7-e705-42cf-98ce-f3557e412b8b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "43f292e7-e705-42cf-98ce-f3557e412b8b",
+    "timestamp": "2026-10-03T06:44:07.580657",
+    "success": true,
+    "metadata": {
+      "email": "subject_881bb7@gmail.com"
+    }
+  },
+  {
+    "id": "41024f00614340ffa2b8fc87d971f61c",
+    "_id": "41024f00614340ffa2b8fc87d971f61c",
+    "actor_user_id": "810e2b95-1665-49f5-b69d-815bace0bbfe",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:44:07.658823",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "bc55880b9d804333a21c3996b31774e8",
+    "_id": "bc55880b9d804333a21c3996b31774e8",
+    "actor_user_id": "ec8f45b3-324b-4c37-bf3f-d7f5f4e68653",
+    "actor_role": "centre",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:44:07.682860",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "21197b9caf6544888768bc4419d3a87f",
+    "_id": "21197b9caf6544888768bc4419d3a87f",
+    "actor_user_id": "2c169a97-1420-4566-b958-ac5b06ef6ccd",
+    "actor_role": "admin",
+    "action": "ADMIN_USER_STATUS_CHANGED",
+    "resource_type": "USER",
+    "resource_id": "43f292e7-e705-42cf-98ce-f3557e412b8b",
+    "timestamp": "2026-10-03T06:44:07.779371",
+    "success": true,
+    "metadata": {
+      "is_active": false
+    }
+  },
+  {
+    "id": "06e990379a924ede9e018cda8c62537e",
+    "_id": "06e990379a924ede9e018cda8c62537e",
+    "actor_user_id": "2c169a97-1420-4566-b958-ac5b06ef6ccd",
+    "actor_role": "admin",
+    "action": "ADMIN_USER_ROLE_CHANGED",
+    "resource_type": "USER",
+    "resource_id": "43f292e7-e705-42cf-98ce-f3557e412b8b",
+    "timestamp": "2026-10-03T06:44:07.861393",
+    "success": true,
+    "metadata": {
+      "role": "centre"
+    }
+  },
+  {
+    "id": "8eed3edd8aaa49f482a361b832a3d76e",
+    "_id": "8eed3edd8aaa49f482a361b832a3d76e",
+    "actor_user_id": "bd74b821-0824-40f4-8bf4-23cd414415e6",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "bd74b821-0824-40f4-8bf4-23cd414415e6",
+    "timestamp": "2026-10-03T06:44:13.012773",
+    "success": true,
+    "metadata": {
+      "email": "learner_p66_0ddb0d@gmail.com"
+    }
+  },
+  {
+    "id": "465cbcb3cd2a46fab9141a2d0b110a7f",
+    "_id": "465cbcb3cd2a46fab9141a2d0b110a7f",
+    "actor_user_id": "20e9ac60-f15e-4ef1-a9de-eee3fa002d6e",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "20e9ac60-f15e-4ef1-a9de-eee3fa002d6e",
+    "timestamp": "2026-10-03T06:44:17.963650",
+    "success": true,
+    "metadata": {
+      "email": "centre_p66_e540d8@naricentre.org"
+    }
+  },
+  {
+    "id": "4d3b9e61dc68466584cabd91313e5921",
+    "_id": "4d3b9e61dc68466584cabd91313e5921",
+    "actor_user_id": "b6d1ad79-f150-4576-8dfb-c1f1e3e4d7a9",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b6d1ad79-f150-4576-8dfb-c1f1e3e4d7a9",
+    "timestamp": "2026-10-03T06:44:19.536502",
+    "success": true,
+    "metadata": {
+      "email": "admin_p66_951471@narinexus.org"
+    }
+  },
+  {
+    "id": "2026ac6defde49daaace5583041348ff",
+    "_id": "2026ac6defde49daaace5583041348ff",
+    "actor_user_id": "bd74b821-0824-40f4-8bf4-23cd414415e6",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:44:19.568838",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "e1603567fc754bdc9da6416b94046b5d",
+    "_id": "e1603567fc754bdc9da6416b94046b5d",
+    "actor_user_id": "20e9ac60-f15e-4ef1-a9de-eee3fa002d6e",
+    "actor_role": "centre",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T06:44:19.578443",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "da77d2f954164827aa974e155062b2ea",
+    "_id": "da77d2f954164827aa974e155062b2ea",
+    "actor_user_id": "d5de0da5-de10-425f-a78c-0117b8930251",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d5de0da5-de10-425f-a78c-0117b8930251",
+    "timestamp": "2026-10-03T06:44:23.652353",
+    "success": true,
+    "metadata": {
+      "email": "progress_a_892c20@example.com"
+    }
+  },
+  {
+    "id": "c77253eb2ecc47ae89093e6047f4234a",
+    "_id": "c77253eb2ecc47ae89093e6047f4234a",
+    "actor_user_id": "fa70a351-51d4-4747-a0a3-c81e6d103f7e",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "fa70a351-51d4-4747-a0a3-c81e6d103f7e",
+    "timestamp": "2026-10-03T06:44:28.263539",
+    "success": true,
+    "metadata": {
+      "email": "progress_b_8f01bd@example.com"
+    }
+  },
+  {
+    "id": "649c656fad724bdf82c58aef0da0e736",
+    "_id": "649c656fad724bdf82c58aef0da0e736",
+    "actor_user_id": "b78894c2-39ae-4b1b-bd1f-f95d75a5b08b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b78894c2-39ae-4b1b-bd1f-f95d75a5b08b",
+    "timestamp": "2026-10-03T06:44:32.064817",
+    "success": true,
+    "metadata": {
+      "email": "test_43726c04@example.com"
+    }
+  },
+  {
+    "id": "e3b5a13703694382b4c046bdfc9290b6",
+    "_id": "e3b5a13703694382b4c046bdfc9290b6",
+    "actor_user_id": "e01392b1-74e4-42f3-8ea7-ba1c2841e7b5",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e01392b1-74e4-42f3-8ea7-ba1c2841e7b5",
+    "timestamp": "2026-10-03T06:44:59.001303",
+    "success": true,
+    "metadata": {
+      "email": "centre_main_dfe409@naricentre.org"
+    }
+  },
+  {
+    "id": "8a66dfe09446447298490a6ebcce45ff",
+    "_id": "8a66dfe09446447298490a6ebcce45ff",
+    "actor_user_id": "8224830d-c6c7-46ce-9a1c-ec270dee843c",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "8224830d-c6c7-46ce-9a1c-ec270dee843c",
+    "timestamp": "2026-10-03T06:45:02.953416",
+    "success": true,
+    "metadata": {
+      "email": "centre_stranger_0f37d4@naricentre.org"
+    }
+  },
+  {
+    "id": "e6506de65ba8452d9c8f7d7dddc942ff",
+    "_id": "e6506de65ba8452d9c8f7d7dddc942ff",
+    "actor_user_id": "06f456cb-32a5-4ae6-9b91-bfb4dc3cb9f0",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "06f456cb-32a5-4ae6-9b91-bfb4dc3cb9f0",
+    "timestamp": "2026-10-03T06:45:06.824787",
+    "success": true,
+    "metadata": {
+      "email": "centre_course_a_03c5c2@naricentre.org"
+    }
+  },
+  {
+    "id": "06930f25b55047c58eca11ebe7dd6f48",
+    "_id": "06930f25b55047c58eca11ebe7dd6f48",
+    "actor_user_id": "cc8831ac-ad3a-480e-a496-d304662e4bda",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "cc8831ac-ad3a-480e-a496-d304662e4bda",
+    "timestamp": "2026-10-03T06:45:10.949886",
+    "success": true,
+    "metadata": {
+      "email": "centre_course_b_d57890@naricentre.org"
+    }
+  },
+  {
+    "id": "3d45a34946d147e49f0f147ccfbd8ccf",
+    "_id": "3d45a34946d147e49f0f147ccfbd8ccf",
+    "actor_user_id": "5b95bf59-e793-4fea-97b3-e03cd0bb5c5a",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "5b95bf59-e793-4fea-97b3-e03cd0bb5c5a",
+    "timestamp": "2026-10-03T06:45:15.433891",
+    "success": true,
+    "metadata": {
+      "email": "learner_course_1783fe@gmail.com"
+    }
+  },
+  {
+    "id": "eb10a7b70a2c45c5bab274fc971c327b",
+    "_id": "eb10a7b70a2c45c5bab274fc971c327b",
+    "actor_user_id": "06f456cb-32a5-4ae6-9b91-bfb4dc3cb9f0",
+    "actor_role": "centre",
+    "action": "CENTRE_COURSE_CREATED",
+    "resource_type": "COURSE",
+    "resource_id": "course-centre-0586e3cc",
+    "timestamp": "2026-10-03T06:45:15.507554",
+    "success": true,
+    "metadata": {
+      "title": "Boutique Stitching & Fashion"
+    }
+  },
+  {
+    "id": "8454361e2b6a45e28f0eeb6d67229292",
+    "_id": "8454361e2b6a45e28f0eeb6d67229292",
+    "actor_user_id": "06f456cb-32a5-4ae6-9b91-bfb4dc3cb9f0",
+    "actor_role": "centre",
+    "action": "CENTRE_COURSE_UPDATED",
+    "resource_type": "COURSE",
+    "resource_id": "course-centre-0586e3cc",
+    "timestamp": "2026-10-03T06:45:15.564444",
+    "success": true,
+    "metadata": {
+      "title": "Boutique Stitching & Fashion (Updated)",
+      "duration": "8 Weeks"
+    }
+  },
+  {
+    "id": "972cfefd6ff74d80b25c0d96d98b5472",
+    "_id": "972cfefd6ff74d80b25c0d96d98b5472",
+    "actor_user_id": "06f456cb-32a5-4ae6-9b91-bfb4dc3cb9f0",
+    "actor_role": "centre",
+    "action": "CENTRE_COURSE_STATUS_CHANGED",
+    "resource_type": "COURSE",
+    "resource_id": "course-centre-0586e3cc",
+    "timestamp": "2026-10-03T06:45:15.623772",
+    "success": true,
+    "metadata": {
+      "status": "inactive"
+    }
+  },
+  {
+    "id": "74117c45198a4a96bc550fa06b3f4dbe",
+    "_id": "74117c45198a4a96bc550fa06b3f4dbe",
+    "actor_user_id": "06f456cb-32a5-4ae6-9b91-bfb4dc3cb9f0",
+    "actor_role": "centre",
+    "action": "CENTRE_COURSE_STATUS_CHANGED",
+    "resource_type": "COURSE",
+    "resource_id": "course-centre-0586e3cc",
+    "timestamp": "2026-10-03T06:45:15.652957",
+    "success": true,
+    "metadata": {
+      "status": "active"
+    }
+  },
+  {
+    "id": "9e87e8de45fd40bf8ba177d856c52bae",
+    "_id": "9e87e8de45fd40bf8ba177d856c52bae",
+    "actor_user_id": "a1105fd1-ff1a-4952-bd71-85aae127e87f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "a1105fd1-ff1a-4952-bd71-85aae127e87f",
+    "timestamp": "2026-10-03T06:45:19.672331",
+    "success": true,
+    "metadata": {
+      "email": "centre_prog_a_d90423@naricentre.org"
+    }
+  },
+  {
+    "id": "28343180b3294ac48d9edf9646b1f538",
+    "_id": "28343180b3294ac48d9edf9646b1f538",
+    "actor_user_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "timestamp": "2026-10-03T06:52:17.393911",
+    "success": false,
+    "metadata": {
+      "email": "1ep23cs154.shwetaningappa@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "b08c9316ddab47f1b2138e94a8a6af56",
+    "_id": "b08c9316ddab47f1b2138e94a8a6af56",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T06:52:34.105454",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "14fd3472b6d2408e86f4f56ccb9a4335",
+    "_id": "14fd3472b6d2408e86f4f56ccb9a4335",
+    "actor_user_id": "b9a1fdc0-2d22-4dab-8bc6-34582e8d23d1",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b9a1fdc0-2d22-4dab-8bc6-34582e8d23d1",
+    "timestamp": "2026-10-03T06:53:35.286397",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_f57e3d@gmail.com"
+    }
+  },
+  {
+    "id": "b9b1ccb3217f422f9e3d23e64985b8d7",
+    "_id": "b9b1ccb3217f422f9e3d23e64985b8d7",
+    "actor_user_id": "4d116e53-4748-408b-8c70-c8416fae8f54",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "4d116e53-4748-408b-8c70-c8416fae8f54",
+    "timestamp": "2026-10-03T06:53:39.373655",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_b_9d9443@gmail.com"
+    }
+  },
+  {
+    "id": "a46dd32f8d4147fdb9b61d398ec8c506",
+    "_id": "a46dd32f8d4147fdb9b61d398ec8c506",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "notif_learner_a_f57e3d@gmail.com",
+    "timestamp": "2026-10-03T06:53:42.011775",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Test Notification Title"
+    }
+  },
+  {
+    "id": "74e8e306739842958e8cda907394c05d",
+    "_id": "74e8e306739842958e8cda907394c05d",
+    "actor_user_id": "55a0cc85-249e-49bf-8085-ae1a3ffaa21f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "55a0cc85-249e-49bf-8085-ae1a3ffaa21f",
+    "timestamp": "2026-10-03T06:53:49.007982",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_b5f71f@gmail.com"
+    }
+  },
+  {
+    "id": "568b8b1b636c4723abdf68af3315f2e6",
+    "_id": "568b8b1b636c4723abdf68af3315f2e6",
+    "actor_user_id": "883945e2-617e-4aac-8f04-bcea4791256f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "883945e2-617e-4aac-8f04-bcea4791256f",
+    "timestamp": "2026-10-03T06:53:52.693165",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_b_aaa9cc@gmail.com"
+    }
+  },
+  {
+    "id": "0eda8f31f0424ca4bc7220388fad7873",
+    "_id": "0eda8f31f0424ca4bc7220388fad7873",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "notif_learner_a_b5f71f@gmail.com",
+    "timestamp": "2026-10-03T06:53:55.738845",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Test Notification Title"
+    }
+  },
+  {
+    "id": "3e3ddcf0812e4d948cd13bc0f047f2c7",
+    "_id": "3e3ddcf0812e4d948cd13bc0f047f2c7",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T06:54:57.769923",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "50dbb88eaf3847a285aeea5e834b4f9a",
+    "_id": "50dbb88eaf3847a285aeea5e834b4f9a",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T06:55:16.240887",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "58834bb1516640b9b2b6f803679a362f",
+    "_id": "58834bb1516640b9b2b6f803679a362f",
+    "actor_user_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "timestamp": "2026-10-03T06:57:15.250571",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_6fe0bf@gmail.com"
+    }
+  },
+  {
+    "id": "107d8630d7e34f709e428f36eac13090",
+    "_id": "107d8630d7e34f709e428f36eac13090",
+    "actor_user_id": "e0545344-55a9-4dad-8353-846db5bdec3d",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e0545344-55a9-4dad-8353-846db5bdec3d",
+    "timestamp": "2026-10-03T07:02:00.507404",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_c6c44d@gmail.com"
+    }
+  },
+  {
+    "id": "7c7c862861ce428591eb8d3ba688e19b",
+    "_id": "7c7c862861ce428591eb8d3ba688e19b",
+    "actor_user_id": "6c8002c3-a665-4ff8-ac56-c5510b7cd13b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "6c8002c3-a665-4ff8-ac56-c5510b7cd13b",
+    "timestamp": "2026-10-03T07:03:39.254377",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_f30fc9@gmail.com"
+    }
+  },
+  {
+    "id": "7bd9e867c820405896def5fcfb86a8b1",
+    "_id": "7bd9e867c820405896def5fcfb86a8b1",
+    "actor_user_id": "6c8002c3-a665-4ff8-ac56-c5510b7cd13b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "6c8002c3-a665-4ff8-ac56-c5510b7cd13b",
+    "timestamp": "2026-10-03T07:03:40.010665",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_f30fc9@gmail.com"
+    }
+  },
+  {
+    "id": "23de81c7024c475580fe6280978fdd52",
+    "_id": "23de81c7024c475580fe6280978fdd52",
+    "actor_user_id": "6c8002c3-a665-4ff8-ac56-c5510b7cd13b",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:03:40.029015",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "eb3549d1ade240659f777c124eb5fb60",
+    "_id": "eb3549d1ade240659f777c124eb5fb60",
+    "actor_user_id": "8d40d278-37d6-4249-a134-83f490ffcc40",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "8d40d278-37d6-4249-a134-83f490ffcc40",
+    "timestamp": "2026-10-03T07:03:57.298489",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_44d718@gmail.com"
+    }
+  },
+  {
+    "id": "70057b8810644fa198e27f61b9e96e52",
+    "_id": "70057b8810644fa198e27f61b9e96e52",
+    "actor_user_id": "8d40d278-37d6-4249-a134-83f490ffcc40",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "8d40d278-37d6-4249-a134-83f490ffcc40",
+    "timestamp": "2026-10-03T07:03:58.041212",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_44d718@gmail.com"
+    }
+  },
+  {
+    "id": "3737fa8d41f9432e86145f1343cfda1f",
+    "_id": "3737fa8d41f9432e86145f1343cfda1f",
+    "actor_user_id": "8d40d278-37d6-4249-a134-83f490ffcc40",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:03:58.061732",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "c97469decafa457e90014bfc50202582",
+    "_id": "c97469decafa457e90014bfc50202582",
+    "actor_user_id": "13a86e5c-41f7-4287-8839-b7f10f75b1a5",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "13a86e5c-41f7-4287-8839-b7f10f75b1a5",
+    "timestamp": "2026-10-03T07:04:43.960599",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_065625@gmail.com"
+    }
+  },
+  {
+    "id": "7984658ee14348d49c29a90e881a14a6",
+    "_id": "7984658ee14348d49c29a90e881a14a6",
+    "actor_user_id": "13a86e5c-41f7-4287-8839-b7f10f75b1a5",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "13a86e5c-41f7-4287-8839-b7f10f75b1a5",
+    "timestamp": "2026-10-03T07:04:44.665425",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_065625@gmail.com"
+    }
+  },
+  {
+    "id": "fde1923c547d4a13aa207ad971179663",
+    "_id": "fde1923c547d4a13aa207ad971179663",
+    "actor_user_id": "13a86e5c-41f7-4287-8839-b7f10f75b1a5",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:04:44.684557",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "b906db785ab64e93befba7be9232e3f3",
+    "_id": "b906db785ab64e93befba7be9232e3f3",
+    "actor_user_id": "da1f7f40-85d7-40a0-a5a1-136bdf31e71d",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "da1f7f40-85d7-40a0-a5a1-136bdf31e71d",
+    "timestamp": "2026-10-03T07:05:16.504673",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_3cdf06@gmail.com"
+    }
+  },
+  {
+    "id": "68f65b519594436eb4c61f786cc8f986",
+    "_id": "68f65b519594436eb4c61f786cc8f986",
+    "actor_user_id": "da1f7f40-85d7-40a0-a5a1-136bdf31e71d",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "da1f7f40-85d7-40a0-a5a1-136bdf31e71d",
+    "timestamp": "2026-10-03T07:05:17.201248",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_3cdf06@gmail.com"
+    }
+  },
+  {
+    "id": "a1cfd6ddef534284bbd59c572b71a819",
+    "_id": "a1cfd6ddef534284bbd59c572b71a819",
+    "actor_user_id": "da1f7f40-85d7-40a0-a5a1-136bdf31e71d",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:05:17.221225",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "9fc21f6235d9414e81cd904b271cc6f4",
+    "_id": "9fc21f6235d9414e81cd904b271cc6f4",
+    "actor_user_id": "f67ff5d7-3b07-47b5-b41d-4e16b3ce00c4",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "f67ff5d7-3b07-47b5-b41d-4e16b3ce00c4",
+    "timestamp": "2026-10-03T07:05:53.201861",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_8ec22d@gmail.com"
+    }
+  },
+  {
+    "id": "ca9bdb0bef89453d86c89f4fbf4d5db9",
+    "_id": "ca9bdb0bef89453d86c89f4fbf4d5db9",
+    "actor_user_id": "f67ff5d7-3b07-47b5-b41d-4e16b3ce00c4",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "f67ff5d7-3b07-47b5-b41d-4e16b3ce00c4",
+    "timestamp": "2026-10-03T07:05:53.747263",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_8ec22d@gmail.com"
+    }
+  },
+  {
+    "id": "5d43d411d8a84842ac55a0a25a9fb0b7",
+    "_id": "5d43d411d8a84842ac55a0a25a9fb0b7",
+    "actor_user_id": "f67ff5d7-3b07-47b5-b41d-4e16b3ce00c4",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:05:53.769224",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "260b8423b29a4aeba7a2f69c35abffff",
+    "_id": "260b8423b29a4aeba7a2f69c35abffff",
+    "actor_user_id": "5c28901a-7198-486a-a7b6-dd5385159406",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "5c28901a-7198-486a-a7b6-dd5385159406",
+    "timestamp": "2026-10-03T07:06:21.040472",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_fa7a0f@gmail.com"
+    }
+  },
+  {
+    "id": "01dcf894cc9e427a8e7952190ecf8f8b",
+    "_id": "01dcf894cc9e427a8e7952190ecf8f8b",
+    "actor_user_id": "5c28901a-7198-486a-a7b6-dd5385159406",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "5c28901a-7198-486a-a7b6-dd5385159406",
+    "timestamp": "2026-10-03T07:06:21.573096",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_fa7a0f@gmail.com"
+    }
+  },
+  {
+    "id": "577d1cdbf15541fda0633eebafabea43",
+    "_id": "577d1cdbf15541fda0633eebafabea43",
+    "actor_user_id": "5c28901a-7198-486a-a7b6-dd5385159406",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:06:21.598209",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "23479170e26f440f9417c78e171b2578",
+    "_id": "23479170e26f440f9417c78e171b2578",
+    "actor_user_id": "efe71a76-1ebb-4c94-abd3-afbbc45b0279",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "efe71a76-1ebb-4c94-abd3-afbbc45b0279",
+    "timestamp": "2026-10-03T07:06:51.275028",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_a915b9@gmail.com"
+    }
+  },
+  {
+    "id": "d3674e29c7eb40b0bee2a5d1a4cad3b5",
+    "_id": "d3674e29c7eb40b0bee2a5d1a4cad3b5",
+    "actor_user_id": "efe71a76-1ebb-4c94-abd3-afbbc45b0279",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "efe71a76-1ebb-4c94-abd3-afbbc45b0279",
+    "timestamp": "2026-10-03T07:06:51.832297",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_a915b9@gmail.com"
+    }
+  },
+  {
+    "id": "dd69fd51b08f48bea907a16496e3b4b9",
+    "_id": "dd69fd51b08f48bea907a16496e3b4b9",
+    "actor_user_id": "efe71a76-1ebb-4c94-abd3-afbbc45b0279",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:06:51.851730",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "6a592b590a964cf096eb95a7c6d78084",
+    "_id": "6a592b590a964cf096eb95a7c6d78084",
+    "actor_user_id": "usr-bb2b54",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "usr-bb2b54",
+    "timestamp": "2026-10-03T07:26:40.022617",
+    "success": false,
+    "metadata": {
+      "email": "shwetaningappa2004@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "8de91df1284b44ac9288a63cc29831a1",
+    "_id": "8de91df1284b44ac9288a63cc29831a1",
+    "actor_user_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "timestamp": "2026-10-03T07:26:46.887590",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_6fe0bf@gmail.com"
+    }
+  },
+  {
+    "id": "17fe8859ece840a789958800be44a7f1",
+    "_id": "17fe8859ece840a789958800be44a7f1",
+    "actor_user_id": "b07970f5-f731-4cec-ab58-201bcb7bf560",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b07970f5-f731-4cec-ab58-201bcb7bf560",
+    "timestamp": "2026-10-03T07:29:50.975939",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_044e73@gmail.com"
+    }
+  },
+  {
+    "id": "91046604271247beb93d1bda7bdcfa4c",
+    "_id": "91046604271247beb93d1bda7bdcfa4c",
+    "actor_user_id": "b07970f5-f731-4cec-ab58-201bcb7bf560",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b07970f5-f731-4cec-ab58-201bcb7bf560",
+    "timestamp": "2026-10-03T07:29:51.567486",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_044e73@gmail.com"
+    }
+  },
+  {
+    "id": "7dd30b88213141a7b84d051122a1a77b",
+    "_id": "7dd30b88213141a7b84d051122a1a77b",
+    "actor_user_id": "b07970f5-f731-4cec-ab58-201bcb7bf560",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:29:51.600817",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "ccd7605fc041479689b46b1854067b00",
+    "_id": "ccd7605fc041479689b46b1854067b00",
+    "actor_user_id": "81e610a7-69c0-4cf8-b36f-3fc4e8d9dc7b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "81e610a7-69c0-4cf8-b36f-3fc4e8d9dc7b",
+    "timestamp": "2026-10-03T07:30:00.568784",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_caf0c5@gmail.com"
+    }
+  },
+  {
+    "id": "f1f6dd761ad14e5793342700fa3994de",
+    "_id": "f1f6dd761ad14e5793342700fa3994de",
+    "actor_user_id": "81e610a7-69c0-4cf8-b36f-3fc4e8d9dc7b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "81e610a7-69c0-4cf8-b36f-3fc4e8d9dc7b",
+    "timestamp": "2026-10-03T07:30:01.184011",
+    "success": true,
+    "metadata": {
+      "email": "multi_test_caf0c5@gmail.com"
+    }
+  },
+  {
+    "id": "e03b0532d89141b2bfb01f164075e8e5",
+    "_id": "e03b0532d89141b2bfb01f164075e8e5",
+    "actor_user_id": "81e610a7-69c0-4cf8-b36f-3fc4e8d9dc7b",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:30:01.214325",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "986d3e46106744939383cec479a55c93",
+    "_id": "986d3e46106744939383cec479a55c93",
+    "actor_user_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "timestamp": "2026-10-03T07:44:24.577869",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_6fe0bf@gmail.com"
+    }
+  },
+  {
+    "id": "8f24fb0a3e144632bc55d01dc41d37ea",
+    "_id": "8f24fb0a3e144632bc55d01dc41d37ea",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T07:50:06.122131",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "6dd403e0870c48fda7c5efc007a6a34d",
+    "_id": "6dd403e0870c48fda7c5efc007a6a34d",
+    "actor_user_id": "4c81c482-548a-4439-9acf-248a96f301d0",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "4c81c482-548a-4439-9acf-248a96f301d0",
+    "timestamp": "2026-10-03T07:53:00.375606",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_938510@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "44445a35c22d425e8aaa2243dc855bd8",
+    "_id": "44445a35c22d425e8aaa2243dc855bd8",
+    "actor_user_id": "4c81c482-548a-4439-9acf-248a96f301d0",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "4c81c482-548a-4439-9acf-248a96f301d0",
+    "timestamp": "2026-10-03T07:53:00.712949",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_938510@gmail.com"
+    }
+  },
+  {
+    "id": "677c17bfbe484eb3b72415124d17ebb3",
+    "_id": "677c17bfbe484eb3b72415124d17ebb3",
+    "actor_user_id": "be35f5e9-f567-44c0-b525-0896edfca2ce",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "be35f5e9-f567-44c0-b525-0896edfca2ce",
+    "timestamp": "2026-10-03T07:53:16.454793",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_cdcd5f@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "154ed8e6406e406a859e1ffee7815bfb",
+    "_id": "154ed8e6406e406a859e1ffee7815bfb",
+    "actor_user_id": "be35f5e9-f567-44c0-b525-0896edfca2ce",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "be35f5e9-f567-44c0-b525-0896edfca2ce",
+    "timestamp": "2026-10-03T07:53:16.792662",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_cdcd5f@gmail.com"
+    }
+  },
+  {
+    "id": "b0e6c1a9f34940b3b372f0dcc0f11144",
+    "_id": "b0e6c1a9f34940b3b372f0dcc0f11144",
+    "actor_user_id": "9a32f7a1-9ea6-421f-97ba-f47de8f3c584",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "9a32f7a1-9ea6-421f-97ba-f47de8f3c584",
+    "timestamp": "2026-10-03T07:53:38.248767",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_c62e88@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "bcd510fbbe2a4a93bc844fdb1f0587e8",
+    "_id": "bcd510fbbe2a4a93bc844fdb1f0587e8",
+    "actor_user_id": "9a32f7a1-9ea6-421f-97ba-f47de8f3c584",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "9a32f7a1-9ea6-421f-97ba-f47de8f3c584",
+    "timestamp": "2026-10-03T07:53:38.587430",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_c62e88@gmail.com"
+    }
+  },
+  {
+    "id": "415abaf3b9a24b82b2c8771e25eb7e81",
+    "_id": "415abaf3b9a24b82b2c8771e25eb7e81",
+    "actor_user_id": "6d2fd475-8187-4d24-a191-935d24ed1a1f",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "6d2fd475-8187-4d24-a191-935d24ed1a1f",
+    "timestamp": "2026-10-03T07:53:48.121211",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_ef2c8e@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "a0a596a9b2f34650bf8c2c0310edc8a8",
+    "_id": "a0a596a9b2f34650bf8c2c0310edc8a8",
+    "actor_user_id": "6d2fd475-8187-4d24-a191-935d24ed1a1f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "6d2fd475-8187-4d24-a191-935d24ed1a1f",
+    "timestamp": "2026-10-03T07:53:48.516079",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_ef2c8e@gmail.com"
+    }
+  },
+  {
+    "id": "82639823205d42c98abeddc8b7627808",
+    "_id": "82639823205d42c98abeddc8b7627808",
+    "actor_user_id": "1611ab5c-8bb3-4a3c-940f-bf45b589d73b",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "1611ab5c-8bb3-4a3c-940f-bf45b589d73b",
+    "timestamp": "2026-10-03T07:54:12.863665",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_53ccfc@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "a3f6956fb25b48258603274d82c3b51d",
+    "_id": "a3f6956fb25b48258603274d82c3b51d",
+    "actor_user_id": "1611ab5c-8bb3-4a3c-940f-bf45b589d73b",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "1611ab5c-8bb3-4a3c-940f-bf45b589d73b",
+    "timestamp": "2026-10-03T07:54:13.203157",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_53ccfc@gmail.com"
+    }
+  },
+  {
+    "id": "de75516511e347638da8b766113d8f04",
+    "_id": "de75516511e347638da8b766113d8f04",
+    "actor_user_id": "40ada0b4-c7de-4c55-a167-bec8995a2fe8",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "40ada0b4-c7de-4c55-a167-bec8995a2fe8",
+    "timestamp": "2026-10-03T07:54:55.061852",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_0641c4@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "ad9d8fabb9d5441ca5082a9815753db4",
+    "_id": "ad9d8fabb9d5441ca5082a9815753db4",
+    "actor_user_id": "40ada0b4-c7de-4c55-a167-bec8995a2fe8",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "40ada0b4-c7de-4c55-a167-bec8995a2fe8",
+    "timestamp": "2026-10-03T07:54:55.401890",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_0641c4@gmail.com"
+    }
+  },
+  {
+    "id": "914ef1068f754dd8ac1b2be4392a78a5",
+    "_id": "914ef1068f754dd8ac1b2be4392a78a5",
+    "actor_user_id": "b89c18c7-73fa-4c77-9a8d-4eaa2175a6b6",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "b89c18c7-73fa-4c77-9a8d-4eaa2175a6b6",
+    "timestamp": "2026-10-03T07:55:26.247957",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_d58aa6@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "31cd1b425bd244b89cf6a277d18e78c6",
+    "_id": "31cd1b425bd244b89cf6a277d18e78c6",
+    "actor_user_id": "b89c18c7-73fa-4c77-9a8d-4eaa2175a6b6",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b89c18c7-73fa-4c77-9a8d-4eaa2175a6b6",
+    "timestamp": "2026-10-03T07:55:26.587244",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_d58aa6@gmail.com"
+    }
+  },
+  {
+    "id": "bfe0eb6278ad49d09f9a719f5ebd7f72",
+    "_id": "bfe0eb6278ad49d09f9a719f5ebd7f72",
+    "actor_user_id": "34ff7483-c5c3-4934-bad8-22a5e312862a",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "34ff7483-c5c3-4934-bad8-22a5e312862a",
+    "timestamp": "2026-10-03T07:56:09.462432",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_337ae1@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "36aeedffa02841a2928bb54ce91e3377",
+    "_id": "36aeedffa02841a2928bb54ce91e3377",
+    "actor_user_id": "34ff7483-c5c3-4934-bad8-22a5e312862a",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "34ff7483-c5c3-4934-bad8-22a5e312862a",
+    "timestamp": "2026-10-03T07:56:09.800613",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_337ae1@gmail.com"
+    }
+  },
+  {
+    "id": "e76d92575bba4d71a036ddac6bb1a688",
+    "_id": "e76d92575bba4d71a036ddac6bb1a688",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T07:56:19.194620",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "e09c4dcffa9541efbf11009ae7d85fab",
+    "_id": "e09c4dcffa9541efbf11009ae7d85fab",
+    "actor_user_id": "34ff7483-c5c3-4934-bad8-22a5e312862a",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:56:19.206347",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "811dd1b3902f4a0d8cbce7cd9ee78bd2",
+    "_id": "811dd1b3902f4a0d8cbce7cd9ee78bd2",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T07:56:19.612979",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "32e519f5895d49528a898c7c9e27fbda",
+    "_id": "32e519f5895d49528a898c7c9e27fbda",
+    "actor_user_id": "313063d9-1f03-4f2c-83ce-ce18848cf36e",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "313063d9-1f03-4f2c-83ce-ce18848cf36e",
+    "timestamp": "2026-10-03T07:56:45.624872",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_354c01@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "d0ff4145596e4e60bd09417943b3e9ca",
+    "_id": "d0ff4145596e4e60bd09417943b3e9ca",
+    "actor_user_id": "313063d9-1f03-4f2c-83ce-ce18848cf36e",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "313063d9-1f03-4f2c-83ce-ce18848cf36e",
+    "timestamp": "2026-10-03T07:56:45.965603",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_354c01@gmail.com"
+    }
+  },
+  {
+    "id": "2324ee56a27a49b29c31799747a86efe",
+    "_id": "2324ee56a27a49b29c31799747a86efe",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T07:56:54.286235",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "7719753ff4244b36a5e7881f8b135ff9",
+    "_id": "7719753ff4244b36a5e7881f8b135ff9",
+    "actor_user_id": "313063d9-1f03-4f2c-83ce-ce18848cf36e",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:56:54.298370",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "56045ff6c0f54a0a8a5c7a228cf78556",
+    "_id": "56045ff6c0f54a0a8a5c7a228cf78556",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T07:56:54.645557",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "e238570a5b874b13aa75d593c6bbd8a8",
+    "_id": "e238570a5b874b13aa75d593c6bbd8a8",
+    "actor_user_id": "9b25a38a-caa8-483a-8ba6-0d2b2fe981a1",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "9b25a38a-caa8-483a-8ba6-0d2b2fe981a1",
+    "timestamp": "2026-10-03T07:57:27.723276",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_34bda2@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "08f55c2fd7514e28b0268eea02c899ce",
+    "_id": "08f55c2fd7514e28b0268eea02c899ce",
+    "actor_user_id": "9b25a38a-caa8-483a-8ba6-0d2b2fe981a1",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "9b25a38a-caa8-483a-8ba6-0d2b2fe981a1",
+    "timestamp": "2026-10-03T07:57:28.072589",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_34bda2@gmail.com"
+    }
+  },
+  {
+    "id": "95387f7b308e400cbe7c13652831131e",
+    "_id": "95387f7b308e400cbe7c13652831131e",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T07:57:37.326556",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "a9b7f3cda3ab4678ad83468235c93c7c",
+    "_id": "a9b7f3cda3ab4678ad83468235c93c7c",
+    "actor_user_id": "9b25a38a-caa8-483a-8ba6-0d2b2fe981a1",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:57:37.338107",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "01cc497fce314ea294f823597f685f40",
+    "_id": "01cc497fce314ea294f823597f685f40",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T07:57:37.700110",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "ce01bf20b79c4b518eb2edf0e35b3a60",
+    "_id": "ce01bf20b79c4b518eb2edf0e35b3a60",
+    "actor_user_id": "e085bc79-b225-4a70-a169-7a50ffa1d3c8",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "e085bc79-b225-4a70-a169-7a50ffa1d3c8",
+    "timestamp": "2026-10-03T07:58:13.549715",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_357b84@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "b942542ba08646de96e202c274111fd0",
+    "_id": "b942542ba08646de96e202c274111fd0",
+    "actor_user_id": "e085bc79-b225-4a70-a169-7a50ffa1d3c8",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e085bc79-b225-4a70-a169-7a50ffa1d3c8",
+    "timestamp": "2026-10-03T07:58:13.903023",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_357b84@gmail.com"
+    }
+  },
+  {
+    "id": "08b6944c7e7f400787d7087ac15af118",
+    "_id": "08b6944c7e7f400787d7087ac15af118",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T07:58:22.976324",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "a3b8cc98d5444156a5baab09fadd35b1",
+    "_id": "a3b8cc98d5444156a5baab09fadd35b1",
+    "actor_user_id": "e085bc79-b225-4a70-a169-7a50ffa1d3c8",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T07:58:22.987854",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "31c0106020544093885e55b8cc2babf6",
+    "_id": "31c0106020544093885e55b8cc2babf6",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T07:58:23.327760",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "6bfe7798da8a4a599de5e99d2900d741",
+    "_id": "6bfe7798da8a4a599de5e99d2900d741",
+    "actor_user_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "timestamp": "2026-10-03T07:59:29.917591",
+    "success": false,
+    "metadata": {
+      "email": "1ep23cs154.shwetaningappa@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "45c173f6c4b9496b90b1de60ac34fb1f",
+    "_id": "45c173f6c4b9496b90b1de60ac34fb1f",
+    "actor_user_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "timestamp": "2026-10-03T07:59:47.309611",
+    "success": false,
+    "metadata": {
+      "email": "1ep23cs154.shwetaningappa@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "697b461310ca446fa191f76bcf3e1496",
+    "_id": "697b461310ca446fa191f76bcf3e1496",
+    "actor_user_id": "ee820f21-0934-47c9-8b76-84dae1150d49",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "ee820f21-0934-47c9-8b76-84dae1150d49",
+    "timestamp": "2026-10-03T08:13:20.982190",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_53f4ca@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "9e9b6c725fc14803961fabc8180983e9",
+    "_id": "9e9b6c725fc14803961fabc8180983e9",
+    "actor_user_id": "ee820f21-0934-47c9-8b76-84dae1150d49",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ee820f21-0934-47c9-8b76-84dae1150d49",
+    "timestamp": "2026-10-03T08:13:21.330466",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_53f4ca@gmail.com"
+    }
+  },
+  {
+    "id": "c69277e4c7f343d482aafcdddec4f878",
+    "_id": "c69277e4c7f343d482aafcdddec4f878",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T08:13:31.019761",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "99f818b1d5af41caa38fd8739ac3266d",
+    "_id": "99f818b1d5af41caa38fd8739ac3266d",
+    "actor_user_id": "ee820f21-0934-47c9-8b76-84dae1150d49",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T08:13:31.031477",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "cecb540111184292885f71156044b552",
+    "_id": "cecb540111184292885f71156044b552",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T08:13:31.387023",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "7b061904114b4e00974a95e371783fb6",
+    "_id": "7b061904114b4e00974a95e371783fb6",
+    "actor_user_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "timestamp": "2026-10-03T08:15:33.597435",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_6fe0bf@gmail.com"
+    }
+  },
+  {
+    "id": "7d1d5fdf2f954a3e8aefa7e5a5885e5c",
+    "_id": "7d1d5fdf2f954a3e8aefa7e5a5885e5c",
+    "actor_user_id": "130cd745-9944-4bd6-a6ae-172e90f1abac",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "130cd745-9944-4bd6-a6ae-172e90f1abac",
+    "timestamp": "2026-10-03T08:19:58.402841",
+    "success": false,
+    "metadata": {
+      "email": "final_val_a530e1@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "aaeb88dddf5c4a9e9fa0117d3ab6024b",
+    "_id": "aaeb88dddf5c4a9e9fa0117d3ab6024b",
+    "actor_user_id": "130cd745-9944-4bd6-a6ae-172e90f1abac",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "130cd745-9944-4bd6-a6ae-172e90f1abac",
+    "timestamp": "2026-10-03T08:19:58.761534",
+    "success": true,
+    "metadata": {
+      "email": "final_val_a530e1@gmail.com"
+    }
+  },
+  {
+    "id": "4e9d3e06965b4439aeaa574e5d857f56",
+    "_id": "4e9d3e06965b4439aeaa574e5d857f56",
+    "actor_user_id": "130cd745-9944-4bd6-a6ae-172e90f1abac",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T08:19:58.781801",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "7fa32c7090cf4734b76445d5a7896157",
+    "_id": "7fa32c7090cf4734b76445d5a7896157",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T08:19:59.142416",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "bce4369b018846c1a8b6e2fb505730d5",
+    "_id": "bce4369b018846c1a8b6e2fb505730d5",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T08:19:59.484119",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "ee7300a00a074dbb8334283c99360346",
+    "_id": "ee7300a00a074dbb8334283c99360346",
+    "actor_user_id": "11798da9-19c5-4aa3-bf03-d29209a0cf4f",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "11798da9-19c5-4aa3-bf03-d29209a0cf4f",
+    "timestamp": "2026-10-03T08:20:11.271407",
+    "success": false,
+    "metadata": {
+      "email": "final_val_661d5d@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "36cfb6901bbc4348ae3e0ba3ffd123ab",
+    "_id": "36cfb6901bbc4348ae3e0ba3ffd123ab",
+    "actor_user_id": "11798da9-19c5-4aa3-bf03-d29209a0cf4f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "11798da9-19c5-4aa3-bf03-d29209a0cf4f",
+    "timestamp": "2026-10-03T08:20:11.615364",
+    "success": true,
+    "metadata": {
+      "email": "final_val_661d5d@gmail.com"
+    }
+  },
+  {
+    "id": "364edbf351b14ca49721d830faeca988",
+    "_id": "364edbf351b14ca49721d830faeca988",
+    "actor_user_id": "11798da9-19c5-4aa3-bf03-d29209a0cf4f",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T08:20:11.631809",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "083c3e3658cd441aa3b46f90cf997a49",
+    "_id": "083c3e3658cd441aa3b46f90cf997a49",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T08:20:12.054065",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "78fd12a2066d4dafa3565c25842f2a75",
+    "_id": "78fd12a2066d4dafa3565c25842f2a75",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T08:20:12.444467",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "7deb28e89a2b4dcbab7f912335c6d528",
+    "_id": "7deb28e89a2b4dcbab7f912335c6d528",
+    "actor_user_id": "21a3b015-5936-4af6-a18a-f779cbef88a3",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "21a3b015-5936-4af6-a18a-f779cbef88a3",
+    "timestamp": "2026-10-03T08:20:22.470896",
+    "success": false,
+    "metadata": {
+      "email": "final_val_4ab5e8@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "5f35de298f35464cb1a47cca3636d0f9",
+    "_id": "5f35de298f35464cb1a47cca3636d0f9",
+    "actor_user_id": "21a3b015-5936-4af6-a18a-f779cbef88a3",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "21a3b015-5936-4af6-a18a-f779cbef88a3",
+    "timestamp": "2026-10-03T08:20:22.812131",
+    "success": true,
+    "metadata": {
+      "email": "final_val_4ab5e8@gmail.com"
+    }
+  },
+  {
+    "id": "82ea7e59833445758c28a82ef8c5010a",
+    "_id": "82ea7e59833445758c28a82ef8c5010a",
+    "actor_user_id": "21a3b015-5936-4af6-a18a-f779cbef88a3",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T08:20:22.830725",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "9d937922d98547589f5e18f3f7eccd64",
+    "_id": "9d937922d98547589f5e18f3f7eccd64",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T08:20:23.192231",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "69c8de3d79744951a963cd851bbd3fe2",
+    "_id": "69c8de3d79744951a963cd851bbd3fe2",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T08:20:23.534582",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "58a60077a26346eb9c15a3c14ea405c7",
+    "_id": "58a60077a26346eb9c15a3c14ea405c7",
+    "actor_user_id": "e9b3fa78-2118-49e9-b2f5-c5fbdb14d7fd",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "e9b3fa78-2118-49e9-b2f5-c5fbdb14d7fd",
+    "timestamp": "2026-10-03T08:23:31.684521",
+    "success": false,
+    "metadata": {
+      "email": "final_val_eb1844@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "d882f69cc12d432fa06f52b0378df270",
+    "_id": "d882f69cc12d432fa06f52b0378df270",
+    "actor_user_id": "e9b3fa78-2118-49e9-b2f5-c5fbdb14d7fd",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e9b3fa78-2118-49e9-b2f5-c5fbdb14d7fd",
+    "timestamp": "2026-10-03T08:23:32.035224",
+    "success": true,
+    "metadata": {
+      "email": "final_val_eb1844@gmail.com"
+    }
+  },
+  {
+    "id": "6d5ef0f681cc4c6ca9b0be112514abb1",
+    "_id": "6d5ef0f681cc4c6ca9b0be112514abb1",
+    "actor_user_id": "e9b3fa78-2118-49e9-b2f5-c5fbdb14d7fd",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T08:23:32.054252",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "ac4cb461e00e426680b2363c8b5a6ff4",
+    "_id": "ac4cb461e00e426680b2363c8b5a6ff4",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T08:23:32.481601",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "6b870d42fb584852ae3942483f35754c",
+    "_id": "6b870d42fb584852ae3942483f35754c",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T08:23:32.821802",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "8702a2ae5f4640d486b329f5f97b4eb2",
+    "_id": "8702a2ae5f4640d486b329f5f97b4eb2",
+    "actor_user_id": "75fd7097-bc9b-4687-89fe-605385a3ddd2",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "75fd7097-bc9b-4687-89fe-605385a3ddd2",
+    "timestamp": "2026-10-03T08:25:49.953393",
+    "success": false,
+    "metadata": {
+      "email": "final_val_c82b04@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "3fd40a3207ae4d4ebb8d9911c565ab07",
+    "_id": "3fd40a3207ae4d4ebb8d9911c565ab07",
+    "actor_user_id": "75fd7097-bc9b-4687-89fe-605385a3ddd2",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "75fd7097-bc9b-4687-89fe-605385a3ddd2",
+    "timestamp": "2026-10-03T08:25:50.308475",
+    "success": true,
+    "metadata": {
+      "email": "final_val_c82b04@gmail.com"
+    }
+  },
+  {
+    "id": "4b820bec6c974e8694108ecb955fbd6b",
+    "_id": "4b820bec6c974e8694108ecb955fbd6b",
+    "actor_user_id": "75fd7097-bc9b-4687-89fe-605385a3ddd2",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T08:25:50.329576",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "dc60e0a79622472aa2baff93fffa9885",
+    "_id": "dc60e0a79622472aa2baff93fffa9885",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T08:25:50.715847",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "b7f4159c1af0465e8106ff03dc291536",
+    "_id": "b7f4159c1af0465e8106ff03dc291536",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T08:25:51.072234",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "a98ee55c88a647d092b8b944011a94ed",
+    "_id": "a98ee55c88a647d092b8b944011a94ed",
+    "actor_user_id": "7d9eb62c-0a81-4c7e-b39a-3cb9898e9dcf",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "7d9eb62c-0a81-4c7e-b39a-3cb9898e9dcf",
+    "timestamp": "2026-10-03T16:10:16.565679",
+    "success": false,
+    "metadata": {
+      "email": "final_val_2aec3b@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "adf36100e77d4560ab7805764cf3b219",
+    "_id": "adf36100e77d4560ab7805764cf3b219",
+    "actor_user_id": "7d9eb62c-0a81-4c7e-b39a-3cb9898e9dcf",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "7d9eb62c-0a81-4c7e-b39a-3cb9898e9dcf",
+    "timestamp": "2026-10-03T16:10:16.941202",
+    "success": true,
+    "metadata": {
+      "email": "final_val_2aec3b@gmail.com"
+    }
+  },
+  {
+    "id": "542d849c15d746e18a56a8d9ee15f3be",
+    "_id": "542d849c15d746e18a56a8d9ee15f3be",
+    "actor_user_id": "7d9eb62c-0a81-4c7e-b39a-3cb9898e9dcf",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T16:10:16.960964",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "925e32192fe74f0dae7f225189e0810f",
+    "_id": "925e32192fe74f0dae7f225189e0810f",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T16:10:17.375225",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "317daf75c3c94d14864e6500ec0bcf99",
+    "_id": "317daf75c3c94d14864e6500ec0bcf99",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T16:10:17.750960",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "2e2ac11f19b749a2b18fec8fca3da140",
+    "_id": "2e2ac11f19b749a2b18fec8fca3da140",
+    "actor_user_id": "343b53f1-92cd-4790-93a0-628caa8108d1",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "343b53f1-92cd-4790-93a0-628caa8108d1",
+    "timestamp": "2026-10-03T16:11:47.242802",
+    "success": true,
+    "metadata": {
+      "email": "test_e791bbe4@example.com"
+    }
+  },
+  {
+    "id": "c02c1624f9c94b9a8ee46ef5941e30f9",
+    "_id": "c02c1624f9c94b9a8ee46ef5941e30f9",
+    "actor_user_id": "cf72e75b-f89e-4d03-b024-a4fea2d36f55",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "cf72e75b-f89e-4d03-b024-a4fea2d36f55",
+    "timestamp": "2026-10-03T16:13:56.509256",
+    "success": true,
+    "metadata": {
+      "email": "test_cf3c7eec@example.com"
+    }
+  },
+  {
+    "id": "a285573c0be0422794f9541d68bee968",
+    "_id": "a285573c0be0422794f9541d68bee968",
+    "actor_user_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "timestamp": "2026-10-03T16:14:23.840411",
+    "success": false,
+    "metadata": {
+      "email": "test_da63a321@example.com",
+      "reason": "Email address is unverified"
+    }
+  },
+  {
+    "id": "396b551aa65a48099bb8b5c8ac269bb3",
+    "_id": "396b551aa65a48099bb8b5c8ac269bb3",
+    "actor_user_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "timestamp": "2026-10-03T16:14:24.955476",
+    "success": false,
+    "metadata": {
+      "email": "test_da63a321@example.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "4e0ac3340ef9496aaf5845b010677eee",
+    "_id": "4e0ac3340ef9496aaf5845b010677eee",
+    "actor_user_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "timestamp": "2026-10-03T16:14:25.299447",
+    "success": true,
+    "metadata": {
+      "email": "test_da63a321@example.com"
+    }
+  },
+  {
+    "id": "41936d410ef54a2fa3cc4e4d9c50df74",
+    "_id": "41936d410ef54a2fa3cc4e4d9c50df74",
+    "actor_user_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "timestamp": "2026-10-03T16:14:29.202334",
+    "success": false,
+    "metadata": {
+      "email": "test_da63a321@example.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "4580fe17ecd84609b754cf76293294fa",
+    "_id": "4580fe17ecd84609b754cf76293294fa",
+    "actor_user_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "e1e9b30b-6326-485b-b1df-67c8fc331ecc",
+    "timestamp": "2026-10-03T16:14:29.544528",
+    "success": true,
+    "metadata": {
+      "email": "test_da63a321@example.com"
+    }
+  },
+  {
+    "id": "e4932650e4434dab904a0c0facb13bcd",
+    "_id": "e4932650e4434dab904a0c0facb13bcd",
+    "actor_user_id": "ed8ff069-4501-427a-a385-c8ea16cf2744",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "ed8ff069-4501-427a-a385-c8ea16cf2744",
+    "timestamp": "2026-10-03T16:14:50.068880",
+    "success": false,
+    "metadata": {
+      "email": "final_val_9002cd@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "7193fbaf63c944ecbf9a3cade9f13a42",
+    "_id": "7193fbaf63c944ecbf9a3cade9f13a42",
+    "actor_user_id": "ed8ff069-4501-427a-a385-c8ea16cf2744",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ed8ff069-4501-427a-a385-c8ea16cf2744",
+    "timestamp": "2026-10-03T16:14:50.415943",
+    "success": true,
+    "metadata": {
+      "email": "final_val_9002cd@gmail.com"
+    }
+  },
+  {
+    "id": "6bd98f7674254b4fb0109bfce222a584",
+    "_id": "6bd98f7674254b4fb0109bfce222a584",
+    "actor_user_id": "ed8ff069-4501-427a-a385-c8ea16cf2744",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-03T16:14:50.433947",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "c4f466dd796b47f1996ad2181ce2828b",
+    "_id": "c4f466dd796b47f1996ad2181ce2828b",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-03T16:14:50.792703",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "89b4a80b329447c3bdd3459dc7d63b6e",
+    "_id": "89b4a80b329447c3bdd3459dc7d63b6e",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-03T16:14:51.134222",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "5928b1b16d604a2d824685dc31c5a279",
+    "_id": "5928b1b16d604a2d824685dc31c5a279",
+    "actor_user_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "timestamp": "2026-10-04T06:25:48.351806",
+    "success": false,
+    "metadata": {
+      "email": "1ep23cs154.shwetaningappa@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "0823ce86cf3c46dc94d2bfc9203df71f",
+    "_id": "0823ce86cf3c46dc94d2bfc9203df71f",
+    "actor_user_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "timestamp": "2026-10-04T06:27:44.579741",
+    "success": true,
+    "metadata": {
+      "email": "1ep23cs154.shwetaningappa@gmail.com"
+    }
+  },
+  {
+    "id": "86c021175f414fa5908a072f188993c3",
+    "_id": "86c021175f414fa5908a072f188993c3",
+    "actor_user_id": "8143ed75-6956-489b-9980-b5122198d1d5",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "8143ed75-6956-489b-9980-b5122198d1d5",
+    "timestamp": "2026-10-04T06:30:28.274579",
+    "success": false,
+    "metadata": {
+      "email": "final_val_fec0c7@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "2c003a8ba73047bb89573f82aa6ee768",
+    "_id": "2c003a8ba73047bb89573f82aa6ee768",
+    "actor_user_id": "8143ed75-6956-489b-9980-b5122198d1d5",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "8143ed75-6956-489b-9980-b5122198d1d5",
+    "timestamp": "2026-10-04T06:30:28.615000",
+    "success": true,
+    "metadata": {
+      "email": "final_val_fec0c7@gmail.com"
+    }
+  },
+  {
+    "id": "4020a8e8ed224131a270380665e3e2a1",
+    "_id": "4020a8e8ed224131a270380665e3e2a1",
+    "actor_user_id": "8143ed75-6956-489b-9980-b5122198d1d5",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T06:30:28.637673",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "0fcf8d71735d4ec29fbe114b9d186b9a",
+    "_id": "0fcf8d71735d4ec29fbe114b9d186b9a",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T06:30:28.997871",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "1087e21268a848a69f431d102aee2264",
+    "_id": "1087e21268a848a69f431d102aee2264",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T06:30:29.342207",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "65da1d5968994a52bab5e22f08267a68",
+    "_id": "65da1d5968994a52bab5e22f08267a68",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T06:32:04.382876",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "fc9b8d45de1f4ade87c97aaf9322fd4a",
+    "_id": "fc9b8d45de1f4ade87c97aaf9322fd4a",
+    "actor_user_id": "40a6bf43-ced4-493b-b07b-3805602f1174",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "40a6bf43-ced4-493b-b07b-3805602f1174",
+    "timestamp": "2026-10-04T06:32:53.330690",
+    "success": false,
+    "metadata": {
+      "email": "final_val_a23141@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "e40b59b44b784a6899b9ee80d65a1318",
+    "_id": "e40b59b44b784a6899b9ee80d65a1318",
+    "actor_user_id": "40a6bf43-ced4-493b-b07b-3805602f1174",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "40a6bf43-ced4-493b-b07b-3805602f1174",
+    "timestamp": "2026-10-04T06:32:53.672872",
+    "success": true,
+    "metadata": {
+      "email": "final_val_a23141@gmail.com"
+    }
+  },
+  {
+    "id": "bf287a4f6b0a4cec8afeed9fd2929cf7",
+    "_id": "bf287a4f6b0a4cec8afeed9fd2929cf7",
+    "actor_user_id": "40a6bf43-ced4-493b-b07b-3805602f1174",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T06:32:53.692630",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "53b17f3ccc964d5db9b8dc88029d404f",
+    "_id": "53b17f3ccc964d5db9b8dc88029d404f",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T06:32:54.054624",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "8f3e62a252dd49d69387f7f0afb0893d",
+    "_id": "8f3e62a252dd49d69387f7f0afb0893d",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T06:32:54.397861",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "fe122991e62c46d584b48a6d60cd2a23",
+    "_id": "fe122991e62c46d584b48a6d60cd2a23",
+    "actor_user_id": "bf398d6e-7b90-4c32-82ba-8a653c850cb0",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "bf398d6e-7b90-4c32-82ba-8a653c850cb0",
+    "timestamp": "2026-10-04T12:19:49.422208",
+    "success": false,
+    "metadata": {
+      "email": "final_val_87be0c@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "cfada40fd6d74a54aa314b0287a1cc22",
+    "_id": "cfada40fd6d74a54aa314b0287a1cc22",
+    "actor_user_id": "bf398d6e-7b90-4c32-82ba-8a653c850cb0",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "bf398d6e-7b90-4c32-82ba-8a653c850cb0",
+    "timestamp": "2026-10-04T12:19:49.786922",
+    "success": true,
+    "metadata": {
+      "email": "final_val_87be0c@gmail.com"
+    }
+  },
+  {
+    "id": "63f5ab8ba0bd4c56aed7e4fc13839236",
+    "_id": "63f5ab8ba0bd4c56aed7e4fc13839236",
+    "actor_user_id": "bf398d6e-7b90-4c32-82ba-8a653c850cb0",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T12:19:49.816806",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "c4aafe23eaf34fb4ab3ce89aba462480",
+    "_id": "c4aafe23eaf34fb4ab3ce89aba462480",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T12:19:50.199935",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "c203d0a7a8af45b5a3d57f6f2a6fbc0c",
+    "_id": "c203d0a7a8af45b5a3d57f6f2a6fbc0c",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T12:19:50.558851",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "cd94808d1e554954b3ab917a3b491bae",
+    "_id": "cd94808d1e554954b3ab917a3b491bae",
+    "actor_user_id": "ec93b982-dfdf-48fb-9685-82f8db5657eb",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "ec93b982-dfdf-48fb-9685-82f8db5657eb",
+    "timestamp": "2026-10-04T16:08:51.603095",
+    "success": false,
+    "metadata": {
+      "email": "final_val_4d1f45@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "6d848b5d8c614c6c95efabcc29693b41",
+    "_id": "6d848b5d8c614c6c95efabcc29693b41",
+    "actor_user_id": "ec93b982-dfdf-48fb-9685-82f8db5657eb",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ec93b982-dfdf-48fb-9685-82f8db5657eb",
+    "timestamp": "2026-10-04T16:08:51.942239",
+    "success": true,
+    "metadata": {
+      "email": "final_val_4d1f45@gmail.com"
+    }
+  },
+  {
+    "id": "9b65650a380e4d1687afe821c2fb0001",
+    "_id": "9b65650a380e4d1687afe821c2fb0001",
+    "actor_user_id": "ec93b982-dfdf-48fb-9685-82f8db5657eb",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:08:51.961650",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "d49d101c4d8d4648a2038b0ade1b8f42",
+    "_id": "d49d101c4d8d4648a2038b0ade1b8f42",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T16:08:52.333008",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "6a96579473dc4270adcae75334ed8ece",
+    "_id": "6a96579473dc4270adcae75334ed8ece",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T16:08:52.686609",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "dfbac21d4fae40e4969a5fb915b51b2c",
+    "_id": "dfbac21d4fae40e4969a5fb915b51b2c",
+    "actor_user_id": "usr-bb2b54",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "usr-bb2b54",
+    "timestamp": "2026-10-04T16:09:57.051580",
+    "success": false,
+    "metadata": {
+      "email": "shwetaningappa2004@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "b2011cce6f9f4fb2a2c8f0e683044784",
+    "_id": "b2011cce6f9f4fb2a2c8f0e683044784",
+    "actor_user_id": "usr-bb2b54",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "usr-bb2b54",
+    "timestamp": "2026-10-04T16:11:00.068071",
+    "success": true,
+    "metadata": {
+      "email": "shwetaningappa2004@gmail.com"
+    }
+  },
+  {
+    "id": "4e2303ccd43d4b86b8affc3baf4b6f9b",
+    "_id": "4e2303ccd43d4b86b8affc3baf4b6f9b",
+    "actor_user_id": "75f13d5a-db08-4162-b7ee-1802e27e378a",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "75f13d5a-db08-4162-b7ee-1802e27e378a",
+    "timestamp": "2026-10-04T16:14:18.951561",
+    "success": false,
+    "metadata": {
+      "email": "final_val_9a3765@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "ee4e270e426a4cbdabf81c2c3a19475b",
+    "_id": "ee4e270e426a4cbdabf81c2c3a19475b",
+    "actor_user_id": "75f13d5a-db08-4162-b7ee-1802e27e378a",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "75f13d5a-db08-4162-b7ee-1802e27e378a",
+    "timestamp": "2026-10-04T16:14:19.294235",
+    "success": true,
+    "metadata": {
+      "email": "final_val_9a3765@gmail.com"
+    }
+  },
+  {
+    "id": "a511389a6c30458794b42d504c32d5ee",
+    "_id": "a511389a6c30458794b42d504c32d5ee",
+    "actor_user_id": "75f13d5a-db08-4162-b7ee-1802e27e378a",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:14:19.312758",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "742573c7bf3a4f9395178cb8f165184b",
+    "_id": "742573c7bf3a4f9395178cb8f165184b",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T16:14:19.688086",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "52aa49b5fa9b475f98d56426c23648ea",
+    "_id": "52aa49b5fa9b475f98d56426c23648ea",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T16:14:20.031060",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "82d051cafcd14b709ae69a330b48d740",
+    "_id": "82d051cafcd14b709ae69a330b48d740",
+    "actor_user_id": "dd57cbf2-d4f1-460d-848c-d9074a006f0f",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "dd57cbf2-d4f1-460d-848c-d9074a006f0f",
+    "timestamp": "2026-10-04T16:30:07.037730",
+    "success": false,
+    "metadata": {
+      "email": "final_val_1596e3@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "19302ce508a5453f90dc9c10ed7f1f4d",
+    "_id": "19302ce508a5453f90dc9c10ed7f1f4d",
+    "actor_user_id": "dd57cbf2-d4f1-460d-848c-d9074a006f0f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "dd57cbf2-d4f1-460d-848c-d9074a006f0f",
+    "timestamp": "2026-10-04T16:30:07.402840",
+    "success": true,
+    "metadata": {
+      "email": "final_val_1596e3@gmail.com"
+    }
+  },
+  {
+    "id": "dc622990881346ee85f05e73cb74b429",
+    "_id": "dc622990881346ee85f05e73cb74b429",
+    "actor_user_id": "dd57cbf2-d4f1-460d-848c-d9074a006f0f",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:30:07.428193",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "dd9e54b6e1ba409191307cc9d1ab8442",
+    "_id": "dd9e54b6e1ba409191307cc9d1ab8442",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T16:30:07.802033",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "1d15977e967d49ca8cbc5743710a5eb1",
+    "_id": "1d15977e967d49ca8cbc5743710a5eb1",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T16:30:08.149227",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "ed6a1a36ac6a4ec8ac46a8f381aef73e",
+    "_id": "ed6a1a36ac6a4ec8ac46a8f381aef73e",
+    "actor_user_id": "392547c1-8447-43de-8713-fb549abe08ad",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "392547c1-8447-43de-8713-fb549abe08ad",
+    "timestamp": "2026-10-04T16:33:20.808467",
+    "success": false,
+    "metadata": {
+      "email": "final_val_c4d412@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "18449c61ffa64ebba26727ee9f4c5257",
+    "_id": "18449c61ffa64ebba26727ee9f4c5257",
+    "actor_user_id": "392547c1-8447-43de-8713-fb549abe08ad",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "392547c1-8447-43de-8713-fb549abe08ad",
+    "timestamp": "2026-10-04T16:33:21.151043",
+    "success": true,
+    "metadata": {
+      "email": "final_val_c4d412@gmail.com"
+    }
+  },
+  {
+    "id": "be1a49440b984408beae9380268bd6c2",
+    "_id": "be1a49440b984408beae9380268bd6c2",
+    "actor_user_id": "392547c1-8447-43de-8713-fb549abe08ad",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:33:21.171063",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "41a7227bb5f2422c97e1f946e377b322",
+    "_id": "41a7227bb5f2422c97e1f946e377b322",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T16:33:21.535903",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "62b10215b14646ecafea81f78586af10",
+    "_id": "62b10215b14646ecafea81f78586af10",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T16:33:21.897177",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "47b64e80811e4f89af4c9811e97c08ee",
+    "_id": "47b64e80811e4f89af4c9811e97c08ee",
+    "actor_user_id": "2363bc06-791e-4908-8c0d-e9cf229d9a29",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "2363bc06-791e-4908-8c0d-e9cf229d9a29",
+    "timestamp": "2026-10-04T16:42:16.399770",
+    "success": false,
+    "metadata": {
+      "email": "e2e_test_b78af1@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "3633516fdcfb4605a986660624e6a460",
+    "_id": "3633516fdcfb4605a986660624e6a460",
+    "actor_user_id": "2363bc06-791e-4908-8c0d-e9cf229d9a29",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2363bc06-791e-4908-8c0d-e9cf229d9a29",
+    "timestamp": "2026-10-04T16:42:16.742395",
+    "success": true,
+    "metadata": {
+      "email": "e2e_test_b78af1@gmail.com"
+    }
+  },
+  {
+    "id": "98233a6422a84af0a5d113c0bcd5fc70",
+    "_id": "98233a6422a84af0a5d113c0bcd5fc70",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T16:42:24.546026",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "947778a28d1946ab85243d409b17404b",
+    "_id": "947778a28d1946ab85243d409b17404b",
+    "actor_user_id": "2363bc06-791e-4908-8c0d-e9cf229d9a29",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:42:24.560109",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "f1699755194a41dcb0e096db8f7097b8",
+    "_id": "f1699755194a41dcb0e096db8f7097b8",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T16:42:24.905368",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "d48fa537333f43ce81b47c1301962aad",
+    "_id": "d48fa537333f43ce81b47c1301962aad",
+    "actor_user_id": "a4244162-cf4c-40ef-845b-f622d60a2b51",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "a4244162-cf4c-40ef-845b-f622d60a2b51",
+    "timestamp": "2026-10-04T16:42:36.348590",
+    "success": true,
+    "metadata": {
+      "email": "security_admin_2e2595@narinexus.org"
+    }
+  },
+  {
+    "id": "7d9edb4469a44a149e592be0db36f94d",
+    "_id": "7d9edb4469a44a149e592be0db36f94d",
+    "actor_user_id": "ae387dd6-dae1-491c-87db-60e942d460de",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ae387dd6-dae1-491c-87db-60e942d460de",
+    "timestamp": "2026-10-04T16:42:40.533915",
+    "success": true,
+    "metadata": {
+      "email": "security_learner_a_2e2595@gmail.com"
+    }
+  },
+  {
+    "id": "ea21d7355c8a4853925616d95b434dd6",
+    "_id": "ea21d7355c8a4853925616d95b434dd6",
+    "actor_user_id": "c3568a79-be69-4ca0-8909-537ae88cb0fe",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "c3568a79-be69-4ca0-8909-537ae88cb0fe",
+    "timestamp": "2026-10-04T16:42:45.162382",
+    "success": true,
+    "metadata": {
+      "email": "security_learner_b_2e2595@gmail.com"
+    }
+  },
+  {
+    "id": "6a607baf6f49454e98b2ac25cbe7cb82",
+    "_id": "6a607baf6f49454e98b2ac25cbe7cb82",
+    "actor_user_id": "bad915a1-f77f-44cd-8965-3d85953ed73d",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "bad915a1-f77f-44cd-8965-3d85953ed73d",
+    "timestamp": "2026-10-04T16:42:50.045816",
+    "success": true,
+    "metadata": {
+      "email": "security_centre_a_2e2595@naricentre.org"
+    }
+  },
+  {
+    "id": "46210c1157634217b88b338ad42aaf04",
+    "_id": "46210c1157634217b88b338ad42aaf04",
+    "actor_user_id": "ac26b1cc-f95a-4683-9a0d-3e77696b06df",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ac26b1cc-f95a-4683-9a0d-3e77696b06df",
+    "timestamp": "2026-10-04T16:42:54.688471",
+    "success": true,
+    "metadata": {
+      "email": "security_centre_b_2e2595@naricentre.org"
+    }
+  },
+  {
+    "id": "2efde1cb5167453a8724fc02be95e172",
+    "_id": "2efde1cb5167453a8724fc02be95e172",
+    "actor_user_id": "ae387dd6-dae1-491c-87db-60e942d460de",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:42:54.758139",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "56e73b3ec2f346699ca9f4c22c63d9d8",
+    "_id": "56e73b3ec2f346699ca9f4c22c63d9d8",
+    "actor_user_id": "bad915a1-f77f-44cd-8965-3d85953ed73d",
+    "actor_role": "centre",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:42:54.772471",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "4ed8fa0b0fbd427d81c897a7adfc685f",
+    "_id": "4ed8fa0b0fbd427d81c897a7adfc685f",
+    "actor_user_id": "system",
+    "actor_role": "system",
+    "action": "COMMUNICATION_SUCCESS",
+    "resource_type": "EMAIL",
+    "resource_id": "security_learner_a_2e2595@gmail.com",
+    "timestamp": "2026-10-04T16:42:58.519480",
+    "success": true,
+    "metadata": {
+      "subject": "NariNexus: Private Alert"
+    }
+  },
+  {
+    "id": "62ab54070b4443c1b705a31dd058f31b",
+    "_id": "62ab54070b4443c1b705a31dd058f31b",
+    "actor_user_id": "a4244162-cf4c-40ef-845b-f622d60a2b51",
+    "actor_role": "admin",
+    "action": "ADMIN_SKILL_CREATED",
+    "resource_type": "SKILL",
+    "resource_id": "b9fa62e6",
+    "timestamp": "2026-10-04T16:42:58.574993",
+    "success": true,
+    "metadata": {
+      "name": "Skill_2e2595"
+    }
+  },
+  {
+    "id": "bd4f3e1695884a34b16f0ea497bd7224",
+    "_id": "bd4f3e1695884a34b16f0ea497bd7224",
+    "actor_user_id": "bad915a1-f77f-44cd-8965-3d85953ed73d",
+    "actor_role": "centre",
+    "action": "CENTRE_COURSE_CREATED",
+    "resource_type": "COURSE",
+    "resource_id": "course-centre-c806534e",
+    "timestamp": "2026-10-04T16:42:58.616000",
+    "success": true,
+    "metadata": {
+      "title": "Course Centre A"
+    }
+  },
+  {
+    "id": "6c0c3ef9935546aabf1a27fe599a21bf",
+    "_id": "6c0c3ef9935546aabf1a27fe599a21bf",
+    "actor_user_id": "c3568a79-be69-4ca0-8909-537ae88cb0fe",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:42:58.661796",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "4eb1b93ed8924fed84b73f74c89e33c7",
+    "_id": "4eb1b93ed8924fed84b73f74c89e33c7",
+    "actor_user_id": "usr-bb2b54",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "usr-bb2b54",
+    "timestamp": "2026-10-04T16:43:35.506077",
+    "success": true,
+    "metadata": {
+      "email": "shwetaningappa2004@gmail.com"
+    }
+  },
+  {
+    "id": "ba4f00fbcc664161ba393a0e62d8073c",
+    "_id": "ba4f00fbcc664161ba393a0e62d8073c",
+    "actor_user_id": "9289bee5-bbdf-433b-99c1-53dd30f33cce",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "9289bee5-bbdf-433b-99c1-53dd30f33cce",
+    "timestamp": "2026-10-04T16:46:35.522670",
+    "success": false,
+    "metadata": {
+      "email": "final_val_ff75e6@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "e707ed7a137b43979a492fca4d7079df",
+    "_id": "e707ed7a137b43979a492fca4d7079df",
+    "actor_user_id": "9289bee5-bbdf-433b-99c1-53dd30f33cce",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "9289bee5-bbdf-433b-99c1-53dd30f33cce",
+    "timestamp": "2026-10-04T16:46:35.871069",
+    "success": true,
+    "metadata": {
+      "email": "final_val_ff75e6@gmail.com"
+    }
+  },
+  {
+    "id": "11fdd7046b7a4c3e8797e5afdaae1a08",
+    "_id": "11fdd7046b7a4c3e8797e5afdaae1a08",
+    "actor_user_id": "9289bee5-bbdf-433b-99c1-53dd30f33cce",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T16:46:35.893657",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "0e30b2622d3540099d515ddd6196af2d",
+    "_id": "0e30b2622d3540099d515ddd6196af2d",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T16:46:36.257779",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "6b4bd176cdeb4fe6be85737b24ff8e82",
+    "_id": "6b4bd176cdeb4fe6be85737b24ff8e82",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T16:46:36.602306",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "072092e1eb19477a88697fef7ad17a66",
+    "_id": "072092e1eb19477a88697fef7ad17a66",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T16:48:05.144569",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "6069b45f18694179b16a274aec533c29",
+    "_id": "6069b45f18694179b16a274aec533c29",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "ADMIN_OPPORTUNITY_STATUS_CHANGED",
+    "resource_type": "OPPORTUNITY",
+    "resource_id": "opp-tailoring-01",
+    "timestamp": "2026-10-04T16:53:59.918507",
+    "success": true,
+    "metadata": {
+      "is_active": true,
+      "updated_at": "2026-10-04T16:53:59.916605"
+    }
+  },
+  {
+    "id": "7265f998e06e4f18859efcc946a01e74",
+    "_id": "7265f998e06e4f18859efcc946a01e74",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T16:54:36.173546",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "a78f0853821b446183468d4f4ebcd0df",
+    "_id": "a78f0853821b446183468d4f4ebcd0df",
+    "actor_user_id": "8c291daf-3672-4f4f-98fb-c85eeb9ebac2",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "8c291daf-3672-4f4f-98fb-c85eeb9ebac2",
+    "timestamp": "2026-10-04T17:00:01.332080",
+    "success": false,
+    "metadata": {
+      "email": "final_val_2070ab@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "15128ad614d14b89bd68f0ef0738a871",
+    "_id": "15128ad614d14b89bd68f0ef0738a871",
+    "actor_user_id": "8c291daf-3672-4f4f-98fb-c85eeb9ebac2",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "8c291daf-3672-4f4f-98fb-c85eeb9ebac2",
+    "timestamp": "2026-10-04T17:00:01.725690",
+    "success": true,
+    "metadata": {
+      "email": "final_val_2070ab@gmail.com"
+    }
+  },
+  {
+    "id": "4cd306e84dc9440790d95a08f481f189",
+    "_id": "4cd306e84dc9440790d95a08f481f189",
+    "actor_user_id": "8c291daf-3672-4f4f-98fb-c85eeb9ebac2",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T17:00:01.751905",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "ca4da1be4a5b4e2999f81eb6a6467eae",
+    "_id": "ca4da1be4a5b4e2999f81eb6a6467eae",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T17:00:02.193108",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "35606a5cd91e4cc29a21c29f1d40746a",
+    "_id": "35606a5cd91e4cc29a21c29f1d40746a",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T17:00:02.605118",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "da65ab171e874686b813eec63355ff9c",
+    "_id": "da65ab171e874686b813eec63355ff9c",
+    "actor_user_id": "usr-bb2b54",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "usr-bb2b54",
+    "timestamp": "2026-10-04T17:00:57.352404",
+    "success": true,
+    "metadata": {
+      "email": "shwetaningappa2004@gmail.com"
+    }
+  },
+  {
+    "id": "b53b8bb2a1194c9cbc756c4d374c5452",
+    "_id": "b53b8bb2a1194c9cbc756c4d374c5452",
+    "actor_user_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "timestamp": "2026-10-04T17:01:41.459039",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_6fe0bf@gmail.com"
+    }
+  },
+  {
+    "id": "f1b2cf8d61f94fdd9f80f00ce5db0a8a",
+    "_id": "f1b2cf8d61f94fdd9f80f00ce5db0a8a",
+    "actor_user_id": "b48adc45-c09f-4f06-9fd6-a0add9e3821d",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "b48adc45-c09f-4f06-9fd6-a0add9e3821d",
+    "timestamp": "2026-10-04T17:01:59.544492",
+    "success": false,
+    "metadata": {
+      "email": "final_val_b4fc53@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "70eb87dd4fc3473db46335149a653c67",
+    "_id": "70eb87dd4fc3473db46335149a653c67",
+    "actor_user_id": "b48adc45-c09f-4f06-9fd6-a0add9e3821d",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b48adc45-c09f-4f06-9fd6-a0add9e3821d",
+    "timestamp": "2026-10-04T17:02:01.835750",
+    "success": true,
+    "metadata": {
+      "email": "final_val_b4fc53@gmail.com"
+    }
+  },
+  {
+    "id": "e62b0aa73ecd4a91b149f3a11c51ad0a",
+    "_id": "e62b0aa73ecd4a91b149f3a11c51ad0a",
+    "actor_user_id": "b48adc45-c09f-4f06-9fd6-a0add9e3821d",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T17:02:03.761523",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "e565bc4f84474df3ab6146ba0950961b",
+    "_id": "e565bc4f84474df3ab6146ba0950961b",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T17:02:04.148599",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "0c02351c264a4598b27bb17d24dd4ba8",
+    "_id": "0c02351c264a4598b27bb17d24dd4ba8",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T17:02:04.493167",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "3661b4d1f6f3444eb5d672c614cc8cd4",
+    "_id": "3661b4d1f6f3444eb5d672c614cc8cd4",
+    "actor_user_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "82cd32d2-1b67-4eef-9208-84093db8d00f",
+    "timestamp": "2026-10-04T17:02:38.977464",
+    "success": true,
+    "metadata": {
+      "email": "notif_learner_a_6fe0bf@gmail.com"
+    }
+  },
+  {
+    "id": "647973c1117f4f5981fccf1f1fe239ec",
+    "_id": "647973c1117f4f5981fccf1f1fe239ec",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T17:03:26.062640",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "1b9577602fbe4f308376f253d3971ef7",
+    "_id": "1b9577602fbe4f308376f253d3971ef7",
+    "actor_user_id": "d697cd85-853c-4f80-9385-35820bd5b35d",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "d697cd85-853c-4f80-9385-35820bd5b35d",
+    "timestamp": "2026-10-04T17:03:48.832296",
+    "success": false,
+    "metadata": {
+      "email": "final_val_6491af@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "598f4090c747474688ccfbda62d17f25",
+    "_id": "598f4090c747474688ccfbda62d17f25",
+    "actor_user_id": "d697cd85-853c-4f80-9385-35820bd5b35d",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d697cd85-853c-4f80-9385-35820bd5b35d",
+    "timestamp": "2026-10-04T17:03:49.174933",
+    "success": true,
+    "metadata": {
+      "email": "final_val_6491af@gmail.com"
+    }
+  },
+  {
+    "id": "ee2dd69d083c49d6af237808b4bb9f37",
+    "_id": "ee2dd69d083c49d6af237808b4bb9f37",
+    "actor_user_id": "d697cd85-853c-4f80-9385-35820bd5b35d",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T17:03:49.195871",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "f95ce4e7465e429a8e934fc15074f6a4",
+    "_id": "f95ce4e7465e429a8e934fc15074f6a4",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T17:03:49.560848",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "23636327fe28476ba902bc59e1285eb4",
+    "_id": "23636327fe28476ba902bc59e1285eb4",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T17:03:49.904935",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "90b63db88f96407c98270416a65cf4fb",
+    "_id": "90b63db88f96407c98270416a65cf4fb",
+    "actor_user_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "7c72e4f4-499e-47b9-b83d-8b17b1822107",
+    "timestamp": "2026-10-04T17:04:03.948919",
+    "success": true,
+    "metadata": {
+      "email": "1ep23cs154.shwetaningappa@gmail.com"
+    }
+  },
+  {
+    "id": "c6973d6e8ccc4a878c3881c31a8c6318",
+    "_id": "c6973d6e8ccc4a878c3881c31a8c6318",
+    "actor_user_id": "598cb9db-ee1f-47ac-9cdd-a816416509a4",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "598cb9db-ee1f-47ac-9cdd-a816416509a4",
+    "timestamp": "2026-10-04T17:04:37.822205",
+    "success": false,
+    "metadata": {
+      "email": "final_val_4b2327@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "2dc098b0ce034a4cbc02b69721688d93",
+    "_id": "2dc098b0ce034a4cbc02b69721688d93",
+    "actor_user_id": "598cb9db-ee1f-47ac-9cdd-a816416509a4",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "598cb9db-ee1f-47ac-9cdd-a816416509a4",
+    "timestamp": "2026-10-04T17:04:38.179850",
+    "success": true,
+    "metadata": {
+      "email": "final_val_4b2327@gmail.com"
+    }
+  },
+  {
+    "id": "e13d3dc748b746e589822156ed24602a",
+    "_id": "e13d3dc748b746e589822156ed24602a",
+    "actor_user_id": "598cb9db-ee1f-47ac-9cdd-a816416509a4",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T17:04:38.201862",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "f0e25e2eb52c44f8ad69c38868309d2e",
+    "_id": "f0e25e2eb52c44f8ad69c38868309d2e",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T17:04:38.571208",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "6b72086d3bca45b29ad122469519571f",
+    "_id": "6b72086d3bca45b29ad122469519571f",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T17:04:38.920445",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "fbbd68b7c1e24eae997b322c03b5e938",
+    "_id": "fbbd68b7c1e24eae997b322c03b5e938",
+    "actor_user_id": "usr-bb2b54",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "usr-bb2b54",
+    "timestamp": "2026-10-04T17:05:15.578545",
+    "success": true,
+    "metadata": {
+      "email": "shwetaningappa2004@gmail.com"
+    }
+  },
+  {
+    "id": "345dcdf0de9c49609d9908e7e9f41056",
+    "_id": "345dcdf0de9c49609d9908e7e9f41056",
+    "actor_user_id": "usr-bb2b54",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "usr-bb2b54",
+    "timestamp": "2026-10-04T17:06:46.876980",
+    "success": true,
+    "metadata": {
+      "email": "shwetaningappa2004@gmail.com"
+    }
+  },
+  {
+    "id": "31268e7b0cd1459aa85a1ac8304ab859",
+    "_id": "31268e7b0cd1459aa85a1ac8304ab859",
+    "actor_user_id": "58fc39fb-dd21-4744-b15f-bd1a4b350fce",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "58fc39fb-dd21-4744-b15f-bd1a4b350fce",
+    "timestamp": "2026-10-04T17:07:15.306088",
+    "success": false,
+    "metadata": {
+      "email": "final_val_ee240c@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "09211c2bb7c441aabb9460d5deea6cc7",
+    "_id": "09211c2bb7c441aabb9460d5deea6cc7",
+    "actor_user_id": "58fc39fb-dd21-4744-b15f-bd1a4b350fce",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "58fc39fb-dd21-4744-b15f-bd1a4b350fce",
+    "timestamp": "2026-10-04T17:07:15.652432",
+    "success": true,
+    "metadata": {
+      "email": "final_val_ee240c@gmail.com"
+    }
+  },
+  {
+    "id": "55966a1a903b4096aa2262469c3a0051",
+    "_id": "55966a1a903b4096aa2262469c3a0051",
+    "actor_user_id": "58fc39fb-dd21-4744-b15f-bd1a4b350fce",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T17:07:15.674643",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "46c0ffe045884ee1a5c35a4e51f1ee81",
+    "_id": "46c0ffe045884ee1a5c35a4e51f1ee81",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T17:07:16.038870",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "221ad7fd98b64a6393ca5dd320f43a06",
+    "_id": "221ad7fd98b64a6393ca5dd320f43a06",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T17:07:16.391790",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "3312c3eee7c44c2a81b7f16fdff76649",
+    "_id": "3312c3eee7c44c2a81b7f16fdff76649",
+    "actor_user_id": "2d68f626-ebdb-4e25-8cec-9dc2dc5d6cee",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "2d68f626-ebdb-4e25-8cec-9dc2dc5d6cee",
+    "timestamp": "2026-10-04T17:12:26.879259",
+    "success": false,
+    "metadata": {
+      "email": "final_val_bb9927@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "7c66b6752c234959936b45793dc696ae",
+    "_id": "7c66b6752c234959936b45793dc696ae",
+    "actor_user_id": "2d68f626-ebdb-4e25-8cec-9dc2dc5d6cee",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2d68f626-ebdb-4e25-8cec-9dc2dc5d6cee",
+    "timestamp": "2026-10-04T17:12:27.227019",
+    "success": true,
+    "metadata": {
+      "email": "final_val_bb9927@gmail.com"
+    }
+  },
+  {
+    "id": "1cf296316b3a4c6ca798176a641a6ea9",
+    "_id": "1cf296316b3a4c6ca798176a641a6ea9",
+    "actor_user_id": "2d68f626-ebdb-4e25-8cec-9dc2dc5d6cee",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-04T17:12:27.250519",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "464dd2fcd9704a6c94289e59a31cfc2b",
+    "_id": "464dd2fcd9704a6c94289e59a31cfc2b",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-04T17:12:27.612759",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "b1e4fffd9f494699812d21025e4b071a",
+    "_id": "b1e4fffd9f494699812d21025e4b071a",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-04T17:12:27.954846",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "3072c0ea7ef24d7e8597a6db2ab55ba6",
+    "_id": "3072c0ea7ef24d7e8597a6db2ab55ba6",
+    "actor_user_id": "b6c17bfd-7e1b-49fa-be10-ec765a411269",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "b6c17bfd-7e1b-49fa-be10-ec765a411269",
+    "timestamp": "2026-10-05T00:36:00.529007",
+    "success": false,
+    "metadata": {
+      "email": "final_val_0b2b09@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "6447ecd8c210460fb7ec51c44254372f",
+    "_id": "6447ecd8c210460fb7ec51c44254372f",
+    "actor_user_id": "b6c17bfd-7e1b-49fa-be10-ec765a411269",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "b6c17bfd-7e1b-49fa-be10-ec765a411269",
+    "timestamp": "2026-10-05T00:36:00.871200",
+    "success": true,
+    "metadata": {
+      "email": "final_val_0b2b09@gmail.com"
+    }
+  },
+  {
+    "id": "5cdd003ab3004602b1f61a594886b2df",
+    "_id": "5cdd003ab3004602b1f61a594886b2df",
+    "actor_user_id": "b6c17bfd-7e1b-49fa-be10-ec765a411269",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-05T00:36:00.891273",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "d41e71385aee40f6bc0aff2bfa62dfb8",
+    "_id": "d41e71385aee40f6bc0aff2bfa62dfb8",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-05T00:36:01.330945",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "dc480b6f6c3e4900be86c68d6181538e",
+    "_id": "dc480b6f6c3e4900be86c68d6181538e",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-05T00:36:01.704079",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  },
+  {
+    "id": "82f57105f7da4acf964f802abfab9744",
+    "_id": "82f57105f7da4acf964f802abfab9744",
+    "actor_user_id": "ff06b371-4a04-4bc8-bbae-ab887b120abe",
+    "actor_role": "learner",
+    "action": "LOGIN_FAILURE",
+    "resource_type": "USER",
+    "resource_id": "ff06b371-4a04-4bc8-bbae-ab887b120abe",
+    "timestamp": "2026-10-05T00:38:25.492754",
+    "success": false,
+    "metadata": {
+      "email": "final_val_001487@gmail.com",
+      "reason": "Incorrect email or password"
+    }
+  },
+  {
+    "id": "46ea701b533e4a0a80038dde3ea2fe40",
+    "_id": "46ea701b533e4a0a80038dde3ea2fe40",
+    "actor_user_id": "ff06b371-4a04-4bc8-bbae-ab887b120abe",
+    "actor_role": "learner",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "ff06b371-4a04-4bc8-bbae-ab887b120abe",
+    "timestamp": "2026-10-05T00:38:25.832740",
+    "success": true,
+    "metadata": {
+      "email": "final_val_001487@gmail.com"
+    }
+  },
+  {
+    "id": "e0b1c9a2badc4e9bbe0734ef84370e40",
+    "_id": "e0b1c9a2badc4e9bbe0734ef84370e40",
+    "actor_user_id": "ff06b371-4a04-4bc8-bbae-ab887b120abe",
+    "actor_role": "learner",
+    "action": "UNAUTHORIZED_ACCESS_ATTEMPT",
+    "resource_type": "ADMIN_API",
+    "resource_id": "system",
+    "timestamp": "2026-10-05T00:38:25.851068",
+    "success": false,
+    "metadata": {
+      "detail": "Attempted to call require_admin checkpoint."
+    }
+  },
+  {
+    "id": "2be2dc714d64446f8b20833b212c79c6",
+    "_id": "2be2dc714d64446f8b20833b212c79c6",
+    "actor_user_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "actor_role": "centre",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "2dcaf572-d6c7-41e7-83ff-4c812e685c5f",
+    "timestamp": "2026-10-05T00:38:26.209849",
+    "success": true,
+    "metadata": {
+      "email": "centre_9de948@naricentre.org"
+    }
+  },
+  {
+    "id": "5ed8eb05897f4dbb8e46ee134c36e9ef",
+    "_id": "5ed8eb05897f4dbb8e46ee134c36e9ef",
+    "actor_user_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "actor_role": "admin",
+    "action": "LOGIN_SUCCESS",
+    "resource_type": "USER",
+    "resource_id": "d8b3e25d-90ad-4a0b-8dc2-a23bf1f59699",
+    "timestamp": "2026-10-05T00:38:26.550493",
+    "success": true,
+    "metadata": {
+      "email": "app_tracker_admin_6fae91@narinexus.org"
+    }
+  }
+]

@@ -20,14 +20,34 @@
     ],
     "language": "en",
     "is_active": true,
+    "is_published": true,
+    "status": "active",
+    "centre_id": "centre-bengaluru",
+    "centre_name": "Bengaluru Skill Development Centre",
+    "centre_address": "Plot 14, 3rd Block, Jayanagar",
+    "centre_city": "Bengaluru",
+    "centre_state": "Karnataka",
+    "centre_latitude": 12.9716,
+    "centre_longitude": 77.5946,
+    "contact_phone": "9999911111",
+    "online_resources": [
+      {
+        "title": "Introduction to Computer Hardware (Video)",
+        "type": "video",
+        "url": "https://www.youtube.com/embed/gYOROf9X76g",
+        "duration": "10 Mins",
+        "provider": "NariNexus Online"
+      }
+    ],
     "translations": {
       "kn": {
         "title": "\u0cae\u0cb9\u0cbf\u0cb3\u0cbe \u0c89\u0ca6\u0ccd\u0caf\u0cae\u0cbf\u0c97\u0cb3\u0cbf\u0c97\u0cbe\u0c97\u0cbf \u0cae\u0cc2\u0cb2 \u0c95\u0c82\u0caa\u0ccd\u0caf\u0cc2\u0c9f\u0cb0\u0ccd \u0cb6\u0cbf\u0c95\u0ccd\u0cb7\u0ca3",
         "description": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0cb5\u0ccd\u0caf\u0cb5\u0cb9\u0cbe\u0cb0\u0ca6 \u0c95\u0cbe\u0cb0\u0ccd\u0caf\u0cbe\u0c9a\u0cb0\u0ca3\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cac\u0cc6\u0c82\u0cac\u0cb2\u0cbf\u0cb8\u0cb2\u0cc1 \u0c9f\u0cc8\u0caa\u0cbf\u0c82\u0c97\u0ccd, \u0cab\u0ccb\u0cb2\u0ccd\u0ca1\u0cb0\u0ccd \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6, \u0cae\u0cc2\u0cb2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0c82\u0caa\u0cbe\u0ca6\u0ca8\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0ca8\u0ccd\u0caf\u0cbe\u0cb5\u0cbf\u0c97\u0cc7\u0cb7\u0ca8\u0ccd \u0c95\u0cb0\u0c97\u0ca4 \u0cae\u0cbe\u0ca1\u0cbf\u0c95\u0cca\u0cb3\u0ccd\u0cb3\u0cbf."
       }
     },
-    "created_at": "2026-08-30T05:43:30.363415",
-    "updated_at": "2026-08-30T05:43:30.363429"
+    "online_training": {
+      "videos": []
+    }
   },
   {
     "id": "secure-mobile-payments",
@@ -50,44 +70,34 @@
     ],
     "language": "en",
     "is_active": true,
+    "is_published": true,
+    "status": "active",
+    "centre_id": "centre-bengaluru",
+    "centre_name": "Bengaluru Skill Development Centre",
+    "centre_address": "Plot 14, 3rd Block, Jayanagar",
+    "centre_city": "Bengaluru",
+    "centre_state": "Karnataka",
+    "centre_latitude": 12.9716,
+    "centre_longitude": 77.5946,
+    "contact_phone": "9999911111",
+    "online_resources": [
+      {
+        "title": "UPI and Mobile Safety Guide (Video)",
+        "type": "video",
+        "url": "https://www.youtube.com/embed/t4U9D8f-h9A",
+        "duration": "12 Mins",
+        "provider": "Digital India Initiative"
+      }
+    ],
     "translations": {
       "kn": {
         "title": "\u0cb8\u0cc1\u0cb0\u0c95\u0ccd\u0cb7\u0cbf\u0ca4 \u0cae\u0cca\u0cac\u0cc8\u0cb2\u0ccd \u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0c97\u0cb3\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca1\u0cbf\u0c9c\u0cbf\u0c9f\u0cb2\u0ccd \u0cb5\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c9f\u0ccd\u200c\u0c97\u0cb3\u0cc1",
         "description": "\u0cae\u0cca\u0cac\u0cc8\u0cb2\u0ccd \u0caa\u0cbe\u0cb5\u0ca4\u0cbf \u0cb5\u0cc7\u0ca6\u0cbf\u0c95\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cc1\u0cb0\u0c95\u0ccd\u0cb7\u0cbf\u0ca4\u0cb5\u0cbe\u0c97\u0cbf \u0cac\u0cb3\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1, \u0caf\u0cc1\u0caa\u0cbf\u0c90 \u0c96\u0cbe\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1, \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cb9\u0cc7\u0c97\u0cc6 \u0c8e\u0c82\u0ca6\u0cc1 \u0ca4\u0cbf\u0cb3\u0cbf\u0caf\u0cbf\u0cb0\u0cbf."
       }
     },
-    "created_at": "2026-08-30T05:43:30.363440",
-    "updated_at": "2026-08-30T05:43:30.363442"
-  },
-  {
-    "id": "social-media-marketing-brands",
-    "title": "Social Media Marketing for Local Brands",
-    "description": "Grow your local customer base by marketing your stitching, handicraft, or food products on WhatsApp Business, Google Maps, and Instagram.",
-    "skill_id": "digital-marketing",
-    "category_id": "digital-skills",
-    "thumbnail": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=600&q=80",
-    "difficulty": "intermediate",
-    "duration": "6 Weeks",
-    "learning_mode": "hybrid",
-    "instructor": "Dr. Aruna Sen",
-    "prerequisites": [
-      "Basic Computer Literacy"
-    ],
-    "career_outcomes": [
-      "Social Media Business Promoter",
-      "Online Store Coordinator",
-      "Marketing Assistant"
-    ],
-    "language": "en",
-    "is_active": true,
-    "translations": {
-      "kn": {
-        "title": "\u0cb8\u0ccd\u0ca5\u0cb3\u0cc0\u0caf \u0cac\u0ccd\u0cb0\u0ccd\u0caf\u0cbe\u0c82\u0ca1\u0ccd\u200c\u0c97\u0cb3\u0cbf\u0c97\u0cbe\u0c97\u0cbf \u0cb8\u0cbe\u0cae\u0cbe\u0c9c\u0cbf\u0c95 \u0cae\u0cbe\u0ca7\u0ccd\u0caf\u0cae \u0cae\u0cbe\u0cb0\u0ccd\u0c95\u0cc6\u0c9f\u0cbf\u0c82\u0c97\u0ccd",
-        "description": "\u0cb5\u0cbe\u0c9f\u0ccd\u0cb8\u0cbe\u0caa\u0ccd \u0cac\u0cbf\u0cb8\u0cbf\u0ca8\u0cc6\u0cb8\u0ccd, \u0c97\u0cc2\u0c97\u0cb2\u0ccd \u0cae\u0ccd\u0caf\u0cbe\u0caa\u0ccd\u0cb8\u0ccd \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c87\u0ca8\u0ccd\u200c\u0cb8\u0ccd\u0c9f\u0cbe\u0c97\u0ccd\u0cb0\u0cbe\u0cae\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0cb9\u0cca\u0cb2\u0cbf\u0c97\u0cc6, \u0c95\u0cb0\u0c95\u0cc1\u0cb6\u0cb2 \u0cb5\u0cb8\u0ccd\u0ca4\u0cc1\u0c97\u0cb3\u0cc1 \u0c85\u0ca5\u0cb5\u0cbe \u0c86\u0cb9\u0cbe\u0cb0 \u0c89\u0ca4\u0ccd\u0caa\u0ca8\u0ccd\u0ca8\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ccd\u0cb0\u0c9a\u0cbe\u0cb0 \u0cae\u0cbe\u0ca1\u0cbf \u0cb8\u0ccd\u0ca5\u0cb3\u0cc0\u0caf \u0c97\u0ccd\u0cb0\u0cbe\u0cb9\u0c95\u0cb0\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cc6\u0c9a\u0ccd\u0c9a\u0cbf\u0cb8\u0cbf."
-      }
-    },
-    "created_at": "2026-08-30T05:43:30.363445",
-    "updated_at": "2026-08-30T05:43:30.363446"
+    "online_training": {
+      "videos": []
+    }
   },
   {
     "id": "garment-alterations-basics",
@@ -110,14 +120,25 @@
     ],
     "language": "en",
     "is_active": true,
+    "is_published": true,
+    "status": "active",
+    "centre_id": "centre-mysuru",
+    "centre_name": "Mysuru Women Skill Centre",
+    "centre_address": "No 45, Devaraj Urs Road",
+    "centre_city": "Mysuru",
+    "centre_state": "Karnataka",
+    "centre_latitude": 12.2958,
+    "centre_longitude": 76.6394,
+    "contact_phone": "9999922222",
     "translations": {
       "kn": {
         "title": "\u0cac\u0c9f\u0ccd\u0c9f\u0cc6 \u0cae\u0cbe\u0cb0\u0ccd\u0caa\u0cbe\u0ca1\u0cc1\u0c97\u0cb3\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cae\u0cc2\u0cb2 \u0cb9\u0cca\u0cb2\u0cbf\u0c97\u0cc6 \u0c95\u0cb2\u0cc6",
         "description": "\u0cae\u0cb9\u0cbf\u0cb3\u0cbe \u0c89\u0ca1\u0cc1\u0caa\u0cc1\u0c97\u0cb3\u0cbf\u0c97\u0cbe\u0c97\u0cbf \u0cb9\u0cca\u0cb2\u0cbf\u0c97\u0cc6 \u0caf\u0c82\u0ca4\u0ccd\u0cb0 \u0c95\u0cbe\u0cb0\u0ccd\u0caf\u0cbe\u0c9a\u0cb0\u0ca3\u0cc6, \u0ca8\u0cc7\u0cb0 \u0cb9\u0cca\u0cb2\u0cbf\u0c97\u0cc6\u0c97\u0cb3\u0cc1, \u0c97\u0cc1\u0c82\u0ca1\u0cbf \u0c85\u0cb3\u0cb5\u0ca1\u0cbf\u0c95\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caa\u0cb0 \u0cae\u0cbe\u0cb0\u0ccd\u0caa\u0cbe\u0ca1\u0cc1\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0cb2\u0cbf\u0caf\u0cbf\u0cb0\u0cbf."
       }
     },
-    "created_at": "2026-08-30T05:43:30.363447",
-    "updated_at": "2026-08-30T05:43:30.363448"
+    "online_training": {
+      "videos": []
+    }
   },
   {
     "id": "professional-blouse-cutting",
@@ -140,44 +161,34 @@
     ],
     "language": "en",
     "is_active": true,
+    "is_published": true,
+    "status": "active",
+    "centre_id": "centre-bengaluru",
+    "centre_name": "Bengaluru Skill Development Centre",
+    "centre_address": "Plot 14, 3rd Block, Jayanagar",
+    "centre_city": "Bengaluru",
+    "centre_state": "Karnataka",
+    "centre_latitude": 12.9716,
+    "centre_longitude": 77.5946,
+    "contact_phone": "9999911111",
+    "online_resources": [
+      {
+        "title": "Blouse Back Neck Designs (Video)",
+        "type": "video",
+        "url": "https://www.youtube.com/embed/z52Xz9D_fEw",
+        "duration": "15 Mins",
+        "provider": "NariNexus Creative Tailoring"
+      }
+    ],
     "translations": {
       "kn": {
         "title": "\u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caa\u0cb0 \u0cac\u0ccd\u0cb2\u0ccc\u0cb8\u0ccd \u0caa\u0ccd\u0caf\u0cbe\u0c9f\u0cb0\u0ccd\u0ca8\u0ccd \u0c95\u0ca4\u0ccd\u0ca4\u0cb0\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb9\u0cca\u0cb2\u0cbf\u0caf\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1",
         "description": "\u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caa\u0cb0 \u0cae\u0cbe\u0ca6\u0cb0\u0cbf\u0c97\u0cb3\u0cc1, \u0c95\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0cb5\u0cbf\u0ca8\u0ccd\u0caf\u0cbe\u0cb8 \u0cb6\u0cc8\u0cb2\u0cbf, \u0c85\u0cb3\u0ca4\u0cc6 \u0c95\u0ca4\u0ccd\u0ca4\u0cb0\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb2\u0cc8\u0ca8\u0cbf\u0c82\u0c97\u0ccd \u0cb9\u0cca\u0cb2\u0cbf\u0c97\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0cb0\u0c97\u0ca4 \u0cae\u0cbe\u0ca1\u0cbf\u0c95\u0cca\u0cb3\u0ccd\u0cb3\u0cbf."
       }
     },
-    "created_at": "2026-08-30T05:43:30.363450",
-    "updated_at": "2026-08-30T05:43:30.363451"
-  },
-  {
-    "id": "zardosi-bridal-embroidery",
-    "title": "Zardosi Hand Embroidery & Bridal Necklines",
-    "description": "Advanced wedding dressmaking, Zardosi gold thread stitching, bridal hand embroidery patterns, beads hooking, and custom boutique creations.",
-    "skill_id": "bridal-embroidery",
-    "category_id": "tailoring-fashion",
-    "thumbnail": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80",
-    "difficulty": "advanced",
-    "duration": "12 Weeks",
-    "learning_mode": "offline",
-    "instructor": "Fatima Begum",
-    "prerequisites": [
-      "Blouse & Salwar Stitching"
-    ],
-    "career_outcomes": [
-      "Bridal Wear Specialist",
-      "Boutique Entrepreneur",
-      "Master Embroidery Designer"
-    ],
-    "language": "en",
-    "is_active": true,
-    "translations": {
-      "kn": {
-        "title": "\u0c9c\u0cb0\u0ccd\u0ca6\u0ccb\u0cb8\u0cbf \u0cb9\u0ccd\u0caf\u0cbe\u0c82\u0ca1\u0ccd \u0c8e\u0c82\u0cac\u0ccd\u0cb0\u0cbe\u0caf\u0ccd\u0ca1\u0cb0\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0ca7\u0cc1\u0cb5\u0cbf\u0ca8 \u0ca8\u0cc6\u0c95\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd\u0cb8\u0ccd",
-        "description": "\u0cb8\u0cc1\u0ca7\u0cbe\u0cb0\u0cbf\u0ca4 \u0cae\u0ca6\u0cc1\u0cb5\u0cc6\u0caf \u0c89\u0ca1\u0cc1\u0c97\u0cc6 \u0ca4\u0caf\u0cbe\u0cb0\u0cbf\u0c95\u0cc6, \u0c9c\u0cb0\u0ccd\u0ca6\u0ccb\u0cb8\u0cbf \u0c9a\u0cbf\u0ca8\u0ccd\u0ca8\u0ca6 \u0ca6\u0cbe\u0cb0\u0ca6 \u0cb9\u0cca\u0cb2\u0cbf\u0c97\u0cc6\u0c97\u0cb3\u0cc1, \u0cb5\u0ca7\u0cc1\u0cb5\u0cbf\u0ca8 \u0cb9\u0ccd\u0caf\u0cbe\u0c82\u0ca1\u0ccd \u0c8e\u0c82\u0cac\u0ccd\u0cb0\u0cbe\u0caf\u0ccd\u0ca1\u0cb0\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c95\u0cb8\u0ccd\u0c9f\u0cae\u0ccd \u0cac\u0cca\u0c9f\u0cbf\u0c95\u0ccd \u0cb5\u0cbf\u0ca8\u0ccd\u0caf\u0cbe\u0cb8\u0c97\u0cb3\u0cc1."
-      }
-    },
-    "created_at": "2026-08-30T05:43:30.363452",
-    "updated_at": "2026-08-30T05:43:30.363453"
+    "online_training": {
+      "videos": []
+    }
   },
   {
     "id": "small-business-bookkeeping",
@@ -200,164 +211,33 @@
     ],
     "language": "en",
     "is_active": true,
+    "is_published": true,
+    "status": "active",
+    "centre_id": "centre-tumakuru",
+    "centre_name": "Tumakuru Rural Training Centre",
+    "centre_address": "Siddaganga Layout, B.H. Road",
+    "centre_city": "Tumakuru",
+    "centre_state": "Karnataka",
+    "centre_latitude": 13.3379,
+    "centre_longitude": 77.1173,
+    "contact_phone": "9999933333",
+    "online_resources": [
+      {
+        "title": "Financial Ledger Setup (Video)",
+        "type": "video",
+        "url": "https://www.youtube.com/embed/9o9L6O4_R4A",
+        "duration": "8 Mins",
+        "provider": "Microfinance Council"
+      }
+    ],
     "translations": {
       "kn": {
         "title": "\u0cb8\u0ca3\u0ccd\u0ca3 \u0c89\u0ca6\u0ccd\u0caf\u0cae\u0c95\u0ccd\u0c95\u0cbe\u0c97\u0cbf \u0cb8\u0cb0\u0cb3 \u0cac\u0cc1\u0c95\u0ccd\u0c95\u0cc0\u0caa\u0cbf\u0c82\u0c97\u0ccd \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb9\u0ca3\u0c95\u0cbe\u0cb8\u0cc1 \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6",
         "description": "\u0ca8\u0c97\u0ca6\u0cc1 \u0cb9\u0cb0\u0cbf\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c9f\u0ccd\u0cb0\u0ccd\u0caf\u0cbe\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1, \u0c87\u0ca8\u0ccd\u200c\u0cb5\u0cbe\u0caf\u0ccd\u0cb8\u0ccd \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1, \u0cb2\u0cbe\u0cad \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca8\u0cb7\u0ccd\u0c9f \u0cb2\u0cc6\u0c95\u0ccd\u0c95 \u0cb9\u0cbe\u0c95\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c89\u0ca6\u0ccd\u0caf\u0cae \u0cb9\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0ca8\u0cc6 \u0cb5\u0cc6\u0c9a\u0ccd\u0c9a\u0ca6\u0cbf\u0c82\u0ca6 \u0cac\u0cc7\u0cb0\u0ccd\u0caa\u0ca1\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0c95\u0cb2\u0cbf\u0caf\u0cbf\u0cb0\u0cbf."
       }
     },
-    "created_at": "2026-08-30T05:43:30.363455",
-    "updated_at": "2026-08-30T05:43:30.363456"
-  },
-  {
-    "id": "ecomm-setup-ondc",
-    "title": "Opening an E-commerce Store on ONDC",
-    "description": "List your handcrafted, stitched, or baked products online through the Open Network for Digital Commerce (ONDC) to find buyers across India.",
-    "skill_id": "online-shop-setup",
-    "category_id": "entrepreneurship",
-    "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80",
-    "difficulty": "intermediate",
-    "duration": "6 Weeks",
-    "learning_mode": "online",
-    "instructor": "Rupa Kulkarni",
-    "prerequisites": [
-      "Basic Computer Literacy",
-      "Micro-Enterprise Bookkeeping"
-    ],
-    "career_outcomes": [
-      "E-commerce Retailer",
-      "Digital Operations Planner",
-      "Store Catalog Specialist"
-    ],
-    "language": "en",
-    "is_active": true,
-    "translations": {
-      "kn": {
-        "title": "ONDC \u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0c87-\u0c95\u0cbe\u0cae\u0cb0\u0ccd\u0cb8\u0ccd \u0cb8\u0ccd\u0c9f\u0ccb\u0cb0\u0ccd \u0cb8\u0ccd\u0ca5\u0cbe\u0caa\u0ca8\u0cc6",
-        "description": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0c95\u0cb0\u0c95\u0cc1\u0cb6\u0cb2 \u0cb5\u0cb8\u0ccd\u0ca4\u0cc1\u0c97\u0cb3\u0cc1, \u0cb9\u0cca\u0cb2\u0cbf\u0c97\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0cac\u0cc7\u0c95\u0cbf\u0c82\u0c97\u0ccd \u0c89\u0ca4\u0ccd\u0caa\u0ca8\u0ccd\u0ca8\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf ONDC \u0ca8\u0cc6\u0c9f\u0ccd\u200c\u0cb5\u0cb0\u0ccd\u0c95\u0ccd \u0cae\u0cc2\u0cb2\u0c95 \u0cad\u0cbe\u0cb0\u0ca4\u0ca6\u0cbe\u0ca6\u0ccd\u0caf\u0c82\u0ca4 \u0cae\u0cbe\u0cb0\u0cbe\u0c9f \u0cae\u0cbe\u0ca1\u0cbf."
-      }
-    },
-    "created_at": "2026-08-30T05:43:30.363460",
-    "updated_at": "2026-08-30T05:43:30.363461"
-  },
-  {
-    "id": "crochet-home-decor",
-    "title": "Crochet Home Decor & Handmade Woolens",
-    "description": "Master beautiful crochet needle chains, woolen home-decor patterns, and handcrafted table mats for commercial selling.",
-    "skill_id": "embroidery-crochet",
-    "category_id": "handicrafts",
-    "thumbnail": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80",
-    "difficulty": "beginner",
-    "duration": "4 Weeks",
-    "learning_mode": "offline",
-    "instructor": "Lakshmi Narayana",
-    "prerequisites": [
-      "None"
-    ],
-    "career_outcomes": [
-      "Crochet Crafter",
-      "Handicrafts Teacher",
-      "Boutique Decor Designer"
-    ],
-    "language": "en",
-    "is_active": true,
-    "translations": {
-      "kn": {
-        "title": "\u0c95\u0ccd\u0cb0\u0ccb\u0c9a\u0cc6\u0c9f\u0ccd \u0c97\u0cc3\u0cb9\u0cbe\u0cb2\u0c82\u0c95\u0cbe\u0cb0 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c95\u0cc8\u0caf\u0cbf\u0c82\u0ca6 \u0cae\u0cbe\u0ca1\u0cbf\u0ca6 \u0c89\u0ca3\u0ccd\u0ca3\u0cc6\u0caf \u0c95\u0cb0\u0c95\u0cc1\u0cb6\u0cb2",
-        "description": "\u0cb8\u0cc1\u0c82\u0ca6\u0cb0\u0cb5\u0cbe\u0ca6 \u0c95\u0ccd\u0cb0\u0ccb\u0c9a\u0cc6\u0c9f\u0ccd \u0cb8\u0cc2\u0c9c\u0cbf \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0c97\u0cb3\u0cc1, \u0c89\u0ca3\u0ccd\u0ca3\u0cc6\u0caf \u0c85\u0cb2\u0c82\u0c95\u0cbe\u0cb0\u0cbf\u0c95 \u0cae\u0cbe\u0ca6\u0cb0\u0cbf\u0c97\u0cb3\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c9f\u0cc7\u0cac\u0cb2\u0ccd \u0cae\u0ccd\u0caf\u0cbe\u0c9f\u0ccd\u200c\u0c97\u0cb3 \u0c95\u0cc8\u0caf\u0cbf\u0c82\u0ca6 \u0ca4\u0caf\u0cbe\u0cb0\u0cbf\u0c95\u0cc6 \u0c95\u0cb2\u0cbf\u0caf\u0cbf\u0cb0\u0cbf."
-      }
-    },
-    "created_at": "2026-08-30T05:43:30.363463",
-    "updated_at": "2026-08-30T05:43:30.363464"
-  },
-  {
-    "id": "home-baking-confectionery",
-    "title": "Home Baking: Teacakes, Cookies & Biscuits",
-    "description": "Learn standard measurement scales, oven operations, eggless baking recipes, professional icing, and food safety standards.",
-    "skill_id": "baking-confectionery",
-    "category_id": "food-catering",
-    "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80",
-    "difficulty": "beginner",
-    "duration": "6 Weeks",
-    "learning_mode": "hybrid",
-    "instructor": "Chef Nupur Roy",
-    "prerequisites": [
-      "None"
-    ],
-    "career_outcomes": [
-      "Professional Home Baker",
-      "Catering Assistant",
-      "Bakery Stall Owner"
-    ],
-    "language": "en",
-    "is_active": true,
-    "translations": {
-      "kn": {
-        "title": "\u0cae\u0ca8\u0cc6 \u0cac\u0cc7\u0c95\u0cbf\u0c82\u0c97\u0ccd: \u0c9f\u0cc0\u0c95\u0cc7\u0c95\u0ccd, \u0c95\u0cc1\u0c95\u0cc0\u0cb8\u0ccd \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cac\u0cbf\u0cb8\u0ccd\u0c95\u0ca4\u0ccd\u0ca4\u0cc1\u0c97\u0cb3\u0cc1",
-        "description": "\u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3\u0cbf\u0ca4 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0cc1, \u0c93\u0cb5\u0ca8\u0ccd \u0c95\u0cbe\u0cb0\u0ccd\u0caf\u0cbe\u0c9a\u0cb0\u0ca3\u0cc6, \u0cae\u0cca\u0c9f\u0ccd\u0c9f\u0cc6\u0caf\u0cbf\u0cb2\u0ccd\u0cb2\u0ca6 \u0cac\u0cc7\u0c95\u0cbf\u0c82\u0c97\u0ccd \u0caa\u0cbe\u0c95\u0cb5\u0cbf\u0ca7\u0cbe\u0ca8\u0c97\u0cb3\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cc1\u0cb0\u0c95\u0ccd\u0cb7\u0ca4\u0cbe \u0cae\u0cbe\u0ca8\u0ca6\u0c82\u0ca1\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0cb2\u0cbf\u0caf\u0cbf\u0cb0\u0cbf."
-      }
-    },
-    "created_at": "2026-08-30T05:43:30.363466",
-    "updated_at": "2026-08-30T05:43:30.363467"
-  },
-  {
-    "id": "kitchen-gardening-composting",
-    "title": "Organic Kitchen Gardening & Vermicomposting",
-    "description": "Create organic kitchen vegetable boxes, manage natural soil composting, make natural pesticides (Panchagavya), and increase crop yields.",
-    "skill_id": "organic-farming",
-    "category_id": "agriculture",
-    "thumbnail": "https://images.unsplash.com/photo-1464226184884-fa280b87c3a9?auto=format&fit=crop&w=600&q=80",
-    "difficulty": "beginner",
-    "duration": "6 Weeks",
-    "learning_mode": "offline",
-    "instructor": "Radhamma Hegde",
-    "prerequisites": [
-      "None"
-    ],
-    "career_outcomes": [
-      "Organic Produce Vendor",
-      "Farm Soil Consultant",
-      "Bio-Fertilizer Supplier"
-    ],
-    "language": "en",
-    "is_active": true,
-    "translations": {
-      "kn": {
-        "title": "\u0cb8\u0cbe\u0cb5\u0caf\u0cb5 \u0c85\u0ca1\u0cc1\u0c97\u0cc6\u0cae\u0ca8\u0cc6 \u0ca4\u0ccb\u0c9f\u0c97\u0cbe\u0cb0\u0cbf\u0c95\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c8e\u0cb0\u0cc6\u0c97\u0cca\u0cac\u0ccd\u0cac\u0cb0",
-        "description": "\u0cb8\u0cbe\u0cb5\u0caf\u0cb5 \u0c85\u0ca1\u0cc1\u0c97\u0cc6\u0cae\u0ca8\u0cc6 \u0ca4\u0cb0\u0c95\u0cbe\u0cb0\u0cbf \u0ca4\u0ccb\u0c9f\u0c97\u0cbe\u0cb0\u0cbf\u0c95\u0cc6, \u0ca8\u0cc8\u0cb8\u0cb0\u0ccd\u0c97\u0cbf\u0c95 \u0cae\u0ca3\u0ccd\u0ca3\u0cc1 \u0c95\u0cbe\u0c82\u0caa\u0ccb\u0cb8\u0ccd\u0c9f\u0ccd \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cbe\u0cb5\u0caf\u0cb5 \u0c95\u0cc0\u0c9f\u0ca8\u0cbe\u0cb6\u0c95 \u0ca4\u0caf\u0cbe\u0cb0\u0cbf\u0c95\u0cc6."
-      }
-    },
-    "created_at": "2026-08-30T05:43:30.363468",
-    "updated_at": "2026-08-30T05:43:30.363469"
-  },
-  {
-    "id": "elderly-nursing-firstaid",
-    "title": "Elderly Nursing Care & Emergency First Aid",
-    "description": "Learn vital blood pressure and sugar readings, elderly nutrition, home patient safety, and critical life-saving first aid techniques.",
-    "skill_id": "elder-care",
-    "category_id": "healthcare-caregiving",
-    "thumbnail": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80",
-    "difficulty": "beginner",
-    "duration": "8 Weeks",
-    "learning_mode": "hybrid",
-    "instructor": "Sister Mary Joseph",
-    "prerequisites": [
-      "None"
-    ],
-    "career_outcomes": [
-      "Geriatric Care Assistant",
-      "Emergency First Responder",
-      "Nursing Assistant"
-    ],
-    "language": "en",
-    "is_active": true,
-    "translations": {
-      "kn": {
-        "title": "\u0cb5\u0cc3\u0ca6\u0ccd\u0ca7\u0cb0 \u0c86\u0cb0\u0cc8\u0c95\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca4\u0cc1\u0cb0\u0ccd\u0ca4\u0cc1 \u0caa\u0ccd\u0cb0\u0ca5\u0cae \u0c9a\u0cbf\u0c95\u0cbf\u0ca4\u0ccd\u0cb8\u0cc6",
-        "description": "\u0cb0\u0c95\u0ccd\u0ca4\u0ca6\u0cca\u0ca4\u0ccd\u0ca4\u0ca1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0c95\u0ccd\u0c95\u0cb0\u0cc6 \u0caa\u0cb0\u0cc0\u0c95\u0ccd\u0cb7\u0cc6, \u0cb5\u0cc3\u0ca6\u0ccd\u0ca7\u0cb0 \u0c86\u0cb9\u0cbe\u0cb0 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cc1\u0cb0\u0c95\u0ccd\u0cb7\u0ca4\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0ccd\u0cb0\u0ca5\u0cae \u0c9a\u0cbf\u0c95\u0cbf\u0ca4\u0ccd\u0cb8\u0cc6 \u0ca4\u0c82\u0ca4\u0ccd\u0cb0\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0cb2\u0cbf\u0caf\u0cbf\u0cb0\u0cbf."
-      }
-    },
-    "created_at": "2026-08-30T05:43:30.363475",
-    "updated_at": "2026-08-30T05:43:30.363477"
+    "online_training": {
+      "videos": []
+    }
   }
 ]

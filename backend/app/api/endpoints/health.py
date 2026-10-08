@@ -6,8 +6,17 @@ router = APIRouter()
 @router.get("/health")
 def health_check():
     connected = db_instance.is_connected()
-    return {
-        "success": True,
-        "message": "NariNexus API is running",
-        "database": "connected" if connected else "failed"
-    }
+    if connected:
+        return {
+            "success": True,
+            "message": "NariNexus API is running",
+            "database": "mongodb",
+            "connection": "connected"
+        }
+    else:
+        return {
+            "success": True,
+            "message": "NariNexus API is running",
+            "database": "json-fallback",
+            "connection": "fallback"
+        }

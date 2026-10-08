@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "python3 -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8001 --reload & vite --port=3000 --host=0.0.0.0",
+    "dev": "python3 start_dev.py",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",

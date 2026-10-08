@@ -37,7 +37,7 @@ export default function LandingPage() {
               {/* Dynamic Tag */}
               <div className="inline-flex items-center space-x-2 rounded-full bg-white border border-primary-gold/20 px-4 py-1.5 text-[10px] font-extrabold tracking-widest text-deep-gold shadow-sm uppercase animate-fade-in-up">
                 <Sparkles className="h-4 w-4 text-primary-pink animate-pulse" />
-                <span>PHASE 1 ARCHITECTURE COMPLETED</span>
+                <span>INTEGRATED WOMEN EMPOWERMENT & DIGITAL SKILLS PLATFORM</span>
               </div>
 
               {/* Title & Headline */}

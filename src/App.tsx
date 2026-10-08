@@ -13,6 +13,11 @@ import OtpPage from './pages/OtpPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
 import LearnerDashboard from './pages/LearnerDashboard';
 import CentreDashboard from './pages/CentreDashboard';
+import CentreProfile from './pages/CentreProfile';
+import CentreLearners from './pages/CentreLearners';
+import CentreCourses from './pages/CentreCourses';
+import CentreProgress from './pages/CentreProgress';
+import CentreAnalytics from './pages/CentreAnalytics';
 import AdminDashboard from './pages/AdminDashboard';
 import LanguageSelectionPage from './pages/LanguageSelectionPage';
 import ProfileSetupPage from './pages/ProfileSetupPage';
@@ -22,6 +27,9 @@ import CoursesCataloguePage from './pages/CoursesCataloguePage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import LessonViewPage from './pages/LessonViewPage';
 import MyCoursesPage from './pages/MyCoursesPage';
+import AIChatPage from './pages/AIChatPage';
+import CareerGuidancePage from './pages/CareerGuidancePage';
+import OpportunitiesPage from './pages/OpportunitiesPage';
 import { AuthProvider } from './services/authContext';
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -101,6 +109,30 @@ export default function App() {
             } 
           />
           <Route 
+            path="/learner/chat" 
+            element={
+              <ProtectedRoute allowedRoles={['learner']}>
+                <AIChatPage />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/learner/career-guidance" 
+            element={
+              <ProtectedRoute allowedRoles={['learner']}>
+                <CareerGuidancePage />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/learner/opportunities" 
+            element={
+              <ProtectedRoute allowedRoles={['learner']}>
+                <OpportunitiesPage />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
             path="/learner/courses/:courseId/lessons/:lessonId" 
             element={
               <ProtectedRoute allowedRoles={['learner']}>
@@ -113,6 +145,54 @@ export default function App() {
             element={
               <ProtectedRoute allowedRoles={['centre']}>
                 <CentreDashboard />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/centre/dashboard" 
+            element={
+              <ProtectedRoute allowedRoles={['centre']}>
+                <CentreDashboard />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/centre/profile" 
+            element={
+              <ProtectedRoute allowedRoles={['centre']}>
+                <CentreProfile />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/centre/learners" 
+            element={
+              <ProtectedRoute allowedRoles={['centre']}>
+                <CentreLearners />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/centre/courses" 
+            element={
+              <ProtectedRoute allowedRoles={['centre']}>
+                <CentreCourses />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/centre/progress" 
+            element={
+              <ProtectedRoute allowedRoles={['centre']}>
+                <CentreProgress />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/centre/analytics" 
+            element={
+              <ProtectedRoute allowedRoles={['centre']}>
+                <CentreAnalytics />
               </ProtectedRoute>
             } 
           />

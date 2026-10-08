@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://narinexus.org/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

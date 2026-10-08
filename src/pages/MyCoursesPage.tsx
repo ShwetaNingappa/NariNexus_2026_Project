@@ -30,6 +30,9 @@ export default function MyCoursesPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'active' | 'completed'>('active');
+  
+  // Phase 4.2 progress dictionary mapping course_id -> progress summary
+  const [progressMap, setProgressMap] = useState<Record<string, any>>({});
 
   useEffect(() => {
     fetchMyEnrollments();
@@ -59,6 +62,25 @@ export default function MyCoursesPage() {
 
       const data = await res.json();
       setEnrollments(data);
+
+      // Fetch dynamic progress for all enrolled courses
+      try {
+        const progRes = await fetch('/api/progress/me', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        if (progRes.ok) {
+          const progData = await progRes.json();
+          const map: Record<string, any> = {};
+          progData.forEach((p: any) => {
+            map[p.course_id] = p;
+          });
+          setProgressMap(map);
+        }
+      } catch (pErr) {
+        console.error("Failed to load dynamic progress map:", pErr);
+      }
     } catch (err: any) {
       setError(err.message || "Something went wrong.");
     } finally {
@@ -219,16 +241,31 @@ export default function MyCoursesPage() {
                         Skill Domain: <span className="text-[#2D241A] font-semibold">{enroll.skill_id.replace(/-/g, ' ').toUpperCase()}</span>
                       </p>
 
-                      {/* Lesson Progress Placeholder */}
-                      <div className="mb-6">
-                        <div className="flex justify-between items-center text-[10px] uppercase font-extrabold text-[#7D7061] mb-1.5">
-                          <span>Progress Indicator</span>
-                          <span>0%</span>
-                        </div>
-                        <div className="w-full bg-[#FCF9F5] border border-primary-gold/5 h-2 rounded-full overflow-hidden">
-                          <div className="bg-primary-gold h-full rounded-full w-0" />
-                        </div>
-                      </div>
+                      {/* Lesson Progress Tracker */}
+                      {(() => {
+                        const prog = progressMap[enroll.course_id] || {
+                          progress_percentage: 0,
+                          completed_lessons: 0,
+                          total_lessons: 0
+                        };
+                        return (
+                          <div className="mb-6">
+                            <div className="flex justify-between items-center text-[10px] uppercase font-extrabold text-[#7D7061] mb-1.5">
+                              <span>Syllabus Modules Completed</span>
+                              <span className="text-deep-rose font-black">{prog.progress_percentage}%</span>
+                            </div>
+                            <div className="w-full bg-[#FCF9F5] border border-primary-gold/10 h-2 rounded-full overflow-hidden">
+                              <div 
+                                className="bg-gradient-to-r from-deep-rose to-primary-pink h-full rounded-full transition-all duration-300" 
+                                style={{ width: `${prog.progress_percentage}%` }} 
+                              />
+                            </div>
+                            <div className="text-[9px] text-[#7D7061]/70 font-semibold mt-1 text-right">
+                              {prog.completed_lessons} of {prog.total_lessons || 1} modules
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </div>
 
                     <div className="flex items-center justify-between gap-4 pt-4 border-t border-primary-gold/5 mt-2">

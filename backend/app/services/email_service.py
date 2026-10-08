@@ -84,11 +84,11 @@ class EmailService:
             part = MIMEText(body, "html")
             msg.attach(part)
             
-            # Connect to SMTP server
+            # Connect to SMTP server with a 5 second timeout to prevent thread hangs
             if settings.SMTP_PORT == 465:
-                server = smtplib.SMTP_SSL(settings.SMTP_HOST, settings.SMTP_PORT)
+                server = smtplib.SMTP_SSL(settings.SMTP_HOST, settings.SMTP_PORT, timeout=5)
             else:
-                server = smtplib.SMTP(settings.SMTP_HOST, settings.SMTP_PORT)
+                server = smtplib.SMTP(settings.SMTP_HOST, settings.SMTP_PORT, timeout=5)
                 server.starttls()
             
             server.login(settings.SMTP_USERNAME, settings.SMTP_PASSWORD)
@@ -97,7 +97,13 @@ class EmailService:
             logger.info(f"Successfully sent OTP email to {email_clean}")
             return True
         except Exception as e:
-            logger.error(f"Failed to send SMTP email to {email_clean}: {str(e)}")
+            err_str = str(e)
+            is_sending_limit = "sending limit" in err_str.lower() or "550" in err_str or "daily" in err_str.lower()
+            if is_sending_limit:
+                logger.warning(f"SMTP daily limit / sending restriction reached for {email_clean} (dev local fallback will be used): {err_str}")
+            else:
+                logger.error(f"Failed to send SMTP email to {email_clean}: {err_str}")
+                
             # In case real SMTP fails, write to fallback log in dev to avoid breaking the experience
             if settings.ENVIRONMENT == "development" or True:
                 logger.info(f"[DEV SMTP FAILED FALLBACK] Logging OTP to local file for {email_clean}")

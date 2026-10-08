@@ -1,0 +1,1022 @@
+[
+  {
+    "recipient_id": "a6790a8c-298c-4a22-995b-4d256cc5a8aa",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-28T15:55:18.015503",
+    "id": "notif-27ec1e"
+  },
+  {
+    "recipient_id": "563443dc-1267-4aa3-8f5e-5f32b4c41255",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant d684'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-28T15:55:25.041957",
+    "id": "notif-9fd025"
+  },
+  {
+    "recipient_id": "17738733-9ad5-41df-9d1c-abb600c35292",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-28T16:06:02.230420",
+    "id": "notif-b2ce39"
+  },
+  {
+    "recipient_id": "32ef3821-a88b-4b87-bb98-75961e2131ef",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant ef1e'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-28T16:06:09.001849",
+    "id": "notif-568bda"
+  },
+  {
+    "recipient_id": "af159177-ed0c-436f-9241-870e5cfae0fd",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-28T16:16:23.012932",
+    "id": "notif-309a70"
+  },
+  {
+    "recipient_id": "685c031b-c607-4f8f-b351-f35b9234f6e1",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 422a'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-28T16:16:28.741346",
+    "id": "notif-f4eb2b"
+  },
+  {
+    "recipient_id": "99126078-7392-47fa-a5ee-8459a757c8e1",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 6e29'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-28T16:35:10.695779",
+    "id": "notif-99b504"
+  },
+  {
+    "recipient_id": "99126078-7392-47fa-a5ee-8459a757c8e1",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 6e29' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-28T16:35:12.467157",
+    "id": "notif-f325d8"
+  },
+  {
+    "recipient_id": "510dcb5f-71d0-41f8-8691-23545f303907",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-28T16:55:21.882793",
+    "id": "notif-b89d1d"
+  },
+  {
+    "recipient_id": "3e05ec5c-5fee-46bf-8aac-893af392046d",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 092d'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-28T16:55:28.088875",
+    "id": "notif-65d340"
+  },
+  {
+    "recipient_id": "3e05ec5c-5fee-46bf-8aac-893af392046d",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 092d' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-28T16:55:30.028611",
+    "id": "notif-e52084"
+  },
+  {
+    "recipient_id": "8b685f34-aa28-4508-8bd6-13db40eef3e0",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T01:59:10.982562",
+    "id": "notif-8f1a70"
+  },
+  {
+    "recipient_id": "dd28d6bb-190b-4102-84fe-4389bad2d31c",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 215c'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T01:59:18.861135",
+    "id": "notif-8ea628"
+  },
+  {
+    "recipient_id": "dd28d6bb-190b-4102-84fe-4389bad2d31c",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 215c' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T01:59:21.873827",
+    "id": "notif-c3933a"
+  },
+  {
+    "recipient_id": "a9aa085c-a0a8-4045-aad0-530cf1ffdc09",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T02:05:33.451872",
+    "id": "notif-8a50fa"
+  },
+  {
+    "recipient_id": "0aaf803a-289b-4874-910a-9975840c14ad",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant df59'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T02:05:41.389327",
+    "id": "notif-d7bcde"
+  },
+  {
+    "recipient_id": "0aaf803a-289b-4874-910a-9975840c14ad",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant df59' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T02:05:43.758700",
+    "id": "notif-a1a34f"
+  },
+  {
+    "recipient_id": "d8b7e2dc-a30a-4293-84b5-eb5db0f42433",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T02:13:27.877168",
+    "id": "notif-b8b849"
+  },
+  {
+    "recipient_id": "b38836e5-085b-4f90-b24c-251ffdc7e7bc",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 43cf'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T02:13:35.620991",
+    "id": "notif-69fdcb"
+  },
+  {
+    "recipient_id": "b38836e5-085b-4f90-b24c-251ffdc7e7bc",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 43cf' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T02:13:38.431470",
+    "id": "notif-5a699d"
+  },
+  {
+    "recipient_id": "5aeab511-00a5-49c7-bd50-38b1ef49253d",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T02:19:49.663716",
+    "id": "notif-86b7d7"
+  },
+  {
+    "recipient_id": "ec35d583-0522-4d6c-97b0-51b5e17de28e",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant e3f4'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T02:19:56.608913",
+    "id": "notif-d47998"
+  },
+  {
+    "recipient_id": "ec35d583-0522-4d6c-97b0-51b5e17de28e",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant e3f4' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T02:19:58.275304",
+    "id": "notif-f33c79"
+  },
+  {
+    "recipient_id": "dccc21a5-8258-4f2c-ab16-da51e8d29497",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T03:20:41.529416",
+    "id": "notif-1f8199"
+  },
+  {
+    "recipient_id": "f3fc5a7a-5493-4d75-9e6b-99b3a7fb2871",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 6f98'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T03:20:48.140448",
+    "id": "notif-4533f7"
+  },
+  {
+    "recipient_id": "f3fc5a7a-5493-4d75-9e6b-99b3a7fb2871",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 6f98' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T03:20:50.426327",
+    "id": "notif-24f861"
+  },
+  {
+    "recipient_id": "2d0f5358-0eb3-4060-b5d6-f4baa1638935",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T03:26:19.860269",
+    "id": "notif-599f42"
+  },
+  {
+    "recipient_id": "cff280ff-6000-4f45-bcc1-9d3b85683c38",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 0568'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T03:26:26.065808",
+    "id": "notif-d3a63d"
+  },
+  {
+    "recipient_id": "cff280ff-6000-4f45-bcc1-9d3b85683c38",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 0568' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T03:26:28.181253",
+    "id": "notif-04e7fd"
+  },
+  {
+    "recipient_id": "b25cf811-d6ce-4b38-97fd-84c881a98325",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant a516'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T03:58:31.554285",
+    "id": "notif-4bad1d"
+  },
+  {
+    "recipient_id": "b25cf811-d6ce-4b38-97fd-84c881a98325",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant a516' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T03:58:33.699227",
+    "id": "notif-e8273d"
+  },
+  {
+    "recipient_id": "f87803f3-468b-4310-9fa7-b8ea03a8d030",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T04:03:51.314228",
+    "id": "notif-2d0dd6"
+  },
+  {
+    "recipient_id": "4510a2e6-7d43-4265-ae78-04c381620460",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant c711'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:03:58.344547",
+    "id": "notif-06a3d3"
+  },
+  {
+    "recipient_id": "4510a2e6-7d43-4265-ae78-04c381620460",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant c711' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:04:00.604709",
+    "id": "notif-404688"
+  },
+  {
+    "recipient_id": "8a5dcf83-eec8-4a81-a491-ffc024ba60da",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T04:06:53.833514",
+    "id": "notif-7a828e"
+  },
+  {
+    "recipient_id": "7a66d336-f8cc-4004-9396-82c70f89c630",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant dbbf'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:06:59.671341",
+    "id": "notif-bdb0d4"
+  },
+  {
+    "recipient_id": "7a66d336-f8cc-4004-9396-82c70f89c630",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant dbbf' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:07:02.008299",
+    "id": "notif-a51063"
+  },
+  {
+    "recipient_id": "6fdb2c50-20f6-45b6-821e-78a8eb1ce072",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T04:12:21.485402",
+    "id": "notif-212463"
+  },
+  {
+    "recipient_id": "aa61e132-ae4a-4c98-bb50-5e6fdad34990",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 9aa5'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:12:28.056916",
+    "id": "notif-933e15"
+  },
+  {
+    "recipient_id": "aa61e132-ae4a-4c98-bb50-5e6fdad34990",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 9aa5' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:12:30.268398",
+    "id": "notif-d04a69"
+  },
+  {
+    "recipient_id": "aefed2aa-d527-48a9-97a2-7c8c0ea7cbae",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T04:15:53.488665",
+    "id": "notif-97a124"
+  },
+  {
+    "recipient_id": "29316e0f-3515-4246-8472-bd6e6a13dd89",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 320c'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:16:06.265041",
+    "id": "notif-7de087"
+  },
+  {
+    "recipient_id": "29316e0f-3515-4246-8472-bd6e6a13dd89",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 320c' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:16:08.556114",
+    "id": "notif-07903b"
+  },
+  {
+    "recipient_id": "779b43ee-759e-4129-b496-f99b861dd46a",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T04:29:33.202549",
+    "id": "notif-62c511"
+  },
+  {
+    "recipient_id": "17b18241-a5ee-4e7a-92de-bbf61910591e",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 4598'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:29:39.285271",
+    "id": "notif-ff664e"
+  },
+  {
+    "recipient_id": "17b18241-a5ee-4e7a-92de-bbf61910591e",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 4598' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:29:41.642987",
+    "id": "notif-d3d3f5"
+  },
+  {
+    "recipient_id": "b544550c-970c-41d1-8ead-2a65156a8047",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T04:35:31.426680",
+    "id": "notif-0d233e"
+  },
+  {
+    "recipient_id": "a99ea28a-ec25-467f-a229-8ec0034757f0",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 7d06'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:35:37.868553",
+    "id": "notif-dc7098"
+  },
+  {
+    "recipient_id": "a99ea28a-ec25-467f-a229-8ec0034757f0",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 7d06' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:35:40.230631",
+    "id": "notif-fc1927"
+  },
+  {
+    "recipient_id": "b9969bc2-fbc6-465d-b7ff-2d43630970d7",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T04:39:38.190496",
+    "id": "notif-88b3c0"
+  },
+  {
+    "recipient_id": "0ea6aede-72c5-4e76-89ca-7fa56e26c701",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 3059'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:39:44.809545",
+    "id": "notif-5feb3a"
+  },
+  {
+    "recipient_id": "0ea6aede-72c5-4e76-89ca-7fa56e26c701",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 3059' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T04:39:47.242201",
+    "id": "notif-fec375"
+  },
+  {
+    "recipient_id": "bda7b2f6-3a9c-4b80-8982-22d9aaff88c9",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 1dcb'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:03:32.183594",
+    "id": "notif-29ae1a"
+  },
+  {
+    "recipient_id": "bda7b2f6-3a9c-4b80-8982-22d9aaff88c9",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 1dcb' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:03:34.342337",
+    "id": "notif-3944a7"
+  },
+  {
+    "recipient_id": "614fff9f-76f9-4526-af00-1a0a060e2b9d",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T05:09:20.642332",
+    "id": "notif-1a3212"
+  },
+  {
+    "recipient_id": "be99a843-c76d-4f16-83a8-d7904e1c7a57",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant ba80'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:09:27.209733",
+    "id": "notif-9ecee9"
+  },
+  {
+    "recipient_id": "be99a843-c76d-4f16-83a8-d7904e1c7a57",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant ba80' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:09:28.923107",
+    "id": "notif-b0a805"
+  },
+  {
+    "recipient_id": "0345249a-da2b-4e24-a401-f1ec296ff80b",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T05:15:02.256356",
+    "id": "notif-3d026e"
+  },
+  {
+    "recipient_id": "6d0c8524-af9c-412d-9e03-08c3d11abbf9",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 903b'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:15:08.523338",
+    "id": "notif-b8cd68"
+  },
+  {
+    "recipient_id": "6d0c8524-af9c-412d-9e03-08c3d11abbf9",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 903b' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:15:10.370840",
+    "id": "notif-62d545"
+  },
+  {
+    "recipient_id": "9f0b9221-2896-40da-b23d-7203c029562b",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T05:18:22.688922",
+    "id": "notif-aef7d3"
+  },
+  {
+    "recipient_id": "de07504d-dfdc-4b7b-996f-5f7c60791c8a",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant c5d7'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:18:28.116194",
+    "id": "notif-f52704"
+  },
+  {
+    "recipient_id": "de07504d-dfdc-4b7b-996f-5f7c60791c8a",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant c5d7' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:18:30.327827",
+    "id": "notif-d1364a"
+  },
+  {
+    "recipient_id": "b5a73d8c-c2b7-46e8-88fc-9331ee49ba73",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T05:23:30.695156",
+    "id": "notif-50384b"
+  },
+  {
+    "recipient_id": "b587f2a0-1a36-4fef-8551-ec2f5b95aed0",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 371c'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:23:36.773544",
+    "id": "notif-14e4db"
+  },
+  {
+    "recipient_id": "b587f2a0-1a36-4fef-8551-ec2f5b95aed0",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 371c' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:23:38.445541",
+    "id": "notif-4e43a3"
+  },
+  {
+    "recipient_id": "0daba3d7-32a0-45ef-aefd-c15ea0eff2c3",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T05:28:43.563620",
+    "id": "notif-973d80"
+  },
+  {
+    "recipient_id": "2c21a4b0-45d2-410e-a220-7d1308038285",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant a794'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:28:48.591135",
+    "id": "notif-3938d7"
+  },
+  {
+    "recipient_id": "2c21a4b0-45d2-410e-a220-7d1308038285",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant a794' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T05:28:50.754279",
+    "id": "notif-347565"
+  },
+  {
+    "recipient_id": "f78ed58d-ac69-41f5-a830-f0ad73ebd7c3",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T08:53:55.533238",
+    "id": "notif-35ff9f"
+  },
+  {
+    "recipient_id": "19f80ef4-4e5c-4a93-9ed3-37276eb14d62",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T08:55:03.760186",
+    "id": "notif-93ed8e"
+  },
+  {
+    "recipient_id": "c3ffecbb-e60e-45b7-b9db-333ea0bff875",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T08:55:40.189052",
+    "id": "notif-faf178"
+  },
+  {
+    "recipient_id": "abb64075-c8fa-44c9-880f-45197ccd850b",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T08:57:14.784995",
+    "id": "notif-b9107d"
+  },
+  {
+    "recipient_id": "97773564-f85c-41af-ad83-fdff11c141bb",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T08:57:53.369222",
+    "id": "notif-46f208"
+  },
+  {
+    "recipient_id": "d6962376-15db-4566-a8a4-c1741f065f01",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T09:05:29.627139",
+    "id": "notif-5a271b"
+  },
+  {
+    "recipient_id": "d919caa0-804e-4945-9fa8-e50a660ccc3c",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 2ec7'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T09:05:42.400866",
+    "id": "notif-e6ca67"
+  },
+  {
+    "recipient_id": "d919caa0-804e-4945-9fa8-e50a660ccc3c",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 2ec7' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T09:05:44.797567",
+    "id": "notif-673c73"
+  },
+  {
+    "recipient_id": "9d6afbb2-8b76-4934-97a0-39f21249dd3c",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T09:40:19.321575",
+    "id": "notif-642866"
+  },
+  {
+    "recipient_id": "0df440ba-0161-4843-987b-50c4f7cb4a49",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T11:49:03.792260",
+    "id": "notif-59ecc8"
+  },
+  {
+    "recipient_id": "f1537faf-f3a0-4401-bacf-dcf5585ecb11",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant d6fd'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T11:49:10.382915",
+    "id": "notif-4fa7e4"
+  },
+  {
+    "recipient_id": "f1537faf-f3a0-4401-bacf-dcf5585ecb11",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant d6fd' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T11:49:12.546836",
+    "id": "notif-c03cda"
+  },
+  {
+    "recipient_id": "26f120fa-e212-4585-a2b3-d482fdc7f1a1",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T11:54:33.356245",
+    "id": "notif-ae57dd"
+  },
+  {
+    "recipient_id": "90f06203-7581-49d0-a9fe-6ba791e11123",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 308d'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T11:54:39.458144",
+    "id": "notif-a2d355"
+  },
+  {
+    "recipient_id": "90f06203-7581-49d0-a9fe-6ba791e11123",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 308d' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T11:54:41.737069",
+    "id": "notif-0e17a3"
+  },
+  {
+    "recipient_id": "3f4abf54-1627-4236-8324-84a4a34882cb",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant f89d'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T12:15:13.592169",
+    "id": "notif-6d63da"
+  },
+  {
+    "recipient_id": "3f4abf54-1627-4236-8324-84a4a34882cb",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant f89d' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T12:15:15.894689",
+    "id": "notif-0554d6"
+  },
+  {
+    "recipient_id": "18677074-82b7-439d-9ace-5b179e2a6db7",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T12:26:19.073576",
+    "id": "notif-22cbef"
+  },
+  {
+    "recipient_id": "b4599a6c-5472-4f7b-aec9-98ed281f8e5e",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-09-29T12:36:53.828366",
+    "id": "notif-db11e9"
+  },
+  {
+    "recipient_id": "ca79f891-3a07-4ba9-a7ae-c08944757510",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant d796'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T12:36:59.330800",
+    "id": "notif-07aad4"
+  },
+  {
+    "recipient_id": "ca79f891-3a07-4ba9-a7ae-c08944757510",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant d796' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T12:37:01.359476",
+    "id": "notif-c8c6ac"
+  },
+  {
+    "recipient_id": "e163cfd7-872f-47b3-95e8-9143b64b0289",
+    "title": "Private Alert",
+    "message": "Alert message",
+    "type": "system",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-09-29T13:03:49.847561",
+    "id": "notif-e9c4ef"
+  },
+  {
+    "recipient_id": "fdf83fa2-0e8f-4e1e-b558-5e86602e41f2",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-10-03T03:44:41.533425",
+    "id": "notif-6e7b21"
+  },
+  {
+    "recipient_id": "18a6c4c3-80c4-4889-9d86-637716f3559e",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant fdae'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-10-03T03:44:49.847108",
+    "id": "notif-b6b9eb"
+  },
+  {
+    "recipient_id": "18a6c4c3-80c4-4889-9d86-637716f3559e",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant fdae' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-10-03T03:44:52.085104",
+    "id": "notif-04397c"
+  },
+  {
+    "recipient_id": "93fe37c3-f854-445c-8222-06f44132661d",
+    "title": "Private Alert A",
+    "message": "Confidential test notification",
+    "type": "system",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-10-03T03:47:15.045256",
+    "id": "notif-8e5fa2"
+  },
+  {
+    "recipient_id": "51579fc4-740a-418e-9e49-4ab74593b9d9",
+    "title": "Private Alert A",
+    "message": "Confidential test notification",
+    "type": "system",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-10-03T03:48:15.685439",
+    "id": "notif-be37fb"
+  },
+  {
+    "recipient_id": "4c12241f-53a1-4339-86cf-bc76ae3626f8",
+    "title": "Private Alert A",
+    "message": "Confidential test notification",
+    "type": "system",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-10-03T03:49:12.201362",
+    "id": "notif-22ccc8"
+  },
+  {
+    "recipient_id": "0685638c-7065-4a96-b4f7-8ca42d22a6c3",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-10-03T03:50:01.849280",
+    "id": "notif-147c3c"
+  },
+  {
+    "recipient_id": "1abf9b5b-59f7-4cb6-ab3a-158ab5c835e6",
+    "title": "Application Submitted Successfully",
+    "message": "You have successfully submitted your application for the opportunity: 'Embroidery Assistant 3524'. We will review your application soon.",
+    "type": "opportunity_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-10-03T03:50:08.956996",
+    "id": "notif-7e7a97"
+  },
+  {
+    "recipient_id": "1abf9b5b-59f7-4cb6-ab3a-158ab5c835e6",
+    "title": "Application Status Updated",
+    "message": "Your application for 'Embroidery Assistant 3524' has been updated to: Shortlisted.",
+    "type": "application_status_update",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-10-03T03:50:12.185191",
+    "id": "notif-d7b93b"
+  },
+  {
+    "recipient_id": "be4f62b3-5306-487f-ba93-c8960609c2c9",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": true,
+    "created_at": "2026-10-03T03:50:32.876235",
+    "id": "notif-4b9056"
+  },
+  {
+    "recipient_id": "35526e4f-df7e-4a0b-a68a-e50467ae5289",
+    "title": "Test Notification Title",
+    "message": "This is a test notification message for testing read/unread counts.",
+    "type": "system_notification",
+    "action_link": null,
+    "is_read": false,
+    "created_at": "2026-10-03T03:50:37.652887",
+    "id": "notif-e762c9"
+  }
+]

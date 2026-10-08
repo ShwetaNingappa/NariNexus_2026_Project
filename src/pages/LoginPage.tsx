@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Mail, Lock, LogIn, ArrowLeft, ShieldAlert, Sparkles } from 'lucide-react';
+import { Mail, Lock, LogIn, ArrowLeft, ShieldAlert, Sparkles, Key, ChevronDown, ChevronUp } from 'lucide-react';
 import { useAuth } from '../services/authContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -15,6 +15,7 @@ export default function LoginPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [redirectedRole, setRedirectedRole] = useState<string>('learner');
+  const [showDemoLogins, setShowDemoLogins] = useState(false);
   
   const navigate = useNavigate();
   const location = useLocation();
@@ -31,17 +32,9 @@ export default function LoginPage() {
 
     try {
       const result = await login(email, password);
-      if (result.success) {
+      if (result.success && result.user) {
         setSuccess(true);
-        // Quick local fetch to determine routing dashboard
-        const rawToken = localStorage.getItem('narinexus_token');
-        let userRole = 'learner';
-        if (rawToken) {
-          try {
-            const payload = JSON.parse(atob(rawToken.split('.')[1]));
-            userRole = payload.role || 'learner';
-          } catch (_) {}
-        }
+        const userRole = result.user.role || 'learner';
         setRedirectedRole(userRole);
 
         setTimeout(() => {
@@ -60,6 +53,12 @@ export default function LoginPage() {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleFillDemo = (demoEmail: string) => {
+    setEmail(demoEmail);
+    setPassword('securePassword123');
+    setError(null);
   };
 
   const handlePlaceholderAlert = (method: string) => {
@@ -97,6 +96,69 @@ export default function LoginPage() {
             <p className="mt-2 text-xs text-[#7D7061] max-w-xs mx-auto font-medium">
               Access your personalized learning, coaching, and management circles.
             </p>
+          </div>
+
+          {/* Quick Demo Login Help Panel */}
+          <div className="border border-primary-gold/20 rounded-xl bg-soft-yellow/15 overflow-hidden transition-all duration-300">
+            <button
+              type="button"
+              onClick={() => setShowDemoLogins(!showDemoLogins)}
+              className="w-full flex items-center justify-between px-4 py-3 bg-soft-yellow/25 hover:bg-soft-yellow/40 transition-colors text-xs font-bold text-deep-gold uppercase tracking-wider cursor-pointer"
+            >
+              <div className="flex items-center gap-2">
+                <Key className="h-4 w-4 text-primary-gold" />
+                <span>Explore with Demo Portals</span>
+              </div>
+              {showDemoLogins ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            </button>
+            
+            {showDemoLogins && (
+              <div className="p-4 space-y-3 border-t border-primary-gold/10 bg-white/50 text-xs animate-fadeIn">
+                <p className="text-[11px] text-[#7D7061] font-medium leading-relaxed">
+                  Select a role below to auto-fill the credentials of a pre-seeded account and access their specific dashboard portal.
+                </p>
+                <div className="grid grid-cols-1 gap-2 pt-1">
+                  <button
+                    type="button"
+                    onClick={() => handleFillDemo('notif_learner_a_6fe0bf@gmail.com')}
+                    className="flex flex-col text-left p-2.5 rounded-lg border border-primary-gold/10 hover:border-primary-pink/50 hover:bg-light-pink/15 transition-all text-xs cursor-pointer group"
+                  >
+                    <span className="font-extrabold text-[#3D2D1E] uppercase tracking-wider text-[10px] group-hover:text-deep-rose transition-colors">
+                      👤 Learner Account
+                    </span>
+                    <span className="text-[10px] text-[#7D7061] mt-0.5 font-medium leading-tight">
+                      Email: notif_learner_a_6fe0bf@gmail.com
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => handleFillDemo('centre_9de948@naricentre.org')}
+                    className="flex flex-col text-left p-2.5 rounded-lg border border-primary-gold/10 hover:border-green-400 hover:bg-sage-green/10 transition-all text-xs cursor-pointer group"
+                  >
+                    <span className="font-extrabold text-[#3D2D1E] uppercase tracking-wider text-[10px] group-hover:text-green-800 transition-colors">
+                      🏫 Coaching/Training Centre
+                    </span>
+                    <span className="text-[10px] text-[#7D7061] mt-0.5 font-medium leading-tight">
+                      Email: centre_9de948@naricentre.org
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => handleFillDemo('app_tracker_admin_6fae91@narinexus.org')}
+                    className="flex flex-col text-left p-2.5 rounded-lg border border-primary-gold/10 hover:border-deep-gold hover:bg-soft-yellow/10 transition-all text-xs cursor-pointer group"
+                  >
+                    <span className="font-extrabold text-[#3D2D1E] uppercase tracking-wider text-[10px] group-hover:text-deep-gold transition-colors">
+                      🛡️ Platform Administrator
+                    </span>
+                    <span className="text-[10px] text-[#7D7061] mt-0.5 font-medium leading-tight">
+                      Email: app_tracker_admin_6fae91@narinexus.org
+                    </span>
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {error && (

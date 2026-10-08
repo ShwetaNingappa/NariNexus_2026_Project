@@ -29,6 +29,17 @@
   h1, h2, h3, .font-serif-header {
     font-family: var(--font-serif);
   }
+
+  /* Exquisite accessible focus indicators */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #C83D68 !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 0 4px rgba(200, 61, 104, 0.2) !important;
+  }
 }
 
 @layer utilities {

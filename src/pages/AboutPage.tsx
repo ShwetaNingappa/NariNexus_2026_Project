@@ -63,7 +63,7 @@ export default function AboutPage() {
               The Proposed Solution: NariNexus
             </h2>
             <p className="mt-4 text-xs text-green-900 leading-relaxed font-semibold">
-              NariNexus answers these structural constraints by building an **AI-Enabled Multilingual Hybrid Skill Development &amp; Women Empowerment Platform**. We solve these challenges in Phase 1 and prepare schemas for Phase 2:
+              NariNexus answers these structural constraints by building an **AI-Enabled Multilingual Hybrid Skill Development &amp; Women Empowerment Platform**. We solve these challenges through several core innovations:
             </p>
             <ul className="mt-6 space-y-3.5 text-xs text-green-950 leading-relaxed font-medium">
               <li className="flex items-start">

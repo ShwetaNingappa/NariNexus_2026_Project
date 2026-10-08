@@ -1,0 +1,4362 @@
+[
+  {
+    "id": "4b12156a8c4549d09af1d786996913d6",
+    "learner_id": "e33afe27-f99e-438b-97d9-03a84f6b4af8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-08-30T18:15:31.026108",
+    "created_at": "2026-08-30T18:15:31.026108",
+    "updated_at": "2026-08-30T18:15:31.026108"
+  },
+  {
+    "id": "b0e407a02e8e4bdaa6199331eba74073",
+    "learner_id": "e33afe27-f99e-438b-97d9-03a84f6b4af8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-08-30T18:15:31.055809",
+    "created_at": "2026-08-30T18:15:31.055809",
+    "updated_at": "2026-08-30T18:15:31.055809"
+  },
+  {
+    "id": "6dde1ea4f64f4ff2a74c771080815368",
+    "learner_id": "733fd583-1aaa-4531-902d-40aa595b3e38",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-01T08:16:48.649217",
+    "created_at": "2026-09-01T08:16:48.649217",
+    "updated_at": "2026-09-01T08:16:48.649217"
+  },
+  {
+    "id": "3019993fda894659a717f106ce4bbaa5",
+    "learner_id": "733fd583-1aaa-4531-902d-40aa595b3e38",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-01T08:16:48.684536",
+    "created_at": "2026-09-01T08:16:48.684536",
+    "updated_at": "2026-09-01T08:16:48.684536"
+  },
+  {
+    "id": "7f01924bd3c94123857e095fe55814d8",
+    "learner_id": "b815ca24-0700-43ab-8bf2-ddc1d881a8db",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-04T12:34:26.662138",
+    "created_at": "2026-09-04T12:34:26.662138",
+    "updated_at": "2026-09-04T12:34:26.662138"
+  },
+  {
+    "id": "779d4d7d820f4530a537a1db1e94b3e6",
+    "learner_id": "b815ca24-0700-43ab-8bf2-ddc1d881a8db",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-04T12:34:26.690210",
+    "created_at": "2026-09-04T12:34:26.690210",
+    "updated_at": "2026-09-04T12:34:26.690210"
+  },
+  {
+    "id": "fde50c2cac084eadae28d3b733bae39c",
+    "learner_id": "5db82f7e-764f-440e-bddc-86ba1b535da2",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-04T13:00:59.929331",
+    "created_at": "2026-09-04T13:00:59.929331",
+    "updated_at": "2026-09-04T13:00:59.929331"
+  },
+  {
+    "id": "156d934b080c432aa7dde476aec09ec5",
+    "learner_id": "5db82f7e-764f-440e-bddc-86ba1b535da2",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-04T13:00:59.962437",
+    "created_at": "2026-09-04T13:00:59.962437",
+    "updated_at": "2026-09-04T13:00:59.962437"
+  },
+  {
+    "id": "9a0d94a02af047c7b197e06a94011244",
+    "learner_id": "0f1e07e7-198c-46c3-bed0-fd146c373b4c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-04T17:11:31.769609",
+    "created_at": "2026-09-04T17:11:31.769609",
+    "updated_at": "2026-09-04T17:11:31.769609"
+  },
+  {
+    "id": "e7de929b7368407ca7d8416a56d40d27",
+    "learner_id": "0f1e07e7-198c-46c3-bed0-fd146c373b4c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-04T17:11:31.803309",
+    "created_at": "2026-09-04T17:11:31.803309",
+    "updated_at": "2026-09-04T17:11:31.803309"
+  },
+  {
+    "id": "66a09af9b2934b17902c1156da6e1623",
+    "learner_id": "96c10a8c-049e-4fec-ba26-2a64cfd30e3b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-07T17:24:11.741411",
+    "created_at": "2026-09-07T17:24:11.741411",
+    "updated_at": "2026-09-07T17:24:11.741411"
+  },
+  {
+    "id": "751c9cec7c084c818a2fbcfff1231a80",
+    "learner_id": "96c10a8c-049e-4fec-ba26-2a64cfd30e3b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-07T17:24:11.772873",
+    "created_at": "2026-09-07T17:24:11.772873",
+    "updated_at": "2026-09-07T17:24:11.772873"
+  },
+  {
+    "id": "e42fce1860ff45f182c0a97671eff633",
+    "learner_id": "5e68bfd4-f164-4f58-a5ea-935b70732bcf",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-09T13:47:27.770405",
+    "created_at": "2026-09-09T13:47:27.770405",
+    "updated_at": "2026-09-09T13:47:27.770405"
+  },
+  {
+    "id": "1c90e041e9f34453b9f999b43dc8df4b",
+    "learner_id": "5e68bfd4-f164-4f58-a5ea-935b70732bcf",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-09T13:47:27.796902",
+    "created_at": "2026-09-09T13:47:27.796902",
+    "updated_at": "2026-09-09T13:47:27.796902"
+  },
+  {
+    "id": "c0587e1d330c436ea8fa1741be950cac",
+    "learner_id": "1932d6a1-deeb-40dc-9c78-194b5b378d00",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-12T05:53:43.419248",
+    "created_at": "2026-09-12T05:53:43.419248",
+    "updated_at": "2026-09-12T05:53:43.419248"
+  },
+  {
+    "id": "1c6500ebfe224bf39befc4cb61b4505c",
+    "learner_id": "1932d6a1-deeb-40dc-9c78-194b5b378d00",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-12T05:53:43.463263",
+    "created_at": "2026-09-12T05:53:43.463263",
+    "updated_at": "2026-09-12T05:53:43.463263"
+  },
+  {
+    "id": "fd5b896fd1aa44b5a3092ea8822c64bd",
+    "learner_id": "526b9e94-dd15-4df7-b04d-1abe56f14edf",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-15T12:52:23.909372",
+    "created_at": "2026-09-15T12:52:23.909372",
+    "updated_at": "2026-09-15T12:52:23.909372"
+  },
+  {
+    "id": "d0392c2703384214a531fe03553f504f",
+    "learner_id": "526b9e94-dd15-4df7-b04d-1abe56f14edf",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-15T12:52:23.950538",
+    "created_at": "2026-09-15T12:52:23.950538",
+    "updated_at": "2026-09-15T12:52:23.950538"
+  },
+  {
+    "id": "db9371223bc44c029635a62bc09484b7",
+    "learner_id": "0152f9b2-fad4-42b8-8d6b-7edeebdc47ba",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T02:30:16.077532",
+    "created_at": "2026-09-25T02:30:16.077532",
+    "updated_at": "2026-09-25T02:30:16.077532"
+  },
+  {
+    "id": "ee841617b143467cb68820c682621dad",
+    "learner_id": "0152f9b2-fad4-42b8-8d6b-7edeebdc47ba",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T02:30:16.128612",
+    "created_at": "2026-09-25T02:30:16.128612",
+    "updated_at": "2026-09-25T02:30:16.128612"
+  },
+  {
+    "id": "3562409e09184ea2b178ef0d99e29452",
+    "learner_id": "3f200c50-9220-45ef-a1cf-b2aeadea01f2",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T02:43:46.147311",
+    "created_at": "2026-09-25T02:43:46.147311",
+    "updated_at": "2026-09-25T02:43:46.147311"
+  },
+  {
+    "id": "027d9eaa312c48ab875ed9674aaaa89c",
+    "learner_id": "3f200c50-9220-45ef-a1cf-b2aeadea01f2",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T02:43:46.199624",
+    "created_at": "2026-09-25T02:43:46.199624",
+    "updated_at": "2026-09-25T02:43:46.199624"
+  },
+  {
+    "id": "d5131d86968e4dc882d2666fd0b65f66",
+    "learner_id": "28a3f763-3889-4507-aac7-252f02e84e75",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T02:59:40.624988",
+    "created_at": "2026-09-25T02:59:40.624988",
+    "updated_at": "2026-09-25T02:59:40.624988"
+  },
+  {
+    "id": "b2ee37f313a449cfa7dc3ddcbf6aee96",
+    "learner_id": "28a3f763-3889-4507-aac7-252f02e84e75",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T02:59:40.680418",
+    "created_at": "2026-09-25T02:59:40.680418",
+    "updated_at": "2026-09-25T02:59:40.680418"
+  },
+  {
+    "id": "1c2eab656dab44bcaa13e4fa38b8578e",
+    "learner_id": "c34aae73-ef44-4b24-8996-9e80c6f92ef2",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T03:30:36.552017",
+    "created_at": "2026-09-25T03:30:36.552017",
+    "updated_at": "2026-09-25T03:30:36.552017"
+  },
+  {
+    "id": "013b60f8fe2e413e9875f7ca33974de5",
+    "learner_id": "c34aae73-ef44-4b24-8996-9e80c6f92ef2",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T03:30:36.624325",
+    "created_at": "2026-09-25T03:30:36.624325",
+    "updated_at": "2026-09-25T03:30:36.624325"
+  },
+  {
+    "id": "4275d23783dc4c08ae0c5d9cb8a66cd3",
+    "learner_id": "354e73c0-353f-4612-869b-3a065cb8cd91",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T04:57:46.946374",
+    "created_at": "2026-09-25T04:57:46.946374",
+    "updated_at": "2026-09-25T04:57:46.946374"
+  },
+  {
+    "id": "f2001b69330f4c3d88699b01b16aba29",
+    "learner_id": "354e73c0-353f-4612-869b-3a065cb8cd91",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T04:57:47.001776",
+    "created_at": "2026-09-25T04:57:47.001776",
+    "updated_at": "2026-09-25T04:57:47.001776"
+  },
+  {
+    "id": "4d6dac56d57442e7952405af1a02491a",
+    "learner_id": "94650fb4-fc73-402c-ad23-56767395c38e",
+    "course_id": "course-centre-577d7b03",
+    "lesson_id": "les-custom-579e9f",
+    "completed": true,
+    "completed_at": "2026-09-25T10:19:58.611600",
+    "created_at": "2026-09-25T10:19:58.611600",
+    "updated_at": "2026-09-25T10:19:58.611600"
+  },
+  {
+    "id": "1d237ef687a64d28929341fae4385065",
+    "learner_id": "3f784574-740c-4cf1-a25a-cf9db5a5391f",
+    "course_id": "course-centre-00795c20",
+    "lesson_id": "les-custom-a864c2",
+    "completed": true,
+    "completed_at": "2026-09-25T10:20:38.004517",
+    "created_at": "2026-09-25T10:20:38.004517",
+    "updated_at": "2026-09-25T10:20:38.004517"
+  },
+  {
+    "id": "4980110f83bf42d3b23cc2b6780440d1",
+    "learner_id": "c17ea2f6-0770-4287-a24b-711dba0b8880",
+    "course_id": "course-centre-b74ef559",
+    "lesson_id": "les-custom-efd4ad",
+    "completed": true,
+    "completed_at": "2026-09-25T10:47:34.836320",
+    "created_at": "2026-09-25T10:47:34.836320",
+    "updated_at": "2026-09-25T10:47:34.836320"
+  },
+  {
+    "id": "1bb7a66fcaed42589c230ddd14f7210b",
+    "learner_id": "e57b39c7-8ede-4a68-9572-f4aa114db1b3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T10:54:52.122546",
+    "created_at": "2026-09-25T10:54:52.122546",
+    "updated_at": "2026-09-25T10:54:52.122546"
+  },
+  {
+    "id": "eedef8a408424ec38f71157d089b49e3",
+    "learner_id": "e57b39c7-8ede-4a68-9572-f4aa114db1b3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T10:54:52.199765",
+    "created_at": "2026-09-25T10:54:52.199765",
+    "updated_at": "2026-09-25T10:54:52.199765"
+  },
+  {
+    "id": "c25a7466850f43c8bd875bf558081505",
+    "learner_id": "7eee906d-cea0-4b01-be72-932b21698cbd",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T10:57:50.571965",
+    "created_at": "2026-09-25T10:57:50.571965",
+    "updated_at": "2026-09-25T10:57:50.571965"
+  },
+  {
+    "id": "3cd9a7e1f6df4a17808c8cb6c8048107",
+    "learner_id": "7eee906d-cea0-4b01-be72-932b21698cbd",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T10:57:50.647659",
+    "created_at": "2026-09-25T10:57:50.647659",
+    "updated_at": "2026-09-25T10:57:50.647659"
+  },
+  {
+    "id": "233fb64e7f4745cf82cd2e82cf1348e4",
+    "learner_id": "e6353727-7786-4fc0-80dd-88f23a99f07b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T11:01:04.911093",
+    "created_at": "2026-09-25T11:01:04.911093",
+    "updated_at": "2026-09-25T11:01:04.911093"
+  },
+  {
+    "id": "cd308989c6db495887ceadb2a99ab165",
+    "learner_id": "e6353727-7786-4fc0-80dd-88f23a99f07b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T11:01:04.985053",
+    "created_at": "2026-09-25T11:01:04.985053",
+    "updated_at": "2026-09-25T11:01:04.985053"
+  },
+  {
+    "id": "ac3215eee18441d894732ba533e3bb9d",
+    "learner_id": "70b162a0-161b-49c9-a3bc-6a3e67e5ef2a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T11:02:18.958159",
+    "created_at": "2026-09-25T11:02:18.958159",
+    "updated_at": "2026-09-25T11:02:18.958159"
+  },
+  {
+    "id": "4ea529fa35af4fb48b5242a37778e9d0",
+    "learner_id": "70b162a0-161b-49c9-a3bc-6a3e67e5ef2a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T11:02:40.291086",
+    "created_at": "2026-09-25T11:02:40.291086",
+    "updated_at": "2026-09-25T11:02:40.291086"
+  },
+  {
+    "id": "672a5eac649a480f8c59e7c3e2eb0947",
+    "learner_id": "6b6e457e-8c04-47c3-8ec6-ff435d1a21d8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T11:03:23.195600",
+    "created_at": "2026-09-25T11:03:23.195600",
+    "updated_at": "2026-09-25T11:03:23.195600"
+  },
+  {
+    "id": "514e68cccbed44cfa2bc3f33b4eb1075",
+    "learner_id": "6b6e457e-8c04-47c3-8ec6-ff435d1a21d8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T11:03:29.972226",
+    "created_at": "2026-09-25T11:03:29.972226",
+    "updated_at": "2026-09-25T11:03:29.972226"
+  },
+  {
+    "id": "37ef490501f947d18aac8eb5a8ce099e",
+    "learner_id": "8da1d6b3-dd7c-4094-af36-b204b78dbadf",
+    "course_id": "course-centre-6a02b94e",
+    "lesson_id": "les-custom-66d71e",
+    "completed": true,
+    "completed_at": "2026-09-25T11:20:00.184119",
+    "created_at": "2026-09-25T11:20:00.184119",
+    "updated_at": "2026-09-25T11:20:00.184119"
+  },
+  {
+    "id": "3e121b7881a9412aa665d1736ec2ed1b",
+    "learner_id": "dcc29901-296c-4cd3-894f-499ce622907e",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T11:20:21.701048",
+    "created_at": "2026-09-25T11:20:21.701048",
+    "updated_at": "2026-09-25T11:20:21.701048"
+  },
+  {
+    "id": "47fe9857bbe84fcbb0235b90f6520411",
+    "learner_id": "dcc29901-296c-4cd3-894f-499ce622907e",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T11:20:21.777351",
+    "created_at": "2026-09-25T11:20:21.777351",
+    "updated_at": "2026-09-25T11:20:21.777351"
+  },
+  {
+    "id": "e07819ada27142ca9054e42d3c9ae77c",
+    "learner_id": "1ca3df81-1d69-4ee6-9fa7-d40c0d7d0635",
+    "course_id": "course-centre-f74eedd5",
+    "lesson_id": "les-an-3d82bd",
+    "completed": true,
+    "completed_at": "2026-09-25T13:26:35.682410",
+    "created_at": "2026-09-25T13:26:35.682410",
+    "updated_at": "2026-09-25T13:26:35.682410"
+  },
+  {
+    "id": "5ba732ed389547afb631d8a847373cf5",
+    "learner_id": "65ffa631-cb9b-43e6-8b88-db39add6b5c1",
+    "course_id": "course-centre-39b72834",
+    "lesson_id": "les-an-6c9db1",
+    "completed": true,
+    "completed_at": "2026-09-25T13:27:39.497924",
+    "created_at": "2026-09-25T13:27:39.497924",
+    "updated_at": "2026-09-25T13:27:39.497924"
+  },
+  {
+    "id": "82cf1850e4464385907dd38995561603",
+    "learner_id": "240892d6-36b1-4de0-90ef-8ea74f91f2f3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T13:27:48.879779",
+    "created_at": "2026-09-25T13:27:48.879779",
+    "updated_at": "2026-09-25T13:27:48.879779"
+  },
+  {
+    "id": "660695ec854c4bb0b11384e744838128",
+    "learner_id": "240892d6-36b1-4de0-90ef-8ea74f91f2f3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T13:27:48.956078",
+    "created_at": "2026-09-25T13:27:48.956078",
+    "updated_at": "2026-09-25T13:27:48.956078"
+  },
+  {
+    "id": "a6d75a7ac9ac40d49fe0be3bbe9ffb0f",
+    "learner_id": "c2a49533-6e30-48d2-b407-967bcd811eb4",
+    "course_id": "course-centre-007d483d",
+    "lesson_id": "les-custom-e8bca5",
+    "completed": true,
+    "completed_at": "2026-09-25T13:32:51.708992",
+    "created_at": "2026-09-25T13:32:51.708992",
+    "updated_at": "2026-09-25T13:32:51.708992"
+  },
+  {
+    "id": "fe9fe77238294a08aa791ea8aa8a4c8f",
+    "learner_id": "103efe72-f390-4ab1-b12e-d0677ffc67b0",
+    "course_id": "course-centre-1d5b5c9c",
+    "lesson_id": "les-an-2d0f9d",
+    "completed": true,
+    "completed_at": "2026-09-25T15:55:17.866968",
+    "created_at": "2026-09-25T15:55:17.866968",
+    "updated_at": "2026-09-25T15:55:17.866968"
+  },
+  {
+    "id": "a018572fe6574fb9b1880edd24fb0343",
+    "learner_id": "bb40e2ca-15d6-4513-bead-ad1f5ce78b62",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T15:55:26.346272",
+    "created_at": "2026-09-25T15:55:26.346272",
+    "updated_at": "2026-09-25T15:55:26.346272"
+  },
+  {
+    "id": "cae2b9e65c81459684ccb8d80ecc90eb",
+    "learner_id": "bb40e2ca-15d6-4513-bead-ad1f5ce78b62",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T15:55:26.425308",
+    "created_at": "2026-09-25T15:55:26.425308",
+    "updated_at": "2026-09-25T15:55:26.425308"
+  },
+  {
+    "id": "6510d085289a4ec1b8c07de3abbecff0",
+    "learner_id": "89dfef12-88f3-4fd0-8135-d061b122cbfd",
+    "course_id": "course-centre-0807f0fd",
+    "lesson_id": "les-an-7497e4",
+    "completed": true,
+    "completed_at": "2026-09-25T16:02:30.802587",
+    "created_at": "2026-09-25T16:02:30.802587",
+    "updated_at": "2026-09-25T16:02:30.802587"
+  },
+  {
+    "id": "f7f6a78f092142bf92079322aea6e89c",
+    "learner_id": "29f6975e-843e-461d-b365-adfdb4a93e63",
+    "course_id": "course-centre-8943216b",
+    "lesson_id": "les-custom-e66e05",
+    "completed": true,
+    "completed_at": "2026-09-25T16:02:57.938486",
+    "created_at": "2026-09-25T16:02:57.938486",
+    "updated_at": "2026-09-25T16:02:57.938486"
+  },
+  {
+    "id": "7c0efc31b03b4033af3dfb1ed3f4b3fa",
+    "learner_id": "bd6b62a0-e61e-4916-a62c-126c3ddc17dc",
+    "course_id": "course-centre-65a16c9b",
+    "lesson_id": "les-an-79b1fe",
+    "completed": true,
+    "completed_at": "2026-09-25T16:03:31.839307",
+    "created_at": "2026-09-25T16:03:31.839307",
+    "updated_at": "2026-09-25T16:03:31.839307"
+  },
+  {
+    "id": "ea59ce50ffe64cbdb6e882202b1d69d6",
+    "learner_id": "701e7ef1-11bf-449b-a157-65ba7d320a82",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T16:03:42.580365",
+    "created_at": "2026-09-25T16:03:42.580365",
+    "updated_at": "2026-09-25T16:03:42.580365"
+  },
+  {
+    "id": "a42536d37bd843d7a8747449dec9c3ab",
+    "learner_id": "701e7ef1-11bf-449b-a157-65ba7d320a82",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T16:03:42.664278",
+    "created_at": "2026-09-25T16:03:42.664278",
+    "updated_at": "2026-09-25T16:03:42.664278"
+  },
+  {
+    "id": "df09bfb9b5cb4eb9b38e981e6ebea3e0",
+    "learner_id": "d623002b-62a5-4c7b-a296-b58fc9b64c48",
+    "course_id": "course-centre-45b84384",
+    "lesson_id": "les-custom-84e80e",
+    "completed": true,
+    "completed_at": "2026-09-25T16:06:44.797042",
+    "created_at": "2026-09-25T16:06:44.797042",
+    "updated_at": "2026-09-25T16:06:44.797042"
+  },
+  {
+    "id": "b35c003fa48b461bb6c9a135e1da29a1",
+    "learner_id": "87b8cee7-5e01-4612-b453-c30a76e60afc",
+    "course_id": "course-centre-43c09727",
+    "lesson_id": "les-an-ed8919",
+    "completed": true,
+    "completed_at": "2026-09-25T16:19:28.299440",
+    "created_at": "2026-09-25T16:19:28.299440",
+    "updated_at": "2026-09-25T16:19:28.299440"
+  },
+  {
+    "id": "1345084e0c3544c09d90f0b4dee890d3",
+    "learner_id": "59a82da8-14f0-486c-b81f-995012af1613",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-25T16:19:37.684494",
+    "created_at": "2026-09-25T16:19:37.684494",
+    "updated_at": "2026-09-25T16:19:37.684494"
+  },
+  {
+    "id": "9f32a35687354bea972d6e7237440e1a",
+    "learner_id": "59a82da8-14f0-486c-b81f-995012af1613",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-25T16:19:37.768582",
+    "created_at": "2026-09-25T16:19:37.768582",
+    "updated_at": "2026-09-25T16:19:37.768582"
+  },
+  {
+    "id": "0c7bb52829bc4764b3f49dbecf1f9d01",
+    "learner_id": "e7802c15-7af5-4630-9453-a054276ef3d5",
+    "course_id": "course-centre-213d5e14",
+    "lesson_id": "les-custom-c32d86",
+    "completed": true,
+    "completed_at": "2026-09-25T16:22:55.498245",
+    "created_at": "2026-09-25T16:22:55.498245",
+    "updated_at": "2026-09-25T16:22:55.498245"
+  },
+  {
+    "id": "de1d3985bf274c739ab5e8ac62d86445",
+    "learner_id": "071a709d-3a32-4659-be3f-f05aef71d091",
+    "course_id": "course-centre-2a642fcd",
+    "lesson_id": "les-an-b43026",
+    "completed": true,
+    "completed_at": "2026-09-27T17:29:44.000823",
+    "created_at": "2026-09-27T17:29:44.000823",
+    "updated_at": "2026-09-27T17:29:44.000823"
+  },
+  {
+    "id": "df2a5ce37a5c43bdb2d65d443d79c41d",
+    "learner_id": "a44226eb-f604-46a2-a624-dd173707e50a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-27T17:29:54.007867",
+    "created_at": "2026-09-27T17:29:54.007867",
+    "updated_at": "2026-09-27T17:29:54.007867"
+  },
+  {
+    "id": "150bdaeda9ef4dbcad352fdec3d8eafb",
+    "learner_id": "a44226eb-f604-46a2-a624-dd173707e50a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-27T17:29:54.067313",
+    "created_at": "2026-09-27T17:29:54.067313",
+    "updated_at": "2026-09-27T17:29:54.067313"
+  },
+  {
+    "id": "f8d891d91ca04ebb86bf9e6ef283316c",
+    "learner_id": "3b900791-73cf-473e-9914-815c6dc08f40",
+    "course_id": "course-centre-f7e67c35",
+    "lesson_id": "les-custom-83b3f7",
+    "completed": true,
+    "completed_at": "2026-09-27T17:33:26.592735",
+    "created_at": "2026-09-27T17:33:26.592735",
+    "updated_at": "2026-09-27T17:33:26.592735"
+  },
+  {
+    "id": "ecba5ee41084400e94529d2053f01df4",
+    "learner_id": "072ac3bd-fb06-45f7-8835-511de1e5e147",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T12:14:26.577319",
+    "created_at": "2026-09-28T12:14:26.577319",
+    "updated_at": "2026-09-28T12:14:26.577319"
+  },
+  {
+    "id": "4632b68bcd6640c08f2d657696bcfd33",
+    "learner_id": "072ac3bd-fb06-45f7-8835-511de1e5e147",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T12:14:26.597034",
+    "created_at": "2026-09-28T12:14:26.597034",
+    "updated_at": "2026-09-28T12:14:26.597034"
+  },
+  {
+    "id": "756f5de67b99421f9b76ef83e842ca73",
+    "learner_id": "0f16e86d-f20e-499f-b648-98bd3a43edc8",
+    "course_id": "course-centre-bebf8c19",
+    "lesson_id": "les-custom-efb4bf",
+    "completed": true,
+    "completed_at": "2026-09-28T12:17:33.995309",
+    "created_at": "2026-09-28T12:17:33.995309",
+    "updated_at": "2026-09-28T12:17:33.995309"
+  },
+  {
+    "id": "52761f317c314e3cb1f05edfabe2a374",
+    "learner_id": "5e55e7bd-6ab5-40d9-97e1-8d121f1495a7",
+    "course_id": "course-centre-9842d292",
+    "lesson_id": "les-an-a35e62",
+    "completed": true,
+    "completed_at": "2026-09-28T12:17:51.585554",
+    "created_at": "2026-09-28T12:17:51.585554",
+    "updated_at": "2026-09-28T12:17:51.585554"
+  },
+  {
+    "id": "c5d2e96c3e3f466db835497a182b528d",
+    "learner_id": "8c94fa0b-580f-47d4-a819-78bfc462e139",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T12:18:02.618837",
+    "created_at": "2026-09-28T12:18:02.618837",
+    "updated_at": "2026-09-28T12:18:02.618837"
+  },
+  {
+    "id": "69f8a0f75d5d442ab99cda8bd2eca4a7",
+    "learner_id": "8c94fa0b-580f-47d4-a819-78bfc462e139",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T12:18:02.641720",
+    "created_at": "2026-09-28T12:18:02.641720",
+    "updated_at": "2026-09-28T12:18:02.641720"
+  },
+  {
+    "id": "6d4f64b3c7d543008c17c142312a0bd8",
+    "learner_id": "3b005617-509b-4a4d-9553-e8277426d38d",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T12:21:35.182748",
+    "created_at": "2026-09-28T12:21:35.182748",
+    "updated_at": "2026-09-28T12:21:35.182748"
+  },
+  {
+    "id": "c07a4f1ce1414fd898e474a1d22ba279",
+    "learner_id": "3b005617-509b-4a4d-9553-e8277426d38d",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T12:21:35.224072",
+    "created_at": "2026-09-28T12:21:35.224072",
+    "updated_at": "2026-09-28T12:21:35.224072"
+  },
+  {
+    "id": "fdc454eed310453c81a0128439f6e980",
+    "learner_id": "12f73bfd-6f98-417a-8c65-b7774f608497",
+    "course_id": "course-centre-bbf201ae",
+    "lesson_id": "les-custom-55c0c0",
+    "completed": true,
+    "completed_at": "2026-09-28T12:22:04.961706",
+    "created_at": "2026-09-28T12:22:04.961706",
+    "updated_at": "2026-09-28T12:22:04.961706"
+  },
+  {
+    "id": "67b6c9ffa9e249feaa825499cf4e53bd",
+    "learner_id": "4412ec81-5995-44e2-ba1e-f4d93daee073",
+    "course_id": "course-centre-7cf8cac9",
+    "lesson_id": "les-custom-b69940",
+    "completed": true,
+    "completed_at": "2026-09-28T12:25:35.065169",
+    "created_at": "2026-09-28T12:25:35.065169",
+    "updated_at": "2026-09-28T12:25:35.065169"
+  },
+  {
+    "id": "f6f71998e8814aabaf0d8b2be59dfb97",
+    "learner_id": "909f5c25-cfb9-4856-96b6-0f41183258c1",
+    "course_id": "course-centre-7bf902e6",
+    "lesson_id": "les-an-fa757b",
+    "completed": true,
+    "completed_at": "2026-09-28T12:25:51.373596",
+    "created_at": "2026-09-28T12:25:51.373596",
+    "updated_at": "2026-09-28T12:25:51.373596"
+  },
+  {
+    "id": "5c52480027084594bed4ae3e31a6bfeb",
+    "learner_id": "43bbcf89-3152-4eb5-ad93-30ce81422425",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T12:25:59.523026",
+    "created_at": "2026-09-28T12:25:59.523026",
+    "updated_at": "2026-09-28T12:25:59.523026"
+  },
+  {
+    "id": "6d49cce5ca9146d1b3ff00b725768f44",
+    "learner_id": "43bbcf89-3152-4eb5-ad93-30ce81422425",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T12:25:59.547615",
+    "created_at": "2026-09-28T12:25:59.547615",
+    "updated_at": "2026-09-28T12:25:59.547615"
+  },
+  {
+    "id": "ab2557ea19354daaa797b25963f5dda8",
+    "learner_id": "be95b9ec-d0db-4e3c-8149-e68533eafe18",
+    "course_id": "course-centre-acce4501",
+    "lesson_id": "les-an-a1f911",
+    "completed": true,
+    "completed_at": "2026-09-28T12:27:32.751093",
+    "created_at": "2026-09-28T12:27:32.751093",
+    "updated_at": "2026-09-28T12:27:32.751093"
+  },
+  {
+    "id": "934aac003727465b8e1aa52df7dd947a",
+    "learner_id": "79f4255d-38a3-40b7-88a6-d4ef68737cb1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T12:27:44.123652",
+    "created_at": "2026-09-28T12:27:44.123652",
+    "updated_at": "2026-09-28T12:27:44.123652"
+  },
+  {
+    "id": "8cc349a2b6bd41d1b023eacb124842a7",
+    "learner_id": "79f4255d-38a3-40b7-88a6-d4ef68737cb1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T12:27:44.169062",
+    "created_at": "2026-09-28T12:27:44.169062",
+    "updated_at": "2026-09-28T12:27:44.169062"
+  },
+  {
+    "id": "676e09657980429cbc4408085e5906c7",
+    "learner_id": "130e96ee-7a2c-4a0d-a1e7-4dfdae40ff3a",
+    "course_id": "course-centre-b8a5f8aa",
+    "lesson_id": "les-custom-753b5d",
+    "completed": true,
+    "completed_at": "2026-09-28T12:29:01.144043",
+    "created_at": "2026-09-28T12:29:01.144043",
+    "updated_at": "2026-09-28T12:29:01.144043"
+  },
+  {
+    "id": "93def2356f4347beb11c26c490be691f",
+    "learner_id": "134b0a48-ee77-44cb-b95e-d1126263f775",
+    "course_id": "course-centre-45c60ae6",
+    "lesson_id": "les-custom-bd562d",
+    "completed": true,
+    "completed_at": "2026-09-28T12:31:36.889366",
+    "created_at": "2026-09-28T12:31:36.889366",
+    "updated_at": "2026-09-28T12:31:36.889366"
+  },
+  {
+    "id": "54659882d9894e76ade83889ef4f7c2c",
+    "learner_id": "dd049f66-2848-4204-8a7f-e2ed3ddcdf36",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T13:53:11.264432",
+    "created_at": "2026-09-28T13:53:11.264432",
+    "updated_at": "2026-09-28T13:53:11.264432"
+  },
+  {
+    "id": "787749ad91bf49f4a3bd2312e9c6cb40",
+    "learner_id": "dd049f66-2848-4204-8a7f-e2ed3ddcdf36",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T13:53:11.293877",
+    "created_at": "2026-09-28T13:53:11.293877",
+    "updated_at": "2026-09-28T13:53:11.293877"
+  },
+  {
+    "id": "b018f6e90f06443f9e5015561f4ed2f3",
+    "learner_id": "c19bb445-b9d1-4ca2-96ce-768c2d0eda8e",
+    "course_id": "course-centre-e8cc0e42",
+    "lesson_id": "les-custom-7cbe18",
+    "completed": true,
+    "completed_at": "2026-09-28T13:57:45.794074",
+    "created_at": "2026-09-28T13:57:45.794074",
+    "updated_at": "2026-09-28T13:57:45.794074"
+  },
+  {
+    "id": "55822bba9b16400eab1f4c0453e6c374",
+    "learner_id": "d1b1630a-e666-42a6-8d57-6eb185f3b6a4",
+    "course_id": "course-centre-d3b38ad3",
+    "lesson_id": "les-an-b4ff5e",
+    "completed": true,
+    "completed_at": "2026-09-28T13:58:18.414841",
+    "created_at": "2026-09-28T13:58:18.414841",
+    "updated_at": "2026-09-28T13:58:18.414841"
+  },
+  {
+    "id": "70a1dd3552534aaba3344958ef45b7df",
+    "learner_id": "c0027532-c202-46cb-9a33-5c0063fc3e16",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T13:58:25.513100",
+    "created_at": "2026-09-28T13:58:25.513100",
+    "updated_at": "2026-09-28T13:58:25.513100"
+  },
+  {
+    "id": "8ede4d41988a474ab841204a52c02b8b",
+    "learner_id": "c0027532-c202-46cb-9a33-5c0063fc3e16",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T13:58:25.540839",
+    "created_at": "2026-09-28T13:58:25.540839",
+    "updated_at": "2026-09-28T13:58:25.540839"
+  },
+  {
+    "id": "da6bac8a293e44f89f15d12d9eedd72f",
+    "learner_id": "00a51f58-2237-447d-8e8a-cf17136f0acd",
+    "course_id": "course-centre-601d0f01",
+    "lesson_id": "les-custom-290c9e",
+    "completed": true,
+    "completed_at": "2026-09-28T14:00:31.494836",
+    "created_at": "2026-09-28T14:00:31.494836",
+    "updated_at": "2026-09-28T14:00:31.494836"
+  },
+  {
+    "id": "45ec3b48995d477b9ffd622f6aaf35ec",
+    "learner_id": "abde64da-660e-4602-95a8-ab457dad0f61",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:01:05.086183",
+    "created_at": "2026-09-28T14:01:05.086183",
+    "updated_at": "2026-09-28T14:01:05.086183"
+  },
+  {
+    "id": "851652f61dd14ba68f5435251a6c72a3",
+    "learner_id": "abde64da-660e-4602-95a8-ab457dad0f61",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:01:05.115536",
+    "created_at": "2026-09-28T14:01:05.115536",
+    "updated_at": "2026-09-28T14:01:05.115536"
+  },
+  {
+    "id": "96557d80724b45839d2fcbf98144e535",
+    "learner_id": "d949759f-487b-4ef7-aded-4804969005da",
+    "course_id": "course-centre-699dac58",
+    "lesson_id": "les-custom-31c372",
+    "completed": true,
+    "completed_at": "2026-09-28T14:03:19.277560",
+    "created_at": "2026-09-28T14:03:19.277560",
+    "updated_at": "2026-09-28T14:03:19.277560"
+  },
+  {
+    "id": "d4ce804796cc49c083628947bd55db1a",
+    "learner_id": "064f422d-5211-4818-9b07-a4084bc2c1e1",
+    "course_id": "course-centre-04d25012",
+    "lesson_id": "les-an-d22f4c",
+    "completed": true,
+    "completed_at": "2026-09-28T14:03:34.519527",
+    "created_at": "2026-09-28T14:03:34.519527",
+    "updated_at": "2026-09-28T14:03:34.519527"
+  },
+  {
+    "id": "879494c875004101bcc443329ada22c7",
+    "learner_id": "8d2b15af-4277-4ac3-bad1-aeb7a5813f46",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:03:43.003009",
+    "created_at": "2026-09-28T14:03:43.003009",
+    "updated_at": "2026-09-28T14:03:43.003009"
+  },
+  {
+    "id": "51cbfc94f79d4e65b2a47cbf50b95740",
+    "learner_id": "8d2b15af-4277-4ac3-bad1-aeb7a5813f46",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:03:43.036548",
+    "created_at": "2026-09-28T14:03:43.036548",
+    "updated_at": "2026-09-28T14:03:43.036548"
+  },
+  {
+    "id": "84e222c59f524c70b4af76e9e15905d2",
+    "learner_id": "13bca37a-b422-451e-b835-48c6485b7a2b",
+    "course_id": "course-centre-8378a886",
+    "lesson_id": "les-custom-f125bf",
+    "completed": true,
+    "completed_at": "2026-09-28T14:06:00.972936",
+    "created_at": "2026-09-28T14:06:00.972936",
+    "updated_at": "2026-09-28T14:06:00.972936"
+  },
+  {
+    "id": "a87aec1b09924ae9ae2257eaaa4ae360",
+    "learner_id": "c714e72b-23f5-4204-84ce-1f5cae6792a9",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:25:37.983206",
+    "created_at": "2026-09-28T14:25:37.983206",
+    "updated_at": "2026-09-28T14:25:37.983206"
+  },
+  {
+    "id": "325a462708f44ef48548a4545690da36",
+    "learner_id": "c714e72b-23f5-4204-84ce-1f5cae6792a9",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:25:38.015526",
+    "created_at": "2026-09-28T14:25:38.015526",
+    "updated_at": "2026-09-28T14:25:38.015526"
+  },
+  {
+    "id": "a6e2f01875e74990b9842bc2cfda8d4c",
+    "learner_id": "3212b1ef-a22c-4580-8407-cca6beaa01d5",
+    "course_id": "course-centre-5a17ddad",
+    "lesson_id": "les-custom-b85335",
+    "completed": true,
+    "completed_at": "2026-09-28T14:27:45.567161",
+    "created_at": "2026-09-28T14:27:45.567161",
+    "updated_at": "2026-09-28T14:27:45.567161"
+  },
+  {
+    "id": "f60567708652438d95884120bf2767a1",
+    "learner_id": "a037c3bb-b89b-4074-bd44-f19867ecc4ab",
+    "course_id": "course-centre-43e6d8ca",
+    "lesson_id": "les-an-281487",
+    "completed": true,
+    "completed_at": "2026-09-28T14:28:01.749348",
+    "created_at": "2026-09-28T14:28:01.749348",
+    "updated_at": "2026-09-28T14:28:01.749348"
+  },
+  {
+    "id": "771ce02d9c0242c2a13d4eeee02097c4",
+    "learner_id": "752bc1d2-6dbc-4e0d-bc7b-8e56350b30bf",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:28:09.870527",
+    "created_at": "2026-09-28T14:28:09.870527",
+    "updated_at": "2026-09-28T14:28:09.870527"
+  },
+  {
+    "id": "75b953c8997b46e98d49994544edeeb4",
+    "learner_id": "752bc1d2-6dbc-4e0d-bc7b-8e56350b30bf",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:28:09.913813",
+    "created_at": "2026-09-28T14:28:09.913813",
+    "updated_at": "2026-09-28T14:28:09.913813"
+  },
+  {
+    "id": "9f9e290cf5464d2ba5474a045c036ecd",
+    "learner_id": "20203c59-99c5-44b1-84b4-ede5d38c2cc4",
+    "course_id": "course-centre-f2d70abf",
+    "lesson_id": "les-custom-d4d024",
+    "completed": true,
+    "completed_at": "2026-09-28T14:30:03.507725",
+    "created_at": "2026-09-28T14:30:03.507725",
+    "updated_at": "2026-09-28T14:30:03.507725"
+  },
+  {
+    "id": "4aedfa11529a476092205cfdd3d2aeba",
+    "learner_id": "8436686e-7bac-4507-8b28-7275d7955428",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:40:12.042383",
+    "created_at": "2026-09-28T14:40:12.042383",
+    "updated_at": "2026-09-28T14:40:12.042383"
+  },
+  {
+    "id": "11f727277858487c871d753730fcd1da",
+    "learner_id": "8436686e-7bac-4507-8b28-7275d7955428",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:40:12.078882",
+    "created_at": "2026-09-28T14:40:12.078882",
+    "updated_at": "2026-09-28T14:40:12.078882"
+  },
+  {
+    "id": "f049d0219293423795f40231e26b49ff",
+    "learner_id": "73864dfe-d049-4bca-891a-ffff1fddc7c6",
+    "course_id": "course-centre-ad45cd9d",
+    "lesson_id": "les-custom-90e873",
+    "completed": true,
+    "completed_at": "2026-09-28T14:41:59.464164",
+    "created_at": "2026-09-28T14:41:59.464164",
+    "updated_at": "2026-09-28T14:41:59.464164"
+  },
+  {
+    "id": "737029e1c7e34276bf5d1db1f9d183e4",
+    "learner_id": "3a604a5a-71f2-4137-b3e3-4e8f24686081",
+    "course_id": "course-centre-0768293f",
+    "lesson_id": "les-an-2d0961",
+    "completed": true,
+    "completed_at": "2026-09-28T14:42:14.011556",
+    "created_at": "2026-09-28T14:42:14.011556",
+    "updated_at": "2026-09-28T14:42:14.011556"
+  },
+  {
+    "id": "501eb4bb7cbc47e9864bcbe5e7ab0f34",
+    "learner_id": "82c7833a-92ec-45cf-8102-a90a35da49a6",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:42:20.647789",
+    "created_at": "2026-09-28T14:42:20.647789",
+    "updated_at": "2026-09-28T14:42:20.647789"
+  },
+  {
+    "id": "50285cf5cbec4c9cacf8e75525a89f6d",
+    "learner_id": "82c7833a-92ec-45cf-8102-a90a35da49a6",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:42:20.682307",
+    "created_at": "2026-09-28T14:42:20.682307",
+    "updated_at": "2026-09-28T14:42:20.682307"
+  },
+  {
+    "id": "dda637ec0cb74051be06afecb3ed39bb",
+    "learner_id": "6ec92fe3-70b4-4d05-b927-9eed800d1a44",
+    "course_id": "course-centre-a53f667a",
+    "lesson_id": "les-custom-a281ad",
+    "completed": true,
+    "completed_at": "2026-09-28T14:44:14.541465",
+    "created_at": "2026-09-28T14:44:14.541465",
+    "updated_at": "2026-09-28T14:44:14.541465"
+  },
+  {
+    "id": "87330e7cc32d4016980db4d18dc500f1",
+    "learner_id": "342030e6-cf6b-42f6-abfc-378f9fadbe90",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:45:01.234106",
+    "created_at": "2026-09-28T14:45:01.234106",
+    "updated_at": "2026-09-28T14:45:01.234106"
+  },
+  {
+    "id": "d215f7ea84a540d881871b3a9a861a4c",
+    "learner_id": "342030e6-cf6b-42f6-abfc-378f9fadbe90",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:45:01.269638",
+    "created_at": "2026-09-28T14:45:01.269638",
+    "updated_at": "2026-09-28T14:45:01.269638"
+  },
+  {
+    "id": "352ce1483b3d402ebc848f2fc91d5a16",
+    "learner_id": "1462066e-aac9-4176-b5cf-761cfff325d5",
+    "course_id": "course-centre-2138aa37",
+    "lesson_id": "les-custom-1aef47",
+    "completed": true,
+    "completed_at": "2026-09-28T14:46:57.616428",
+    "created_at": "2026-09-28T14:46:57.616428",
+    "updated_at": "2026-09-28T14:46:57.616428"
+  },
+  {
+    "id": "c57a8331c8dc438d97e10b69712d5e9b",
+    "learner_id": "36784a09-b944-49cf-a34b-cdaaa2ccb3ab",
+    "course_id": "course-centre-f70b6de8",
+    "lesson_id": "les-an-a9f0f3",
+    "completed": true,
+    "completed_at": "2026-09-28T14:47:11.546624",
+    "created_at": "2026-09-28T14:47:11.546624",
+    "updated_at": "2026-09-28T14:47:11.546624"
+  },
+  {
+    "id": "26bc07e3db6441b8aeef5dad606ad61b",
+    "learner_id": "c0d1f61c-038a-4f28-99ee-efe7ce346f3c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:47:18.058743",
+    "created_at": "2026-09-28T14:47:18.058743",
+    "updated_at": "2026-09-28T14:47:18.058743"
+  },
+  {
+    "id": "f9e1d97890274855a23ba6e04c02741f",
+    "learner_id": "c0d1f61c-038a-4f28-99ee-efe7ce346f3c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:47:18.095511",
+    "created_at": "2026-09-28T14:47:18.095511",
+    "updated_at": "2026-09-28T14:47:18.095511"
+  },
+  {
+    "id": "5543d7e88b1240e9a9da84dea445c6c0",
+    "learner_id": "b42e4f3f-edad-4655-b044-44b15465f506",
+    "course_id": "course-centre-484f4009",
+    "lesson_id": "les-custom-0c6c6d",
+    "completed": true,
+    "completed_at": "2026-09-28T14:49:09.696663",
+    "created_at": "2026-09-28T14:49:09.696663",
+    "updated_at": "2026-09-28T14:49:09.696663"
+  },
+  {
+    "id": "f4eaaa7ee1ec4fa89868d69e172bf2f3",
+    "learner_id": "2818188b-636b-4477-b78d-94d32617ed00",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:49:59.203968",
+    "created_at": "2026-09-28T14:49:59.203968",
+    "updated_at": "2026-09-28T14:49:59.203968"
+  },
+  {
+    "id": "6214a72718a44286ae011c988da32614",
+    "learner_id": "2818188b-636b-4477-b78d-94d32617ed00",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:49:59.244042",
+    "created_at": "2026-09-28T14:49:59.244042",
+    "updated_at": "2026-09-28T14:49:59.244042"
+  },
+  {
+    "id": "164f5ae0afe343a8b6a23d5fc938ea8c",
+    "learner_id": "63f0061b-a2a5-4526-9f47-f176b083a6f7",
+    "course_id": "course-centre-6d3bdb81",
+    "lesson_id": "les-custom-e75371",
+    "completed": true,
+    "completed_at": "2026-09-28T14:51:50.097772",
+    "created_at": "2026-09-28T14:51:50.097772",
+    "updated_at": "2026-09-28T14:51:50.097772"
+  },
+  {
+    "id": "647dd57a2f064cb68cdc0d525840a8e0",
+    "learner_id": "e63dd019-9ce3-46e6-ab31-c6a3e218cada",
+    "course_id": "course-centre-0460f6bb",
+    "lesson_id": "les-an-1312d2",
+    "completed": true,
+    "completed_at": "2026-09-28T14:52:03.869809",
+    "created_at": "2026-09-28T14:52:03.869809",
+    "updated_at": "2026-09-28T14:52:03.869809"
+  },
+  {
+    "id": "fdb7308e5b4d4422b2b2af9b77031861",
+    "learner_id": "2c5ecc3e-90ee-44cb-9753-4dd6c97325c6",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:52:11.897123",
+    "created_at": "2026-09-28T14:52:11.897123",
+    "updated_at": "2026-09-28T14:52:11.897123"
+  },
+  {
+    "id": "be596451438140e99aca66b086a2d499",
+    "learner_id": "2c5ecc3e-90ee-44cb-9753-4dd6c97325c6",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:52:11.938800",
+    "created_at": "2026-09-28T14:52:11.938800",
+    "updated_at": "2026-09-28T14:52:11.938800"
+  },
+  {
+    "id": "91c519b0c5f545d386a01b8c08140014",
+    "learner_id": "37fb347d-9676-416e-bfd8-d81ce130d428",
+    "course_id": "course-centre-10986cc8",
+    "lesson_id": "les-custom-250b77",
+    "completed": true,
+    "completed_at": "2026-09-28T14:54:05.610553",
+    "created_at": "2026-09-28T14:54:05.610553",
+    "updated_at": "2026-09-28T14:54:05.610553"
+  },
+  {
+    "id": "5845ca4023184eeeb925852294905359",
+    "learner_id": "8bf656a5-d8f8-4efd-8bca-be5afdcedfee",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:55:17.462251",
+    "created_at": "2026-09-28T14:55:17.462251",
+    "updated_at": "2026-09-28T14:55:17.462251"
+  },
+  {
+    "id": "a7ca95c654fb41708c68f6a6808ddbac",
+    "learner_id": "8bf656a5-d8f8-4efd-8bca-be5afdcedfee",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:55:17.501935",
+    "created_at": "2026-09-28T14:55:17.501935",
+    "updated_at": "2026-09-28T14:55:17.501935"
+  },
+  {
+    "id": "a934bb7f72a94b2aa282c6d776135717",
+    "learner_id": "ca0555fb-372e-45ec-97e5-95b7ffc60d64",
+    "course_id": "course-centre-3e33d03e",
+    "lesson_id": "les-custom-1bf47e",
+    "completed": true,
+    "completed_at": "2026-09-28T14:57:06.358731",
+    "created_at": "2026-09-28T14:57:06.358731",
+    "updated_at": "2026-09-28T14:57:06.358731"
+  },
+  {
+    "id": "af8ec921ec1f433ba8ca145d7d169303",
+    "learner_id": "3a00faef-8369-44d0-ac0a-6a89b34176f3",
+    "course_id": "course-centre-c68936a2",
+    "lesson_id": "les-an-377e9c",
+    "completed": true,
+    "completed_at": "2026-09-28T14:57:19.382834",
+    "created_at": "2026-09-28T14:57:19.382834",
+    "updated_at": "2026-09-28T14:57:19.382834"
+  },
+  {
+    "id": "def04042331048e59368d225d52fad22",
+    "learner_id": "acbd89c4-5e3d-4ddd-b400-2f02c68520c8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:57:25.478140",
+    "created_at": "2026-09-28T14:57:25.478140",
+    "updated_at": "2026-09-28T14:57:25.478140"
+  },
+  {
+    "id": "d831b1bd1f5f41cfabb2476627535f5b",
+    "learner_id": "acbd89c4-5e3d-4ddd-b400-2f02c68520c8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:57:25.518929",
+    "created_at": "2026-09-28T14:57:25.518929",
+    "updated_at": "2026-09-28T14:57:25.518929"
+  },
+  {
+    "id": "1013deb535bf4fcbac2d894df0949d35",
+    "learner_id": "86b06251-b696-4fcc-b9e2-b88557e08398",
+    "course_id": "course-centre-9fc15ceb",
+    "lesson_id": "les-custom-e72f24",
+    "completed": true,
+    "completed_at": "2026-09-28T14:59:16.152206",
+    "created_at": "2026-09-28T14:59:16.152206",
+    "updated_at": "2026-09-28T14:59:16.152206"
+  },
+  {
+    "id": "10be8bc37ee34f778f12b1f4d579bcfa",
+    "learner_id": "8b0580c7-7ee3-4aa3-8b56-6eeded8bc374",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T14:59:58.757660",
+    "created_at": "2026-09-28T14:59:58.757660",
+    "updated_at": "2026-09-28T14:59:58.757660"
+  },
+  {
+    "id": "61f022523a7a450594cbbb01f291f4a9",
+    "learner_id": "8b0580c7-7ee3-4aa3-8b56-6eeded8bc374",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T14:59:58.800665",
+    "created_at": "2026-09-28T14:59:58.800665",
+    "updated_at": "2026-09-28T14:59:58.800665"
+  },
+  {
+    "id": "af831e00e0484c9cbc22589610d6001b",
+    "learner_id": "a9d1ce81-f82a-4186-8f95-626662e470cb",
+    "course_id": "course-centre-06b8987d",
+    "lesson_id": "les-custom-f92bc7",
+    "completed": true,
+    "completed_at": "2026-09-28T15:01:55.562500",
+    "created_at": "2026-09-28T15:01:55.562500",
+    "updated_at": "2026-09-28T15:01:55.562500"
+  },
+  {
+    "id": "79f22644e9994cabaa3d588a6147ab2e",
+    "learner_id": "bde688a3-cfa5-41b2-adb0-3637ad2e18b4",
+    "course_id": "course-centre-dfa8bb07",
+    "lesson_id": "les-an-f61c12",
+    "completed": true,
+    "completed_at": "2026-09-28T15:02:09.252756",
+    "created_at": "2026-09-28T15:02:09.252756",
+    "updated_at": "2026-09-28T15:02:09.252756"
+  },
+  {
+    "id": "a11096bcbf584899bd936e3b01eaa911",
+    "learner_id": "56522bbc-324d-4cdf-a8bc-9a59e68197b1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T15:02:15.520824",
+    "created_at": "2026-09-28T15:02:15.520824",
+    "updated_at": "2026-09-28T15:02:15.520824"
+  },
+  {
+    "id": "f608a5a72d1b40edb6883ed3e5cc7b97",
+    "learner_id": "56522bbc-324d-4cdf-a8bc-9a59e68197b1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T15:02:15.565309",
+    "created_at": "2026-09-28T15:02:15.565309",
+    "updated_at": "2026-09-28T15:02:15.565309"
+  },
+  {
+    "id": "bad4e218166e4ee1b6ccec2e9e6f6257",
+    "learner_id": "7d597adb-2dbb-4aff-82e6-a6e464a5b525",
+    "course_id": "course-centre-9743b108",
+    "lesson_id": "les-custom-ac12fe",
+    "completed": true,
+    "completed_at": "2026-09-28T15:04:12.319969",
+    "created_at": "2026-09-28T15:04:12.319969",
+    "updated_at": "2026-09-28T15:04:12.319969"
+  },
+  {
+    "id": "8b1b6d7195664af987a59a10800ed79f",
+    "learner_id": "5886313c-d490-4d4a-b761-95fa52a779fd",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T15:05:01.800403",
+    "created_at": "2026-09-28T15:05:01.800403",
+    "updated_at": "2026-09-28T15:05:01.800403"
+  },
+  {
+    "id": "80984d0886d244b3ba5c2ee3dc438429",
+    "learner_id": "5886313c-d490-4d4a-b761-95fa52a779fd",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T15:05:01.846551",
+    "created_at": "2026-09-28T15:05:01.846551",
+    "updated_at": "2026-09-28T15:05:01.846551"
+  },
+  {
+    "id": "5b99354861084dfa97d34c04a688f369",
+    "learner_id": "41dd2832-338c-4e2b-85cc-a10f85f6516d",
+    "course_id": "course-centre-a6c06945",
+    "lesson_id": "les-custom-897676",
+    "completed": true,
+    "completed_at": "2026-09-28T15:06:51.746717",
+    "created_at": "2026-09-28T15:06:51.746717",
+    "updated_at": "2026-09-28T15:06:51.746717"
+  },
+  {
+    "id": "3bf71dce84514174845f082658a82219",
+    "learner_id": "ae9f7bd9-b254-4834-944b-a43b1d90e6b6",
+    "course_id": "course-centre-5d2eb203",
+    "lesson_id": "les-an-91cfaf",
+    "completed": true,
+    "completed_at": "2026-09-28T15:07:04.989632",
+    "created_at": "2026-09-28T15:07:04.989632",
+    "updated_at": "2026-09-28T15:07:04.989632"
+  },
+  {
+    "id": "ec69c0dbbb2d4ef587b76391df7facf5",
+    "learner_id": "47c291d9-3796-496e-b594-d24654d2e598",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T15:07:11.513491",
+    "created_at": "2026-09-28T15:07:11.513491",
+    "updated_at": "2026-09-28T15:07:11.513491"
+  },
+  {
+    "id": "79e8b909b2254c8ab2e0dcf2c8fd0f7e",
+    "learner_id": "47c291d9-3796-496e-b594-d24654d2e598",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T15:07:11.565254",
+    "created_at": "2026-09-28T15:07:11.565254",
+    "updated_at": "2026-09-28T15:07:11.565254"
+  },
+  {
+    "id": "af6ca0b733a047f890cd96064f21481d",
+    "learner_id": "34a47855-2452-4a65-a2b4-e0b68140daef",
+    "course_id": "course-centre-14e6b0d0",
+    "lesson_id": "les-custom-bf25c6",
+    "completed": true,
+    "completed_at": "2026-09-28T15:09:04.278528",
+    "created_at": "2026-09-28T15:09:04.278528",
+    "updated_at": "2026-09-28T15:09:04.278528"
+  },
+  {
+    "id": "37553b55d8714098a3336629581eca98",
+    "learner_id": "aa9f305c-26ff-4dde-a257-bd103e4d70fb",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T15:15:31.873441",
+    "created_at": "2026-09-28T15:15:31.873441",
+    "updated_at": "2026-09-28T15:15:31.873441"
+  },
+  {
+    "id": "bd466d80da46419eb4ca0a6890e85a50",
+    "learner_id": "aa9f305c-26ff-4dde-a257-bd103e4d70fb",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T15:15:31.934319",
+    "created_at": "2026-09-28T15:15:31.934319",
+    "updated_at": "2026-09-28T15:15:31.934319"
+  },
+  {
+    "id": "40f819e06b28488ba15dac1064004dc7",
+    "learner_id": "0dcbdcfb-5abf-4252-a803-e349bf004cf3",
+    "course_id": "course-centre-0941a1cd",
+    "lesson_id": "les-custom-c03eef",
+    "completed": true,
+    "completed_at": "2026-09-28T15:17:25.440262",
+    "created_at": "2026-09-28T15:17:25.440262",
+    "updated_at": "2026-09-28T15:17:25.440262"
+  },
+  {
+    "id": "bc8ddc2062ae471d8c28f380c631efdf",
+    "learner_id": "0b02b8ac-d7c7-49d6-b122-c51a9891644e",
+    "course_id": "course-centre-020477a3",
+    "lesson_id": "les-an-e08485",
+    "completed": true,
+    "completed_at": "2026-09-28T15:17:40.488613",
+    "created_at": "2026-09-28T15:17:40.488613",
+    "updated_at": "2026-09-28T15:17:40.488613"
+  },
+  {
+    "id": "9213076fabf641df8954defeb194e4e2",
+    "learner_id": "9cdb0242-4722-4c3d-a424-b29294e27a23",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T15:17:47.009493",
+    "created_at": "2026-09-28T15:17:47.009493",
+    "updated_at": "2026-09-28T15:17:47.009493"
+  },
+  {
+    "id": "cd220bc12dbc43b3bced4be556919bd4",
+    "learner_id": "9cdb0242-4722-4c3d-a424-b29294e27a23",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T15:17:47.074398",
+    "created_at": "2026-09-28T15:17:47.074398",
+    "updated_at": "2026-09-28T15:17:47.074398"
+  },
+  {
+    "id": "ab306086619f4fa7babbb3a22356057e",
+    "learner_id": "c6d331a8-5405-406d-84e1-1f77b2527f44",
+    "course_id": "course-centre-d56308d3",
+    "lesson_id": "les-custom-daf313",
+    "completed": true,
+    "completed_at": "2026-09-28T15:19:43.413163",
+    "created_at": "2026-09-28T15:19:43.413163",
+    "updated_at": "2026-09-28T15:19:43.413163"
+  },
+  {
+    "id": "e87b7fcd47654f82a24f566fa6195191",
+    "learner_id": "2033d61b-f72e-400b-b020-3d9b223c3468",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T16:35:50.416238",
+    "created_at": "2026-09-28T16:35:50.416238",
+    "updated_at": "2026-09-28T16:35:50.416238"
+  },
+  {
+    "id": "62d5598873cb4657be920ab6ebf9a7ac",
+    "learner_id": "2033d61b-f72e-400b-b020-3d9b223c3468",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T16:35:50.481580",
+    "created_at": "2026-09-28T16:35:50.481580",
+    "updated_at": "2026-09-28T16:35:50.481580"
+  },
+  {
+    "id": "101cbdd59cd740c383be62a7b70fdf86",
+    "learner_id": "4a51baa3-9085-48cd-84f2-a9473d047183",
+    "course_id": "course-centre-23335ea7",
+    "lesson_id": "les-custom-0012ae",
+    "completed": true,
+    "completed_at": "2026-09-28T16:37:47.332374",
+    "created_at": "2026-09-28T16:37:47.332374",
+    "updated_at": "2026-09-28T16:37:47.332374"
+  },
+  {
+    "id": "f7b920ae3e374ea9a796b7f50e6a3067",
+    "learner_id": "98d6dfa4-deef-40d1-84aa-1572a0b92471",
+    "course_id": "course-centre-7479b357",
+    "lesson_id": "les-an-e656f1",
+    "completed": true,
+    "completed_at": "2026-09-28T16:38:01.290124",
+    "created_at": "2026-09-28T16:38:01.290124",
+    "updated_at": "2026-09-28T16:38:01.290124"
+  },
+  {
+    "id": "cea97b93231641c6b37020a1e69493aa",
+    "learner_id": "d7c758c1-3e17-4c1e-a906-2ec79216de05",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T16:38:07.897700",
+    "created_at": "2026-09-28T16:38:07.897700",
+    "updated_at": "2026-09-28T16:38:07.897700"
+  },
+  {
+    "id": "dad9e06a923146df9f1a7145b349d5e4",
+    "learner_id": "d7c758c1-3e17-4c1e-a906-2ec79216de05",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T16:38:07.966677",
+    "created_at": "2026-09-28T16:38:07.966677",
+    "updated_at": "2026-09-28T16:38:07.966677"
+  },
+  {
+    "id": "8de3f485491c4158b9ab57593dafb3dd",
+    "learner_id": "eb9b57fc-57e0-4ffe-bc5e-228c90e72b39",
+    "course_id": "course-centre-31ca402b",
+    "lesson_id": "les-custom-ba7b2f",
+    "completed": true,
+    "completed_at": "2026-09-28T16:40:04.383062",
+    "created_at": "2026-09-28T16:40:04.383062",
+    "updated_at": "2026-09-28T16:40:04.383062"
+  },
+  {
+    "id": "1c917b31543b4573ae0259f4c4c8cbf8",
+    "learner_id": "983fe001-511a-4b45-b862-7a807e2efa14",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T16:56:07.860336",
+    "created_at": "2026-09-28T16:56:07.860336",
+    "updated_at": "2026-09-28T16:56:07.860336"
+  },
+  {
+    "id": "3c09b834541841dca94ce8ff247fa485",
+    "learner_id": "983fe001-511a-4b45-b862-7a807e2efa14",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T16:56:07.922024",
+    "created_at": "2026-09-28T16:56:07.922024",
+    "updated_at": "2026-09-28T16:56:07.922024"
+  },
+  {
+    "id": "d0df3de5920c46d4a1fd574faa252b06",
+    "learner_id": "3dfd95e2-74d7-4b24-8937-9f50b0a8252b",
+    "course_id": "course-centre-f5727337",
+    "lesson_id": "les-custom-839de8",
+    "completed": true,
+    "completed_at": "2026-09-28T16:58:03.157353",
+    "created_at": "2026-09-28T16:58:03.157353",
+    "updated_at": "2026-09-28T16:58:03.157353"
+  },
+  {
+    "id": "82298b9aa04b4e9e988d34f1b718caff",
+    "learner_id": "4ed648a0-fba8-4997-bdf9-917ba588f5cb",
+    "course_id": "course-centre-79d4204e",
+    "lesson_id": "les-an-76394e",
+    "completed": true,
+    "completed_at": "2026-09-28T16:58:16.209411",
+    "created_at": "2026-09-28T16:58:16.209411",
+    "updated_at": "2026-09-28T16:58:16.209411"
+  },
+  {
+    "id": "2599b2ee31f7416baffee160157351f0",
+    "learner_id": "ef5c5198-85c8-4367-b787-c09c7a95bf6b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-28T16:58:22.876692",
+    "created_at": "2026-09-28T16:58:22.876692",
+    "updated_at": "2026-09-28T16:58:22.876692"
+  },
+  {
+    "id": "aaa2b2a9ff1d4c68984a96fca5741816",
+    "learner_id": "ef5c5198-85c8-4367-b787-c09c7a95bf6b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-28T16:58:22.946612",
+    "created_at": "2026-09-28T16:58:22.946612",
+    "updated_at": "2026-09-28T16:58:22.946612"
+  },
+  {
+    "id": "6a59708afb584b9e976613a00770d62d",
+    "learner_id": "2b80db80-aafa-4f40-b114-c67bec5b4df9",
+    "course_id": "course-centre-299e1273",
+    "lesson_id": "les-custom-865ec4",
+    "completed": true,
+    "completed_at": "2026-09-28T17:00:17.113438",
+    "created_at": "2026-09-28T17:00:17.113438",
+    "updated_at": "2026-09-28T17:00:17.113438"
+  },
+  {
+    "id": "e93dbfd1956a4d5f894ad452872e309e",
+    "learner_id": "feb00760-c656-480b-bcc3-0862a8008e23",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:00:05.137999",
+    "created_at": "2026-09-29T02:00:05.137999",
+    "updated_at": "2026-09-29T02:00:05.137999"
+  },
+  {
+    "id": "b5654e49f3054cd09640b89fd604bd4a",
+    "learner_id": "feb00760-c656-480b-bcc3-0862a8008e23",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:00:05.233735",
+    "created_at": "2026-09-29T02:00:05.233735",
+    "updated_at": "2026-09-29T02:00:05.233735"
+  },
+  {
+    "id": "6549a2c5d1e845ef803801f20b04f214",
+    "learner_id": "93d4402b-db8e-4b5e-8e99-b762f69daf15",
+    "course_id": "course-centre-12a11f34",
+    "lesson_id": "les-custom-51be33",
+    "completed": true,
+    "completed_at": "2026-09-29T02:02:27.390487",
+    "created_at": "2026-09-29T02:02:27.390487",
+    "updated_at": "2026-09-29T02:02:27.390487"
+  },
+  {
+    "id": "143919d3fc3a4124bb7676d7135763e4",
+    "learner_id": "c3128015-14f2-4986-9a2e-8eb078759f11",
+    "course_id": "course-centre-f2e46305",
+    "lesson_id": "les-an-f474d5",
+    "completed": true,
+    "completed_at": "2026-09-29T02:02:44.577355",
+    "created_at": "2026-09-29T02:02:44.577355",
+    "updated_at": "2026-09-29T02:02:44.577355"
+  },
+  {
+    "id": "e93d073829944ab8942f8a301d8df004",
+    "learner_id": "087a18f2-2fa0-4b39-b348-d15257f19d37",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:02:52.496233",
+    "created_at": "2026-09-29T02:02:52.496233",
+    "updated_at": "2026-09-29T02:02:52.496233"
+  },
+  {
+    "id": "ffd710bb691641168f083d116918f223",
+    "learner_id": "087a18f2-2fa0-4b39-b348-d15257f19d37",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:02:52.559283",
+    "created_at": "2026-09-29T02:02:52.559283",
+    "updated_at": "2026-09-29T02:02:52.559283"
+  },
+  {
+    "id": "22f9d2ab65e24463acc6e3a7e3d2f938",
+    "learner_id": "f3eeced6-0104-4c4c-8a84-97c09d62487a",
+    "course_id": "course-centre-189e7397",
+    "lesson_id": "les-custom-fde0e7",
+    "completed": true,
+    "completed_at": "2026-09-29T02:05:03.141172",
+    "created_at": "2026-09-29T02:05:03.141172",
+    "updated_at": "2026-09-29T02:05:03.141172"
+  },
+  {
+    "id": "b0d95590d75c412bb943eb6ae8d713d6",
+    "learner_id": "79a64e07-64bf-4f83-8dcd-a6171f5aa9a5",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:06:27.715059",
+    "created_at": "2026-09-29T02:06:27.715059",
+    "updated_at": "2026-09-29T02:06:27.715059"
+  },
+  {
+    "id": "d1a66889c9a44ebca837c53b154a5de9",
+    "learner_id": "79a64e07-64bf-4f83-8dcd-a6171f5aa9a5",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:06:27.780576",
+    "created_at": "2026-09-29T02:06:27.780576",
+    "updated_at": "2026-09-29T02:06:27.780576"
+  },
+  {
+    "id": "bbd7cf0e3b484fb2ad255454b87504db",
+    "learner_id": "7b1fa11b-c2b3-4a68-b6aa-20bd4593c8d9",
+    "course_id": "course-centre-ea227cb0",
+    "lesson_id": "les-custom-47ce59",
+    "completed": true,
+    "completed_at": "2026-09-29T02:08:36.015265",
+    "created_at": "2026-09-29T02:08:36.015265",
+    "updated_at": "2026-09-29T02:08:36.015265"
+  },
+  {
+    "id": "6160b41520fa40abad2f47dc59fab031",
+    "learner_id": "e39c4d37-be88-4be8-95c5-0a23b5b6fef5",
+    "course_id": "course-centre-20f2b9e2",
+    "lesson_id": "les-an-ae58b6",
+    "completed": true,
+    "completed_at": "2026-09-29T02:08:51.153786",
+    "created_at": "2026-09-29T02:08:51.153786",
+    "updated_at": "2026-09-29T02:08:51.153786"
+  },
+  {
+    "id": "c43249160d5745b0ac62ac051356b603",
+    "learner_id": "a4308384-9c35-4a31-852c-2f5ae20a959e",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:08:59.750248",
+    "created_at": "2026-09-29T02:08:59.750248",
+    "updated_at": "2026-09-29T02:08:59.750248"
+  },
+  {
+    "id": "1cf1d568c7d74d90a4796c486cd9e5e9",
+    "learner_id": "a4308384-9c35-4a31-852c-2f5ae20a959e",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:08:59.818851",
+    "created_at": "2026-09-29T02:08:59.818851",
+    "updated_at": "2026-09-29T02:08:59.818851"
+  },
+  {
+    "id": "93ef0ba8018d495797fc7ebc25f98d3f",
+    "learner_id": "fb7cdadd-58ee-4f26-897a-e125350d9f98",
+    "course_id": "course-centre-bd00a145",
+    "lesson_id": "les-custom-e449e2",
+    "completed": true,
+    "completed_at": "2026-09-29T02:11:10.066858",
+    "created_at": "2026-09-29T02:11:10.066858",
+    "updated_at": "2026-09-29T02:11:10.066858"
+  },
+  {
+    "id": "5288299cd80844f3a7cb6bad66f5bd45",
+    "learner_id": "44528914-aaca-471e-9bfc-7f7c91f9e7f0",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:14:22.334907",
+    "created_at": "2026-09-29T02:14:22.334907",
+    "updated_at": "2026-09-29T02:14:22.334907"
+  },
+  {
+    "id": "ff22ec81c53a43fdb678912b1cc223e1",
+    "learner_id": "44528914-aaca-471e-9bfc-7f7c91f9e7f0",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:14:22.419920",
+    "created_at": "2026-09-29T02:14:22.419920",
+    "updated_at": "2026-09-29T02:14:22.419920"
+  },
+  {
+    "id": "00477a775da842f6a8869351b0ab510f",
+    "learner_id": "571100ff-513c-449b-af42-dfbd2cf8ad79",
+    "course_id": "course-centre-432e3016",
+    "lesson_id": "les-custom-00b9a7",
+    "completed": true,
+    "completed_at": "2026-09-29T02:16:40.377895",
+    "created_at": "2026-09-29T02:16:40.377895",
+    "updated_at": "2026-09-29T02:16:40.377895"
+  },
+  {
+    "id": "deeb477bee744f558c4c5dd4a688b283",
+    "learner_id": "49d7e380-e8ab-4b89-8276-a6dab61f6f70",
+    "course_id": "course-centre-28b52168",
+    "lesson_id": "les-an-47c417",
+    "completed": true,
+    "completed_at": "2026-09-29T02:16:57.188763",
+    "created_at": "2026-09-29T02:16:57.188763",
+    "updated_at": "2026-09-29T02:16:57.188763"
+  },
+  {
+    "id": "235cd8d5bc5948f7b55130f829c733a9",
+    "learner_id": "b1926e67-d16a-4c01-848d-7bbd7ba7f48d",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:17:05.248362",
+    "created_at": "2026-09-29T02:17:05.248362",
+    "updated_at": "2026-09-29T02:17:05.248362"
+  },
+  {
+    "id": "ccb2a77268344695afe23d8bf7a20064",
+    "learner_id": "b1926e67-d16a-4c01-848d-7bbd7ba7f48d",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:17:05.319428",
+    "created_at": "2026-09-29T02:17:05.319428",
+    "updated_at": "2026-09-29T02:17:05.319428"
+  },
+  {
+    "id": "25e1b8e4f6ef4311aeb9e79395bc14b9",
+    "learner_id": "036c2fee-7ebc-461b-ba96-673ebb5d176f",
+    "course_id": "course-centre-707acac9",
+    "lesson_id": "les-custom-6bf7d9",
+    "completed": true,
+    "completed_at": "2026-09-29T02:19:18.347415",
+    "created_at": "2026-09-29T02:19:18.347415",
+    "updated_at": "2026-09-29T02:19:18.347415"
+  },
+  {
+    "id": "556c385d9aef46ca9c41363b4d5cdfdc",
+    "learner_id": "1ee1a31d-4425-4725-b1de-60a7aed0b2b1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:20:36.628360",
+    "created_at": "2026-09-29T02:20:36.628360",
+    "updated_at": "2026-09-29T02:20:36.628360"
+  },
+  {
+    "id": "b8697379cdbd44ecb9c031d0616c3578",
+    "learner_id": "1ee1a31d-4425-4725-b1de-60a7aed0b2b1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:20:36.706048",
+    "created_at": "2026-09-29T02:20:36.706048",
+    "updated_at": "2026-09-29T02:20:36.706048"
+  },
+  {
+    "id": "c1f55490e415453abdf15f751de5b335",
+    "learner_id": "b03eb0ce-f340-41e1-896a-aecb0044f3eb",
+    "course_id": "course-centre-37867fb6",
+    "lesson_id": "les-custom-e7d097",
+    "completed": true,
+    "completed_at": "2026-09-29T02:22:28.685329",
+    "created_at": "2026-09-29T02:22:28.685329",
+    "updated_at": "2026-09-29T02:22:28.685329"
+  },
+  {
+    "id": "ff93ada41783458497ccf4ab40a00a24",
+    "learner_id": "d1ffc16e-f4e6-423a-8cbc-6d02b3ab57d4",
+    "course_id": "course-centre-ab970ebe",
+    "lesson_id": "les-an-50ed34",
+    "completed": true,
+    "completed_at": "2026-09-29T02:22:42.823873",
+    "created_at": "2026-09-29T02:22:42.823873",
+    "updated_at": "2026-09-29T02:22:42.823873"
+  },
+  {
+    "id": "1aad308554b245c49f13307eb3a50c2a",
+    "learner_id": "a8ca8bc6-2233-40c4-915b-4ee2e9ff2eeb",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T02:22:49.500096",
+    "created_at": "2026-09-29T02:22:49.500096",
+    "updated_at": "2026-09-29T02:22:49.500096"
+  },
+  {
+    "id": "16a2a046161d44a084d5e39bb8addf91",
+    "learner_id": "a8ca8bc6-2233-40c4-915b-4ee2e9ff2eeb",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T02:22:49.573624",
+    "created_at": "2026-09-29T02:22:49.573624",
+    "updated_at": "2026-09-29T02:22:49.573624"
+  },
+  {
+    "id": "45ef08e48fc8466b813903fdb0af409b",
+    "learner_id": "70adc79c-55e5-42e6-b09a-4ae9ebf53954",
+    "course_id": "course-centre-4e1352c0",
+    "lesson_id": "les-custom-69788d",
+    "completed": true,
+    "completed_at": "2026-09-29T02:24:43.466049",
+    "created_at": "2026-09-29T02:24:43.466049",
+    "updated_at": "2026-09-29T02:24:43.466049"
+  },
+  {
+    "id": "0d0228a0bb504df680ab128378297e03",
+    "learner_id": "61923a93-9a4f-4c29-b66d-a371b063ea55",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:21:27.799359",
+    "created_at": "2026-09-29T03:21:27.799359",
+    "updated_at": "2026-09-29T03:21:27.799359"
+  },
+  {
+    "id": "dacf5395f4fc4bfbb34632b8a11cf1d8",
+    "learner_id": "61923a93-9a4f-4c29-b66d-a371b063ea55",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:21:27.874490",
+    "created_at": "2026-09-29T03:21:27.874490",
+    "updated_at": "2026-09-29T03:21:27.874490"
+  },
+  {
+    "id": "47a13632713c40e981ba1fe1a7f95905",
+    "learner_id": "0f1b8758-75b7-473c-b8cd-2748b8d1fe43",
+    "course_id": "course-centre-e0ccc1ad",
+    "lesson_id": "les-custom-037f56",
+    "completed": true,
+    "completed_at": "2026-09-29T03:23:15.048372",
+    "created_at": "2026-09-29T03:23:15.048372",
+    "updated_at": "2026-09-29T03:23:15.048372"
+  },
+  {
+    "id": "36399ab86e264ce893c0a89d234a4a42",
+    "learner_id": "49fcd7eb-4903-4764-b131-9a04e3570259",
+    "course_id": "course-centre-a9dba234",
+    "lesson_id": "les-an-c78ffc",
+    "completed": true,
+    "completed_at": "2026-09-29T03:23:28.280726",
+    "created_at": "2026-09-29T03:23:28.280726",
+    "updated_at": "2026-09-29T03:23:28.280726"
+  },
+  {
+    "id": "d71fbb843ace416d8219d03f71f61d92",
+    "learner_id": "d7407e2b-1711-44f0-8407-9b551ad2231a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:23:35.249758",
+    "created_at": "2026-09-29T03:23:35.249758",
+    "updated_at": "2026-09-29T03:23:35.249758"
+  },
+  {
+    "id": "5769a9f5a21e47a8bc45a8a6f569ede5",
+    "learner_id": "d7407e2b-1711-44f0-8407-9b551ad2231a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:23:35.342645",
+    "created_at": "2026-09-29T03:23:35.342645",
+    "updated_at": "2026-09-29T03:23:35.342645"
+  },
+  {
+    "id": "07e191d93c134af18042e5e5cea71bbd",
+    "learner_id": "2f2c6e95-5dd0-4433-bce7-2c4ecce61e81",
+    "course_id": "course-centre-66e122b1",
+    "lesson_id": "les-custom-ec475b",
+    "completed": true,
+    "completed_at": "2026-09-29T03:25:29.700732",
+    "created_at": "2026-09-29T03:25:29.700732",
+    "updated_at": "2026-09-29T03:25:29.700732"
+  },
+  {
+    "id": "2f6011501cb34d26aed17e48a69ecd03",
+    "learner_id": "1419e72e-922c-4eb3-b6fd-c55ca7c64d4f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:27:05.617137",
+    "created_at": "2026-09-29T03:27:05.617137",
+    "updated_at": "2026-09-29T03:27:05.617137"
+  },
+  {
+    "id": "ae12210633fa4f3a89822fb976a7e4fb",
+    "learner_id": "1419e72e-922c-4eb3-b6fd-c55ca7c64d4f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:27:05.709384",
+    "created_at": "2026-09-29T03:27:05.709384",
+    "updated_at": "2026-09-29T03:27:05.709384"
+  },
+  {
+    "id": "6f081825bb3b4032b2303053912cb56e",
+    "learner_id": "f1b51553-cceb-4619-83ad-1934eade01d0",
+    "course_id": "course-centre-9d27c4b9",
+    "lesson_id": "les-custom-830f6e",
+    "completed": true,
+    "completed_at": "2026-09-29T03:28:58.466742",
+    "created_at": "2026-09-29T03:28:58.466742",
+    "updated_at": "2026-09-29T03:28:58.466742"
+  },
+  {
+    "id": "ef072a462e4744a48015d8c1f62c8165",
+    "learner_id": "c31edddc-bfa2-4bfc-b6c0-a768287d0190",
+    "course_id": "course-centre-b8a7115c",
+    "lesson_id": "les-an-8962ab",
+    "completed": true,
+    "completed_at": "2026-09-29T03:29:12.684301",
+    "created_at": "2026-09-29T03:29:12.684301",
+    "updated_at": "2026-09-29T03:29:12.684301"
+  },
+  {
+    "id": "1e28676d62b8453d850f8c9ae12c0b91",
+    "learner_id": "ddd591dd-84be-4a6d-bf30-8733a4bd6c82",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:29:20.321583",
+    "created_at": "2026-09-29T03:29:20.321583",
+    "updated_at": "2026-09-29T03:29:20.321583"
+  },
+  {
+    "id": "6baa9fbe673a432aa0e1050190fe2f58",
+    "learner_id": "ddd591dd-84be-4a6d-bf30-8733a4bd6c82",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:29:20.409411",
+    "created_at": "2026-09-29T03:29:20.409411",
+    "updated_at": "2026-09-29T03:29:20.409411"
+  },
+  {
+    "id": "2ddcad9e4b9d4ed2af910f2db645ea24",
+    "learner_id": "cf4a982f-6caa-4fd3-8306-5eedbd1e8512",
+    "course_id": "course-centre-4cc08032",
+    "lesson_id": "les-custom-41219f",
+    "completed": true,
+    "completed_at": "2026-09-29T03:31:11.293400",
+    "created_at": "2026-09-29T03:31:11.293400",
+    "updated_at": "2026-09-29T03:31:11.293400"
+  },
+  {
+    "id": "5b35f8ecc5994e03816e18ee306cb8fc",
+    "learner_id": "9088b03f-e09b-480e-9b88-005e31af8b78",
+    "course_id": "course-centre-01b9b32b",
+    "lesson_id": "les-custom-adf5af",
+    "completed": true,
+    "completed_at": "2026-09-29T03:35:46.941741",
+    "created_at": "2026-09-29T03:35:46.941741",
+    "updated_at": "2026-09-29T03:35:46.941741"
+  },
+  {
+    "id": "c1ebeb68173e41209238e7d44d680f33",
+    "learner_id": "6901372b-257a-4117-8b27-d5748526bc72",
+    "course_id": "course-centre-0df2f69f",
+    "lesson_id": "les-an-5a1f44",
+    "completed": true,
+    "completed_at": "2026-09-29T03:36:16.804874",
+    "created_at": "2026-09-29T03:36:16.804874",
+    "updated_at": "2026-09-29T03:36:16.804874"
+  },
+  {
+    "id": "5f49f23123cb492d9c8cd46fcda253ed",
+    "learner_id": "dea4f6a8-4d0e-450c-97e8-f20545a89c39",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:36:22.968249",
+    "created_at": "2026-09-29T03:36:22.968249",
+    "updated_at": "2026-09-29T03:36:22.968249"
+  },
+  {
+    "id": "f6a870448e36497bb10511e19ab2b470",
+    "learner_id": "dea4f6a8-4d0e-450c-97e8-f20545a89c39",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:36:23.063814",
+    "created_at": "2026-09-29T03:36:23.063814",
+    "updated_at": "2026-09-29T03:36:23.063814"
+  },
+  {
+    "id": "fc53ff6714d8465f8e57b0edcdc76315",
+    "learner_id": "a87c4d96-cf62-49b2-acd4-dbe942174ecd",
+    "course_id": "course-centre-283eb5a3",
+    "lesson_id": "les-custom-0406dd",
+    "completed": true,
+    "completed_at": "2026-09-29T03:38:14.039423",
+    "created_at": "2026-09-29T03:38:14.039423",
+    "updated_at": "2026-09-29T03:38:14.039423"
+  },
+  {
+    "id": "e11af394d5994c93b4caf6c2e01976e0",
+    "learner_id": "93bce45e-e5c8-4339-8ed6-8605fddf8682",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:38:44.301843",
+    "created_at": "2026-09-29T03:38:44.301843",
+    "updated_at": "2026-09-29T03:38:44.301843"
+  },
+  {
+    "id": "1b58f534d4284af788ceb1d9d6953089",
+    "learner_id": "93bce45e-e5c8-4339-8ed6-8605fddf8682",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:38:44.399554",
+    "created_at": "2026-09-29T03:38:44.399554",
+    "updated_at": "2026-09-29T03:38:44.399554"
+  },
+  {
+    "id": "014bcab20298488ebc0dfd878c836449",
+    "learner_id": "77bfc557-c2e6-48f9-b882-a93b7e6e7778",
+    "course_id": "course-centre-f08d4614",
+    "lesson_id": "les-custom-e189ac",
+    "completed": true,
+    "completed_at": "2026-09-29T03:40:38.485357",
+    "created_at": "2026-09-29T03:40:38.485357",
+    "updated_at": "2026-09-29T03:40:38.485357"
+  },
+  {
+    "id": "09372a93b1114df98a6bfaedac1763a7",
+    "learner_id": "a8a1312b-44dc-4f56-8d84-5c78f1e61083",
+    "course_id": "course-centre-ca1fb4f6",
+    "lesson_id": "les-an-59ccda",
+    "completed": true,
+    "completed_at": "2026-09-29T03:40:52.295472",
+    "created_at": "2026-09-29T03:40:52.295472",
+    "updated_at": "2026-09-29T03:40:52.295472"
+  },
+  {
+    "id": "979c4f4818f14bb0be395307759b05b6",
+    "learner_id": "f1ce6b7a-f708-4e75-907e-fb17e0609697",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:40:59.354916",
+    "created_at": "2026-09-29T03:40:59.354916",
+    "updated_at": "2026-09-29T03:40:59.354916"
+  },
+  {
+    "id": "5cd33d10e6af496aa9c7179c1803fc6c",
+    "learner_id": "f1ce6b7a-f708-4e75-907e-fb17e0609697",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:40:59.449771",
+    "created_at": "2026-09-29T03:40:59.449771",
+    "updated_at": "2026-09-29T03:40:59.449771"
+  },
+  {
+    "id": "fcbb3cc193af470fa273a44c1d9531be",
+    "learner_id": "2952e6f4-c9f5-404a-9286-314b5228b74a",
+    "course_id": "course-centre-a4f9f580",
+    "lesson_id": "les-custom-c122a7",
+    "completed": true,
+    "completed_at": "2026-09-29T03:42:54.857982",
+    "created_at": "2026-09-29T03:42:54.857982",
+    "updated_at": "2026-09-29T03:42:54.857982"
+  },
+  {
+    "id": "bcf5096a7ece4dbf8b5e74a2aa0014f2",
+    "learner_id": "5aaa5c14-0e11-437f-a50a-4633bb974187",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:43:46.112558",
+    "created_at": "2026-09-29T03:43:46.112558",
+    "updated_at": "2026-09-29T03:43:46.112558"
+  },
+  {
+    "id": "dc1e26b2fc134208863483de1c3b7798",
+    "learner_id": "5aaa5c14-0e11-437f-a50a-4633bb974187",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:43:46.212023",
+    "created_at": "2026-09-29T03:43:46.212023",
+    "updated_at": "2026-09-29T03:43:46.212023"
+  },
+  {
+    "id": "222a2b8b766c46ea967633d88e78c1b6",
+    "learner_id": "1ba45519-ae9f-4e72-b2a0-196f610be619",
+    "course_id": "course-centre-49665ee6",
+    "lesson_id": "les-custom-fa40c1",
+    "completed": true,
+    "completed_at": "2026-09-29T03:45:44.003743",
+    "created_at": "2026-09-29T03:45:44.003743",
+    "updated_at": "2026-09-29T03:45:44.003743"
+  },
+  {
+    "id": "2505bea0624249ceb28f02d23542f48d",
+    "learner_id": "ebc7b504-b46f-4e64-b2a1-2b78fb28935f",
+    "course_id": "course-centre-ddc1c874",
+    "lesson_id": "les-an-94c79d",
+    "completed": true,
+    "completed_at": "2026-09-29T03:45:58.709169",
+    "created_at": "2026-09-29T03:45:58.709169",
+    "updated_at": "2026-09-29T03:45:58.709169"
+  },
+  {
+    "id": "0424ceb3234b40e882091215db87ea04",
+    "learner_id": "500055dd-79f6-4665-9d2b-c52eb3aced50",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:46:05.623489",
+    "created_at": "2026-09-29T03:46:05.623489",
+    "updated_at": "2026-09-29T03:46:05.623489"
+  },
+  {
+    "id": "97bdbcc9de4f4567b0a9158d25c5eac7",
+    "learner_id": "500055dd-79f6-4665-9d2b-c52eb3aced50",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:46:05.729010",
+    "created_at": "2026-09-29T03:46:05.729010",
+    "updated_at": "2026-09-29T03:46:05.729010"
+  },
+  {
+    "id": "56ac9e8936784554a83af671b494780e",
+    "learner_id": "1157de0f-6a63-492b-b4e3-d6cd55a5f174",
+    "course_id": "course-centre-f5578fd1",
+    "lesson_id": "les-custom-c6e1c0",
+    "completed": true,
+    "completed_at": "2026-09-29T03:48:03.060570",
+    "created_at": "2026-09-29T03:48:03.060570",
+    "updated_at": "2026-09-29T03:48:03.060570"
+  },
+  {
+    "id": "54741a508f09497da8fe82cd9cd1fd56",
+    "learner_id": "d696fb08-c758-4665-99cc-5f962299bcf1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:48:49.415851",
+    "created_at": "2026-09-29T03:48:49.415851",
+    "updated_at": "2026-09-29T03:48:49.415851"
+  },
+  {
+    "id": "ad55044273ec4afe88201cc4c56d1a71",
+    "learner_id": "d696fb08-c758-4665-99cc-5f962299bcf1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:48:49.517841",
+    "created_at": "2026-09-29T03:48:49.517841",
+    "updated_at": "2026-09-29T03:48:49.517841"
+  },
+  {
+    "id": "ad459f843ca745c2a0e0992b1a247a07",
+    "learner_id": "2d8a82ac-4f19-40bb-b54f-e0a59b675b29",
+    "course_id": "course-centre-1270e6fc",
+    "lesson_id": "les-custom-ee6801",
+    "completed": true,
+    "completed_at": "2026-09-29T03:50:42.161544",
+    "created_at": "2026-09-29T03:50:42.161544",
+    "updated_at": "2026-09-29T03:50:42.161544"
+  },
+  {
+    "id": "3cd8e551e3d94d0282617e5359ce0488",
+    "learner_id": "0ee559b8-7e56-4765-af3d-d132fed8301c",
+    "course_id": "course-centre-1825885b",
+    "lesson_id": "les-an-a9685b",
+    "completed": true,
+    "completed_at": "2026-09-29T03:50:57.137505",
+    "created_at": "2026-09-29T03:50:57.137505",
+    "updated_at": "2026-09-29T03:50:57.137505"
+  },
+  {
+    "id": "9654f40c4bfd46f7882cb2fcc77bf6c9",
+    "learner_id": "dd9f6150-35b1-4b7d-86c8-a5c4a731717c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:51:04.376461",
+    "created_at": "2026-09-29T03:51:04.376461",
+    "updated_at": "2026-09-29T03:51:04.376461"
+  },
+  {
+    "id": "e8330a5a3c314d4881948709f7106281",
+    "learner_id": "dd9f6150-35b1-4b7d-86c8-a5c4a731717c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:51:04.472895",
+    "created_at": "2026-09-29T03:51:04.472895",
+    "updated_at": "2026-09-29T03:51:04.472895"
+  },
+  {
+    "id": "11ded862d1474d6fbd06f129e235a3dd",
+    "learner_id": "1a2006ae-7bd2-457b-beff-691ff16afb8f",
+    "course_id": "course-centre-e672127e",
+    "lesson_id": "les-custom-67268b",
+    "completed": true,
+    "completed_at": "2026-09-29T03:52:58.178208",
+    "created_at": "2026-09-29T03:52:58.178208",
+    "updated_at": "2026-09-29T03:52:58.178208"
+  },
+  {
+    "id": "9723f02a38be405c9c6261bba44ae91d",
+    "learner_id": "12b00abf-4b35-4256-9723-16e44a1b5997",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:53:54.253847",
+    "created_at": "2026-09-29T03:53:54.253847",
+    "updated_at": "2026-09-29T03:53:54.253847"
+  },
+  {
+    "id": "e62945ec7b4143efa1500d9fb3a6aaf4",
+    "learner_id": "12b00abf-4b35-4256-9723-16e44a1b5997",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:53:54.354879",
+    "created_at": "2026-09-29T03:53:54.354879",
+    "updated_at": "2026-09-29T03:53:54.354879"
+  },
+  {
+    "id": "c395e5e027de452897530af70fa2b39d",
+    "learner_id": "fbe4ddeb-6ea3-4e3e-926a-05557acf4752",
+    "course_id": "course-centre-c1ef83b3",
+    "lesson_id": "les-custom-9eb1dc",
+    "completed": true,
+    "completed_at": "2026-09-29T03:55:50.955322",
+    "created_at": "2026-09-29T03:55:50.955322",
+    "updated_at": "2026-09-29T03:55:50.955322"
+  },
+  {
+    "id": "18792219fa5e4981928e050640e6e2c3",
+    "learner_id": "48015212-9ef9-41ed-a799-208620aefc45",
+    "course_id": "course-centre-96eae2d7",
+    "lesson_id": "les-an-632a79",
+    "completed": true,
+    "completed_at": "2026-09-29T03:56:06.056822",
+    "created_at": "2026-09-29T03:56:06.056822",
+    "updated_at": "2026-09-29T03:56:06.056822"
+  },
+  {
+    "id": "e9c5a2548f72462393ffbfdc3a3f2329",
+    "learner_id": "d91d9697-db42-4134-a9d7-a28db9d79070",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:56:13.169946",
+    "created_at": "2026-09-29T03:56:13.169946",
+    "updated_at": "2026-09-29T03:56:13.169946"
+  },
+  {
+    "id": "0db797bfca274ea79068f829e29a2689",
+    "learner_id": "d91d9697-db42-4134-a9d7-a28db9d79070",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:56:13.447845",
+    "created_at": "2026-09-29T03:56:13.447845",
+    "updated_at": "2026-09-29T03:56:13.447845"
+  },
+  {
+    "id": "01ae2b9d48ad478c96992a1ee773ed03",
+    "learner_id": "63db5726-e4c7-491f-bb15-eb130429f23e",
+    "course_id": "course-centre-99cf5462",
+    "lesson_id": "les-custom-ea9880",
+    "completed": true,
+    "completed_at": "2026-09-29T03:58:03.927368",
+    "created_at": "2026-09-29T03:58:03.927368",
+    "updated_at": "2026-09-29T03:58:03.927368"
+  },
+  {
+    "id": "b25495b8379740a8ab58c923cb27e3c6",
+    "learner_id": "22a46aba-0ce9-4217-a37e-2617eab29a6a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T03:59:11.529261",
+    "created_at": "2026-09-29T03:59:11.529261",
+    "updated_at": "2026-09-29T03:59:11.529261"
+  },
+  {
+    "id": "401ce3b517124bf784e60db8643c2bde",
+    "learner_id": "22a46aba-0ce9-4217-a37e-2617eab29a6a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T03:59:11.631171",
+    "created_at": "2026-09-29T03:59:11.631171",
+    "updated_at": "2026-09-29T03:59:11.631171"
+  },
+  {
+    "id": "ce21009c053240a699f902739592be4e",
+    "learner_id": "6936d1fb-17a3-4c03-835a-40eefdadd937",
+    "course_id": "course-centre-144d1784",
+    "lesson_id": "les-custom-9a8854",
+    "completed": true,
+    "completed_at": "2026-09-29T04:01:06.763465",
+    "created_at": "2026-09-29T04:01:06.763465",
+    "updated_at": "2026-09-29T04:01:06.763465"
+  },
+  {
+    "id": "91ccf2383fc74a8f92b90f59ac74b9f6",
+    "learner_id": "66fe712c-64a6-48fe-8b83-e35238488aa8",
+    "course_id": "course-centre-3ba5f9bc",
+    "lesson_id": "les-an-e996cd",
+    "completed": true,
+    "completed_at": "2026-09-29T04:01:21.711580",
+    "created_at": "2026-09-29T04:01:21.711580",
+    "updated_at": "2026-09-29T04:01:21.711580"
+  },
+  {
+    "id": "f47a63e7de8242c5bd07ea4605d81639",
+    "learner_id": "14d3d652-340e-46d1-aa0f-15e0414bc835",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:01:29.676100",
+    "created_at": "2026-09-29T04:01:29.676100",
+    "updated_at": "2026-09-29T04:01:29.676100"
+  },
+  {
+    "id": "c1fe32484c34402dba4ffd921589cfda",
+    "learner_id": "14d3d652-340e-46d1-aa0f-15e0414bc835",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:01:29.779934",
+    "created_at": "2026-09-29T04:01:29.779934",
+    "updated_at": "2026-09-29T04:01:29.779934"
+  },
+  {
+    "id": "81da21b4a4634fd3b144badbd341b41b",
+    "learner_id": "93bd49a3-647f-492d-bed5-57ecb2c5b7bb",
+    "course_id": "course-centre-6344bff8",
+    "lesson_id": "les-custom-e2212e",
+    "completed": true,
+    "completed_at": "2026-09-29T04:03:25.310024",
+    "created_at": "2026-09-29T04:03:25.310024",
+    "updated_at": "2026-09-29T04:03:25.310024"
+  },
+  {
+    "id": "1a8712ab6a0f437e91fc6c3cf78aafd3",
+    "learner_id": "6443f6e9-7800-4dc1-9390-a6601a9089d3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:07:39.888282",
+    "created_at": "2026-09-29T04:07:39.888282",
+    "updated_at": "2026-09-29T04:07:39.888282"
+  },
+  {
+    "id": "7acda5dc46ed422bb2757cbfeb4de9e1",
+    "learner_id": "6443f6e9-7800-4dc1-9390-a6601a9089d3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:07:40.000748",
+    "created_at": "2026-09-29T04:07:40.000748",
+    "updated_at": "2026-09-29T04:07:40.000748"
+  },
+  {
+    "id": "7d13c02d363044bab3f8408411dabc61",
+    "learner_id": "5b6c5bdb-6892-4b4b-be92-7a4f9f44fc64",
+    "course_id": "course-centre-5c377ffb",
+    "lesson_id": "les-custom-83231e",
+    "completed": true,
+    "completed_at": "2026-09-29T04:09:35.962766",
+    "created_at": "2026-09-29T04:09:35.962766",
+    "updated_at": "2026-09-29T04:09:35.962766"
+  },
+  {
+    "id": "bb638ecc524a4818acfdec99ba7c59da",
+    "learner_id": "c553c51f-7df2-4804-9e14-f023e431e5e1",
+    "course_id": "course-centre-075bcd64",
+    "lesson_id": "les-an-fa0ee9",
+    "completed": true,
+    "completed_at": "2026-09-29T04:09:50.546720",
+    "created_at": "2026-09-29T04:09:50.546720",
+    "updated_at": "2026-09-29T04:09:50.546720"
+  },
+  {
+    "id": "45502e01d9fd463fbb8e738f4594163b",
+    "learner_id": "e611cf69-58c9-458e-84cb-cfe66dcb31d0",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:09:57.534130",
+    "created_at": "2026-09-29T04:09:57.534130",
+    "updated_at": "2026-09-29T04:09:57.534130"
+  },
+  {
+    "id": "d503edc670f74a4492e7a4eb9a53e27d",
+    "learner_id": "e611cf69-58c9-458e-84cb-cfe66dcb31d0",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:09:57.637948",
+    "created_at": "2026-09-29T04:09:57.637948",
+    "updated_at": "2026-09-29T04:09:57.637948"
+  },
+  {
+    "id": "8d3b98da1b874965afb5cafe364be6a5",
+    "learner_id": "702cb79d-88a0-44c7-84ba-4861f8eb1955",
+    "course_id": "course-centre-f4cd52ae",
+    "lesson_id": "les-custom-caebd2",
+    "completed": true,
+    "completed_at": "2026-09-29T04:11:52.792150",
+    "created_at": "2026-09-29T04:11:52.792150",
+    "updated_at": "2026-09-29T04:11:52.792150"
+  },
+  {
+    "id": "8255729995a44bbebc6838d110cc5185",
+    "learner_id": "6c71e3b3-47ab-4964-9a5c-ec6b2397b608",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:13:09.283130",
+    "created_at": "2026-09-29T04:13:09.283130",
+    "updated_at": "2026-09-29T04:13:09.283130"
+  },
+  {
+    "id": "c5a27df7b19e494f882df479532c1941",
+    "learner_id": "6c71e3b3-47ab-4964-9a5c-ec6b2397b608",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:13:09.404952",
+    "created_at": "2026-09-29T04:13:09.404952",
+    "updated_at": "2026-09-29T04:13:09.404952"
+  },
+  {
+    "id": "50d26ec233614a42ae053c601968b6d0",
+    "learner_id": "66631b5f-1995-48f1-9f76-98b16cdf369c",
+    "course_id": "course-centre-0d82052b",
+    "lesson_id": "les-custom-237d84",
+    "completed": true,
+    "completed_at": "2026-09-29T04:15:03.768587",
+    "created_at": "2026-09-29T04:15:03.768587",
+    "updated_at": "2026-09-29T04:15:03.768587"
+  },
+  {
+    "id": "0477b1a38f744e449bfcc7572a96b517",
+    "learner_id": "c5a027bd-95bb-4a12-9b20-f194514445e9",
+    "course_id": "course-centre-c102c3b5",
+    "lesson_id": "les-an-3b00fc",
+    "completed": true,
+    "completed_at": "2026-09-29T04:15:19.896073",
+    "created_at": "2026-09-29T04:15:19.896073",
+    "updated_at": "2026-09-29T04:15:19.896073"
+  },
+  {
+    "id": "a07b9cc11b9c4eb0aa6c2811c78a9785",
+    "learner_id": "68c85ff7-f888-42e5-9bc6-099487ac42ee",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:15:26.744447",
+    "created_at": "2026-09-29T04:15:26.744447",
+    "updated_at": "2026-09-29T04:15:26.744447"
+  },
+  {
+    "id": "227f4fc255b2490893139344460e08fd",
+    "learner_id": "68c85ff7-f888-42e5-9bc6-099487ac42ee",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:15:26.866159",
+    "created_at": "2026-09-29T04:15:26.866159",
+    "updated_at": "2026-09-29T04:15:26.866159"
+  },
+  {
+    "id": "afc446ad2945493e8ae1eab2e9afb8d2",
+    "learner_id": "bbc064a1-00c4-4672-90c1-6affb83817b3",
+    "course_id": "course-centre-e493a1fd",
+    "lesson_id": "les-custom-3a7bc8",
+    "completed": true,
+    "completed_at": "2026-09-29T04:17:57.090798",
+    "created_at": "2026-09-29T04:17:57.090798",
+    "updated_at": "2026-09-29T04:17:57.090798"
+  },
+  {
+    "id": "5d017a257d8b4ae3a68cf34dde26ddbd",
+    "learner_id": "3b9a9909-17b3-4d24-b230-a2bc095d1b5b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:18:32.286807",
+    "created_at": "2026-09-29T04:18:32.286807",
+    "updated_at": "2026-09-29T04:18:32.286807"
+  },
+  {
+    "id": "dc7e191f0306422ea8c8b11c64fe7a1e",
+    "learner_id": "3b9a9909-17b3-4d24-b230-a2bc095d1b5b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:18:32.410069",
+    "created_at": "2026-09-29T04:18:32.410069",
+    "updated_at": "2026-09-29T04:18:32.410069"
+  },
+  {
+    "id": "ed1a3df112934a4e966259269a796d61",
+    "learner_id": "bfd4b1a9-3086-4b6f-b85e-25c29b580cb9",
+    "course_id": "course-centre-37e8a688",
+    "lesson_id": "les-custom-440c32",
+    "completed": true,
+    "completed_at": "2026-09-29T04:20:27.415575",
+    "created_at": "2026-09-29T04:20:27.415575",
+    "updated_at": "2026-09-29T04:20:27.415575"
+  },
+  {
+    "id": "91887349213c4369b964f450509fd759",
+    "learner_id": "24e10ccf-c7e5-4fee-95f3-e12bfda48c3e",
+    "course_id": "course-centre-ea62da93",
+    "lesson_id": "les-an-07f706",
+    "completed": true,
+    "completed_at": "2026-09-29T04:20:42.786127",
+    "created_at": "2026-09-29T04:20:42.786127",
+    "updated_at": "2026-09-29T04:20:42.786127"
+  },
+  {
+    "id": "2f10560e18bf4e419e36a1872dcc0b8e",
+    "learner_id": "c51801c8-00da-4dbd-a177-e7cca5210f0a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:20:49.265509",
+    "created_at": "2026-09-29T04:20:49.265509",
+    "updated_at": "2026-09-29T04:20:49.265509"
+  },
+  {
+    "id": "ff72c6d4d8c34e88a04d43308d1d70d7",
+    "learner_id": "c51801c8-00da-4dbd-a177-e7cca5210f0a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:20:49.392144",
+    "created_at": "2026-09-29T04:20:49.392144",
+    "updated_at": "2026-09-29T04:20:49.392144"
+  },
+  {
+    "id": "e9913ae108c54a138ac79173fa17d21b",
+    "learner_id": "183f7166-1565-40b7-bf1e-ce36115615ac",
+    "course_id": "course-centre-e476c95d",
+    "lesson_id": "les-custom-553e5b",
+    "completed": true,
+    "completed_at": "2026-09-29T04:22:45.664052",
+    "created_at": "2026-09-29T04:22:45.664052",
+    "updated_at": "2026-09-29T04:22:45.664052"
+  },
+  {
+    "id": "aa2a06ad889c4d82846b2e24c4010a8a",
+    "learner_id": "6dbc53a8-eeab-4c0f-9ebb-e3275f3921f1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:24:37.118257",
+    "created_at": "2026-09-29T04:24:37.118257",
+    "updated_at": "2026-09-29T04:24:37.118257"
+  },
+  {
+    "id": "2255bb833a344f1abe254d526601e86d",
+    "learner_id": "6dbc53a8-eeab-4c0f-9ebb-e3275f3921f1",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:24:37.245754",
+    "created_at": "2026-09-29T04:24:37.245754",
+    "updated_at": "2026-09-29T04:24:37.245754"
+  },
+  {
+    "id": "5bf5ebc8adbd49c2a8c55165b874cb88",
+    "learner_id": "d934538f-9450-490b-984c-dbe845efedf7",
+    "course_id": "course-centre-d8f19445",
+    "lesson_id": "les-custom-526b5f",
+    "completed": true,
+    "completed_at": "2026-09-29T04:26:34.671754",
+    "created_at": "2026-09-29T04:26:34.671754",
+    "updated_at": "2026-09-29T04:26:34.671754"
+  },
+  {
+    "id": "5568dbe7407d4b4cae03e13e7294e16e",
+    "learner_id": "0d171873-cd27-4165-8b8e-265a779320cb",
+    "course_id": "course-centre-bdaaa7a1",
+    "lesson_id": "les-an-b1d405",
+    "completed": true,
+    "completed_at": "2026-09-29T04:26:49.013811",
+    "created_at": "2026-09-29T04:26:49.013811",
+    "updated_at": "2026-09-29T04:26:49.013811"
+  },
+  {
+    "id": "e5a4b11cfd8d4aff8744228009ad6f99",
+    "learner_id": "7bb9eb25-82b1-4232-9fe7-ecaa8d6870c4",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:26:55.867971",
+    "created_at": "2026-09-29T04:26:55.867971",
+    "updated_at": "2026-09-29T04:26:55.867971"
+  },
+  {
+    "id": "8ecfc15b932047dfa44ac1f70e08cf0e",
+    "learner_id": "7bb9eb25-82b1-4232-9fe7-ecaa8d6870c4",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:26:55.992052",
+    "created_at": "2026-09-29T04:26:55.992052",
+    "updated_at": "2026-09-29T04:26:55.992052"
+  },
+  {
+    "id": "8b01458bc3a44b9995ae93f06501e1ee",
+    "learner_id": "4cc702de-6082-4e74-a8dc-649c32d1ae9f",
+    "course_id": "course-centre-2e1f497f",
+    "lesson_id": "les-custom-d0d32f",
+    "completed": true,
+    "completed_at": "2026-09-29T04:28:54.113091",
+    "created_at": "2026-09-29T04:28:54.113091",
+    "updated_at": "2026-09-29T04:28:54.113091"
+  },
+  {
+    "id": "bdbcd4001eef4eccb272d0bca4cd0554",
+    "learner_id": "8787a59a-a492-4bef-93c5-9e2d9fd4468d",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:30:19.945999",
+    "created_at": "2026-09-29T04:30:19.945999",
+    "updated_at": "2026-09-29T04:30:19.945999"
+  },
+  {
+    "id": "9241ba1fad1640dcb12234c3db9f7c1c",
+    "learner_id": "8787a59a-a492-4bef-93c5-9e2d9fd4468d",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:30:20.078427",
+    "created_at": "2026-09-29T04:30:20.078427",
+    "updated_at": "2026-09-29T04:30:20.078427"
+  },
+  {
+    "id": "82fcab5a5b35448e921fd1298353c084",
+    "learner_id": "5d1ea682-5a8b-42de-8ea4-a5028f754d27",
+    "course_id": "course-centre-addafc44",
+    "lesson_id": "les-custom-8ab821",
+    "completed": true,
+    "completed_at": "2026-09-29T04:32:21.118489",
+    "created_at": "2026-09-29T04:32:21.118489",
+    "updated_at": "2026-09-29T04:32:21.118489"
+  },
+  {
+    "id": "2c3902242c9b4701b470ef6868b285f6",
+    "learner_id": "6428e824-8074-4aff-bf87-8ca28adaaae1",
+    "course_id": "course-centre-e7ffd898",
+    "lesson_id": "les-an-d9e138",
+    "completed": true,
+    "completed_at": "2026-09-29T04:32:35.344663",
+    "created_at": "2026-09-29T04:32:35.344663",
+    "updated_at": "2026-09-29T04:32:35.344663"
+  },
+  {
+    "id": "1ac7fb8bc7014aa6bdffe4ad2b66dc59",
+    "learner_id": "6c863d6d-d496-4a20-bb5d-dafa1c71455f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:32:43.259865",
+    "created_at": "2026-09-29T04:32:43.259865",
+    "updated_at": "2026-09-29T04:32:43.259865"
+  },
+  {
+    "id": "40bb42fa94114050a1ed7251253c975f",
+    "learner_id": "6c863d6d-d496-4a20-bb5d-dafa1c71455f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:32:43.391526",
+    "created_at": "2026-09-29T04:32:43.391526",
+    "updated_at": "2026-09-29T04:32:43.391526"
+  },
+  {
+    "id": "bf8c2c9550aa40a99a8937b5df0177fe",
+    "learner_id": "460df9a0-5360-4743-97c8-bdb0904461da",
+    "course_id": "course-centre-426e97e0",
+    "lesson_id": "les-custom-ec5fa2",
+    "completed": true,
+    "completed_at": "2026-09-29T04:34:41.654088",
+    "created_at": "2026-09-29T04:34:41.654088",
+    "updated_at": "2026-09-29T04:34:41.654088"
+  },
+  {
+    "id": "2054253ebe6b452db4f944e64372845a",
+    "learner_id": "fa7f3590-c0c0-4c1e-926a-6228034ff301",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:36:19.845663",
+    "created_at": "2026-09-29T04:36:19.845663",
+    "updated_at": "2026-09-29T04:36:19.845663"
+  },
+  {
+    "id": "894f46b655014a38adb9696ec7dea1c7",
+    "learner_id": "fa7f3590-c0c0-4c1e-926a-6228034ff301",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:36:19.966011",
+    "created_at": "2026-09-29T04:36:19.966011",
+    "updated_at": "2026-09-29T04:36:19.966011"
+  },
+  {
+    "id": "0ba9c921a58e45ef876762cca18bfadc",
+    "learner_id": "f17135d3-c8c5-43b7-a575-3f11cbb741f7",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:40:24.278318",
+    "created_at": "2026-09-29T04:40:24.278318",
+    "updated_at": "2026-09-29T04:40:24.278318"
+  },
+  {
+    "id": "1f768b201f3c4713bc98fbc67df61642",
+    "learner_id": "f17135d3-c8c5-43b7-a575-3f11cbb741f7",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:40:24.406839",
+    "created_at": "2026-09-29T04:40:24.406839",
+    "updated_at": "2026-09-29T04:40:24.406839"
+  },
+  {
+    "id": "ab64077902034769b906ab4c78ed3ca2",
+    "learner_id": "e4ac529a-7290-485a-b6fe-4cd5688d5534",
+    "course_id": "course-centre-30d1bfb6",
+    "lesson_id": "les-custom-d84bf6",
+    "completed": true,
+    "completed_at": "2026-09-29T04:42:18.572231",
+    "created_at": "2026-09-29T04:42:18.572231",
+    "updated_at": "2026-09-29T04:42:18.572231"
+  },
+  {
+    "id": "9c2c8a666a704354bba5d2bd64451fdb",
+    "learner_id": "31ec81cd-da20-41f4-8f0c-77ec637bc4d0",
+    "course_id": "course-centre-4bd2479e",
+    "lesson_id": "les-an-62a36e",
+    "completed": true,
+    "completed_at": "2026-09-29T04:42:33.066815",
+    "created_at": "2026-09-29T04:42:33.066815",
+    "updated_at": "2026-09-29T04:42:33.066815"
+  },
+  {
+    "id": "221df83d60ac4eef88fa451dd087e773",
+    "learner_id": "25e0e860-ddd5-4012-b395-09a88793d0df",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:42:39.372507",
+    "created_at": "2026-09-29T04:42:39.372507",
+    "updated_at": "2026-09-29T04:42:39.372507"
+  },
+  {
+    "id": "7df336acbe8b4da69e962e7795f3aead",
+    "learner_id": "25e0e860-ddd5-4012-b395-09a88793d0df",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:42:39.511387",
+    "created_at": "2026-09-29T04:42:39.511387",
+    "updated_at": "2026-09-29T04:42:39.511387"
+  },
+  {
+    "id": "10c81fb4bbc3495f889901215032e72b",
+    "learner_id": "8547dda3-ebc9-4ff0-932a-161f56344697",
+    "course_id": "course-centre-2e1e7a5a",
+    "lesson_id": "les-custom-f132fe",
+    "completed": true,
+    "completed_at": "2026-09-29T04:44:33.611964",
+    "created_at": "2026-09-29T04:44:33.611964",
+    "updated_at": "2026-09-29T04:44:33.611964"
+  },
+  {
+    "id": "addba05824814145afc7080a5fc09148",
+    "learner_id": "00446ed8-4fc4-44ec-88e0-017c80ded37c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:48:21.526518",
+    "created_at": "2026-09-29T04:48:21.526518",
+    "updated_at": "2026-09-29T04:48:21.526518"
+  },
+  {
+    "id": "1d2cbc8474e24dddafe9cf2ba07d7f50",
+    "learner_id": "00446ed8-4fc4-44ec-88e0-017c80ded37c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:48:21.669368",
+    "created_at": "2026-09-29T04:48:21.669368",
+    "updated_at": "2026-09-29T04:48:21.669368"
+  },
+  {
+    "id": "03767b8bee694ec78026ea05378f3e37",
+    "learner_id": "7ff59a59-21ae-4bf5-a589-badf2e0ecbb3",
+    "course_id": "course-centre-f378a1b3",
+    "lesson_id": "les-custom-f54d99",
+    "completed": true,
+    "completed_at": "2026-09-29T04:50:15.344874",
+    "created_at": "2026-09-29T04:50:15.344874",
+    "updated_at": "2026-09-29T04:50:15.344874"
+  },
+  {
+    "id": "ffb9f741d562425790b8e84c765f5a74",
+    "learner_id": "776fce54-bded-48eb-844d-6c8d2b8a8242",
+    "course_id": "course-centre-883d822e",
+    "lesson_id": "les-an-942990",
+    "completed": true,
+    "completed_at": "2026-09-29T04:50:30.136063",
+    "created_at": "2026-09-29T04:50:30.136063",
+    "updated_at": "2026-09-29T04:50:30.136063"
+  },
+  {
+    "id": "c7f4b7f598de4fd8bc15d41e2a81ceb0",
+    "learner_id": "32ad8499-e120-4d28-83e1-655ffc77b12b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:50:37.852699",
+    "created_at": "2026-09-29T04:50:37.852699",
+    "updated_at": "2026-09-29T04:50:37.852699"
+  },
+  {
+    "id": "40f6e14f784544f9a3d4c28999ac4e2e",
+    "learner_id": "32ad8499-e120-4d28-83e1-655ffc77b12b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:50:37.983800",
+    "created_at": "2026-09-29T04:50:37.983800",
+    "updated_at": "2026-09-29T04:50:37.983800"
+  },
+  {
+    "id": "756d8013864b4c3da832f57f64c699bc",
+    "learner_id": "4e4383e0-935d-406c-a42a-5f20f8aaba51",
+    "course_id": "course-centre-3082b8a3",
+    "lesson_id": "les-custom-b95206",
+    "completed": true,
+    "completed_at": "2026-09-29T04:52:40.717058",
+    "created_at": "2026-09-29T04:52:40.717058",
+    "updated_at": "2026-09-29T04:52:40.717058"
+  },
+  {
+    "id": "fbac81a9e6604928b1259724b7b550c2",
+    "learner_id": "e78c4d41-bf6d-4948-bbf5-0b336e1cb9da",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:53:30.864905",
+    "created_at": "2026-09-29T04:53:30.864905",
+    "updated_at": "2026-09-29T04:53:30.864905"
+  },
+  {
+    "id": "45dae00d18d24934bdc3ef6ff1b53d09",
+    "learner_id": "e78c4d41-bf6d-4948-bbf5-0b336e1cb9da",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:53:31.008242",
+    "created_at": "2026-09-29T04:53:31.008242",
+    "updated_at": "2026-09-29T04:53:31.008242"
+  },
+  {
+    "id": "9361f9a949c84492944292e2d10a6d62",
+    "learner_id": "545a4005-542d-403d-82bf-5c88e7d3b623",
+    "course_id": "course-centre-b052e86b",
+    "lesson_id": "les-custom-6c27e5",
+    "completed": true,
+    "completed_at": "2026-09-29T04:55:26.820080",
+    "created_at": "2026-09-29T04:55:26.820080",
+    "updated_at": "2026-09-29T04:55:26.820080"
+  },
+  {
+    "id": "153a8fdfb9574ddbad7eb3fbceae8614",
+    "learner_id": "e19e006e-d20e-4381-9ee6-4d5b1aa1145e",
+    "course_id": "course-centre-9aba6b35",
+    "lesson_id": "les-an-25643b",
+    "completed": true,
+    "completed_at": "2026-09-29T04:55:40.657314",
+    "created_at": "2026-09-29T04:55:40.657314",
+    "updated_at": "2026-09-29T04:55:40.657314"
+  },
+  {
+    "id": "3bd1b20bbe934f82a0250ad1399c63ce",
+    "learner_id": "9e3206a4-dd77-4a0d-aa02-50a861076bac",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:55:47.719053",
+    "created_at": "2026-09-29T04:55:47.719053",
+    "updated_at": "2026-09-29T04:55:47.719053"
+  },
+  {
+    "id": "18b24fbffe3a426da8c72ab24bc49bd7",
+    "learner_id": "9e3206a4-dd77-4a0d-aa02-50a861076bac",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:55:47.860783",
+    "created_at": "2026-09-29T04:55:47.860783",
+    "updated_at": "2026-09-29T04:55:47.860783"
+  },
+  {
+    "id": "d4e32f65477043ccb5d33a8346ecad70",
+    "learner_id": "d4a8d705-d6ec-4b6f-bf15-030e77feec96",
+    "course_id": "course-centre-89467bb5",
+    "lesson_id": "les-custom-f98d3f",
+    "completed": true,
+    "completed_at": "2026-09-29T04:57:40.013094",
+    "created_at": "2026-09-29T04:57:40.013094",
+    "updated_at": "2026-09-29T04:57:40.013094"
+  },
+  {
+    "id": "be08971a183f432e8417eb7cf3acdf9c",
+    "learner_id": "f715b2fb-bba9-4e25-b631-7548188303b7",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T04:58:42.820392",
+    "created_at": "2026-09-29T04:58:42.820392",
+    "updated_at": "2026-09-29T04:58:42.820392"
+  },
+  {
+    "id": "d596d4543c71433091a4c8f8541a925b",
+    "learner_id": "f715b2fb-bba9-4e25-b631-7548188303b7",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T04:58:42.958935",
+    "created_at": "2026-09-29T04:58:42.958935",
+    "updated_at": "2026-09-29T04:58:42.958935"
+  },
+  {
+    "id": "4f33a72bd8f0418dac17aa237baf0b6e",
+    "learner_id": "75d1ee98-5d31-45eb-8a6c-8f90333f1471",
+    "course_id": "course-centre-6906d380",
+    "lesson_id": "les-custom-cdadb2",
+    "completed": true,
+    "completed_at": "2026-09-29T05:00:38.239736",
+    "created_at": "2026-09-29T05:00:38.239736",
+    "updated_at": "2026-09-29T05:00:38.239736"
+  },
+  {
+    "id": "3344a51be1dc4546a74fed27495fce4c",
+    "learner_id": "24d5ab8f-bd4a-460b-8abc-cfd8f2e8be4f",
+    "course_id": "course-centre-a5fe6573",
+    "lesson_id": "les-an-c5af32",
+    "completed": true,
+    "completed_at": "2026-09-29T05:00:51.846662",
+    "created_at": "2026-09-29T05:00:51.846662",
+    "updated_at": "2026-09-29T05:00:51.846662"
+  },
+  {
+    "id": "0414cf26476243e497d2e0e71e1a939e",
+    "learner_id": "1e92b809-9065-44ce-96ed-d56847000324",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:00:58.881910",
+    "created_at": "2026-09-29T05:00:58.881910",
+    "updated_at": "2026-09-29T05:00:58.881910"
+  },
+  {
+    "id": "207bf86c3a0f44ee8e4dff0ca9d00a5c",
+    "learner_id": "1e92b809-9065-44ce-96ed-d56847000324",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:00:59.021440",
+    "created_at": "2026-09-29T05:00:59.021440",
+    "updated_at": "2026-09-29T05:00:59.021440"
+  },
+  {
+    "id": "a47f2cbb4fe7489492810949a3492cbf",
+    "learner_id": "ad291bc7-1447-428d-a1ea-e3e9fc8a44c6",
+    "course_id": "course-centre-d791735c",
+    "lesson_id": "les-custom-f44c12",
+    "completed": true,
+    "completed_at": "2026-09-29T05:03:00.665498",
+    "created_at": "2026-09-29T05:03:00.665498",
+    "updated_at": "2026-09-29T05:03:00.665498"
+  },
+  {
+    "id": "60be4a17d10b4b18b0a140bbec0e5dca",
+    "learner_id": "558af60b-f170-47b4-9d92-dd1fccb77283",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:04:14.197845",
+    "created_at": "2026-09-29T05:04:14.197845",
+    "updated_at": "2026-09-29T05:04:14.197845"
+  },
+  {
+    "id": "c9514e41fcb042c0bd153d6f9e8b23b9",
+    "learner_id": "558af60b-f170-47b4-9d92-dd1fccb77283",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:04:14.352716",
+    "created_at": "2026-09-29T05:04:14.352716",
+    "updated_at": "2026-09-29T05:04:14.352716"
+  },
+  {
+    "id": "50fd8fd3f59549818d83f70d8a840167",
+    "learner_id": "d56355b3-5b8a-42c0-9170-ebb10373dd09",
+    "course_id": "course-centre-4165ca26",
+    "lesson_id": "les-custom-8ccbd1",
+    "completed": true,
+    "completed_at": "2026-09-29T05:06:21.303760",
+    "created_at": "2026-09-29T05:06:21.303760",
+    "updated_at": "2026-09-29T05:06:21.303760"
+  },
+  {
+    "id": "a671cc69cf0243b287ae00d17a21597d",
+    "learner_id": "8b7de420-ba0c-4c69-950f-0b1df6bd90f5",
+    "course_id": "course-centre-326ed059",
+    "lesson_id": "les-an-0c238e",
+    "completed": true,
+    "completed_at": "2026-09-29T05:06:35.056605",
+    "created_at": "2026-09-29T05:06:35.056605",
+    "updated_at": "2026-09-29T05:06:35.056605"
+  },
+  {
+    "id": "8592470a3c0b48f9bf3c0ed4a866e1f7",
+    "learner_id": "3df1dc36-b4f0-4688-aacc-442bc52f0362",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:06:41.819841",
+    "created_at": "2026-09-29T05:06:41.819841",
+    "updated_at": "2026-09-29T05:06:41.819841"
+  },
+  {
+    "id": "0a8a67cc307243978b22d5660873ed87",
+    "learner_id": "3df1dc36-b4f0-4688-aacc-442bc52f0362",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:06:41.960215",
+    "created_at": "2026-09-29T05:06:41.960215",
+    "updated_at": "2026-09-29T05:06:41.960215"
+  },
+  {
+    "id": "621c31bfd2214aeea4aba34a6bb996f5",
+    "learner_id": "ebbc93ce-a897-48e9-b07d-8dd33f9083c7",
+    "course_id": "course-centre-18e79b0b",
+    "lesson_id": "les-custom-f69d4a",
+    "completed": true,
+    "completed_at": "2026-09-29T05:08:45.231248",
+    "created_at": "2026-09-29T05:08:45.231248",
+    "updated_at": "2026-09-29T05:08:45.231248"
+  },
+  {
+    "id": "36d65c8c2b8a4b6189b8bd45686e722a",
+    "learner_id": "68ef7a83-047c-43d1-9462-1e6baba65ade",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:10:07.425213",
+    "created_at": "2026-09-29T05:10:07.425213",
+    "updated_at": "2026-09-29T05:10:07.425213"
+  },
+  {
+    "id": "d168a4842a6f46658c446f546f7a60fa",
+    "learner_id": "68ef7a83-047c-43d1-9462-1e6baba65ade",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:10:07.577106",
+    "created_at": "2026-09-29T05:10:07.577106",
+    "updated_at": "2026-09-29T05:10:07.577106"
+  },
+  {
+    "id": "2ee9f3ccf8524b10931ad1d2a36f55ce",
+    "learner_id": "8b6cd539-a9cd-4b1d-9590-7bc880850f0b",
+    "course_id": "course-centre-e396546f",
+    "lesson_id": "les-custom-a2cb30",
+    "completed": true,
+    "completed_at": "2026-09-29T05:12:04.158351",
+    "created_at": "2026-09-29T05:12:04.158351",
+    "updated_at": "2026-09-29T05:12:04.158351"
+  },
+  {
+    "id": "4cf085e29dd748a799dff1b14a646771",
+    "learner_id": "72343e7e-d20a-47e0-8e58-7c211dd26a64",
+    "course_id": "course-centre-966680f3",
+    "lesson_id": "les-an-1477a5",
+    "completed": true,
+    "completed_at": "2026-09-29T05:12:18.269312",
+    "created_at": "2026-09-29T05:12:18.269312",
+    "updated_at": "2026-09-29T05:12:18.269312"
+  },
+  {
+    "id": "66f9b14688bd492b8ceffc30fcdc381a",
+    "learner_id": "c64ce7f6-6e70-4e77-b831-ff36f3f04849",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:12:25.211727",
+    "created_at": "2026-09-29T05:12:25.211727",
+    "updated_at": "2026-09-29T05:12:25.211727"
+  },
+  {
+    "id": "b32a8c29235f4253a81dcd769ddc2760",
+    "learner_id": "c64ce7f6-6e70-4e77-b831-ff36f3f04849",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:12:25.360853",
+    "created_at": "2026-09-29T05:12:25.360853",
+    "updated_at": "2026-09-29T05:12:25.360853"
+  },
+  {
+    "id": "23f924107205498bacf867295d2e8037",
+    "learner_id": "f5a0b16d-57e3-458e-b433-c5e0d38b3929",
+    "course_id": "course-centre-3c608718",
+    "lesson_id": "les-custom-4a7b51",
+    "completed": true,
+    "completed_at": "2026-09-29T05:14:22.045934",
+    "created_at": "2026-09-29T05:14:22.045934",
+    "updated_at": "2026-09-29T05:14:22.045934"
+  },
+  {
+    "id": "fa9afd4124d44f168ce502306a2c1873",
+    "learner_id": "b81c6068-93d5-4e54-af4c-0ea3d71ecf7a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:15:49.957436",
+    "created_at": "2026-09-29T05:15:49.957436",
+    "updated_at": "2026-09-29T05:15:49.957436"
+  },
+  {
+    "id": "dfecaf48c09f4e99a4e66db5b7f674bb",
+    "learner_id": "b81c6068-93d5-4e54-af4c-0ea3d71ecf7a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:15:50.118354",
+    "created_at": "2026-09-29T05:15:50.118354",
+    "updated_at": "2026-09-29T05:15:50.118354"
+  },
+  {
+    "id": "6ea2a77fb8454d9aaf518dab837d54e8",
+    "learner_id": "e1a0b967-8c6b-488c-bdba-ce48426eaa5a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:19:06.341808",
+    "created_at": "2026-09-29T05:19:06.341808",
+    "updated_at": "2026-09-29T05:19:06.341808"
+  },
+  {
+    "id": "a068f49ebe93477c9e25464e2915b22a",
+    "learner_id": "e1a0b967-8c6b-488c-bdba-ce48426eaa5a",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:19:06.380934",
+    "created_at": "2026-09-29T05:19:06.380934",
+    "updated_at": "2026-09-29T05:19:06.380934"
+  },
+  {
+    "id": "58b8818d5ac44ab9b41a8b913f319620",
+    "learner_id": "10f194fb-38cb-49ff-80f1-86eddd8f8d01",
+    "course_id": "course-centre-08fd0505",
+    "lesson_id": "les-custom-450f01",
+    "completed": true,
+    "completed_at": "2026-09-29T05:20:50.209661",
+    "created_at": "2026-09-29T05:20:50.209661",
+    "updated_at": "2026-09-29T05:20:50.209661"
+  },
+  {
+    "id": "eca574678bd745569c0de75e63f7c9fc",
+    "learner_id": "01a4211f-0f44-4516-8b69-004a0dff90af",
+    "course_id": "course-centre-46976661",
+    "lesson_id": "les-an-b5bbac",
+    "completed": true,
+    "completed_at": "2026-09-29T05:21:02.339066",
+    "created_at": "2026-09-29T05:21:02.339066",
+    "updated_at": "2026-09-29T05:21:02.339066"
+  },
+  {
+    "id": "9ab3a96484c340859f6762bd083e22b7",
+    "learner_id": "eb7b9db4-7e17-475f-80e9-9865b01ff6ea",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:21:09.316540",
+    "created_at": "2026-09-29T05:21:09.316540",
+    "updated_at": "2026-09-29T05:21:09.316540"
+  },
+  {
+    "id": "05befd81400347ffb2470374a459029e",
+    "learner_id": "eb7b9db4-7e17-475f-80e9-9865b01ff6ea",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:21:09.361314",
+    "created_at": "2026-09-29T05:21:09.361314",
+    "updated_at": "2026-09-29T05:21:09.361314"
+  },
+  {
+    "id": "14bf027a4bf648fc8d569c499032465b",
+    "learner_id": "81a23ceb-f96b-40f7-9a7b-24052c781645",
+    "course_id": "course-centre-dd868665",
+    "lesson_id": "les-custom-0de2a2",
+    "completed": true,
+    "completed_at": "2026-09-29T05:22:55.271844",
+    "created_at": "2026-09-29T05:22:55.271844",
+    "updated_at": "2026-09-29T05:22:55.271844"
+  },
+  {
+    "id": "27d165c8c3ec42a9b7dc93160fe47201",
+    "learner_id": "ece8d5f9-f43b-4403-864f-d7b91233af64",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:24:12.205286",
+    "created_at": "2026-09-29T05:24:12.205286",
+    "updated_at": "2026-09-29T05:24:12.205286"
+  },
+  {
+    "id": "3af6d007c8e644758d6f3f18781b4b8e",
+    "learner_id": "ece8d5f9-f43b-4403-864f-d7b91233af64",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:24:12.247574",
+    "created_at": "2026-09-29T05:24:12.247574",
+    "updated_at": "2026-09-29T05:24:12.247574"
+  },
+  {
+    "id": "0ee95877a69a44be82c113444c28e572",
+    "learner_id": "484fcbf5-6a8d-48eb-afb1-ae5dbf55bf29",
+    "course_id": "course-centre-830f3097",
+    "lesson_id": "les-custom-e42a30",
+    "completed": true,
+    "completed_at": "2026-09-29T05:25:57.281913",
+    "created_at": "2026-09-29T05:25:57.281913",
+    "updated_at": "2026-09-29T05:25:57.281913"
+  },
+  {
+    "id": "ffebe5e10101499f8c779f0151366241",
+    "learner_id": "825c20e5-3e24-49b9-8a14-373d71374523",
+    "course_id": "course-centre-93fd6445",
+    "lesson_id": "les-an-456904",
+    "completed": true,
+    "completed_at": "2026-09-29T05:26:09.504340",
+    "created_at": "2026-09-29T05:26:09.504340",
+    "updated_at": "2026-09-29T05:26:09.504340"
+  },
+  {
+    "id": "d0b4771cbca0410392a867891be80187",
+    "learner_id": "871995d8-ef6c-4757-86dd-9843c27807e5",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:26:15.770981",
+    "created_at": "2026-09-29T05:26:15.770981",
+    "updated_at": "2026-09-29T05:26:15.770981"
+  },
+  {
+    "id": "aff4c46a602b4f5fb4f822d17616d695",
+    "learner_id": "871995d8-ef6c-4757-86dd-9843c27807e5",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:26:15.812844",
+    "created_at": "2026-09-29T05:26:15.812844",
+    "updated_at": "2026-09-29T05:26:15.812844"
+  },
+  {
+    "id": "6e1c1e2f4e7e44be9143b58daf4e7037",
+    "learner_id": "7df48c06-41ef-4f14-b2fe-b94934923f24",
+    "course_id": "course-centre-60691a72",
+    "lesson_id": "les-custom-8f84b3",
+    "completed": true,
+    "completed_at": "2026-09-29T05:28:01.148348",
+    "created_at": "2026-09-29T05:28:01.148348",
+    "updated_at": "2026-09-29T05:28:01.148348"
+  },
+  {
+    "id": "4563bab19f1b4ceca692846e3abe76b5",
+    "learner_id": "b8035d20-759a-4c8e-aece-0696b59385fb",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:29:27.210508",
+    "created_at": "2026-09-29T05:29:27.210508",
+    "updated_at": "2026-09-29T05:29:27.210508"
+  },
+  {
+    "id": "efc02bc9c06547b296eff5e6784012a4",
+    "learner_id": "b8035d20-759a-4c8e-aece-0696b59385fb",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:29:27.257531",
+    "created_at": "2026-09-29T05:29:27.257531",
+    "updated_at": "2026-09-29T05:29:27.257531"
+  },
+  {
+    "id": "60ebcf528a49459590a91eb8aec7e876",
+    "learner_id": "ecb1b708-c40c-4aec-bb08-875a1c75462e",
+    "course_id": "course-centre-bde4af89",
+    "lesson_id": "les-custom-ac332f",
+    "completed": true,
+    "completed_at": "2026-09-29T05:31:16.351221",
+    "created_at": "2026-09-29T05:31:16.351221",
+    "updated_at": "2026-09-29T05:31:16.351221"
+  },
+  {
+    "id": "245e5743c6494caf9c8d5b1cd430960b",
+    "learner_id": "743b16aa-08ee-481b-becd-a3a398557ef6",
+    "course_id": "course-centre-15da382f",
+    "lesson_id": "les-an-8fb040",
+    "completed": true,
+    "completed_at": "2026-09-29T05:31:32.002455",
+    "created_at": "2026-09-29T05:31:32.002455",
+    "updated_at": "2026-09-29T05:31:32.002455"
+  },
+  {
+    "id": "6ab8deb902434be39b790f1978e5f337",
+    "learner_id": "fb974055-8c92-4413-89ac-40758bd3af9e",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:31:39.036627",
+    "created_at": "2026-09-29T05:31:39.036627",
+    "updated_at": "2026-09-29T05:31:39.036627"
+  },
+  {
+    "id": "39de943e4df046f1a5d9028ca61fae18",
+    "learner_id": "fb974055-8c92-4413-89ac-40758bd3af9e",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:31:39.100641",
+    "created_at": "2026-09-29T05:31:39.100641",
+    "updated_at": "2026-09-29T05:31:39.100641"
+  },
+  {
+    "id": "2f827f45f53149a2877090b7dca199fa",
+    "learner_id": "6f26ae05-1aa1-4266-8571-516392c5d89a",
+    "course_id": "course-centre-a406e30b",
+    "lesson_id": "les-custom-33c9c3",
+    "completed": true,
+    "completed_at": "2026-09-29T05:33:29.796541",
+    "created_at": "2026-09-29T05:33:29.796541",
+    "updated_at": "2026-09-29T05:33:29.796541"
+  },
+  {
+    "id": "9424e5af78604487b4c5126d5c6098d4",
+    "learner_id": "be65c4c9-b7b5-4b5f-8188-687fe4908115",
+    "course_id": "course-centre-6bf9afbd",
+    "lesson_id": "les-custom-e93d0b",
+    "completed": true,
+    "completed_at": "2026-09-29T05:34:35.570157",
+    "created_at": "2026-09-29T05:34:35.570157",
+    "updated_at": "2026-09-29T05:34:35.570157"
+  },
+  {
+    "id": "2181e0590aa24dc6b42e4cb218897c12",
+    "learner_id": "05ec0c18-6382-4773-bbc5-ee525f8f7831",
+    "course_id": "course-centre-c3752e56",
+    "lesson_id": "les-an-3af9b9",
+    "completed": true,
+    "completed_at": "2026-09-29T05:35:00.587221",
+    "created_at": "2026-09-29T05:35:00.587221",
+    "updated_at": "2026-09-29T05:35:00.587221"
+  },
+  {
+    "id": "f07bf2dc7f984f7094d18eed1df9a1f3",
+    "learner_id": "b5789e93-9543-450c-b2ea-7050f2810f11",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:35:08.005391",
+    "created_at": "2026-09-29T05:35:08.005391",
+    "updated_at": "2026-09-29T05:35:08.005391"
+  },
+  {
+    "id": "bee2fc03e9904105830625838c123a80",
+    "learner_id": "b5789e93-9543-450c-b2ea-7050f2810f11",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:35:08.058951",
+    "created_at": "2026-09-29T05:35:08.058951",
+    "updated_at": "2026-09-29T05:35:08.058951"
+  },
+  {
+    "id": "b6255dd3dfc94753a3bbf0ebb01e6755",
+    "learner_id": "b43c1458-ece8-4aaf-864a-27ad540d230a",
+    "course_id": "course-centre-10295900",
+    "lesson_id": "les-custom-41bec8",
+    "completed": true,
+    "completed_at": "2026-09-29T05:36:57.379552",
+    "created_at": "2026-09-29T05:36:57.379552",
+    "updated_at": "2026-09-29T05:36:57.379552"
+  },
+  {
+    "id": "c78ef6b4ef774412980bfb9ed4f0c951",
+    "learner_id": "84951cdf-1e24-459f-995d-a04619f505c5",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:37:26.519254",
+    "created_at": "2026-09-29T05:37:26.519254",
+    "updated_at": "2026-09-29T05:37:26.519254"
+  },
+  {
+    "id": "931e23df9ae94e28a6e9b000d2d3a6f3",
+    "learner_id": "84951cdf-1e24-459f-995d-a04619f505c5",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:37:26.569977",
+    "created_at": "2026-09-29T05:37:26.569977",
+    "updated_at": "2026-09-29T05:37:26.569977"
+  },
+  {
+    "id": "c0c7cd81d93e49169937be87d3107829",
+    "learner_id": "0c49bf01-cb58-4b4c-9899-d3b4352c426f",
+    "course_id": "course-centre-db481765",
+    "lesson_id": "les-custom-f8c01a",
+    "completed": true,
+    "completed_at": "2026-09-29T05:39:19.861707",
+    "created_at": "2026-09-29T05:39:19.861707",
+    "updated_at": "2026-09-29T05:39:19.861707"
+  },
+  {
+    "id": "7e8096023ed04368b307591808ed061f",
+    "learner_id": "5c791d71-e2fc-4247-81f9-16a476bba0ef",
+    "course_id": "course-centre-364673cc",
+    "lesson_id": "les-an-957799",
+    "completed": true,
+    "completed_at": "2026-09-29T05:39:33.401857",
+    "created_at": "2026-09-29T05:39:33.401857",
+    "updated_at": "2026-09-29T05:39:33.401857"
+  },
+  {
+    "id": "27466c98e1b44356bfc4f6ca275f22a3",
+    "learner_id": "39dad00a-52c3-4d3b-a305-0f2948b1a678",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T05:39:40.471644",
+    "created_at": "2026-09-29T05:39:40.471644",
+    "updated_at": "2026-09-29T05:39:40.471644"
+  },
+  {
+    "id": "09e1c08039a94127898f2c65145f9359",
+    "learner_id": "39dad00a-52c3-4d3b-a305-0f2948b1a678",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T05:39:40.522684",
+    "created_at": "2026-09-29T05:39:40.522684",
+    "updated_at": "2026-09-29T05:39:40.522684"
+  },
+  {
+    "id": "76a02c6b085d4655985d3a189a9b7e52",
+    "learner_id": "16dfe08e-0392-43ef-910f-4c684b6724ad",
+    "course_id": "course-centre-e2420fef",
+    "lesson_id": "les-custom-9787f4",
+    "completed": true,
+    "completed_at": "2026-09-29T05:41:29.850764",
+    "created_at": "2026-09-29T05:41:29.850764",
+    "updated_at": "2026-09-29T05:41:29.850764"
+  },
+  {
+    "id": "8b12458b40ca4b0996fbf3adeb7a611f",
+    "learner_id": "4714f872-d6e1-4e37-b9c4-674054ec67c4",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T08:58:53.188782",
+    "created_at": "2026-09-29T08:58:53.188782",
+    "updated_at": "2026-09-29T08:58:53.188782"
+  },
+  {
+    "id": "524384db692b414291a3b180ae1c061d",
+    "learner_id": "4714f872-d6e1-4e37-b9c4-674054ec67c4",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T08:58:53.243782",
+    "created_at": "2026-09-29T08:58:53.243782",
+    "updated_at": "2026-09-29T08:58:53.243782"
+  },
+  {
+    "id": "26c454309c084a999cfeac50c2e27c3f",
+    "learner_id": "2aa54225-83fa-474b-b92d-47077497f5cf",
+    "course_id": "course-centre-24726d8b",
+    "lesson_id": "les-custom-0eaf65",
+    "completed": true,
+    "completed_at": "2026-09-29T09:03:33.843360",
+    "created_at": "2026-09-29T09:03:33.843360",
+    "updated_at": "2026-09-29T09:03:33.843360"
+  },
+  {
+    "id": "126b5486cf364c1a816793c234edc60a",
+    "learner_id": "d3a69977-bcc3-4f59-9227-5d1d6ffbe1eb",
+    "course_id": "course-centre-79b299c0",
+    "lesson_id": "les-an-9e040f",
+    "completed": true,
+    "completed_at": "2026-09-29T09:03:46.482284",
+    "created_at": "2026-09-29T09:03:46.482284",
+    "updated_at": "2026-09-29T09:03:46.482284"
+  },
+  {
+    "id": "f961dfb1c806461b9f6bd018204cdfff",
+    "learner_id": "c81516fb-ad49-44c8-9000-9d73fd2b84a3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T09:03:52.397741",
+    "created_at": "2026-09-29T09:03:52.397741",
+    "updated_at": "2026-09-29T09:03:52.397741"
+  },
+  {
+    "id": "51c0a13d8507429bb3af7f616cfbe670",
+    "learner_id": "c81516fb-ad49-44c8-9000-9d73fd2b84a3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T09:03:52.452868",
+    "created_at": "2026-09-29T09:03:52.452868",
+    "updated_at": "2026-09-29T09:03:52.452868"
+  },
+  {
+    "id": "133108f8d5d24444aa52d560c246e085",
+    "learner_id": "69edbeb3-a9e3-400b-b737-cf4df2b76714",
+    "course_id": "course-centre-89b8e867",
+    "lesson_id": "les-custom-7a2eb9",
+    "completed": true,
+    "completed_at": "2026-09-29T09:06:24.677347",
+    "created_at": "2026-09-29T09:06:24.677347",
+    "updated_at": "2026-09-29T09:06:24.677347"
+  },
+  {
+    "id": "74f4f26208c94aa8aebb662e63029ec2",
+    "learner_id": "044b9fbc-e387-4313-a3a5-f76eb93356cc",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T09:07:12.607950",
+    "created_at": "2026-09-29T09:07:12.607950",
+    "updated_at": "2026-09-29T09:07:12.607950"
+  },
+  {
+    "id": "90ff6b94ba104273bf1e2cf63b97bd26",
+    "learner_id": "044b9fbc-e387-4313-a3a5-f76eb93356cc",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T09:07:12.666839",
+    "created_at": "2026-09-29T09:07:12.666839",
+    "updated_at": "2026-09-29T09:07:12.666839"
+  },
+  {
+    "id": "fc7077dd06614e51ad738bb42a80cac1",
+    "learner_id": "350b0e17-7181-4a76-b7ce-e4a4ecf055c1",
+    "course_id": "course-centre-db625699",
+    "lesson_id": "les-custom-95a073",
+    "completed": true,
+    "completed_at": "2026-09-29T09:12:28.876535",
+    "created_at": "2026-09-29T09:12:28.876535",
+    "updated_at": "2026-09-29T09:12:28.876535"
+  },
+  {
+    "id": "a8e49c7242064b559cf8dc51ff7571a5",
+    "learner_id": "c83e1df4-8cb7-4e99-815f-0d12e9c4e1f4",
+    "course_id": "course-centre-3161cf44",
+    "lesson_id": "les-an-e0bd72",
+    "completed": true,
+    "completed_at": "2026-09-29T09:12:42.128985",
+    "created_at": "2026-09-29T09:12:42.128985",
+    "updated_at": "2026-09-29T09:12:42.128985"
+  },
+  {
+    "id": "e50490ed08854586a3b13652ab4f1416",
+    "learner_id": "034fc85d-b84e-4c71-a48c-47585ed99bbe",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T09:13:54.141855",
+    "created_at": "2026-09-29T09:13:54.141855",
+    "updated_at": "2026-09-29T09:13:54.141855"
+  },
+  {
+    "id": "d07d44a936184a4dbbe3a799ce741cea",
+    "learner_id": "034fc85d-b84e-4c71-a48c-47585ed99bbe",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T09:13:54.203004",
+    "created_at": "2026-09-29T09:13:54.203004",
+    "updated_at": "2026-09-29T09:13:54.203004"
+  },
+  {
+    "id": "58182abb602f451d9d6c3f223745065f",
+    "learner_id": "cbbd35fc-7f99-4876-979c-e73b0835c468",
+    "course_id": "course-centre-08564cad",
+    "lesson_id": "les-custom-568f14",
+    "completed": true,
+    "completed_at": "2026-09-29T09:18:58.612442",
+    "created_at": "2026-09-29T09:18:58.612442",
+    "updated_at": "2026-09-29T09:18:58.612442"
+  },
+  {
+    "id": "9bfdae45dae14199ba35a5b244b13ea3",
+    "learner_id": "bb3c2426-6837-4172-868f-5974cdf64265",
+    "course_id": "course-centre-29009a7c",
+    "lesson_id": "les-an-d85d67",
+    "completed": true,
+    "completed_at": "2026-09-29T09:19:11.762903",
+    "created_at": "2026-09-29T09:19:11.762903",
+    "updated_at": "2026-09-29T09:19:11.762903"
+  },
+  {
+    "id": "9583ab67405f48dc959758f115781e8b",
+    "learner_id": "517aa265-d685-486b-8a5d-0e3b4f9e8f15",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T09:19:17.696040",
+    "created_at": "2026-09-29T09:19:17.696040",
+    "updated_at": "2026-09-29T09:19:17.696040"
+  },
+  {
+    "id": "6677c4dfdd704e209aeb3d678d2c854f",
+    "learner_id": "517aa265-d685-486b-8a5d-0e3b4f9e8f15",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T09:19:17.754927",
+    "created_at": "2026-09-29T09:19:17.754927",
+    "updated_at": "2026-09-29T09:19:17.754927"
+  },
+  {
+    "id": "6663194314454aed9827b4ae89adeae0",
+    "learner_id": "fcd35ed7-eb48-4716-a7c2-3898319a05a8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T11:43:56.289590",
+    "created_at": "2026-09-29T11:43:56.289590",
+    "updated_at": "2026-09-29T11:43:56.289590"
+  },
+  {
+    "id": "57429fe1c64c4993b635d39fb87ec353",
+    "learner_id": "fcd35ed7-eb48-4716-a7c2-3898319a05a8",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T11:43:56.373266",
+    "created_at": "2026-09-29T11:43:56.373266",
+    "updated_at": "2026-09-29T11:43:56.373266"
+  },
+  {
+    "id": "703e4eb1d9f045eb8a7c8c58ebe187b8",
+    "learner_id": "457d2d23-ada7-4436-a0e6-6019b3a549e9",
+    "course_id": "course-centre-6a74f43a",
+    "lesson_id": "les-custom-01eeb2",
+    "completed": true,
+    "completed_at": "2026-09-29T11:46:01.543511",
+    "created_at": "2026-09-29T11:46:01.543511",
+    "updated_at": "2026-09-29T11:46:01.543511"
+  },
+  {
+    "id": "8735ceae61d843e99758f3adf4a488bd",
+    "learner_id": "9fdec961-81e0-4e3c-bf30-0989730520d5",
+    "course_id": "course-centre-5d80c099",
+    "lesson_id": "les-an-112295",
+    "completed": true,
+    "completed_at": "2026-09-29T11:46:18.180331",
+    "created_at": "2026-09-29T11:46:18.180331",
+    "updated_at": "2026-09-29T11:46:18.180331"
+  },
+  {
+    "id": "fa653e139d884ad6b4aa3e58c1728607",
+    "learner_id": "d5ed52cf-feac-4989-af5c-74c229b2737f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T11:46:27.588507",
+    "created_at": "2026-09-29T11:46:27.588507",
+    "updated_at": "2026-09-29T11:46:27.588507"
+  },
+  {
+    "id": "6b41dfd8844942feab93fa673fc1c00e",
+    "learner_id": "d5ed52cf-feac-4989-af5c-74c229b2737f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T11:46:27.673360",
+    "created_at": "2026-09-29T11:46:27.673360",
+    "updated_at": "2026-09-29T11:46:27.673360"
+  },
+  {
+    "id": "9dbcc9d15e2f44419756eac68adea193",
+    "learner_id": "5c9db009-7200-492d-8e42-d8a357b1f1fd",
+    "course_id": "course-centre-4eab79d6",
+    "lesson_id": "les-custom-f4b46e",
+    "completed": true,
+    "completed_at": "2026-09-29T11:48:31.616943",
+    "created_at": "2026-09-29T11:48:31.616943",
+    "updated_at": "2026-09-29T11:48:31.616943"
+  },
+  {
+    "id": "e682dcec0e37412392c189c2b33da665",
+    "learner_id": "6ce14288-e24d-4570-b4c2-aff5e372255b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T11:49:47.782472",
+    "created_at": "2026-09-29T11:49:47.782472",
+    "updated_at": "2026-09-29T11:49:47.782472"
+  },
+  {
+    "id": "426300c13fe84a2ca760e20ba3927c98",
+    "learner_id": "6ce14288-e24d-4570-b4c2-aff5e372255b",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T11:49:47.875103",
+    "created_at": "2026-09-29T11:49:47.875103",
+    "updated_at": "2026-09-29T11:49:47.875103"
+  },
+  {
+    "id": "73cdc0132ff7496aa7b42df2146582e8",
+    "learner_id": "36d46a3a-3daa-4089-8c9d-42813c0bb202",
+    "course_id": "course-centre-7b667c06",
+    "lesson_id": "les-custom-43a9e6",
+    "completed": true,
+    "completed_at": "2026-09-29T11:51:35.228227",
+    "created_at": "2026-09-29T11:51:35.228227",
+    "updated_at": "2026-09-29T11:51:35.228227"
+  },
+  {
+    "id": "3da9b616c4994d6a81ea715962d1401d",
+    "learner_id": "36409cb9-3d32-4af7-9a54-d8fb728a7436",
+    "course_id": "course-centre-7ecf50da",
+    "lesson_id": "les-an-ff3953",
+    "completed": true,
+    "completed_at": "2026-09-29T11:51:48.074802",
+    "created_at": "2026-09-29T11:51:48.074802",
+    "updated_at": "2026-09-29T11:51:48.074802"
+  },
+  {
+    "id": "953c42517aae4d9cba4a6bf243382dbf",
+    "learner_id": "c7e3d54a-9f4a-40df-8eec-833c30e9583c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T11:51:54.768783",
+    "created_at": "2026-09-29T11:51:54.768783",
+    "updated_at": "2026-09-29T11:51:54.768783"
+  },
+  {
+    "id": "97040fff60964edaa7cb93a23da4b8f9",
+    "learner_id": "c7e3d54a-9f4a-40df-8eec-833c30e9583c",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T11:51:54.851160",
+    "created_at": "2026-09-29T11:51:54.851160",
+    "updated_at": "2026-09-29T11:51:54.851160"
+  },
+  {
+    "id": "0d1d5bfc888d460898ee0c74832378e5",
+    "learner_id": "0e4a7a8b-8db1-426d-89f4-820f7e95256d",
+    "course_id": "course-centre-1a13b12c",
+    "lesson_id": "les-custom-76e1ec",
+    "completed": true,
+    "completed_at": "2026-09-29T11:53:44.131661",
+    "created_at": "2026-09-29T11:53:44.131661",
+    "updated_at": "2026-09-29T11:53:44.131661"
+  },
+  {
+    "id": "896df9ee5ced46bf9da87a6495ac33e8",
+    "learner_id": "9a5f4e82-41d0-4e7b-9625-a4a489ecd568",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T11:55:17.908606",
+    "created_at": "2026-09-29T11:55:17.908606",
+    "updated_at": "2026-09-29T11:55:17.908606"
+  },
+  {
+    "id": "f58f9f148e8340b78fa44d92c88ce11f",
+    "learner_id": "9a5f4e82-41d0-4e7b-9625-a4a489ecd568",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T11:55:17.986038",
+    "created_at": "2026-09-29T11:55:17.986038",
+    "updated_at": "2026-09-29T11:55:17.986038"
+  },
+  {
+    "id": "5374cc0fd7924ce8855efd0175dc0ed2",
+    "learner_id": "82e58491-e509-463a-8ae7-9a4568e29f6a",
+    "course_id": "course-centre-5ccd4ebf",
+    "lesson_id": "les-custom-b4cc0c",
+    "completed": true,
+    "completed_at": "2026-09-29T11:57:05.511749",
+    "created_at": "2026-09-29T11:57:05.511749",
+    "updated_at": "2026-09-29T11:57:05.511749"
+  },
+  {
+    "id": "fde1d2ac7dd24f909fd54b608f2d577c",
+    "learner_id": "3243e9d8-5ca9-4c82-9eb1-8b6956cdd1bf",
+    "course_id": "course-centre-f4b2d733",
+    "lesson_id": "les-an-553dc9",
+    "completed": true,
+    "completed_at": "2026-09-29T11:57:18.478657",
+    "created_at": "2026-09-29T11:57:18.478657",
+    "updated_at": "2026-09-29T11:57:18.478657"
+  },
+  {
+    "id": "995681e2f92e469cba687455f2b45606",
+    "learner_id": "849b136e-7e2b-4eb4-8daa-d63f3d085a83",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T11:57:24.769378",
+    "created_at": "2026-09-29T11:57:24.769378",
+    "updated_at": "2026-09-29T11:57:24.769378"
+  },
+  {
+    "id": "f43985c6b40f4157b607eec9b2a1da14",
+    "learner_id": "849b136e-7e2b-4eb4-8daa-d63f3d085a83",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T11:57:24.868547",
+    "created_at": "2026-09-29T11:57:24.868547",
+    "updated_at": "2026-09-29T11:57:24.868547"
+  },
+  {
+    "id": "ccdf10b9f9a044c9b7e8c57f2039fd6f",
+    "learner_id": "27210b5b-6b5c-4209-b4b6-69d3742f88f7",
+    "course_id": "course-centre-794c9a2b",
+    "lesson_id": "les-custom-b30f4a",
+    "completed": true,
+    "completed_at": "2026-09-29T11:59:16.766834",
+    "created_at": "2026-09-29T11:59:16.766834",
+    "updated_at": "2026-09-29T11:59:16.766834"
+  },
+  {
+    "id": "aec26155a57149a985034e8cb5d3f23e",
+    "learner_id": "4c5cf383-5014-4fe3-93b8-812a1db1b4e9",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T12:15:51.581183",
+    "created_at": "2026-09-29T12:15:51.581183",
+    "updated_at": "2026-09-29T12:15:51.581183"
+  },
+  {
+    "id": "aeee2fe9c7484e148610ecba30f5d091",
+    "learner_id": "4c5cf383-5014-4fe3-93b8-812a1db1b4e9",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T12:15:51.670599",
+    "created_at": "2026-09-29T12:15:51.670599",
+    "updated_at": "2026-09-29T12:15:51.670599"
+  },
+  {
+    "id": "5b36de37420b4ca1aff126009bad6fc0",
+    "learner_id": "650f9b1e-5130-4f17-ad43-dbdb018dfef5",
+    "course_id": "course-centre-c76101aa",
+    "lesson_id": "les-custom-85db8c",
+    "completed": true,
+    "completed_at": "2026-09-29T12:17:37.837140",
+    "created_at": "2026-09-29T12:17:37.837140",
+    "updated_at": "2026-09-29T12:17:37.837140"
+  },
+  {
+    "id": "ece08ea055e14cceace48faebfc607e7",
+    "learner_id": "84fb9211-943f-4034-8363-ccce1ad3994c",
+    "course_id": "course-centre-bd70f26a",
+    "lesson_id": "les-an-5f864a",
+    "completed": true,
+    "completed_at": "2026-09-29T12:17:50.887578",
+    "created_at": "2026-09-29T12:17:50.887578",
+    "updated_at": "2026-09-29T12:17:50.887578"
+  },
+  {
+    "id": "1fcf00c58ba04a35933ef72284af3627",
+    "learner_id": "1045e675-c357-40f9-a055-124878b52a37",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T12:17:57.969687",
+    "created_at": "2026-09-29T12:17:57.969687",
+    "updated_at": "2026-09-29T12:17:57.969687"
+  },
+  {
+    "id": "46088d4d1a8c49be9be0fb06b1a88c80",
+    "learner_id": "1045e675-c357-40f9-a055-124878b52a37",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T12:17:58.051586",
+    "created_at": "2026-09-29T12:17:58.051586",
+    "updated_at": "2026-09-29T12:17:58.051586"
+  },
+  {
+    "id": "507325da821f46bab2ea7cbf54568882",
+    "learner_id": "ceb475f7-3b46-4d35-9051-a99a09090afe",
+    "course_id": "course-centre-6b0aa8fb",
+    "lesson_id": "les-custom-080fd4",
+    "completed": true,
+    "completed_at": "2026-09-29T12:19:48.937777",
+    "created_at": "2026-09-29T12:19:48.937777",
+    "updated_at": "2026-09-29T12:19:48.937777"
+  },
+  {
+    "id": "3749bcb6e0cc47a69fe0420580827e47",
+    "learner_id": "206210ad-2f68-41b2-962d-16e00c1f4a8f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T12:20:40.998554",
+    "created_at": "2026-09-29T12:20:40.998554",
+    "updated_at": "2026-09-29T12:20:40.998554"
+  },
+  {
+    "id": "d51ae290e95b4eeb87dbbe7cd76f6eba",
+    "learner_id": "206210ad-2f68-41b2-962d-16e00c1f4a8f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T12:20:41.089152",
+    "created_at": "2026-09-29T12:20:41.089152",
+    "updated_at": "2026-09-29T12:20:41.089152"
+  },
+  {
+    "id": "73f359e87f1e405a88a94df9a93bae3a",
+    "learner_id": "6b32a362-2fac-4054-88f0-76d90a3fb69f",
+    "course_id": "course-centre-3a81d58e",
+    "lesson_id": "les-custom-0963e3",
+    "completed": true,
+    "completed_at": "2026-09-29T12:22:58.278214",
+    "created_at": "2026-09-29T12:22:58.278214",
+    "updated_at": "2026-09-29T12:22:58.278214"
+  },
+  {
+    "id": "05567485a3554f3abb1ca5a4a797bb60",
+    "learner_id": "169366db-f22b-4234-8426-066b071ea8df",
+    "course_id": "course-centre-82b4db7f",
+    "lesson_id": "les-an-2e69bb",
+    "completed": true,
+    "completed_at": "2026-09-29T12:23:16.831582",
+    "created_at": "2026-09-29T12:23:16.831582",
+    "updated_at": "2026-09-29T12:23:16.831582"
+  },
+  {
+    "id": "973822f11e3e4074a7e589fc90bcb1c1",
+    "learner_id": "cfc85bb7-95ad-411e-a477-4f01a24891e7",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-09-29T12:23:26.063124",
+    "created_at": "2026-09-29T12:23:26.063124",
+    "updated_at": "2026-09-29T12:23:26.063124"
+  },
+  {
+    "id": "d18220ac6ad34c2580415f5a784ac01c",
+    "learner_id": "cfc85bb7-95ad-411e-a477-4f01a24891e7",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-09-29T12:23:26.154739",
+    "created_at": "2026-09-29T12:23:26.154739",
+    "updated_at": "2026-09-29T12:23:26.154739"
+  },
+  {
+    "id": "f6dd985165634eeeb254985f816a7716",
+    "learner_id": "fcdf5470-a8ad-411c-a991-05e0941b0d8e",
+    "course_id": "course-centre-70a3fff9",
+    "lesson_id": "les-custom-c26999",
+    "completed": true,
+    "completed_at": "2026-09-29T12:25:41.620707",
+    "created_at": "2026-09-29T12:25:41.620707",
+    "updated_at": "2026-09-29T12:25:41.620707"
+  },
+  {
+    "id": "05bbda0af1d54ea980861505fe350fdd",
+    "learner_id": "5e570034-6c5f-4a6d-80f7-80eb52b9915f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-10-03T03:45:37.378247",
+    "created_at": "2026-10-03T03:45:37.378247",
+    "updated_at": "2026-10-03T03:45:37.378247"
+  },
+  {
+    "id": "15152574e6c24b32911c9f0d3d901edc",
+    "learner_id": "5e570034-6c5f-4a6d-80f7-80eb52b9915f",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-10-03T03:45:37.460993",
+    "created_at": "2026-10-03T03:45:37.460993",
+    "updated_at": "2026-10-03T03:45:37.460993"
+  },
+  {
+    "id": "21377b9477e040ee9dfc26ec9e5e734f",
+    "learner_id": "2e562c5f-24ec-42c5-b6e0-88d70bc2dc98",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-10-03T06:28:30.400733",
+    "created_at": "2026-10-03T06:28:30.400733",
+    "updated_at": "2026-10-03T06:28:30.400733"
+  },
+  {
+    "id": "d2e229cf0203418fa7ceba2f242a38c4",
+    "learner_id": "2e562c5f-24ec-42c5-b6e0-88d70bc2dc98",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-10-03T06:28:30.481721",
+    "created_at": "2026-10-03T06:28:30.481721",
+    "updated_at": "2026-10-03T06:28:30.481721"
+  },
+  {
+    "id": "9d524603ac594039968f2682fe9422ad",
+    "learner_id": "4cd5bc41-24e3-4edd-9f09-630a75469737",
+    "course_id": "course-centre-316edcc3",
+    "lesson_id": "les-custom-922446",
+    "completed": true,
+    "completed_at": "2026-10-03T06:30:08.766440",
+    "created_at": "2026-10-03T06:30:08.766440",
+    "updated_at": "2026-10-03T06:30:08.766440"
+  },
+  {
+    "id": "b4d02eca1272418dbc59661c7029c5ab",
+    "learner_id": "7a6c97b7-7de2-4a0d-b21e-18ae6251f590",
+    "course_id": "course-centre-0c55f318",
+    "lesson_id": "les-an-514ae7",
+    "completed": true,
+    "completed_at": "2026-10-03T06:30:25.543997",
+    "created_at": "2026-10-03T06:30:25.543997",
+    "updated_at": "2026-10-03T06:30:25.543997"
+  },
+  {
+    "id": "a00e1fc4b75743bea58ae718f2913126",
+    "learner_id": "4ff248af-75ca-4bd2-ab4c-7def590a3846",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-10-03T06:30:33.650362",
+    "created_at": "2026-10-03T06:30:33.650362",
+    "updated_at": "2026-10-03T06:30:33.650362"
+  },
+  {
+    "id": "1adf35a8e67b49e88bdc8a569a69ca6a",
+    "learner_id": "4ff248af-75ca-4bd2-ab4c-7def590a3846",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-10-03T06:30:33.737646",
+    "created_at": "2026-10-03T06:30:33.737646",
+    "updated_at": "2026-10-03T06:30:33.737646"
+  },
+  {
+    "id": "edd5089cd691405d9e0016340402d5b1",
+    "learner_id": "e566780a-5c03-4f0d-90eb-83fa6dbca597",
+    "course_id": "course-centre-cbeca76f",
+    "lesson_id": "les-custom-ec0e47",
+    "completed": true,
+    "completed_at": "2026-10-03T06:33:18.040613",
+    "created_at": "2026-10-03T06:33:18.040613",
+    "updated_at": "2026-10-03T06:33:18.040613"
+  },
+  {
+    "id": "b994a77595004838a9b9c4496e844276",
+    "learner_id": "0bda89b9-b192-4273-83e9-e284ebc89877",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-10-03T06:33:55.684584",
+    "created_at": "2026-10-03T06:33:55.684584",
+    "updated_at": "2026-10-03T06:33:55.684584"
+  },
+  {
+    "id": "423dac2218cc479baff6609d82bdb4a7",
+    "learner_id": "0bda89b9-b192-4273-83e9-e284ebc89877",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-10-03T06:33:55.782598",
+    "created_at": "2026-10-03T06:33:55.782598",
+    "updated_at": "2026-10-03T06:33:55.782598"
+  },
+  {
+    "id": "1e2e5cff10784a43a98430f3e2c47540",
+    "learner_id": "bf2b13a6-6347-407b-b249-8265dc6e4c6b",
+    "course_id": "course-centre-5ff03d39",
+    "lesson_id": "les-custom-7a35bb",
+    "completed": true,
+    "completed_at": "2026-10-03T06:36:28.418320",
+    "created_at": "2026-10-03T06:36:28.418320",
+    "updated_at": "2026-10-03T06:36:28.418320"
+  },
+  {
+    "id": "86047315d9bb4de287a5f5973c9d74ed",
+    "learner_id": "69674e09-e51f-44fc-80f7-ab9487136a84",
+    "course_id": "course-centre-fe153b23",
+    "lesson_id": "les-an-cadf81",
+    "completed": true,
+    "completed_at": "2026-10-03T06:36:45.876376",
+    "created_at": "2026-10-03T06:36:45.876376",
+    "updated_at": "2026-10-03T06:36:45.876376"
+  },
+  {
+    "id": "0d0598cd566942ca9cf845899f329c60",
+    "learner_id": "2078a86f-7271-448d-96e8-7e61b83d7234",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-10-03T06:36:54.316179",
+    "created_at": "2026-10-03T06:36:54.316179",
+    "updated_at": "2026-10-03T06:36:54.316179"
+  },
+  {
+    "id": "cbc9bf4802154542b727c1afb27a9bfc",
+    "learner_id": "2078a86f-7271-448d-96e8-7e61b83d7234",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-10-03T06:36:54.409557",
+    "created_at": "2026-10-03T06:36:54.409557",
+    "updated_at": "2026-10-03T06:36:54.409557"
+  },
+  {
+    "id": "e53926a7a6d24e14a4859708f0ab1f1f",
+    "learner_id": "5412e3eb-0326-4525-8b8e-c64e6f4ba96b",
+    "course_id": "course-centre-f97a09eb",
+    "lesson_id": "les-an-5af9c0",
+    "completed": true,
+    "completed_at": "2026-10-03T06:40:25.240292",
+    "created_at": "2026-10-03T06:40:25.240292",
+    "updated_at": "2026-10-03T06:40:25.240292"
+  },
+  {
+    "id": "715a8358aa834f699416b29c4f681747",
+    "learner_id": "6065ec28-1689-49cb-a11c-94fef7d68ff3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-10-03T06:40:33.772348",
+    "created_at": "2026-10-03T06:40:33.772348",
+    "updated_at": "2026-10-03T06:40:33.772348"
+  },
+  {
+    "id": "4779eedfa1ff4bcd839772aa3a671a85",
+    "learner_id": "6065ec28-1689-49cb-a11c-94fef7d68ff3",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-10-03T06:40:33.858774",
+    "created_at": "2026-10-03T06:40:33.858774",
+    "updated_at": "2026-10-03T06:40:33.858774"
+  },
+  {
+    "id": "64e8dbfebc6b41a8a8ef495304411003",
+    "learner_id": "d5de0da5-de10-425f-a78c-0117b8930251",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-upi-setup",
+    "completed": true,
+    "completed_at": "2026-10-03T06:44:28.318875",
+    "created_at": "2026-10-03T06:44:28.318875",
+    "updated_at": "2026-10-03T06:44:28.318875"
+  },
+  {
+    "id": "2e62dd9440d34167b10ee2c3db4b8296",
+    "learner_id": "d5de0da5-de10-425f-a78c-0117b8930251",
+    "course_id": "secure-mobile-payments",
+    "lesson_id": "les-pay-transfer",
+    "completed": true,
+    "completed_at": "2026-10-03T06:44:28.402434",
+    "created_at": "2026-10-03T06:44:28.402434",
+    "updated_at": "2026-10-03T06:44:28.402434"
+  }
+]

@@ -8,8 +8,7 @@
     "content_type": "article",
     "content": "### Welcome to Computer Basics\n\nIn this lesson, we will cover the fundamentals of a Computer Operating System (OS). \n\nAn Operating System is the software that manages your computer's hardware and makes it possible for you to click on applications, open internet browsers, and print invoices. The most common operating systems are **Windows** and **macOS** for laptops, and **Android** for mobile phones.\n\n#### Key Actions:\n1. **Booting up**: Press the physical Power button on your laptop. Wait for the loading screen.\n2. **The Desktop Screen**: This is your digital table. It contains icons (shortcuts to apps) and your Taskbar (the strip at the bottom showcasing opened apps).\n3. **Safe Shut Down**: Do NOT press and hold the power button to shut down. Go to the Start Menu, click Power, and select 'Shut Down' to protect your system files.",
     "duration": "15 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364247"
+    "is_preview": true
   },
   {
     "id": "les-kb-shortcuts",
@@ -20,8 +19,7 @@
     "content_type": "article",
     "content": "### Keyboard Secrets\n\nTo manage an online enterprise, you need to navigate typing fields quickly. Here are the most essential keys:\n\n* **Shift**: Hold this and press any letter to make it UPPERCASE.\n* **Caps Lock**: Press once to type everything in UPPERCASE. Press again to turn it off.\n* **Backspace**: Deletes the character directly to the left of your cursor.\n* **Delete**: Deletes the character to the right of your cursor.\n\n#### Key Shortcuts:\n- **Copy**: `Ctrl + C` (copies highlighted text/files)\n- **Paste**: `Ctrl + V` (places copied content in selection)\n- **Undo**: `Ctrl + Z` (undoes your last mistake!)",
     "duration": "20 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364253"
+    "is_preview": true
   },
   {
     "id": "les-folder-mgt",
@@ -32,8 +30,7 @@
     "content_type": "article",
     "content": "### Stay Organized, Stay Smart\n\nWhen running a small boutique or tailoring store, disorganized files can lose you clients. Today we learn to create safe directories.\n\n1. **Right Click** on any empty desktop area.\n2. Select **New** -> **Folder**.\n3. Type a clear name like `Client_Receipts_2026`.\n4. Click **Enter** to save the folder.\n\nYou can drag-and-drop receipt images directly into this folder to back them up safely.",
     "duration": "15 Mins",
-    "is_preview": false,
-    "created_at": "2026-08-30T05:43:30.364255"
+    "is_preview": false
   },
   {
     "id": "les-upi-setup",
@@ -44,32 +41,7 @@
     "content_type": "article",
     "content": "### What is UPI?\n\nUnified Payments Interface (UPI) is a real-time instant payment system developed by National Payments Corporation of India (NPCI). It allows you to transfer money instantly between bank accounts on your mobile phone.\n\n#### Checklist for UPI Setup:\n- A smartphone with internet\n- Your bank account linked to your mobile phone number\n- Your debit card handy\n\n#### Step-by-Step Setup:\n1. Download a certified app: BHIM, Google Pay, or PhonePe from the Google Play Store.\n2. Verify your mobile number using an automatic SMS verification.\n3. Select your Bank Name from the listing. The app will automatically find your account.\n4. Enter the last 6 digits of your debit card and expiration date to generate your unique **UPI PIN**.\n\n*CRITICAL SECURITY RULE:* Never share your UPI PIN with anyone, not even bank executives!",
     "duration": "15 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364256"
-  },
-  {
-    "id": "les-pay-transfer",
-    "course_id": "secure-mobile-payments",
-    "title": "Making your First Digital Transfer",
-    "description": "Learn how to scanning QR codes and use mobile numbers to accept and send instant merchant payments.",
-    "lesson_number": 2,
-    "content_type": "article",
-    "content": "### Making Payments Simpler\n\nThere are three ways to pay or receive payments using your newly setup UPI ID:\n\n1. **Scanning QR Codes**: Point your camera at a store's paper QR stand. Type the amount and input your secure UPI PIN.\n2. **Using Mobile Number**: Type the customer's linked mobile number, select the bank, and proceed with verification.\n3. **Requesting Money**: Only do this if a customer explicitly requested an invoice. Verify their name on screen before approving requests.",
-    "duration": "10 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364257"
-  },
-  {
-    "id": "les-anti-fraud",
-    "course_id": "secure-mobile-payments",
-    "title": "Avoiding Online Financial Frauds",
-    "description": "Crucial security guidelines on spotting online payment scams, phishing links, and fake screenshot receipts.",
-    "lesson_number": 3,
-    "content_type": "article",
-    "content": "### Protect Your Earnings\n\nAs a NariNexus learner, your financial safety is our highest priority. Scammers use tricks to pull money from your account. Memorize these golden rules:\n\n* **No UPI PIN is needed to RECEIVE money**: If someone tells you to enter your PIN to receive an advance, they are stealing your money.\n* **Double Check Fake Screenshots**: Customers might show you a green payment successful screenshot on their phone. Do NOT hand over products until you receive an SMS directly from your bank or see the transaction updated in your own UPI app history.",
-    "duration": "20 Mins",
-    "is_preview": false,
-    "created_at": "2026-08-30T05:43:30.364259"
+    "is_preview": true
   },
   {
     "id": "les-sewing-machine",
@@ -80,8 +52,7 @@
     "content_type": "article",
     "content": "### Getting to Know your Machine\n\nBefore you stitch fabrics, you must understand your tool. A standard sewing machine has several core components:\n\n1. **Flywheel (Handwheel)**: Located on the right. Always turn it TOWARDS you to raise or lower the needle manually.\n2. **Presser Foot**: The small metal clamp that holds the fabric flat against the needle plate. Lower it before stitching!\n3. **Bobbin Winder**: Winds the bottom thread. The bobbin sits underneath the needle and locks the stitch.\n\n#### Threading Steps:\n- Place thread spool on spindle.\n- Guide thread through tension disks.\n- Loop through the take-up lever.\n- Needle threading goes from left to right (or front to back depending on model).",
     "duration": "25 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364260"
+    "is_preview": true
   },
   {
     "id": "les-straight-stitch",
@@ -92,8 +63,7 @@
     "content_type": "article",
     "content": "### Practice Straight Lines\n\nDo not worry if your first stitches are wavy! Everyone starts there. Follow these practice rules:\n\n* **Do not pull fabric**: Let the machine feed-dogs pull the fabric naturally. Just guide it gently with your fingers.\n* **Reverse Stitching**: Find the reverse lever (usually on the front right). Hold it down for 3 stitches at the start and end of your line to tie knots and lock your threads.",
     "duration": "30 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364262"
+    "is_preview": true
   },
   {
     "id": "les-inc-exp",
@@ -104,19 +74,6 @@
     "content_type": "article",
     "content": "### Financial Discipline\n\nMany small ventures fail because owners mix family cash with business revenues. Today you learn to separate them.\n\n* **Business Income**: Money earned from selling stitched garments, baked breads, or craft work.\n* **Business Expenses**: Money spent on fabrics, needles, flour, mobile phone internet bills, or stall rent.\n* **Personal Expenses**: Family milk, school fees, personal clothes. Do NOT record these in your business ledger!\n\n#### Rule of Thumb:\nHave a dedicated cash pouch for your business. When you make a sale, put the money there. When buying raw material, pay from that pouch. Never borrow from it for grocery bills.",
     "duration": "15 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364273"
-  },
-  {
-    "id": "les-sales-register",
-    "course_id": "small-business-bookkeeping",
-    "title": "Creating your Daily Sales Register",
-    "description": "Learn how to record transactions in a simple paperback notebook or mobile journal app systematically.",
-    "lesson_number": 2,
-    "content_type": "article",
-    "content": "### The Notebook Ledger\n\nDraw five columns in a clean notebook:\n\n| Date | Description | Category | Cash In (+) | Cash Out (-) |\n|------|-------------|----------|-------------|--------------|\n| 2026-08-01 | Opening Balance | Setup | 500.00 | - |\n| 2026-08-01 | Bought Cotton Thread | Raw Material | - | 45.00 |\n| 2026-08-02 | Salwar Stitching Sale | Income | 350.00 | - |\n\nSum your totals at the end of each week to see exactly how much cash is remaining.",
-    "duration": "20 Mins",
-    "is_preview": true,
-    "created_at": "2026-08-30T05:43:30.364275"
+    "is_preview": true
   }
 ]

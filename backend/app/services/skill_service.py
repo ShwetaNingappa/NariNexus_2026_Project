@@ -422,6 +422,28 @@ INITIAL_SKILLS = [
             }
         },
         "is_active": True
+    },
+    # Beauty & Wellness
+    {
+        "id": "beauty-personal-care",
+        "category_id": "beauty-wellness",
+        "name": "Beauty and Personal Care",
+        "description": "Learn basic beauty and personal-care skills including skincare, hair care, hygiene, basic makeup, and salon service fundamentals.",
+        "difficulty": "Beginner",
+        "estimated_duration": "4 Weeks",
+        "prerequisites": ["None"],
+        "career_options": ["Beautician", "Salon Assistant", "Freelance Makeup Artist"],
+        "translations": {
+            "kn": {
+                "name": "ಸೌಂದರ್ಯ ಮತ್ತು ವೈಯಕ್ತಿಕ ಆರೈಕೆ",
+                "description": "ತ್ವಚೆಯ ಆರೈಕೆ, ಕೂದಲಿನ ಆರೈಕೆ, ನೈರ್ಮಲ್ಯ ಮತ್ತು ಮೂಲ ಮೇಕಪ್ ಸೇರಿದಂತೆ ಸೌಂದರ್ಯ ಕೌಶಲ್ಯಗಳನ್ನು ಕಲಿಯಿರಿ."
+            },
+            "hi": {
+                "name": "सौंदर्य और व्यक्तिगत देखभाल",
+                "description": "त्वचा की देखभाल, बालों की देखभाल, स्वच्छता और बुनियादी मेकअप सहित सौंदर्य कौशल सीखें।"
+            }
+        },
+        "is_active": True
     }
 ]
 
@@ -546,8 +568,10 @@ class SkillService:
             if category_id:
                 query["category_id"] = category_id
             if difficulty:
+                import re
+                safe_difficulty = re.escape(str(difficulty).strip())
                 # Case-insensitive match or standard matching
-                query["difficulty"] = {"$regex": f"^{difficulty}$", "$options": "i"}
+                query["difficulty"] = {"$regex": f"^{safe_difficulty}$", "$options": "i"}
             
             db_skills = list(db["skills"].find(query))
             for sk in db_skills:
@@ -664,6 +688,162 @@ class SkillService:
         # Sort by recommendation score descending
         recommended.sort(key=lambda x: x[1], reverse=True)
         return [item[0] for item in recommended[:3]]
+
+    @classmethod
+    def get_personalized_recommendations(cls, profile: Dict[str, Any], lang: Optional[str] = "en") -> List[Dict[str, Any]]:
+        """
+        AI-based personalized skill recommendations.
+        Attempts to use Gemini to analyze interests, goals, active enrollments, and progress,
+        and matches them against the NariNexus skill catalog to recommend 3 personalized skills.
+        If Gemini is rate limited (429) or fails, falls back gracefully to rule-based recommendations.
+        """
+        user_id = profile.get("id") or profile.get("user_id")
+        user_name = profile.get("name") or "Learner"
+        interests = profile.get("learning_interests", [])
+        existing_skills = profile.get("existing_skills", [])
+        experience_level = profile.get("experience_level") or profile.get("skill_level") or "Beginner"
+        career_goal = profile.get("career_goal") or ""
+        active_lang = lang or profile.get("preferred_language") or "en"
+
+        enroll_str = ""
+        if user_id:
+            try:
+                from backend.app.services.enrollment_service import EnrollmentService
+                from backend.app.services.progress_service import ProgressService
+                enrollments = EnrollmentService.get_learner_enrollments(user_id)
+                if enrollments:
+                    for e in enrollments:
+                        course_id = e.get("course_id")
+                        prog = ProgressService.get_course_progress(user_id, course_id)
+                        percent = prog.get("progress_percentage", 0)
+                        enroll_str += f"- Enrolled in: {e.get('course_title')} (ID: {course_id}), Progress: {percent}%, Status: {e.get('status')}\n"
+                else:
+                    enroll_str = "- Not enrolled in any courses yet.\n"
+            except Exception as e_err:
+                enroll_str = f"Error loading enrollment context: {str(e_err)}\n"
+
+        all_skills = cls.get_skills(lang=active_lang)
+        skills_pool = []
+        for sk in all_skills:
+            skills_pool.append({
+                "id": sk.get("id"),
+                "name": sk.get("name"),
+                "description": sk.get("description"),
+                "category_id": sk.get("category_id"),
+                "difficulty": sk.get("difficulty"),
+                "estimated_duration": sk.get("estimated_duration"),
+                "career_options": sk.get("career_options", [])
+            })
+
+        try:
+            from backend.app.services.ai_service import AIService
+            from google.genai import types
+            client = AIService.get_client()
+            if client:
+                # Optimized failover sequence: primary gemini-3.1-flash-lite, fall back to gemini-3.5-flash
+                models_to_try = ["gemini-3.1-flash-lite", "gemini-3.5-flash"]
+                ai_response_text = None
+
+                system_instruction = (
+                    "You are NariNexus Personalized Skill Recommendation Engine, an intelligent matching system for rural women.\n"
+                    "You analyze the learner's profile data and recommend exactly 3 skills from the available Skills Pool.\n"
+                    "Your response must be a valid raw JSON array containing exactly 3 objects. Do not include any extra text."
+                )
+
+                config = types.GenerateContentConfig(
+                    system_instruction=system_instruction,
+                    temperature=0.2,
+                    response_mime_type="application/json"
+                )
+
+                prompt = (
+                    f"Return exactly 3 personalized skill recommendations as a JSON array of objects matching the specified schema.\n"
+                    f"Learner Profile:\n"
+                    f"- Name: {user_name}\n"
+                    f"- Preferred Language: {active_lang}\n"
+                    f"- Interests: {interests}\n"
+                    f"- Existing Skills: {existing_skills}\n"
+                    f"- Skill Level: {experience_level}\n"
+                    f"- Goals/Career: {career_goal}\n"
+                    f"- Enrollments Progress:\n{enroll_str}\n\n"
+                    f"Skills Pool:\n{json.dumps(skills_pool)}\n\n"
+                    f"JSON schema to return:\n"
+                    f"[\n"
+                    f"  {{\n"
+                    f"    \"id\": \"skill-id\",\n"
+                    f"    \"reason\": \"Why recommended in language: {active_lang}\",\n"
+                    f"    \"benefit\": \"Benefit in language: {active_lang}\",\n"
+                    f"    \"next_step\": \"Suggested next action in language: {active_lang}\"\n"
+                    f"  }}\n"
+                    "]"
+                )
+
+                for model_name in models_to_try:
+                    try:
+                        response = client.models.generate_content(
+                            model=model_name,
+                            contents=prompt,
+                            config=config
+                        )
+                        if response and response.text:
+                            ai_response_text = response.text.strip()
+                            break
+                    except Exception as err:
+                        err_msg = str(err).upper()
+                        if "RESOURCE" in err_msg or "429" in err_msg or "QUOTA" in err_msg:
+                            continue
+                        else:
+                            continue
+
+                if ai_response_text:
+                    if ai_response_text.startswith("```json"):
+                        ai_response_text = ai_response_text[7:]
+                    if ai_response_text.endswith("```"):
+                        ai_response_text = ai_response_text[:-3]
+                    ai_response_text = ai_response_text.strip()
+
+                    rec_list = json.loads(ai_response_text)
+                    if isinstance(rec_list, list):
+                        from backend.app.services.ai_safety_service import AISafetyService
+                        validated_res = AISafetyService.validate_ai_response(
+                            {"recommended_skills": rec_list},
+                            "skill_recommendation"
+                        )
+                        rec_list = validated_res.get("recommended_skills", [])
+
+                        final_recommendations = []
+                        for r in rec_list:
+                            skill_id = r.get("id")
+                            skill_obj = cls.get_skill_by_id(skill_id, lang=active_lang)
+                            if skill_obj:
+                                skill_obj["reason"] = r.get("reason") or f"This is highly recommended for {experience_level} learners."
+                                skill_obj["benefit"] = r.get("benefit") or "Helps you master practical local livelihood and digital skills."
+                                skill_obj["next_step"] = r.get("next_step") or "Explore the detailed modules for this skill."
+                                final_recommendations.append(skill_obj)
+                        if final_recommendations:
+                            return final_recommendations[:3]
+        except Exception:
+            pass
+
+        # Rule-based fallback
+        rule_recs = cls.get_rule_based_recommendations(profile, lang=active_lang)
+        final_fallback = []
+        for sk in rule_recs:
+            sk_name = sk.get("name")
+            if active_lang == "kn":
+                sk["reason"] = f"ನಿಮ್ಮ ಆಸಕ್ತಿಗಳು ಮತ್ತು ಪ್ರೊಫೈಲ್ ಆಧರಿಸಿ ಈ {sk_name} ಕೌಶಲ್ಯವನ್ನು ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ."
+                sk["benefit"] = "ಇದು ಸ್ಥಳೀಯ ಉದ್ಯೋಗಾವಕಾಶಗಳು ಅಥವಾ ಸಣ್ಣ ಉದ್ಯಮವನ್ನು ಪ್ರಾರಂಭಿಸಲು ನಿಮಗೆ ಸಹಕಾರಿಯಾಗಿದೆ."
+                sk["next_step"] = "ಕೋರ್ಸ್ ವಿವರಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ."
+            elif active_lang == "hi":
+                sk["reason"] = f"आपकी रुचियों और प्रोफ़ाइल के आधार पर इस {sk_name} कौशल की सिफारिश की गई है।"
+                sk["benefit"] = "यह स्थानीय रोजगार के अवसरों या छोटे पैमाने पर व्यवसाय शुरू करने में आपकी सहायता करेगा।"
+                sk["next_step"] = "कोर्स के विवरण देखने के लिए क्लिक करें।"
+            else:
+                sk["reason"] = f"Recommended based on your alignment with {sk_name} and your current learning goals."
+                sk["benefit"] = "This helps in establishing local self-employment or unlocking small business streams."
+                sk["next_step"] = f"View course options and lessons for {sk_name} to get started."
+            final_fallback.append(sk)
+        return final_fallback[:3]
 
     @staticmethod
     def _apply_category_translation(cat: Dict[str, Any], lang: Optional[str]) -> Dict[str, Any]:

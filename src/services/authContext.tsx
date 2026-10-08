@@ -63,7 +63,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       try {
-        const response = await api.get('/api/auth/me');
+        const response = await api.get('/api/auth/me', {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
         if (response.data && response.data.success) {
           setUser(response.data.user);
         } else {
@@ -72,7 +76,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           setUser(null);
         }
       } catch (error) {
-        console.error('Failed to load authenticated user:', error);
+        console.warn('Failed to load authenticated user:', error);
         // If it's a 401 error, clear token
         setToken(null);
         setUser(null);
@@ -85,16 +89,31 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, [token]);
 
   const login = async (email: string, password: string) => {
+    console.log("LOGIN_DEBUG: Attempting login for email:", email);
+    console.log("LOGIN_DEBUG: Axios BaseURL:", api.defaults.baseURL);
+    console.log("LOGIN_DEBUG: Request Path:", '/api/auth/login');
     try {
       const response = await api.post('/api/auth/login', { email, password });
+      console.log("LOGIN_DEBUG: Response status:", response.status, "data:", response.data);
       if (response.data && response.data.success) {
-        setToken(response.data.access_token);
+        const accessToken = response.data.access_token;
+        localStorage.setItem('narinexus_token', accessToken);
+        api.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
+        setToken(accessToken);
         setUser(response.data.user);
-        return { success: true };
+        return { success: true, user: response.data.user };
       }
       return { success: false, message: response.data?.message || 'Login failed' };
     } catch (error: any) {
-      console.error('Login error:', error);
+      console.error("LOGIN_DEBUG: Catching login error:", error);
+      if (error.response) {
+        console.error("LOGIN_DEBUG: Error response status:", error.response.status, "data:", error.response.data);
+      } else if (error.request) {
+        console.error("LOGIN_DEBUG: Error request sent but no response received:", error.request);
+      } else {
+        console.error("LOGIN_DEBUG: Error message during setup:", error.message);
+      }
+      console.warn('Login error:', error.response?.data?.detail || error.message || error);
       const detail = error.response?.data?.detail || 'Incorrect email or password.';
       return { success: false, message: typeof detail === 'string' ? detail : 'Incorrect email or password.' };
     }
@@ -125,7 +144,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
       return { success: false, message: response.data?.message || 'Registration failed' };
     } catch (error: any) {
-      console.error('Registration error:', error);
+      console.warn('Registration error:', error.response?.data?.detail || error.message || error);
       const detail = error.response?.data?.detail;
       let errorMsg = 'Registration failed.';
       if (typeof detail === 'string') {
@@ -157,7 +176,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setUser(response.data.user);
       }
     } catch (error) {
-      console.error('Failed to reload user:', error);
+      console.warn('Failed to reload user:', error);
     }
   };
 

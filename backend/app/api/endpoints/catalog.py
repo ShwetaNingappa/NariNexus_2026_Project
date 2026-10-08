@@ -60,10 +60,10 @@ async def get_skills(
 @router.get("/skills/recommendations", response_model=Dict[str, Any])
 async def get_recommended_skills(current_user: dict = Depends(get_current_user)):
     """
-    Retrieve rule-based personalized skill recommendations matching the learner's profile interests, career goals, etc.
+    Retrieve AI-personalized skill recommendations matching the learner's profile interests, career goals, progress, etc.
     """
     lang = current_user.get("preferred_language", "en")
-    recommended = SkillService.get_rule_based_recommendations(profile=current_user, lang=lang)
+    recommended = SkillService.get_personalized_recommendations(profile=current_user, lang=lang)
     return {
         "success": True,
         "skills": recommended

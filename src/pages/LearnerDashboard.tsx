@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   BookOpen, 
@@ -21,9 +21,13 @@ import {
   Target,
   FileCheck,
   BrainCircuit,
-  Building
+  Building,
+  Briefcase
 } from 'lucide-react';
 import { useAuth } from '../services/authContext';
+import RecommendedSkills from '../components/RecommendedSkills';
+import RecommendedCourses from '../components/RecommendedCourses';
+import NariNexusAIAssistantHub from '../components/NariNexusAIAssistantHub';
 
 const LANGUAGE_LABELS: Record<string, string> = {
   en: 'English',
@@ -36,6 +40,49 @@ const LANGUAGE_LABELS: Record<string, string> = {
 export default function LearnerDashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { user, logout } = useAuth();
+
+  // Phase 4.2 Dynamic dashboard course progress state
+  const [enrollments, setEnrollments] = useState<any[]>([]);
+  const [progressMap, setProgressMap] = useState<Record<string, any>>({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchDashboardData = async () => {
+      const token = localStorage.getItem('narinexus_token');
+      if (!token) {
+        setLoading(false);
+        return;
+      }
+      try {
+        // Fetch active enrollments
+        const enrollRes = await fetch('/api/enrollments/me', {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        if (enrollRes.ok) {
+          const enrollData = await enrollRes.json();
+          setEnrollments(enrollData);
+        }
+
+        // Fetch progress summary map
+        const progRes = await fetch('/api/progress/me', {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        if (progRes.ok) {
+          const progData = await progRes.json();
+          const map: Record<string, any> = {};
+          progData.forEach((p: any) => {
+            map[p.course_id] = p;
+          });
+          setProgressMap(map);
+        }
+      } catch (err) {
+        console.error("Failed to load dashboard progress:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchDashboardData();
+  }, []);
 
   const userInitials = user?.name
     ? user.name.split(' ').map((n: string) => n[0]).join('').toUpperCase().substring(0, 2)
@@ -59,6 +106,27 @@ export default function LearnerDashboard() {
       </div>
     );
   };
+
+  const getAICardGlow = () => {
+    const lang = user?.preferred_language || 'en';
+    if (lang === 'kn') {
+      return {
+        prompt: "ನಮಸ್ಕಾರ! ನಾನು ನಿಮ್ಮ ನಾರಿನೆಕ್ಸಸ್ AI ಸಹಾಯಕಿ. ಕೌಶಲ್ಯಗಳು, ಉದ್ಯಮ ಯೋಜನೆಗಳು ಮತ್ತು ಬ್ಯಾಂಕಿಂಗ್ ಬಗ್ಗೆ ನನ್ನನ್ನು ಕೇಳಿ!",
+        btn: "AI ಸಹಾಯಕಿ ಜೊತೆ ಚಾಟ್ ಮಾಡಿ"
+      };
+    } else if (lang === 'hi') {
+      return {
+        prompt: "नमस्ते! मैं आपकी नारीनेक्सस AI असिस्टेंट हूँ। मुझसे कोर्सेज, करियर और व्यवसाय शुरू करने के बारे में पूछें!",
+        btn: "AI असिस्टेंट के साथ चैट करें"
+      };
+    } else {
+      return {
+        prompt: "Namaste! I am your NariNexus AI Companion. Ask me anything about tailoring courses, starting a micro-business, or computer literacy!",
+        btn: "Chat with AI Companion"
+      };
+    }
+  };
+  const aiCardInfo = getAICardGlow();
 
   return (
     <div className="flex h-screen bg-cream overflow-hidden text-[#3D2D1E]" id="learner-dashboard">
@@ -85,10 +153,25 @@ export default function LearnerDashboard() {
           <div className="my-3 border-t border-primary-gold/10" />
           <span className="px-4 text-[9px] uppercase tracking-widest font-extrabold text-deep-gold">Learner Hub</span>
           
-          <button className="w-full flex items-center space-x-3 rounded-xl bg-soft-yellow/80 px-4 py-3 text-xs font-bold uppercase tracking-wider text-[#4A3E31] text-left border border-primary-gold/20 shadow-sm cursor-pointer">
+          <Link to="/learner/my-courses" className="w-full flex items-center space-x-3 rounded-xl bg-soft-yellow/80 px-4 py-3 text-xs font-bold uppercase tracking-wider text-[#4A3E31] text-left border border-primary-gold/20 shadow-sm">
             <GraduationCap className="h-4.5 w-4.5 text-deep-gold" />
             <span>My Courses</span>
-          </button>
+          </Link>
+          
+          <Link to="/learner/chat" className="w-full flex items-center space-x-3 rounded-xl px-4 py-3 text-xs font-bold uppercase tracking-wider text-[#7D7061] hover:bg-cream hover:text-deep-rose transition border border-transparent">
+            <Sparkles className="h-4.5 w-4.5 text-deep-gold animate-pulse" />
+            <span>AI Assistant</span>
+          </Link>
+          
+          <Link to="/learner/career-guidance" className="w-full flex items-center space-x-3 rounded-xl px-4 py-3 text-xs font-bold uppercase tracking-wider text-[#7D7061] hover:bg-cream hover:text-deep-rose transition border border-transparent">
+            <Target className="h-4.5 w-4.5 text-deep-gold" />
+            <span>AI Career Guide</span>
+          </Link>
+          
+          <Link to="/learner/opportunities" className="w-full flex items-center space-x-3 rounded-xl px-4 py-3 text-xs font-bold uppercase tracking-wider text-[#7D7061] hover:bg-cream hover:text-deep-rose transition border border-transparent">
+            <Briefcase className="h-4.5 w-4.5 text-deep-gold" />
+            <span>AI Opportunities &amp; Planner</span>
+          </Link>
           
           <button className="w-full flex items-center space-x-3 rounded-xl px-4 py-3 text-xs font-bold uppercase tracking-wider text-[#7D7061] hover:bg-cream hover:text-[#2D241A] transition text-left border border-transparent cursor-pointer">
             <Flame className="h-4.5 w-4.5 text-deep-rose" />
@@ -256,39 +339,23 @@ export default function LearnerDashboard() {
             </div>
           </section>
 
+          {/* Unified AI Assistant Hub */}
+          <NariNexusAIAssistantHub />
+
+          {/* New Phase 5.4 AI Recommended Skills Section */}
+          <section className="bg-cream/20 border border-primary-gold/10 rounded-3xl p-6 sm:p-8">
+            <RecommendedSkills />
+          </section>
+
+          {/* New Phase 5.5 AI Recommended Courses Section */}
+          <section className="bg-cream/20 border border-primary-gold/10 rounded-3xl p-6 sm:p-8">
+            <RecommendedCourses />
+          </section>
+
           {/* Grid Layout of Cards / Placeholder Sections */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            {/* Placeholder: Recommended Skills */}
-            <div className="rounded-2xl border border-primary-gold/15 bg-white p-6 shadow-sm flex flex-col">
-              <span className="text-[9px] uppercase tracking-widest font-extrabold text-[#6B8E6F]">INTELLIGENT MATCHING</span>
-              <h3 className="mt-1 font-serif text-base font-bold text-[#2D241A] uppercase tracking-wider border-b border-primary-gold/10 pb-3 flex items-center gap-1.5">
-                <BrainCircuit className="h-4 w-4 text-[#6B8E6F]" />
-                Recommended Skills
-              </h3>
-              <div className="mt-4 space-y-3.5 flex-grow text-xs text-[#7D7061] font-semibold leading-relaxed">
-                <p>Based on your interest in <strong className="text-deep-rose">{(user?.learning_interests && user.learning_interests[0]) || 'skills'}</strong>, NariNexus recommends the following starter circles:</p>
-                <div className="p-3 bg-cream/40 border border-primary-gold/10 rounded-xl space-y-1">
-                  <span className="font-extrabold text-[#2D241A] block">1. Micro-Business Foundations</span>
-                  <span className="text-[10px] text-[#7D7061]">Includes pricing strategies, invoice logs, and sales tracking.</span>
-                </div>
-                <div className="p-3 bg-cream/40 border border-primary-gold/10 rounded-xl space-y-1">
-                  <span className="font-extrabold text-[#2D241A] block">2. Native Handloom &amp; Weaving</span>
-                  <span className="text-[10px] text-[#7D7061]">Learn direct thread designs from regional master craftswomen.</span>
-                </div>
-              </div>
 
-              <div className="mt-5 pt-3 border-t border-primary-gold/10">
-                <Link
-                  to="/learner/skills"
-                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-light-pink border border-soft-rose/30 hover:border-primary-pink py-2 text-xs font-bold text-deep-rose transition-all text-center"
-                >
-                  <span>Explore Skills Catalogue</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* Placeholder: My Courses & Learning Progress */}
+            {/* Real Enrolled Courses & Learning Progress */}
             <div className="rounded-2xl border border-primary-gold/15 bg-white p-6 shadow-sm flex flex-col">
               <span className="text-[9px] uppercase tracking-widest font-extrabold text-deep-rose">PROGRESS MONITOR</span>
               <h3 className="mt-1 font-serif text-base font-bold text-[#2D241A] uppercase tracking-wider border-b border-primary-gold/10 pb-3 flex items-center gap-1.5">
@@ -297,39 +364,64 @@ export default function LearnerDashboard() {
               </h3>
               
               <div className="mt-4 space-y-4 flex-grow">
-                {/* Course 1 */}
-                <div className="p-4 bg-cream/40 border border-primary-gold/10 rounded-xl">
-                  <div className="flex justify-between items-center text-xs">
-                    <span className="font-bold text-[#2D241A]">Tailoring &amp; Textile Design</span>
-                    <span className="text-deep-rose font-bold bg-light-pink px-2.5 py-1 rounded-full text-[9px] uppercase tracking-widest border border-soft-rose/30">Hybrid</span>
+                {loading ? (
+                  <div className="py-6 text-center">
+                    <div className="h-6 w-6 animate-spin rounded-full border-2 border-primary-gold border-t-transparent mx-auto mb-2" />
+                    <span className="text-[10px] text-[#7D7061]">Retrieving progress...</span>
                   </div>
-                  <div className="mt-3.5 w-full bg-white border border-primary-gold/10 h-2 rounded-full overflow-hidden">
-                    <div className="bg-gradient-to-r from-deep-rose to-primary-pink h-full" style={{ width: '40%' }} />
+                ) : enrollments.length === 0 ? (
+                  <div className="py-8 text-center text-xs text-[#7D7061] font-semibold leading-relaxed">
+                    <p>You have not enrolled in any skill courses yet.</p>
+                    <Link to="/learner/courses" className="text-deep-rose font-bold hover:underline mt-2 block">
+                      Explore Course Catalogue →
+                    </Link>
                   </div>
-                  <div className="flex justify-between text-[10px] text-[#7D7061] mt-2 font-medium">
-                    <span className="font-semibold text-deep-rose">40% Completed</span>
-                    <span className="font-semibold text-[#2D241A]">Next offline batch soon</span>
-                  </div>
-                </div>
+                ) : (
+                  enrollments.slice(0, 2).map((enroll) => {
+                    const prog = progressMap[enroll.course_id] || {
+                      progress_percentage: 0,
+                      completed_lessons: 0,
+                      total_lessons: 0
+                    };
+                    return (
+                      <div key={enroll.enrollment_id} className="p-4 bg-cream/40 border border-primary-gold/10 rounded-xl">
+                        <div className="flex justify-between items-center text-xs mb-1.5">
+                          <span className="font-bold text-[#2D241A] truncate max-w-[150px]">{enroll.course_title}</span>
+                          <span className={`font-bold px-2.5 py-0.5 rounded-full text-[9px] uppercase tracking-widest border ${
+                            enroll.learning_mode === 'online'
+                              ? 'bg-soft-yellow/55 text-deep-gold border-primary-gold/20'
+                              : 'bg-light-pink text-deep-rose border-soft-rose/30'
+                          }`}>
+                            {enroll.learning_mode}
+                          </span>
+                        </div>
+                        <div className="mt-3 w-full bg-white border border-primary-gold/10 h-2 rounded-full overflow-hidden">
+                          <div 
+                            className="bg-gradient-to-r from-deep-rose to-primary-pink h-full transition-all duration-300" 
+                            style={{ width: `${prog.progress_percentage}%` }} 
+                          />
+                        </div>
+                        <div className="flex justify-between text-[10px] text-[#7D7061] mt-2 font-medium">
+                          <span className="font-semibold text-deep-rose">{prog.progress_percentage}% Completed</span>
+                          <span className="font-semibold text-[#2D241A]">{prog.completed_lessons} / {prog.total_lessons || 1} Modules</span>
+                        </div>
+                      </div>
+                    );
+                  })
+                )}
+              </div>
 
-                {/* Course 2 */}
-                <div className="p-4 bg-cream/40 border border-primary-gold/10 rounded-xl">
-                  <div className="flex justify-between items-center text-xs">
-                    <span className="font-bold text-[#2D241A]">Basic Financial Bookkeeping</span>
-                    <span className="text-deep-gold font-bold bg-soft-yellow px-2.5 py-1 rounded-full text-[9px] uppercase tracking-widest border border-primary-gold/20">Online</span>
-                  </div>
-                  <div className="mt-3.5 w-full bg-white border border-primary-gold/10 h-2 rounded-full overflow-hidden">
-                    <div className="bg-gradient-to-r from-primary-gold to-deep-gold h-full" style={{ width: '10%' }} />
-                  </div>
-                  <div className="flex justify-between text-[10px] text-[#7D7061] mt-2 font-medium">
-                    <span className="font-semibold text-deep-gold">10% Completed</span>
-                    <span className="font-semibold text-[#2D241A]">Ready for self-paced study</span>
-                  </div>
-                </div>
+              <div className="mt-5 pt-3 border-t border-primary-gold/10">
+                <Link
+                  to="/learner/my-courses"
+                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-light-pink border border-soft-rose/30 hover:border-primary-pink py-2 text-xs font-bold text-deep-rose transition-all text-center"
+                >
+                  <span>Go to My Course Tracks</span>
+                </Link>
               </div>
             </div>
 
-            {/* Placeholder: Points & Streak */}
+            {/* Dynamic: Points & Streak */}
             <div className="rounded-2xl border border-primary-gold/15 bg-white p-6 shadow-sm flex flex-col">
               <span className="text-[9px] uppercase tracking-widest font-extrabold text-deep-gold">GAMIFICATION HUBS</span>
               <h3 className="mt-1 font-serif text-base font-bold text-[#2D241A] uppercase tracking-wider border-b border-primary-gold/10 pb-3 flex items-center gap-1.5">
@@ -342,22 +434,22 @@ export default function LearnerDashboard() {
                   <div className="flex items-center space-x-2">
                     <span className="text-xl">🔥</span>
                     <div>
-                      <span className="font-bold text-[#2D241A] block">1 Day Streak</span>
+                      <span className="font-bold text-[#2D241A] block">{(user as any)?.streak || 1} Day Streak</span>
                       <span className="text-[9px] text-[#7D7061]">Keep learning to multiply points!</span>
                     </div>
                   </div>
-                  <span className="text-xs font-black text-deep-rose">x1.0</span>
+                  <span className="text-xs font-black text-deep-rose">x{(1.0 + (((user as any)?.streak || 1) - 1) * 0.1).toFixed(1)}</span>
                 </div>
 
                 <div className="flex items-center justify-between p-3 border border-primary-gold/10 rounded-xl bg-cream/20 font-semibold">
                   <div className="flex items-center space-x-2">
                     <span className="text-xl">⭐</span>
                     <div>
-                      <span className="font-bold text-[#2D241A] block">50 Platform Points</span>
-                      <span className="text-[9px] text-[#7D7061]">Awarded for profile completion.</span>
+                      <span className="font-bold text-[#2D241A] block">{(user as any)?.points || 50} Platform Points</span>
+                      <span className="text-[9px] text-[#7D7061]">Awarded for profile and study milestones.</span>
                     </div>
                   </div>
-                  <span className="text-xs font-black text-[#8FBC8F]">+50</span>
+                  <span className="text-xs font-black text-[#8FBC8F]">+{(user as any)?.points || 50}</span>
                 </div>
               </div>
             </div>
@@ -382,9 +474,9 @@ export default function LearnerDashboard() {
               </div>
             </div>
 
-            {/* Placeholder: AI Learning Assistant */}
+            {/* Interactive: AI Learning Assistant */}
             <div className="rounded-2xl border border-primary-gold/15 bg-white p-6 shadow-sm flex flex-col md:col-span-2 lg:col-span-1">
-              <span className="text-[9px] uppercase tracking-widest font-extrabold text-[#4A3E31]">INTELLIGENT COMPANIONS</span>
+              <span className="text-[9px] uppercase tracking-widest font-extrabold text-deep-gold">INTELLIGENT COMPANIONS</span>
               <h3 className="mt-1 font-serif text-base font-bold text-[#2D241A] uppercase tracking-wider border-b border-primary-gold/10 pb-3 flex items-center gap-1.5">
                 <Sparkles className="h-4 w-4 text-deep-gold animate-bounce" />
                 AI Learning Assistant
@@ -393,12 +485,54 @@ export default function LearnerDashboard() {
                 <div className="p-4 bg-[#FFF9F2] rounded-xl border border-primary-gold/15 flex items-start space-x-3">
                   <span className="text-lg">🤖</span>
                   <div className="space-y-1">
-                    <span className="font-bold text-[#2D241A] block uppercase text-[9px] tracking-widest text-deep-gold">Assistant Prompt</span>
+                    <span className="font-bold text-[#2D241A] block uppercase text-[9px] tracking-widest text-deep-gold">NariNexus Assistant</span>
                     <span className="text-[11px] block text-[#7D7061] leading-relaxed">
-                      "Namaste! I am your NariNexus AI companion. In a future update, you can ask me questions about courses, tailoring techniques, or shop setups in your preferred language."
+                      "{aiCardInfo.prompt}"
                     </span>
                   </div>
                 </div>
+              </div>
+              <div className="mt-5 pt-3 border-t border-primary-gold/10">
+                <Link
+                  to="/learner/chat"
+                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-deep-rose hover:bg-deep-rose/95 text-white py-2.5 text-xs font-bold uppercase tracking-wider transition-all text-center shadow-sm"
+                >
+                  <Sparkles className="h-3.5 w-3.5 text-white" />
+                  <span>{aiCardInfo.btn}</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Real: AI Career Guidance & Pathway Engine */}
+            <div className="rounded-2xl border border-primary-gold/15 bg-white p-6 shadow-sm flex flex-col md:col-span-2 lg:col-span-1">
+              <span className="text-[9px] uppercase tracking-widest font-extrabold text-deep-gold">PERSONALIZED ROADMAPS</span>
+              <h3 className="mt-1 font-serif text-base font-bold text-[#2D241A] uppercase tracking-wider border-b border-primary-gold/10 pb-3 flex items-center gap-1.5">
+                <BrainCircuit className="h-4.5 w-4.5 text-deep-rose animate-pulse" />
+                AI Career Pathway Guide
+              </h3>
+              <div className="mt-4 space-y-4 flex-grow text-xs text-[#7D7061] font-semibold leading-relaxed">
+                <div className="p-4 bg-[#FFF9F2] rounded-xl border border-primary-gold/15 flex items-start space-x-3">
+                  <span className="text-lg">🎯</span>
+                  <div className="space-y-1">
+                    <span className="font-bold text-[#2D241A] block uppercase text-[9px] tracking-widest text-deep-gold">Career Guide</span>
+                    <span className="text-[11px] block text-[#7D7061] leading-relaxed">
+                      {user?.preferred_language === 'kn' 
+                        ? 'ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳು ಮತ್ತು ಆಸಕ್ತಿಗಳಿಗೆ ಹೊಂದುವ ಉದ್ಯೋಗ ಮತ್ತು ಸ್ವಯಂ ಉದ್ಯೋಗದ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ರಚಿಸಿ.'
+                        : user?.preferred_language === 'hi'
+                        ? 'अपनी पसंद और कौशल के अनुसार रोजगार और स्वरोजगार के बेहतरीन रोडमैप खोजें।'
+                        : 'Explore suitable employment & self-employment pathways tailored to your specific profile interests.'}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-5 pt-3 border-t border-primary-gold/10">
+                <Link
+                  to="/learner/career-guidance"
+                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-deep-rose to-primary-pink hover:opacity-95 text-white py-2.5 text-xs font-bold uppercase tracking-wider transition-all text-center shadow-sm"
+                >
+                  <BrainCircuit className="h-3.5 w-3.5 text-white" />
+                  <span>{user?.preferred_language === 'kn' ? 'ಮಾರ್ಗಸೂಚಿ ರಚಿಸಿ' : user?.preferred_language === 'hi' ? 'रोडमैप शुरू करें' : 'Get Career Roadmap'}</span>
+                </Link>
               </div>
             </div>
 

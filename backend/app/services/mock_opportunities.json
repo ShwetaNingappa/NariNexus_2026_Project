@@ -1,0 +1,1326 @@
+[
+  {
+    "id": "opp-tailoring-01",
+    "title": "Home-Based Custom Tailoring Partner",
+    "type": "Home-based Work",
+    "description": "Collaborate with local boutiques and self-help groups (SHGs) to stitch custom clothing, blouses, and ethnic wear. Materials will be delivered to your home and picked up weekly.",
+    "required_skills": [
+      "Basic Needlework",
+      "Measurement Cutting",
+      "Lining Stitching"
+    ],
+    "preferred_skills": [
+      "Professional Blouse Pattern Cutting & Stitching",
+      "Embroidery and Zardosi work"
+    ],
+    "location": "Rural Hub & Work-from-Home",
+    "remote_mode": "Remote",
+    "earning_info": "\u20b94,000 - \u20b98,000 per month (Piece-rate based)",
+    "organization": "NariNexus Apparel Network & local SHGs",
+    "application_info": "Apply on the platform. A coordinator from your nearest Centre will visit for verification.",
+    "status": "Active"
+  },
+  {
+    "id": "opp-digital-02",
+    "title": "Village Center Digital Assistant",
+    "type": "Local Employment",
+    "description": "Assist rural villagers with online services, internet utility payments, ticket bookings, and digital document printing at the nearest Common Service Centre (CSC) or NariNexus hub.",
+    "required_skills": [
+      "Computer Basics",
+      "Internet Navigation",
+      "Form Submissions"
+    ],
+    "preferred_skills": [
+      "UPI Payments",
+      "Cyber-security basics"
+    ],
+    "location": "Local Panchayat Common Service Centre",
+    "remote_mode": "Local",
+    "earning_info": "\u20b95,000 - \u20b97,000 per month (Stipend-based)",
+    "organization": "District CSC Network",
+    "application_info": "Submit application. Interview will be conducted at the NariNexus Centre.",
+    "status": "Active"
+  },
+  {
+    "id": "opp-bookkeeping-03",
+    "title": "SHG Small Business Bookkeeper",
+    "type": "Freelance",
+    "description": "Manage financial records, cash books, and small enterprise spreadsheets for rural women Self-Help Groups (SHGs) and local micro-businesses in your sub-district.",
+    "required_skills": [
+      "Communication",
+      "Organized Records keeping"
+    ],
+    "preferred_skills": [
+      "Simple Bookkeeping",
+      "Digital Payments"
+    ],
+    "location": "Rural Sub-District Co-operatives",
+    "remote_mode": "Hybrid",
+    "earning_info": "\u20b93,000 - \u20b95,000 per month (Part-time)",
+    "organization": "Sub-District Cooperative Federation",
+    "application_info": "Requires basic bookkeeping certification or course completion on NariNexus.",
+    "status": "Active"
+  },
+  {
+    "id": "opp-handicraft-04",
+    "title": "Local Craft & Handicraft Artisan Partnership",
+    "type": "Self-employment",
+    "description": "Create traditional rural handicrafts, incense sticks, candles, or local items under quality guidance. Training and raw materials provided at the hub, with guaranteed buy-back.",
+    "required_skills": [
+      "Production planning",
+      "Basic pricing"
+    ],
+    "preferred_skills": [
+      "Bookkeeping",
+      "Accepting mobile payments safely"
+    ],
+    "location": "Sub-District Cottage Industry Collective",
+    "remote_mode": "Remote",
+    "earning_info": "\u20b93,500 - \u20b96,500 per month (Based on craft output)",
+    "organization": "Rural Cottage Industries Board",
+    "application_info": "Register at the NariNexus Centre to receive your starter raw-materials kit.",
+    "status": "Active"
+  },
+  {
+    "title": "Embroidery Assistant 3f9c",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "9da7a845",
+    "is_active": true,
+    "created_at": "2026-09-28T14:24:49.773000",
+    "updated_at": "2026-09-28T14:24:49.773006"
+  },
+  {
+    "title": "Cotton Weaving Apprentice d144",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "aa704bab",
+    "is_active": true,
+    "created_at": "2026-09-28T14:24:54.442741",
+    "updated_at": "2026-09-28T14:24:54.451791"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 4174",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "b4b33a04",
+    "is_active": true,
+    "created_at": "2026-09-28T14:49:30.419484",
+    "updated_at": "2026-09-28T14:49:30.429213"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 8fd7",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "311ac0dc",
+    "is_active": true,
+    "created_at": "2026-09-28T15:04:29.309750",
+    "updated_at": "2026-09-28T15:04:29.322696"
+  },
+  {
+    "title": "Embroidery Assistant 088f",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "e5d28e54",
+    "is_active": true,
+    "created_at": "2026-09-28T15:09:25.179582",
+    "updated_at": "2026-09-28T15:09:25.179588"
+  },
+  {
+    "title": "Cotton Weaving Apprentice d086",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "f73b6b98",
+    "is_active": true,
+    "created_at": "2026-09-28T15:09:29.141253",
+    "updated_at": "2026-09-28T15:09:29.153786"
+  },
+  {
+    "title": "Embroidery Assistant 2aeb",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "1ef72dd2",
+    "is_active": true,
+    "created_at": "2026-09-28T15:14:55.511230",
+    "updated_at": "2026-09-28T15:14:55.511238"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 83dd",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "2fcfebe5",
+    "is_active": true,
+    "created_at": "2026-09-28T15:15:00.305177",
+    "updated_at": "2026-09-28T15:15:00.324056"
+  },
+  {
+    "title": "Embroidery Assistant d684",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "82ac2ac6",
+    "is_active": true,
+    "created_at": "2026-09-28T15:55:25.034021",
+    "updated_at": "2026-09-28T15:55:25.034029"
+  },
+  {
+    "title": "Embroidery Assistant ef1e",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "38df34a9",
+    "is_active": true,
+    "created_at": "2026-09-28T16:06:08.993584",
+    "updated_at": "2026-09-28T16:06:08.993597"
+  },
+  {
+    "title": "Embroidery Assistant 422a",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "36eeb5e9",
+    "is_active": true,
+    "created_at": "2026-09-28T16:16:28.732223",
+    "updated_at": "2026-09-28T16:16:28.732235"
+  },
+  {
+    "title": "Embroidery Assistant 6e29",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "0c455b08",
+    "is_active": true,
+    "created_at": "2026-09-28T16:35:10.688036",
+    "updated_at": "2026-09-28T16:35:10.688042"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 81e3",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "40aa599b",
+    "is_active": true,
+    "created_at": "2026-09-28T16:35:19.295068",
+    "updated_at": "2026-09-28T16:35:19.311866"
+  },
+  {
+    "title": "Embroidery Assistant 092d",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "6c15e99a",
+    "is_active": true,
+    "created_at": "2026-09-28T16:55:28.080539",
+    "updated_at": "2026-09-28T16:55:28.080546"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 9ed0",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "b8f2bc85",
+    "is_active": true,
+    "created_at": "2026-09-28T16:55:37.025122",
+    "updated_at": "2026-09-28T16:55:37.041918"
+  },
+  {
+    "title": "Embroidery Assistant 215c",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "830c4d7d",
+    "is_active": true,
+    "created_at": "2026-09-29T01:59:18.853044",
+    "updated_at": "2026-09-29T01:59:18.853050"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 7777",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "a6d2186a",
+    "is_active": true,
+    "created_at": "2026-09-29T01:59:30.069066",
+    "updated_at": "2026-09-29T01:59:30.085988"
+  },
+  {
+    "title": "Embroidery Assistant df59",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "3161b7c1",
+    "is_active": true,
+    "created_at": "2026-09-29T02:05:41.379067",
+    "updated_at": "2026-09-29T02:05:41.379075"
+  },
+  {
+    "title": "Cotton Weaving Apprentice b288",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "9993a80b",
+    "is_active": true,
+    "created_at": "2026-09-29T02:05:51.757668",
+    "updated_at": "2026-09-29T02:05:51.775126"
+  },
+  {
+    "title": "Embroidery Assistant 43cf",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "1fead133",
+    "is_active": true,
+    "created_at": "2026-09-29T02:13:35.611157",
+    "updated_at": "2026-09-29T02:13:35.611165"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 997f",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "0ec37484",
+    "is_active": true,
+    "created_at": "2026-09-29T02:13:46.670501",
+    "updated_at": "2026-09-29T02:13:46.691485"
+  },
+  {
+    "title": "Embroidery Assistant e3f4",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "c5981677",
+    "is_active": true,
+    "created_at": "2026-09-29T02:19:56.598906",
+    "updated_at": "2026-09-29T02:19:56.598913"
+  },
+  {
+    "title": "Cotton Weaving Apprentice e5cf",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "33b19212",
+    "is_active": true,
+    "created_at": "2026-09-29T02:20:05.083948",
+    "updated_at": "2026-09-29T02:20:05.122488"
+  },
+  {
+    "title": "Embroidery Assistant 6f98",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "7d2c2929",
+    "is_active": true,
+    "created_at": "2026-09-29T03:20:48.128152",
+    "updated_at": "2026-09-29T03:20:48.128160"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 360a",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "197e74ec",
+    "is_active": true,
+    "created_at": "2026-09-29T03:20:56.858264",
+    "updated_at": "2026-09-29T03:20:56.878299"
+  },
+  {
+    "title": "Embroidery Assistant 0568",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "2dc23713",
+    "is_active": true,
+    "created_at": "2026-09-29T03:26:26.053639",
+    "updated_at": "2026-09-29T03:26:26.053648"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 5537",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "a8cbb63a",
+    "is_active": true,
+    "created_at": "2026-09-29T03:26:34.712971",
+    "updated_at": "2026-09-29T03:26:34.736561"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 9155",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "a155d0bd",
+    "is_active": true,
+    "created_at": "2026-09-29T03:53:23.335676",
+    "updated_at": "2026-09-29T03:53:23.365255"
+  },
+  {
+    "title": "Embroidery Assistant a516",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "2a8f4993",
+    "is_active": true,
+    "created_at": "2026-09-29T03:58:31.538209",
+    "updated_at": "2026-09-29T03:58:31.538219"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 3e95",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "bc98d9d7",
+    "is_active": true,
+    "created_at": "2026-09-29T03:58:39.971172",
+    "updated_at": "2026-09-29T03:58:40.002681"
+  },
+  {
+    "title": "Embroidery Assistant c711",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "e15857a0",
+    "is_active": true,
+    "created_at": "2026-09-29T04:03:58.328764",
+    "updated_at": "2026-09-29T04:03:58.328772"
+  },
+  {
+    "title": "Cotton Weaving Apprentice ab2f",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "d3148d15",
+    "is_active": true,
+    "created_at": "2026-09-29T04:04:07.575011",
+    "updated_at": "2026-09-29T04:04:07.605567"
+  },
+  {
+    "title": "Embroidery Assistant dbbf",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "e40ecca6",
+    "is_active": true,
+    "created_at": "2026-09-29T04:06:59.657677",
+    "updated_at": "2026-09-29T04:06:59.657685"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 5837",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "d43e49ec",
+    "is_active": true,
+    "created_at": "2026-09-29T04:07:08.735740",
+    "updated_at": "2026-09-29T04:07:08.764978"
+  },
+  {
+    "title": "Embroidery Assistant 9aa5",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "ed3e0578",
+    "is_active": true,
+    "created_at": "2026-09-29T04:12:28.040388",
+    "updated_at": "2026-09-29T04:12:28.040400"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 04cc",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "0472e558",
+    "is_active": true,
+    "created_at": "2026-09-29T04:12:36.870327",
+    "updated_at": "2026-09-29T04:12:36.899160"
+  },
+  {
+    "title": "Embroidery Assistant 320c",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "11b51caf",
+    "is_active": true,
+    "created_at": "2026-09-29T04:16:06.247732",
+    "updated_at": "2026-09-29T04:16:06.247753"
+  },
+  {
+    "title": "Cotton Weaving Apprentice fddc",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "670812ad",
+    "is_active": true,
+    "created_at": "2026-09-29T04:16:21.738072",
+    "updated_at": "2026-09-29T04:16:25.548516"
+  },
+  {
+    "title": "Embroidery Assistant 4598",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "6c0df5ff",
+    "is_active": true,
+    "created_at": "2026-09-29T04:29:39.264461",
+    "updated_at": "2026-09-29T04:29:39.264471"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 27cd",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "8128f0c8",
+    "is_active": true,
+    "created_at": "2026-09-29T04:29:48.340416",
+    "updated_at": "2026-09-29T04:29:48.376282"
+  },
+  {
+    "title": "Embroidery Assistant 7d06",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "8ef5b62e",
+    "is_active": true,
+    "created_at": "2026-09-29T04:35:37.851710",
+    "updated_at": "2026-09-29T04:35:37.851719"
+  },
+  {
+    "title": "Cotton Weaving Apprentice e3db",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "55555b11",
+    "is_active": true,
+    "created_at": "2026-09-29T04:35:46.557067",
+    "updated_at": "2026-09-29T04:35:46.588959"
+  },
+  {
+    "title": "Embroidery Assistant 3059",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "50b23067",
+    "is_active": true,
+    "created_at": "2026-09-29T04:39:44.790403",
+    "updated_at": "2026-09-29T04:39:44.790413"
+  },
+  {
+    "title": "Cotton Weaving Apprentice b494",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "4c770a81",
+    "is_active": true,
+    "created_at": "2026-09-29T04:39:54.325202",
+    "updated_at": "2026-09-29T04:39:54.360151"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 6441",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "145fe817",
+    "is_active": true,
+    "created_at": "2026-09-29T04:58:11.888470",
+    "updated_at": "2026-09-29T04:58:11.923829"
+  },
+  {
+    "title": "Embroidery Assistant 1dcb",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "fefa57e0",
+    "is_active": true,
+    "created_at": "2026-09-29T05:03:32.161513",
+    "updated_at": "2026-09-29T05:03:32.161523"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 6ce5",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "d1c0bf2f",
+    "is_active": true,
+    "created_at": "2026-09-29T05:03:41.370686",
+    "updated_at": "2026-09-29T05:03:41.410949"
+  },
+  {
+    "title": "Embroidery Assistant ba80",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "23510300",
+    "is_active": true,
+    "created_at": "2026-09-29T05:09:27.189041",
+    "updated_at": "2026-09-29T05:09:27.189052"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 0670",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "55baf405",
+    "is_active": true,
+    "created_at": "2026-09-29T05:09:34.810796",
+    "updated_at": "2026-09-29T05:09:34.852410"
+  },
+  {
+    "title": "Embroidery Assistant 903b",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "cf58900e",
+    "is_active": true,
+    "created_at": "2026-09-29T05:15:08.503039",
+    "updated_at": "2026-09-29T05:15:08.503049"
+  },
+  {
+    "title": "Cotton Weaving Apprentice dfc8",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "e4e4cdbb",
+    "is_active": true,
+    "created_at": "2026-09-29T05:15:17.580699",
+    "updated_at": "2026-09-29T05:15:17.621975"
+  },
+  {
+    "title": "Embroidery Assistant c5d7",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "2cdf1295",
+    "is_active": true,
+    "created_at": "2026-09-29T05:18:28.111443",
+    "updated_at": "2026-09-29T05:18:28.111449"
+  },
+  {
+    "title": "Cotton Weaving Apprentice be73",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "10c6971e",
+    "is_active": true,
+    "created_at": "2026-09-29T05:18:37.401081",
+    "updated_at": "2026-09-29T05:18:37.409902"
+  },
+  {
+    "title": "Embroidery Assistant 371c",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "0e223aed",
+    "is_active": true,
+    "created_at": "2026-09-29T05:23:36.768383",
+    "updated_at": "2026-09-29T05:23:36.768389"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 4c64",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "46d864b5",
+    "is_active": true,
+    "created_at": "2026-09-29T05:23:44.252365",
+    "updated_at": "2026-09-29T05:23:44.261091"
+  },
+  {
+    "title": "Embroidery Assistant a794",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "7b7e1520",
+    "is_active": true,
+    "created_at": "2026-09-29T05:28:48.585192",
+    "updated_at": "2026-09-29T05:28:48.585198"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 4fa9",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "17a9308c",
+    "is_active": true,
+    "created_at": "2026-09-29T05:28:57.381430",
+    "updated_at": "2026-09-29T05:28:57.391081"
+  },
+  {
+    "title": "Embroidery Assistant 2ec7",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "a0a9b257",
+    "is_active": true,
+    "created_at": "2026-09-29T09:05:42.392731",
+    "updated_at": "2026-09-29T09:05:42.392738"
+  },
+  {
+    "title": "Cotton Weaving Apprentice f801",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "66e4530b",
+    "is_active": true,
+    "created_at": "2026-09-29T09:05:52.509634",
+    "updated_at": "2026-09-29T09:05:52.572261"
+  },
+  {
+    "title": "Embroidery Assistant d6fd",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "3d7d2988",
+    "is_active": true,
+    "created_at": "2026-09-29T11:49:10.369050",
+    "updated_at": "2026-09-29T11:49:10.369056"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 67b2",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "ec27a106",
+    "is_active": true,
+    "created_at": "2026-09-29T11:49:18.593352",
+    "updated_at": "2026-09-29T11:49:18.617588"
+  },
+  {
+    "title": "Embroidery Assistant 308d",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "b52de6a2",
+    "is_active": true,
+    "created_at": "2026-09-29T11:54:39.441209",
+    "updated_at": "2026-09-29T11:54:39.441216"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 7e6d",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "b751ffce",
+    "is_active": true,
+    "created_at": "2026-09-29T11:54:48.337118",
+    "updated_at": "2026-09-29T11:54:48.362225"
+  },
+  {
+    "title": "Embroidery Assistant f89d",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "7d5b020d",
+    "is_active": true,
+    "created_at": "2026-09-29T12:15:13.572114",
+    "updated_at": "2026-09-29T12:15:13.572121"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 1340",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "3d4386a3",
+    "is_active": true,
+    "created_at": "2026-09-29T12:15:22.020482",
+    "updated_at": "2026-09-29T12:15:22.052388"
+  },
+  {
+    "title": "Embroidery Assistant fdae",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "d3ac8d2a",
+    "is_active": true,
+    "created_at": "2026-10-03T03:44:49.834731",
+    "updated_at": "2026-10-03T03:44:49.834738"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 34f5",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "6cfbb4d3",
+    "is_active": true,
+    "created_at": "2026-10-03T03:45:00.750542",
+    "updated_at": "2026-10-03T03:45:00.776244"
+  },
+  {
+    "title": "Embroidery Assistant 3524",
+    "organization": "Sudarshan Handlooms",
+    "description": "Traditional embroidery design roles for local candidates.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Embroidery"
+    ],
+    "eligibility": "Basic course completion",
+    "deadline": "2026-11-30",
+    "compensation": "Stipend of 4,000 INR / month",
+    "id": "1fb210c8",
+    "is_active": true,
+    "created_at": "2026-10-03T03:50:08.939489",
+    "updated_at": "2026-10-03T03:50:08.939497"
+  },
+  {
+    "title": "Cotton Weaving Apprentice 6092",
+    "organization": "Sudarshan Handlooms",
+    "description": "Learn to operate traditional looms and weaves under local master artisans in Dharwad.",
+    "opportunity_type": "livelihood",
+    "location": "Dharwad, Karnataka",
+    "required_skills": [
+      "Handicrafts",
+      "Weaving"
+    ],
+    "eligibility": "Basic weaving experience preferred",
+    "deadline": "2026-12-15",
+    "compensation": "Stipend of 6,500 INR / month",
+    "id": "2bbc8b45",
+    "is_active": true,
+    "created_at": "2026-10-03T03:50:36.760131",
+    "updated_at": "2026-10-03T03:50:37.152124"
+  }
+]

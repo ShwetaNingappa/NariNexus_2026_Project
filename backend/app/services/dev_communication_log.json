@@ -1,0 +1,702 @@
+[
+  {
+    "timestamp": "2026-09-29T03:58:31.565781",
+    "channel": "email",
+    "to": "candidate_learner_9cd6e7@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T03:58:33.709079",
+    "channel": "email",
+    "to": "candidate_learner_9cd6e7@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:03:51.325448",
+    "channel": "email",
+    "to": "notif_learner_a_93f02f@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:03:58.355554",
+    "channel": "email",
+    "to": "candidate_learner_702b34@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:04:00.615418",
+    "channel": "email",
+    "to": "candidate_learner_702b34@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:06:53.845795",
+    "channel": "email",
+    "to": "notif_learner_a_9eecde@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:06:59.681549",
+    "channel": "email",
+    "to": "candidate_learner_fb46b2@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:07:02.018715",
+    "channel": "email",
+    "to": "candidate_learner_fb46b2@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:12:11.306196",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:12:13.370672",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:12:21.498590",
+    "channel": "email",
+    "to": "notif_learner_a_a073a4@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:12:28.069132",
+    "channel": "email",
+    "to": "candidate_learner_4a3a56@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:12:30.282620",
+    "channel": "email",
+    "to": "candidate_learner_4a3a56@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:15:36.754123",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:15:38.856461",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:15:53.502676",
+    "channel": "email",
+    "to": "notif_learner_a_f850ae@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:16:06.278224",
+    "channel": "email",
+    "to": "candidate_learner_6bfd80@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:16:08.571381",
+    "channel": "email",
+    "to": "candidate_learner_6bfd80@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:29:20.253492",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:29:22.381295",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:29:33.217636",
+    "channel": "email",
+    "to": "notif_learner_a_7ad09c@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:29:39.300254",
+    "channel": "email",
+    "to": "candidate_learner_26560a@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:29:41.660651",
+    "channel": "email",
+    "to": "candidate_learner_26560a@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:35:19.291089",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:35:21.786401",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:35:31.440490",
+    "channel": "email",
+    "to": "notif_learner_a_01905c@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:35:37.881318",
+    "channel": "email",
+    "to": "candidate_learner_ba1cdd@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:35:40.243466",
+    "channel": "email",
+    "to": "candidate_learner_ba1cdd@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:39:27.415718",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:39:29.180147",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T04:39:38.205601",
+    "channel": "email",
+    "to": "notif_learner_a_4d8993@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:39:44.824095",
+    "channel": "email",
+    "to": "candidate_learner_320a80@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T04:39:47.254444",
+    "channel": "email",
+    "to": "candidate_learner_320a80@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:03:32.200091",
+    "channel": "email",
+    "to": "candidate_learner_84914f@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:03:34.358659",
+    "channel": "email",
+    "to": "candidate_learner_84914f@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:09:20.659722",
+    "channel": "email",
+    "to": "notif_learner_a_76ca33@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:09:27.228337",
+    "channel": "email",
+    "to": "candidate_learner_e3ee8d@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:09:28.937654",
+    "channel": "email",
+    "to": "candidate_learner_e3ee8d@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:14:51.223871",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:14:52.957355",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:15:02.274914",
+    "channel": "email",
+    "to": "notif_learner_a_e50c77@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:15:08.538744",
+    "channel": "email",
+    "to": "candidate_learner_22626a@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:15:10.389783",
+    "channel": "email",
+    "to": "candidate_learner_22626a@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:18:10.919501",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:18:13.201906",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:18:22.690761",
+    "channel": "email",
+    "to": "notif_learner_a_6fe0bf@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:18:28.117849",
+    "channel": "email",
+    "to": "candidate_learner_9cc2ae@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:18:30.329421",
+    "channel": "email",
+    "to": "candidate_learner_9cc2ae@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:23:21.056286",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:23:22.594459",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:23:30.697571",
+    "channel": "email",
+    "to": "notif_learner_a_a0a9d5@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:23:36.775385",
+    "channel": "email",
+    "to": "candidate_learner_9a34c8@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:23:38.447464",
+    "channel": "email",
+    "to": "candidate_learner_9a34c8@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:28:33.019147",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:28:35.533509",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T05:28:43.566088",
+    "channel": "email",
+    "to": "notif_learner_a_9531bb@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:28:48.593293",
+    "channel": "email",
+    "to": "candidate_learner_1cf428@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T05:28:50.756455",
+    "channel": "email",
+    "to": "candidate_learner_1cf428@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T08:53:55.536836",
+    "channel": "email",
+    "to": "security_learner_a_eaaa9f@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T08:55:03.764397",
+    "channel": "email",
+    "to": "security_learner_a_31d331@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T08:55:40.192607",
+    "channel": "email",
+    "to": "security_learner_a_96adfa@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T08:57:14.788863",
+    "channel": "email",
+    "to": "security_learner_a_4bfd8a@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T08:57:53.372892",
+    "channel": "email",
+    "to": "security_learner_a_fe7929@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T09:05:29.631979",
+    "channel": "email",
+    "to": "notif_learner_a_10b5d7@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T09:05:42.468493",
+    "channel": "email",
+    "to": "candidate_learner_e4131a@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T09:05:44.801098",
+    "channel": "email",
+    "to": "candidate_learner_e4131a@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T09:40:19.326641",
+    "channel": "email",
+    "to": "security_learner_a_cd0fd5@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T11:48:52.385484",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T11:48:54.666261",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T11:49:03.798097",
+    "channel": "email",
+    "to": "notif_learner_a_2edab5@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T11:49:10.387203",
+    "channel": "email",
+    "to": "candidate_learner_c1ed39@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T11:49:12.552296",
+    "channel": "email",
+    "to": "candidate_learner_c1ed39@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T11:54:22.417407",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T11:54:24.680819",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T11:54:33.363679",
+    "channel": "email",
+    "to": "notif_learner_a_31dce9@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T11:54:39.462441",
+    "channel": "email",
+    "to": "candidate_learner_4078fa@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T11:54:41.743102",
+    "channel": "email",
+    "to": "candidate_learner_4078fa@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T12:15:13.597205",
+    "channel": "email",
+    "to": "candidate_learner_ffad47@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T12:15:15.901092",
+    "channel": "email",
+    "to": "candidate_learner_ffad47@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T12:26:19.082411",
+    "channel": "email",
+    "to": "security_learner_a_244ddf@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T12:36:43.317302",
+    "channel": "email",
+    "to": "safe.test@narinexus.org",
+    "subject": "Confidential Alert",
+    "body_snippet": "<h3>Secure Message</h3><p>Verify details.</p>"
+  },
+  {
+    "timestamp": "2026-09-29T12:36:45.504556",
+    "channel": "email",
+    "to": "learner@gmail.com",
+    "subject": "Test Fallback",
+    "body_snippet": "<p>Fallback check</p>"
+  },
+  {
+    "timestamp": "2026-09-29T12:36:53.836226",
+    "channel": "email",
+    "to": "notif_learner_a_87c59a@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T12:36:59.340525",
+    "channel": "email",
+    "to": "candidate_learner_3e4d71@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T12:37:01.367231",
+    "channel": "email",
+    "to": "candidate_learner_3e4d71@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-09-29T13:03:49.854816",
+    "channel": "email",
+    "to": "security_learner_a_de40e8@gmail.com",
+    "subject": "NariNexus: Private Alert",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:44:41.536610",
+    "channel": "email",
+    "to": "notif_learner_a_f90550@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:44:49.849964",
+    "channel": "email",
+    "to": "candidate_learner_b50291@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:44:52.088518",
+    "channel": "email",
+    "to": "candidate_learner_b50291@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:47:15.048654",
+    "channel": "email",
+    "to": "rel_learner_a_583b37@gmail.com",
+    "subject": "NariNexus: Private Alert A",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:47:18.969639",
+    "channel": "email",
+    "to": "failure-test@gmail.com",
+    "subject": "Test Subject",
+    "body_snippet": "<p>Crash test</p>"
+  },
+  {
+    "timestamp": "2026-10-03T03:48:15.689148",
+    "channel": "email",
+    "to": "rel_learner_a_cc7bb4@gmail.com",
+    "subject": "NariNexus: Private Alert A",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:48:32.998625",
+    "channel": "email",
+    "to": "failure-test@gmail.com",
+    "subject": "Test Subject",
+    "body_snippet": "<p>Crash test</p>"
+  },
+  {
+    "timestamp": "2026-10-03T03:49:12.204888",
+    "channel": "email",
+    "to": "rel_learner_a_2a2956@gmail.com",
+    "subject": "NariNexus: Private Alert A",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:49:14.556326",
+    "channel": "email",
+    "to": "failure-test@gmail.com",
+    "subject": "Test Subject",
+    "body_snippet": "<p>Crash test</p>"
+  },
+  {
+    "timestamp": "2026-10-03T03:50:01.854556",
+    "channel": "email",
+    "to": "notif_learner_a_c233d2@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:50:08.960532",
+    "channel": "email",
+    "to": "candidate_learner_1dd415@gmail.com",
+    "subject": "NariNexus: Application Submitted Successfully",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:50:12.188400",
+    "channel": "email",
+    "to": "candidate_learner_1dd415@gmail.com",
+    "subject": "NariNexus: Application Status Updated",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:50:32.879947",
+    "channel": "email",
+    "to": "notif_learner_a_e81de8@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  },
+  {
+    "timestamp": "2026-10-03T03:50:37.658145",
+    "channel": "email",
+    "to": "notif_learner_a_3d0076@gmail.com",
+    "subject": "NariNexus: Test Notification Title",
+    "body_snippet": "\n                <html>\n                <body style=\"font-family: Arial, sans-serif; color: #3D2D1E; background-color: #FFFDF9; padding: 20px;\">\n                    <div style=\"max-width: 600px; margi..."
+  }
+]

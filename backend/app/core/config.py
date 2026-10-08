@@ -1,8 +1,8 @@
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables from .env file if it exists
-load_dotenv()
+load_dotenv(find_dotenv())
 
 class Settings:
     APP_NAME: str = os.getenv("APP_NAME", "NariNexus")
@@ -13,6 +13,7 @@ class Settings:
     JWT_SECRET: str = os.getenv("JWT_SECRET", "super-secret-key-narinexus-empowerment-2026")
     JWT_ALGORITHM: str = os.getenv("JWT_ALGORITHM", "HS256")
     ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "1440")) # 24 hours
+    CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "")
 
     # SMTP Settings
     SMTP_HOST: str = os.getenv("SMTP_HOST", "")

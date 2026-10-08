@@ -10,6 +10,7 @@ from backend.app.services.email_service import EmailService, DEV_OTP_LOG_FILE
 from backend.app.core.security import verify_password, create_access_token
 from backend.app.api.deps import get_current_user
 from backend.app.core.config import settings
+from backend.app.services.audit_service import AuditService
 
 router = APIRouter()
 
@@ -93,6 +94,15 @@ async def login(credentials: LoginRequest):
     email = credentials.email.strip().lower()
     user = UserService.get_user_by_email(email)
     if not user:
+        AuditService.record_audit_event(
+            actor_user_id="unknown",
+            actor_role="unknown",
+            action="LOGIN_FAILURE",
+            resource_type="USER",
+            resource_id="system",
+            success=False,
+            metadata={"email": email, "reason": "Incorrect email or password"}
+        )
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password"
@@ -100,12 +110,30 @@ async def login(credentials: LoginRequest):
     
     # Verify password securely
     if not verify_password(credentials.password, user.get("password_hash", "")):
+        AuditService.record_audit_event(
+            actor_user_id=user["id"],
+            actor_role=user["role"],
+            action="LOGIN_FAILURE",
+            resource_type="USER",
+            resource_id=user["id"],
+            success=False,
+            metadata={"email": email, "reason": "Incorrect email or password"}
+        )
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password"
         )
     
     if not user.get("is_active", True):
+        AuditService.record_audit_event(
+            actor_user_id=user["id"],
+            actor_role=user["role"],
+            action="LOGIN_FAILURE",
+            resource_type="USER",
+            resource_id=user["id"],
+            success=False,
+            metadata={"email": email, "reason": "User account is deactivated"}
+        )
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="User account is deactivated"
@@ -113,14 +141,34 @@ async def login(credentials: LoginRequest):
         
     # Enforce email OTP verification check
     if not user.get("is_verified", False):
+        AuditService.record_audit_event(
+            actor_user_id=user["id"],
+            actor_role=user["role"],
+            action="LOGIN_FAILURE",
+            resource_type="USER",
+            resource_id=user["id"],
+            success=False,
+            metadata={"email": email, "reason": "Email address is unverified"}
+        )
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Email verification is required"
+            detail="Email address is unverified. Please complete your OTP verification."
         )
     
     # Generate JWT
     token_data = {"sub": user["id"], "role": user["role"]}
     access_token = create_access_token(token_data)
+    
+    # Record audit event
+    AuditService.record_audit_event(
+        actor_user_id=user["id"],
+        actor_role=user["role"],
+        action="LOGIN_SUCCESS",
+        resource_type="USER",
+        resource_id=user["id"],
+        success=True,
+        metadata={"email": email}
+    )
     
     return {
         "success": True,
@@ -154,7 +202,9 @@ async def get_me(current_user: dict = Depends(get_current_user)):
             "existing_skills": current_user.get("existing_skills") or [],
             "learning_interests": current_user.get("learning_interests") or [],
             "learning_preference": current_user.get("learning_preference"),
-            "career_goal": current_user.get("career_goal")
+            "career_goal": current_user.get("career_goal"),
+            "points": current_user.get("points", 50),
+            "streak": current_user.get("streak", 1)
         }
     }
 

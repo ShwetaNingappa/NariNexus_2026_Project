@@ -175,13 +175,13 @@ export default function SkillsCataloguePage() {
               >
                 <span>Back to Dashboard</span>
               </Link>
-              <button
-                onClick={() => alert('Courses, enrollments, and training batches will be released in Phase 3.2!')}
+              <Link
+                to="/learner/courses"
                 className="inline-flex items-center gap-2 justify-center rounded-full bg-gradient-to-r from-deep-rose to-primary-pink hover:from-primary-pink hover:to-deep-rose px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-white shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5 cursor-pointer"
               >
                 <span>Explore Courses</span>
                 <ArrowRight className="h-3.5 w-3.5" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -280,6 +280,30 @@ export default function SkillsCataloguePage() {
                         </div>
                       )}
                     </div>
+
+                    {/* AI-Personalized Guidance Segment */}
+                    {((skill as any).reason || (skill as any).benefit || (skill as any).next_step) && (
+                      <div className="mt-4 p-3 bg-cream/40 border border-primary-gold/10 rounded-xl space-y-2">
+                        {(skill as any).reason && (
+                          <div>
+                            <span className="text-[9px] uppercase font-extrabold tracking-widest text-[#6B8E6F] block">Why Recommended:</span>
+                            <span className="text-[11px] text-[#3D2D1E] font-medium leading-normal block">{(skill as any).reason}</span>
+                          </div>
+                        )}
+                        {(skill as any).benefit && (
+                          <div>
+                            <span className="text-[9px] uppercase font-extrabold tracking-widest text-[#6B8E6F] block">Your Livelihood Benefit:</span>
+                            <span className="text-[11px] text-[#7D7061] leading-normal block">{(skill as any).benefit}</span>
+                          </div>
+                        )}
+                        {(skill as any).next_step && (
+                          <div className="pt-1.5 border-t border-primary-gold/10">
+                            <span className="text-[9px] uppercase font-extrabold tracking-widest text-[#6B8E6F] block">Suggested Action:</span>
+                            <span className="text-[11px] text-deep-rose font-bold block">{(skill as any).next_step}</span>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   <div className="mt-5 pt-3 border-t border-[#FCF9F5]">

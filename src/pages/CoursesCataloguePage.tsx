@@ -37,6 +37,28 @@ interface Course {
   prerequisites: string[];
   career_outcomes: string[];
   language: string;
+  // Enhanced parent training centre delivery fields
+  training_mode?: string;
+  centre_name?: string;
+  distance_km?: number | null;
+  online_training?: {
+    videos?: Array<{
+      title: string;
+      youtube_url: string;
+      duration?: string;
+      order?: number;
+    }>;
+  } | null;
+  offline_training?: {
+    address: string;
+    city: string;
+    district: string;
+    state: string;
+    pincode: string;
+    available_days: string;
+    start_time: string;
+    end_time: string;
+  } | null;
 }
 
 interface Category {
@@ -75,6 +97,12 @@ export default function CoursesCataloguePage() {
   const [selectedSkill, setSelectedSkill] = useState('');
   const [selectedDifficulty, setSelectedDifficulty] = useState('');
   const [selectedMode, setSelectedMode] = useState('');
+
+  // Enhanced geolocation and distance filtering states
+  const [selectedSort, setSelectedSort] = useState('');
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedDistrict, setSelectedDistrict] = useState('');
+  const [selectedState, setSelectedState] = useState('');
   
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -85,7 +113,7 @@ export default function CoursesCataloguePage() {
 
   useEffect(() => {
     fetchFilteredCourses();
-  }, [search, selectedCategory, selectedSkill, selectedDifficulty, selectedMode]);
+  }, [search, selectedCategory, selectedSkill, selectedDifficulty, selectedMode, selectedSort, selectedCity, selectedDistrict, selectedState]);
 
   const fetchMetadataAndRecommendations = async () => {
     try {
@@ -133,6 +161,12 @@ export default function CoursesCataloguePage() {
       if (selectedDifficulty) params.append('difficulty', selectedDifficulty);
       if (selectedMode) params.append('learning_mode', selectedMode);
 
+      // Enhanced geolocated parameters
+      if (selectedSort) params.append('sort', selectedSort);
+      if (selectedCity) params.append('city', selectedCity);
+      if (selectedDistrict) params.append('district', selectedDistrict);
+      if (selectedState) params.append('state', selectedState);
+
       const res = await fetch(`/api/courses?${params.toString()}`, { headers });
       if (!res.ok) {
         if (res.status === 401) {
@@ -160,6 +194,10 @@ export default function CoursesCataloguePage() {
     setSelectedSkill('');
     setSelectedDifficulty('');
     setSelectedMode('');
+    setSelectedSort('');
+    setSelectedCity('');
+    setSelectedDistrict('');
+    setSelectedState('');
   };
 
   const getDifficultyBadgeColor = (diff: string) => {
@@ -178,77 +216,90 @@ export default function CoursesCataloguePage() {
   const getModeBadgeColor = (mode: string) => {
     switch (mode.toLowerCase()) {
       case 'online':
-        return 'bg-blue-500/10 text-blue-700 border-blue-500/20';
+        return 'bg-emerald-50 text-emerald-800 border-emerald-200';
       case 'offline':
-        return 'bg-amber-500/10 text-amber-800 border-amber-500/20';
+        return 'bg-amber-50 text-amber-900 border-amber-200';
       case 'hybrid':
-        return 'bg-emerald-500/10 text-emerald-800 border-emerald-500/20';
+        return 'bg-blue-50 text-blue-800 border-blue-200';
       default:
         return 'bg-cream text-[#7D7061] border-primary-gold/10';
     }
   };
 
   return (
-    <div id="courses-catalogue-container" className="min-h-screen flex flex-col bg-[#FCF9F5] text-[#2D241A] font-sans">
+    <div className="flex min-h-screen flex-col bg-cream text-[#3D2D1E]" id="courses-catalogue-root">
       <Navbar />
 
-      <main className="flex-grow max-w-7xl w-full mx-auto px-4 py-8">
+      <main className="flex-grow max-w-7xl w-full mx-auto px-4 py-8 sm:px-6 lg:px-8 space-y-8">
+        
         {/* Page Header */}
-        <div className="mb-8 text-center md:text-left">
-          <h1 className="text-3xl font-extrabold text-[#2D241A] tracking-tight mb-2">Explore Learning Courses</h1>
-          <p className="text-sm text-[#7D7061] max-w-2xl">
-            Choose from high-quality offline classes at verified centers, convenient online modules, or hybrid skill-development courses.
+        <div className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs uppercase font-extrabold tracking-widest text-deep-gold block">
+            Skills &amp; Vocational Training Hub
+          </span>
+          <h1 className="font-serif text-3xl sm:text-4xl font-black text-[#2D241A] tracking-tight">
+            Discover Lifelong Learning and Enterprise Skills
+          </h1>
+          <p className="text-sm font-medium text-[#7D7061] leading-relaxed">
+            Choose from high-quality, local language courses provided by verified coaching centres. Study online at your own pace, or join hands-on classes nearby.
           </p>
         </div>
 
-        {/* Personalized recommendations */}
-        {recommendations.length > 0 && (
-          <div id="personalized-courses-shelf" className="mb-10 rounded-2xl bg-[#FFF8F0] border border-primary-gold/10 p-6 md:p-8">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="rounded-full bg-primary-gold/10 p-1.5 text-primary-gold">
-                <Star className="h-5 w-5 fill-current text-primary-gold" />
-              </div>
-              <div>
-                <h2 className="text-lg font-bold text-[#2D241A]">Recommended for You</h2>
-                <p className="text-xs text-[#7D7061]">Preliminary suggestions matching your stated goals and language preferences.</p>
-              </div>
-            </div>
+        {/* Global Catalog Search Bar */}
+        <div className="max-w-2xl mx-auto relative shadow-sm border border-primary-gold/15 rounded-2xl overflow-hidden bg-white">
+          <input 
+            type="text" 
+            placeholder="Search tailoring, digital literacy, finance, food products, basic stitching..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full pl-12 pr-4 py-4 text-xs font-semibold bg-white text-[#2D241A] focus:outline-none"
+          />
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-primary-gold/70" />
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {recommendations.map((course) => (
-                <div 
-                  key={`rec-${course.id}`} 
-                  onClick={() => navigate(`/learner/courses/${course.id}`)}
-                  className="flex flex-col bg-white rounded-xl border border-primary-gold/5 shadow-sm hover:shadow-md transition cursor-pointer overflow-hidden group"
-                >
-                  <div className="h-32 w-full relative overflow-hidden bg-cream">
-                    <img 
-                      src={course.thumbnail} 
-                      alt={course.title}
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                    />
-                    <div className="absolute top-2 right-2 flex flex-col gap-1">
-                      <span className={`px-2 py-0.5 rounded text-[10px] font-bold border ${getModeBadgeColor(course.learning_mode)} uppercase`}>
-                        {course.learning_mode}
+        {/* Personalized Recommendations Section */}
+        {recommendations.length > 0 && !search && (
+          <div className="space-y-4">
+            <h2 className="font-serif text-lg font-bold text-[#2D241A] flex items-center gap-1.5 justify-start">
+              <Sparkles className="h-5 w-5 text-deep-gold" />
+              <span>Recommended Courses For Your Profile</span>
+            </h2>
+            
+            <div className="overflow-x-auto pb-4 scrollbar-thin">
+              <div className="flex gap-6 w-max pr-4">
+                {recommendations.map((course) => (
+                  <div 
+                    key={`rec-${course.id}`}
+                    onClick={() => navigate(`/learner/courses/${course.id}`)}
+                    className="w-80 bg-white border border-primary-gold/10 hover:border-primary-gold/30 rounded-2xl p-4 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col group text-left"
+                  >
+                    <div className="h-32 rounded-xl overflow-hidden bg-cream mb-3.5 relative">
+                      <img src={course.thumbnail} alt={course.title} referrerPolicy="no-referrer" className="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                      <span className={`absolute top-2 right-2 px-2 py-0.5 rounded text-[8px] font-extrabold uppercase border ${getModeBadgeColor(course.training_mode || course.learning_mode)}`}>
+                        {course.training_mode || course.learning_mode}
                       </span>
                     </div>
-                  </div>
-                  <div className="p-4 flex-grow flex flex-col">
-                    <span className="text-[10px] font-bold text-primary-gold uppercase mb-1">
-                      {skills.find(s => s.id === course.skill_id)?.name || 'Course'}
+                    <span className="text-[9px] uppercase tracking-widest font-extrabold text-[#C8870A] mb-1">
+                      {course.centre_name || 'Partner Centre'}
                     </span>
                     <h3 className="text-sm font-bold text-[#2D241A] mb-1 line-clamp-1 group-hover:text-primary-gold transition">
                       {course.title}
                     </h3>
                     <p className="text-xs text-[#7D7061] line-clamp-2 mb-3 flex-grow">{course.description}</p>
+                    
+                    {course.distance_km !== null && course.distance_km !== undefined && (
+                      <span className="text-[9px] text-[#2E7D32] bg-[#E2F0D9] font-bold px-2 py-0.5 rounded w-fit mb-2">
+                        📍 Approx {course.distance_km} km away
+                      </span>
+                    )}
+
                     <div className="flex items-center justify-between text-[11px] font-medium text-[#7D7061] pt-2 border-t border-primary-gold/5">
                       <span>{course.duration}</span>
                       <span>By {course.instructor}</span>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         )}
@@ -257,7 +308,7 @@ export default function CoursesCataloguePage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           
           {/* Sidebar Filters */}
-          <div className="lg:col-span-1 bg-white border border-primary-gold/10 rounded-2xl p-6 h-fit sticky top-6">
+          <div className="lg:col-span-1 bg-white border border-primary-gold/10 rounded-2xl p-6 h-fit sticky top-6 text-left">
             <div className="flex items-center justify-between mb-5">
               <div className="flex items-center gap-2">
                 <Filter className="h-4.5 w-4.5 text-primary-gold" />
@@ -281,7 +332,7 @@ export default function CoursesCataloguePage() {
                   setSelectedCategory(e.target.value);
                   setSelectedSkill(''); // reset skill since category changed
                 }}
-                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition"
+                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition font-semibold"
               >
                 <option value="">All Categories</option>
                 {categories.map((cat) => (
@@ -296,7 +347,7 @@ export default function CoursesCataloguePage() {
               <select 
                 value={selectedSkill} 
                 onChange={(e) => setSelectedSkill(e.target.value)}
-                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition"
+                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition font-semibold"
               >
                 <option value="">All Skills</option>
                 {skills
@@ -314,7 +365,7 @@ export default function CoursesCataloguePage() {
               <select 
                 value={selectedDifficulty} 
                 onChange={(e) => setSelectedDifficulty(e.target.value)}
-                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition"
+                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition font-semibold"
               >
                 <option value="">All Levels</option>
                 <option value="beginner">Beginner</option>
@@ -329,7 +380,7 @@ export default function CoursesCataloguePage() {
               <select 
                 value={selectedMode} 
                 onChange={(e) => setSelectedMode(e.target.value)}
-                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition"
+                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition font-semibold"
               >
                 <option value="">All Modes</option>
                 <option value="online">Online</option>
@@ -337,42 +388,49 @@ export default function CoursesCataloguePage() {
                 <option value="hybrid">Hybrid</option>
               </select>
             </div>
-          </div>
 
-          {/* Core Catalogue Area */}
-          <div className="lg:col-span-3">
-            {/* Search Input */}
-            <div className="relative mb-6">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4.5 w-4.5 text-[#7D7061]" />
-              <input 
-                type="text" 
-                placeholder="Search courses by title, keywords, or instructor..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-2xl border border-primary-gold/15 bg-white pl-11 pr-4 py-3 text-sm focus:outline-none focus:border-primary-gold shadow-sm transition"
-              />
+            {/* Distance Sorting Option */}
+            <div className="mb-4">
+              <label className="block text-xs font-bold uppercase text-[#7D7061] mb-1.5">Geographic Distance</label>
+              <select 
+                value={selectedSort} 
+                onChange={(e) => setSelectedSort(e.target.value)}
+                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition font-semibold"
+              >
+                <option value="">None (Standard order)</option>
+                <option value="nearest">Nearest Training Centres</option>
+              </select>
             </div>
 
-            {/* Loading/Error state */}
-            {loading ? (
-              <div className="flex flex-col items-center justify-center py-20 text-[#7D7061]">
-                <div className="h-7 w-7 animate-spin rounded-full border-2 border-primary-gold border-t-transparent mb-3" />
-                <span className="text-xs font-medium">Fetching learning content...</span>
-              </div>
-            ) : error ? (
-              <div className="bg-soft-rose/10 border border-soft-rose/30 text-deep-rose rounded-2xl p-6 text-center text-sm font-medium">
+            {/* City Lookup Filter */}
+            <div className="mb-4">
+              <label className="block text-xs font-bold uppercase text-[#7D7061] mb-1.5">City Location</label>
+              <input 
+                type="text" 
+                placeholder="e.g. Mysuru"
+                value={selectedCity} 
+                onChange={(e) => setSelectedCity(e.target.value)}
+                className="w-full rounded-xl border border-primary-gold/10 bg-[#FCF9F5] p-2.5 text-xs text-[#2D241A] focus:outline-none focus:border-primary-gold transition font-semibold"
+              />
+            </div>
+          </div>
+
+          {/* Courses List Grid */}
+          <div className="lg:col-span-3">
+            {error && (
+              <div className="p-4 bg-soft-rose/30 border border-deep-rose/20 rounded-2xl text-xs text-deep-rose font-medium text-left">
                 {error}
               </div>
+            )}
+
+            {loading ? (
+              <div className="text-center py-20 text-xs font-bold uppercase tracking-widest text-[#7D7061]">
+                Syncing Course Database...
+              </div>
             ) : courses.length === 0 ? (
-              <div className="bg-white border border-primary-gold/5 rounded-2xl p-12 text-center">
-                <p className="text-sm font-bold text-[#2D241A] mb-1">No courses found matching filters</p>
-                <p className="text-xs text-[#7D7061] mb-4">Try clearing active search queries or loosening selection properties.</p>
-                <button 
-                  onClick={resetFilters}
-                  className="rounded-xl bg-light-pink border border-soft-rose/30 px-4 py-2 text-xs font-bold text-deep-rose hover:bg-soft-rose/10 transition cursor-pointer"
-                >
-                  Clear All Filters
-                </button>
+              <div className="text-center py-20 bg-white rounded-2xl border border-primary-gold/10 shadow-sm">
+                <p className="text-sm font-bold text-[#7D7061] uppercase tracking-wider">No matching courses found</p>
+                <p className="text-xs text-[#7D7061]/70 font-semibold mt-1">Try relaxing your search terms or location filters.</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -395,8 +453,8 @@ export default function CoursesCataloguePage() {
                         </span>
                       </div>
                       <div className="absolute top-3 right-3 flex flex-col gap-1.5 items-end">
-                        <span className={`px-2 py-0.5 rounded text-[9px] font-extrabold border ${getModeBadgeColor(course.learning_mode)} uppercase tracking-wider shadow-sm`}>
-                          {course.learning_mode}
+                        <span className={`px-2 py-0.5 rounded text-[9px] font-extrabold border ${getModeBadgeColor(course.training_mode || course.learning_mode)} uppercase tracking-wider shadow-sm`}>
+                          {course.training_mode || course.learning_mode}
                         </span>
                         <span className={`px-2 py-0.5 rounded text-[9px] font-extrabold border ${getDifficultyBadgeColor(course.difficulty)} uppercase tracking-wider shadow-sm`}>
                           {course.difficulty}
@@ -406,14 +464,14 @@ export default function CoursesCataloguePage() {
 
                     {/* Card details */}
                     <div className="p-5 flex-grow flex flex-col">
-                      <div className="flex items-center gap-1 text-[11px] font-bold text-primary-gold uppercase tracking-wider mb-1.5">
+                      <div className="flex items-center gap-1 text-[11px] font-bold text-primary-gold uppercase tracking-wider mb-1.5 text-left">
                         <BookOpen className="h-3 w-3" />
                         <span>{skills.find(s => s.id === course.skill_id)?.name || 'Learning Unit'}</span>
                       </div>
-                      <h3 className="text-base font-extrabold text-[#2D241A] mb-2 leading-snug group-hover:text-primary-gold transition">
+                      <h3 className="text-base font-extrabold text-[#2D241A] mb-2 leading-snug group-hover:text-primary-gold transition text-left">
                         {course.title}
                       </h3>
-                      <p className="text-xs text-[#7D7061] line-clamp-3 mb-4 flex-grow leading-relaxed">
+                      <p className="text-xs text-[#7D7061] line-clamp-3 mb-4 flex-grow leading-relaxed text-left">
                         {course.description}
                       </p>
 
@@ -428,16 +486,45 @@ export default function CoursesCataloguePage() {
                         </div>
                       </div>
 
-                      {/* Learning Mode Instructions */}
-                      <div className="mt-4 pt-3 border-t border-primary-gold/5 text-[11px] font-medium text-[#7D7061]">
-                        {course.learning_mode === 'online' && (
-                          <span className="text-emerald-700">✓ Digital course modules accessible immediately online.</span>
+                      {/* Training Delivery Details Display for Learner */}
+                      <div className="mt-4 pt-3 border-t border-primary-gold/5 text-[11px] font-semibold text-[#5D5041] space-y-2 text-left bg-[#FCF9F5] p-3.5 rounded-xl border border-primary-gold/5">
+                        <div className="flex items-center justify-between text-[10px] text-deep-gold font-bold uppercase tracking-wider mb-0.5">
+                          <span>Delivery Options</span>
+                          <span className="bg-deep-gold/10 px-2 py-0.5 rounded text-[8px]">
+                            {course.training_mode || course.learning_mode}
+                          </span>
+                        </div>
+                        
+                        {/* Parent Centre Name */}
+                        <div className="text-[10px] text-[#2D241A] font-extrabold uppercase tracking-wider block">
+                          🏫 {course.centre_name || 'NariNexus Partner Centre'}
+                        </div>
+
+                        {(course.training_mode === 'online' || course.training_mode === 'hybrid' || course.learning_mode === 'online' || course.learning_mode === 'hybrid') && (
+                          <div className="flex items-center gap-1.5 text-[10px] text-emerald-700">
+                            <span>🎥</span>
+                            <span>{course.online_training?.videos?.length || 0} YouTube training lessons</span>
+                          </div>
                         )}
-                        {course.learning_mode === 'offline' && (
-                          <span className="text-amber-800 font-bold">ℹ Available through verified training centres.</span>
-                        )}
-                        {course.learning_mode === 'hybrid' && (
-                          <span className="text-blue-700">⚙ Online learning lectures + mandatory local centre sessions.</span>
+                        
+                        {(course.training_mode === 'offline' || course.training_mode === 'hybrid' || course.learning_mode === 'offline' || course.learning_mode === 'hybrid') && (
+                          <div className="space-y-1.5 pt-1.5 border-t border-primary-gold/5">
+                            <div className="flex items-center justify-between text-[10px] text-amber-800">
+                              <span className="flex items-center gap-1">
+                                <span>📍</span>
+                                <span>{course.offline_training?.city || course.city || 'Mysuru'}, {course.offline_training?.state || course.state || 'Karnataka'}</span>
+                              </span>
+                              {course.distance_km !== null && course.distance_km !== undefined && (
+                                <span className="bg-[#E2F0D9] text-[#2E7D32] px-1.5 py-0.5 rounded font-extrabold text-[8px] tracking-wider shrink-0">
+                                  {course.distance_km} km away (approx)
+                                </span>
+                              )}
+                            </div>
+                            <div className="flex items-center gap-1 text-[9px] text-[#7D7061]">
+                              <span>📅</span>
+                              <span>{course.offline_training?.available_days || 'Mon–Fri'} ({course.offline_training?.start_time || '10:00 AM'} - {course.offline_training?.end_time || '1:00 PM'})</span>
+                            </div>
+                          </div>
                         )}
                       </div>
 
@@ -458,6 +545,7 @@ export default function CoursesCataloguePage() {
           </div>
 
         </div>
+
       </main>
 
       <Footer />

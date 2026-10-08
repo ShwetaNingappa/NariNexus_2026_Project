@@ -8,7 +8,8 @@ import {
   List, 
   CheckCircle, 
   PlayCircle,
-  Home
+  Home,
+  Lock
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -39,6 +40,11 @@ export default function LessonViewPage() {
   const [allLessons, setAllLessons] = useState<Lesson[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Phase 4.2 Progress States
+  const [enrolled, setEnrolled] = useState(false);
+  const [completedLessons, setCompletedLessons] = useState<string[]>([]);
+  const [toggling, setToggling] = useState(false);
 
   useEffect(() => {
     fetchLessonData();
@@ -80,10 +86,57 @@ export default function LessonViewPage() {
           setAllLessons(allData.lessons);
         }
       }
+
+      // 4. Fetch learner progress (to check enrollment and complete status)
+      try {
+        const progressRes = await fetch(`/api/progress/courses/${courseId}`, { headers });
+        if (progressRes.ok) {
+          const progressData = await progressRes.json();
+          setEnrolled(true);
+          setCompletedLessons(progressData.completed_lesson_ids || []);
+        } else {
+          setEnrolled(false);
+          setCompletedLessons([]);
+        }
+      } catch (err) {
+        setEnrolled(false);
+        setCompletedLessons([]);
+      }
     } catch (err: any) {
       setError(err.message || "Failed to load lesson module.");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleToggleComplete = async () => {
+    if (!lessonId || !courseId) return;
+    setToggling(true);
+    try {
+      const headers = {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${localStorage.getItem('narinexus_token')}`
+      };
+      const isCompleted = completedLessons.includes(lessonId);
+      const url = `/api/progress/lessons/${lessonId}/complete`;
+      const method = isCompleted ? 'DELETE' : 'POST';
+
+      const res = await fetch(url, { method, headers });
+      if (res.ok) {
+        // Refetch progress
+        const progressRes = await fetch(`/api/progress/courses/${courseId}`, { headers });
+        if (progressRes.ok) {
+          const progressData = await progressRes.json();
+          setCompletedLessons(progressData.completed_lesson_ids || []);
+        }
+      } else {
+        const errData = await res.json();
+        alert(errData.detail || "Failed to update lesson progress.");
+      }
+    } catch (err: any) {
+      alert("Error toggling lesson completion status.");
+    } finally {
+      setToggling(false);
     }
   };
 
@@ -191,24 +244,28 @@ export default function LessonViewPage() {
             <div className="space-y-3">
               {allLessons.map((les) => {
                 const isActive = les.id === lessonId;
+                const isCompleted = completedLessons.includes(les.id);
+                const isUnlocked = les.is_preview || enrolled || isCompleted;
                 return (
                   <button 
                     key={les.id}
-                    disabled={!les.is_preview && !isActive}
+                    disabled={!isUnlocked}
                     onClick={() => navigateToLesson(les.id)}
                     className={`w-full flex items-start gap-2.5 p-2.5 rounded-xl text-left border transition text-xs ${
                       isActive 
                         ? 'bg-light-pink border-soft-rose text-deep-rose font-bold'
-                        : les.is_preview
+                        : isUnlocked
                           ? 'border-transparent hover:bg-cream text-[#2D241A] font-medium cursor-pointer'
                           : 'border-transparent opacity-50 text-[#7D7061] cursor-not-allowed'
                     }`}
                   >
                     <div className="mt-0.5 shrink-0">
-                      {les.is_preview ? (
+                      {isCompleted ? (
+                        <CheckCircle className="h-4 w-4 text-[#556B2F]" />
+                      ) : les.is_preview ? (
                         <PlayCircle className="h-4 w-4 text-primary-gold" />
                       ) : (
-                        <CheckCircle className="h-4 w-4 text-[#7D7061]" />
+                        <Lock className="h-4 w-4 text-[#7D7061]" />
                       )}
                     </div>
                     <div>
@@ -241,9 +298,76 @@ export default function LessonViewPage() {
             </div>
 
             {/* Reading body container */}
-            <div id="lesson-reading-body" className="prose max-w-none text-[#7D7061] mb-10">
-              {renderFormattedContent(lesson.content)}
+            <div id="lesson-reading-body" className="prose max-w-none text-[#7D7061] mb-10 text-left">
+              {(() => {
+                const isVideo = lesson.content_type === 'video' || lesson.content?.includes('youtube.com') || lesson.content?.includes('youtu.be');
+                const videoId = isVideo ? (lesson.content.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/) || [])[1] : null;
+                
+                if (videoId) {
+                  return (
+                    <div className="space-y-4">
+                      <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-primary-gold/15 shadow-sm">
+                        <iframe
+                          src={`https://www.youtube.com/embed/${videoId}`}
+                          title={lesson.title}
+                          className="w-full h-full"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                      <div>
+                        <a
+                          href={lesson.content}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 rounded-xl bg-red-600 hover:bg-red-700 px-4 py-2.5 text-xs font-bold text-white transition cursor-pointer"
+                        >
+                          🎥 Watch on YouTube
+                        </a>
+                      </div>
+                      <div className="pt-4 border-t border-primary-gold/5">
+                        <p className="text-sm font-semibold text-[#2D241A] mb-1">Module Description:</p>
+                        <p className="text-xs font-semibold text-[#7D7061] leading-relaxed">{lesson.description}</p>
+                      </div>
+                    </div>
+                  );
+                }
+                
+                return renderFormattedContent(lesson.content);
+              })()}
             </div>
+
+            {/* Bottom Lesson Progress Action Button */}
+            {enrolled && (
+              <div className="my-8 p-6 bg-cream/40 border border-primary-gold/10 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="text-left">
+                  <h4 className="font-bold text-sm text-[#2D241A] mb-1">
+                    Have you read this module?
+                  </h4>
+                  <p className="text-xs text-[#7D7061]">
+                    Mark it complete to record your learning progress and unlock downstream credentials.
+                  </p>
+                </div>
+                <button
+                  disabled={toggling}
+                  onClick={handleToggleComplete}
+                  className={`px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-sm transition-all flex items-center gap-1.5 cursor-pointer disabled:opacity-50 ${
+                    completedLessons.includes(lessonId || '')
+                      ? 'bg-sage-green/20 border border-sage/40 text-[#556B2F] hover:bg-sage-green/30'
+                      : 'bg-deep-rose hover:bg-deep-rose/90 text-white'
+                  }`}
+                >
+                  {completedLessons.includes(lessonId || '') ? (
+                    <>
+                      <CheckCircle className="h-4.5 w-4.5 text-[#556B2F]" />
+                      <span>✓ Module Completed!</span>
+                    </>
+                  ) : (
+                    <span>Mark Module Complete</span>
+                  )}
+                </button>
+              </div>
+            )}
 
             {/* Bottom Navigation controls */}
             <div className="flex items-center justify-between pt-6 border-t border-primary-gold/10 mt-12 gap-4">
@@ -259,7 +383,7 @@ export default function LessonViewPage() {
                 <div />
               )}
 
-              {nextLesson && nextLesson.is_preview ? (
+              {nextLesson && (nextLesson.is_preview || enrolled) ? (
                 <button 
                   onClick={() => navigateToLesson(nextLesson.id)}
                   className="inline-flex items-center gap-1.5 rounded-xl bg-deep-rose hover:bg-deep-rose/90 px-4 py-2.5 text-xs font-bold text-white transition cursor-pointer shadow-sm"

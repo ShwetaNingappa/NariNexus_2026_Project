@@ -20,11 +20,6 @@ enrollments_router = APIRouter()
 def get_enrollments():
     return {"message": "Enrollments placeholder (Phase 2)"}
 
-progress_router = APIRouter()
-@progress_router.get("/")
-def get_progress():
-    return {"message": "Progress tracker placeholder (Phase 2)"}
-
 attendance_router = APIRouter()
 @attendance_router.get("/")
 def get_attendance():
@@ -40,10 +35,7 @@ notifications_router = APIRouter()
 def get_notifications():
     return {"message": "Notifications placeholder (Phase 2)"}
 
-ai_router = APIRouter()
-@ai_router.get("/")
-def get_ai_status():
-    return {"message": "Gemini AI assistant placeholder (Phase 2)"}
+from backend.app.api.endpoints.ai import router as ai_router
 
 admin_router = APIRouter()
 @admin_router.get("/stats")

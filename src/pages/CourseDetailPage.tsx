@@ -33,6 +33,30 @@ interface Course {
   prerequisites: string[];
   career_outcomes: string[];
   language: string;
+  // Enhanced parent training centre delivery fields
+  training_mode?: string;
+  centre_name?: string;
+  distance_km?: number | null;
+  online_training?: {
+    videos?: Array<{
+      title: string;
+      youtube_url: string;
+      description?: string;
+      order?: number;
+    }>;
+  } | null;
+  offline_training?: {
+    address: string;
+    city: string;
+    district: string;
+    state: string;
+    pincode: string;
+    available_days: string;
+    start_time: string;
+    end_time: string;
+    latitude?: number | null;
+    longitude?: number | null;
+  } | null;
 }
 
 interface Lesson {
@@ -62,6 +86,7 @@ export default function CourseDetailPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [enrollMsg, setEnrollMsg] = useState(false);
+  const [activeVideoIdx, setActiveVideoIdx] = useState(0);
 
   // Phase 4.1 Enrollment States
   const [enrollment, setEnrollment] = useState<Enrollment | null>(null);
@@ -70,6 +95,14 @@ export default function CourseDetailPage() {
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
   const [enrolling, setEnrolling] = useState(false);
   const [enrollError, setEnrollError] = useState<string | null>(null);
+
+  // Phase 4.2 Progress States
+  const [courseProgress, setCourseProgress] = useState<{
+    total_lessons: number;
+    completed_lessons: number;
+    completed_lesson_ids: string[];
+    progress_percentage: number;
+  } | null>(null);
 
   useEffect(() => {
     fetchCourseDetails();
@@ -116,8 +149,20 @@ export default function CourseDetailPage() {
               learning_mode: enrollData.learning_mode,
               enrollment_id: enrollData.enrollment_id
             });
+
+            // If enrolled, fetch dynamic course progress
+            try {
+              const progressRes = await fetch(`/api/progress/courses/${id}`, { headers });
+              if (progressRes.ok) {
+                const progressData = await progressRes.json();
+                setCourseProgress(progressData);
+              }
+            } catch (pErr) {
+              console.error("Failed to fetch course progress details:", pErr);
+            }
           } else {
             setEnrollment(null);
+            setCourseProgress(null);
           }
         }
       } catch (err) {
@@ -161,6 +206,15 @@ export default function CourseDetailPage() {
           learning_mode: data.enrollment.learning_mode,
           enrollment_id: data.enrollment.id
         });
+        
+        // Initialize 0% progress on newly created enrollment
+        setCourseProgress({
+          total_lessons: lessons.length,
+          completed_lessons: 0,
+          completed_lesson_ids: [],
+          progress_percentage: 0
+        });
+
         setShowEnrollModal(false);
         setShowConfirmationModal(true);
       }
@@ -273,6 +327,176 @@ export default function CourseDetailPage() {
               </div>
             </div>
 
+            {/* Training Mode Experience Sections */}
+            <div className="space-y-6 mb-8 text-left">
+              {(course.training_mode === 'hybrid' || course.learning_mode === 'hybrid') && (
+                <div className="bg-gradient-to-r from-deep-rose/10 to-primary-pink/15 p-5 rounded-3xl border border-soft-rose/30">
+                  <span className="text-xs uppercase font-extrabold tracking-widest text-deep-rose block mb-1">
+                    🔄 Hybrid Training Course
+                  </span>
+                  <p className="text-xs font-semibold text-[#5D5041] leading-relaxed">
+                    This course blends online video theory lessons with offline practical skill-building workshops at our neighborhood Training Centre. Both tracks are unlocked for your credentials.
+                  </p>
+                </div>
+              )}
+
+              {/* A. Online YouTube Training */}
+              {(course.training_mode === 'online' || course.training_mode === 'hybrid' || course.learning_mode === 'online' || course.learning_mode === 'hybrid') && (
+                <div className="bg-white border border-primary-gold/10 rounded-3xl p-6 shadow-sm space-y-4">
+                  <h3 className="font-serif text-lg font-extrabold text-[#2D241A] flex items-center gap-2">
+                    <span>🎥</span> Online Training
+                  </h3>
+
+                  {course.online_training?.videos && course.online_training.videos.length > 0 ? (
+                    <div className="space-y-4">
+                      {/* Active Video Player */}
+                      {(() => {
+                        const activeVideo = course.online_training.videos[activeVideoIdx] || course.online_training.videos[0];
+                        const videoId = activeVideo ? (activeVideo.youtube_url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/) || [])[1] : null;
+                        
+                        return (
+                          <div className="space-y-3">
+                            <h4 className="font-bold text-sm text-[#2D241A] leading-tight">
+                              Currently Playing: <span className="text-deep-rose">{activeVideo?.title}</span>
+                            </h4>
+                            
+                            {videoId ? (
+                              <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-primary-gold/15 shadow-sm">
+                                <iframe
+                                  src={`https://www.youtube.com/embed/${videoId}`}
+                                  title={activeVideo?.title || 'YouTube Video'}
+                                  className="w-full h-full"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                ></iframe>
+                              </div>
+                            ) : (
+                              <div className="aspect-video w-full rounded-2xl bg-cream/35 border border-dashed border-primary-gold/15 flex items-center justify-center text-xs font-semibold text-[#7D7061] italic">
+                                Loading video feed...
+                              </div>
+                            )}
+
+                            <div className="flex justify-between items-center">
+                              <span className="text-[11px] text-[#7D7061] font-medium leading-relaxed">
+                                {activeVideo?.description || 'Learn core concepts in this lesson module.'}
+                              </span>
+                              <a
+                                href={activeVideo?.youtube_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 rounded-xl bg-red-600 hover:bg-red-700 px-3.5 py-2 text-[10px] font-bold text-white transition cursor-pointer"
+                              >
+                                🎥 Watch on YouTube
+                              </a>
+                            </div>
+                          </div>
+                        );
+                      })()}
+
+                      {/* Video Selector list if multiple */}
+                      {course.online_training.videos.length > 1 && (
+                        <div className="space-y-2 pt-2 border-t border-primary-gold/5">
+                          <span className="text-[10px] uppercase font-bold text-[#7D7061] tracking-wider block mb-1">
+                            Course Video Lessons ({course.online_training.videos.length})
+                          </span>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-40 overflow-y-auto pr-1">
+                            {course.online_training.videos.map((vid, idx) => (
+                              <button
+                                key={idx}
+                                onClick={() => setActiveVideoIdx(idx)}
+                                className={`text-left p-2.5 rounded-xl border text-xs transition-all flex items-start gap-2 ${
+                                  activeVideoIdx === idx
+                                    ? 'border-deep-rose bg-light-pink text-deep-rose font-bold'
+                                    : 'border-primary-gold/15 hover:border-primary-gold/30 hover:bg-[#FCF9F5] text-[#3D2D1E]'
+                                }`}
+                              >
+                                <span className="bg-deep-rose/10 px-1.5 py-0.5 rounded text-[9px] font-bold tracking-tight mt-0.5 shrink-0">
+                                  {idx + 1}
+                                </span>
+                                <span className="truncate leading-tight">{vid.title}</span>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="p-5 text-center bg-cream/20 rounded-2xl border border-dashed border-primary-gold/10 text-xs font-semibold text-[#7D7061] italic">
+                      Online lessons are currently being registered under this curriculum.
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* B. Offline Training Centre Location */}
+              {(course.training_mode === 'offline' || course.training_mode === 'hybrid' || course.learning_mode === 'offline' || course.learning_mode === 'hybrid') && (
+                <div className="bg-white border border-primary-gold/10 rounded-3xl p-6 shadow-sm space-y-4">
+                  <h3 className="font-serif text-lg font-extrabold text-[#2D241A] flex items-center gap-2">
+                    <span>📍</span> Neighborhood Training Location
+                  </h3>
+
+                  {course.offline_training ? (
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                      <div className="md:col-span-2 space-y-2.5">
+                        <div className="space-y-1">
+                          <span className="text-[10px] uppercase font-bold text-[#7D7061] tracking-wider block">Official Training Centre</span>
+                          <h4 className="font-serif text-base font-extrabold text-[#2D241A]">
+                            🏫 {course.centre_name || course.offline_training.centre_name || 'NariNexus Women Skill Centre'}
+                          </h4>
+                        </div>
+                        
+                        <div className="space-y-1">
+                          <span className="text-[10px] uppercase font-bold text-[#7D7061] tracking-wider block">Neighborhood Address</span>
+                          <p className="text-xs font-semibold text-[#5D5041] leading-relaxed">
+                            {course.offline_training.address}<br />
+                            {course.offline_training.city}, {course.offline_training.district}, {course.offline_training.state} - {course.offline_training.pincode}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="md:col-span-1 flex flex-col justify-center items-stretch md:items-end gap-3.5 bg-cream/10 md:bg-transparent p-4 md:p-0 rounded-2xl border border-primary-gold/15 md:border-transparent">
+                        {(() => {
+                          const offline = course.offline_training;
+                          let mapUrl = '#';
+                          if (offline.latitude !== undefined && offline.latitude !== null && offline.longitude !== undefined && offline.longitude !== null) {
+                            mapUrl = `https://www.google.com/maps/search/?api=1&query=${offline.latitude},${offline.longitude}`;
+                          } else {
+                            const queryParts = [
+                              offline.address,
+                              offline.city,
+                              offline.district,
+                              offline.state,
+                              offline.pincode
+                            ].filter(Boolean);
+                            mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queryParts.join(', '))}`;
+                          }
+                          return (
+                            <a
+                              href={mapUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex w-full md:w-auto items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-deep-gold to-[#C8870A] hover:from-[#C8870A] hover:to-deep-gold text-white text-xs font-bold uppercase tracking-wider py-3 px-5 shadow-sm hover:shadow-md transition cursor-pointer text-center"
+                            >
+                              <span>📍 VIEW ON MAP</span>
+                            </a>
+                          );
+                        })()}
+
+                        <div className="text-[10px] text-[#7D7061] font-semibold md:text-right space-y-1">
+                          <div>📅 {course.offline_training.available_days || 'Monday – Friday'}</div>
+                          <div>🕒 {course.offline_training.start_time || '10:00 AM'} - {course.offline_training.end_time || '1:00 PM'}</div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="p-5 text-center bg-cream/20 rounded-2xl border border-dashed border-primary-gold/10 text-xs font-semibold text-[#7D7061] italic">
+                      Offline session schedules are currently being compiled.
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
             {/* Prerequisites and Career outcomes */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white border border-primary-gold/10 rounded-2xl p-5 shadow-sm">
@@ -324,22 +548,46 @@ export default function CourseDetailPage() {
               </div>
 
               {/* Enrollment Trigger */}
-              {enrollment && enrollment.status === 'active' ? (
-                <div className="space-y-3">
-                  <div className="bg-sage/10 border border-sage/30 rounded-xl p-3.5 text-center">
-                    <span className="text-xs font-bold text-[#556B2F] block mb-1">
-                      ✓ ENROLLED & ACTIVE
+              {enrollment ? (
+                <div className="space-y-4">
+                  <div className={`border rounded-xl p-3.5 text-center ${
+                    enrollment.status === 'completed'
+                      ? 'bg-sage-green/20 border-green-300 text-green-800'
+                      : 'bg-sage-green/10 border-[#556B2F]/20 text-[#556B2F]'
+                  }`}>
+                    <span className="text-xs font-bold block mb-1">
+                      {enrollment.status === 'completed' ? '✓ COURSE COMPLETED!' : '✓ ENROLLED & ACTIVE'}
                     </span>
                     <span className="text-[11px] text-[#7D7061] capitalize">
                       {enrollment.learning_mode} Mode Track
                     </span>
                   </div>
+
+                  {/* Course Progress Bar */}
+                  {courseProgress && (
+                    <div className="bg-cream/40 border border-primary-gold/10 rounded-xl p-3.5 space-y-2">
+                      <div className="flex justify-between items-center text-[10px] font-bold">
+                        <span className="text-[#7D7061] uppercase">Course Progress</span>
+                        <span className="text-deep-rose">{courseProgress.progress_percentage}%</span>
+                      </div>
+                      <div className="w-full bg-white border border-primary-gold/10 h-2 rounded-full overflow-hidden">
+                        <div 
+                          className="bg-gradient-to-r from-deep-rose to-primary-pink h-full transition-all duration-300" 
+                          style={{ width: `${courseProgress.progress_percentage}%` }} 
+                        />
+                      </div>
+                      <div className="text-[9px] text-[#7D7061] font-semibold text-center mt-1">
+                        {courseProgress.completed_lessons} of {courseProgress.total_lessons} modules completed
+                      </div>
+                    </div>
+                  )}
+
                   {lessons.length > 0 && (
                     <Link
                       to={`/learner/courses/${course.id}/lessons/${lessons[0].id}`}
                       className="w-full text-center block rounded-xl bg-deep-rose hover:bg-deep-rose/90 text-white font-bold py-3 text-xs uppercase tracking-wider shadow-sm transition-all"
                     >
-                      Resume Learning
+                      {enrollment.status === 'completed' ? 'Review Lessons' : 'Resume Learning'}
                     </Link>
                   )}
                 </div>
@@ -358,26 +606,77 @@ export default function CourseDetailPage() {
                   <span>The NariNexus enrollment system is being finalized. Your preference is recorded!</span>
                 </div>
               )}
-
-              {/* Learning Mode specifics */}
-              <div className="mt-5 pt-4 border-t border-primary-gold/5 space-y-3.5">
-                <div className="flex gap-2.5 items-start">
-                  <span className="text-xs uppercase font-extrabold text-[#7D7061] shrink-0">Mode:</span>
-                  <div className="text-xs text-[#7D7061]">
-                    {course.learning_mode === 'online' && (
-                      <p className="font-medium">100% Online course. Study at your own pace through digital lessons.</p>
-                    )}
-                    {course.learning_mode === 'offline' && (
-                      <p className="font-medium text-amber-800">Offline Course. Delivered physically through verified local coaching centers.</p>
-                    )}
-                    {course.learning_mode === 'hybrid' && (
-                      <p className="font-medium text-blue-700">Hybrid Course. Digital lessons combined with physical practical workshops.</p>
-                    )}
+              {/* Enhanced Training Options & Delivery Management Panel */}
+              <div className="mt-5 pt-4 border-t border-primary-gold/15 space-y-4">
+                <h4 className="text-xs uppercase font-extrabold text-[#2D241A] tracking-wider border-b border-primary-gold/5 pb-1 text-left">
+                  Training Options &amp; Delivery
+                </h4>
+                
+                <div className="bg-[#FCF9F5] p-4 rounded-xl border border-primary-gold/10 space-y-3.5 text-left">
+                  <div className="flex items-center justify-between border-b border-primary-gold/5 pb-1.5">
+                    <span className="text-[10px] uppercase tracking-wider font-extrabold text-[#7D7061]">Delivery Mode</span>
+                    <span className="px-2 py-0.5 rounded bg-deep-gold/10 text-deep-gold text-[8px] font-extrabold uppercase tracking-wide">
+                      {course.training_mode || course.learning_mode || 'online'}
+                    </span>
                   </div>
-                </div>
-                <div className="flex gap-2.5 items-start">
-                  <span className="text-xs uppercase font-extrabold text-[#7D7061] shrink-0">Center:</span>
-                  <p className="text-xs text-[#7D7061] italic">Centre selection and scheduling will unlock in the next phase.</p>
+
+                  <div className="space-y-1">
+                    <span className="text-[9px] uppercase tracking-wider font-extrabold text-[#7D7061] block">Training Centre</span>
+                    <span className="text-xs font-bold text-[#2D241A] block">🏫 {course.centre_name || 'NariNexus Partner Centre'}</span>
+                  </div>
+
+                  {/* Online section */}
+                  {(course.training_mode === 'online' || course.training_mode === 'hybrid' || course.learning_mode === 'online' || course.learning_mode === 'hybrid') && (
+                    <div className="space-y-1.5 border-t border-primary-gold/5 pt-2">
+                      <span className="text-[9px] uppercase tracking-wider font-extrabold text-emerald-800 flex items-center gap-1.5">
+                        <span>🎥</span> Online Study Portal
+                      </span>
+                      <p className="text-[11px] text-[#5D5041] font-medium leading-relaxed">
+                        ✓ {course.online_training?.videos?.length || 0} YouTube training lectures pre-registered and waiting inside your syllabus.
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Offline section */}
+                  {(course.training_mode === 'offline' || course.training_mode === 'hybrid' || course.learning_mode === 'offline' || course.learning_mode === 'hybrid') && (
+                    <div className="space-y-2 border-t border-primary-gold/5 pt-2 text-[11px]">
+                      <span className="text-[9px] uppercase tracking-wider font-extrabold text-amber-800 flex items-center gap-1.5">
+                        <span>📍</span> Practical Classes
+                      </span>
+                      
+                      {course.offline_training ? (
+                        <div className="space-y-2 text-[#5D5041] font-semibold">
+                          <div>
+                            <span className="text-[9px] uppercase tracking-wider font-extrabold text-[#7D7061] block">Location Address</span>
+                            <span className="block leading-relaxed">{course.offline_training.address}</span>
+                            {course.offline_training.village && <span className="block text-[10px] text-[#7D7061]">{course.offline_training.village}</span>}
+                            <span className="block font-bold text-[#2D241A]">{course.offline_training.city}, {course.offline_training.district}, {course.offline_training.state} - {course.offline_training.pincode}</span>
+                          </div>
+
+                          {course.distance_km !== null && course.distance_km !== undefined && (
+                            <div className="bg-[#E2F0D9] text-[#2E7D32] px-2.5 py-1 rounded font-extrabold text-[10px] tracking-wider w-fit">
+                              Distance: {course.distance_km} km away (approx)
+                            </div>
+                          )}
+
+                          <div className="grid grid-cols-2 gap-2 bg-white p-2 rounded-lg border border-primary-gold/5 text-[10px]">
+                            <div>
+                              <span className="text-[8px] uppercase tracking-wider text-[#7D7061] block">Weekly Days</span>
+                              <span className="text-[#2D241A] font-bold">{course.offline_training.available_days}</span>
+                            </div>
+                            <div>
+                              <span className="text-[8px] uppercase tracking-wider text-[#7D7061] block">Daily Window</span>
+                              <span className="text-[#2D241A] font-bold">{course.offline_training.start_time} - {course.offline_training.end_time}</span>
+                            </div>
+                          </div>
+                        </div>
+                      ) : (
+                        <p className="text-[10px] text-[#7D7061] italic leading-relaxed">
+                          Practical classes are available at {(course as any).centre_address || 'our local center'}, {(course as any).centre_city || 'Mysuru'}. Contact support for schedule updates.
+                        </p>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -399,7 +698,8 @@ export default function CourseDetailPage() {
           ) : (
             <div className="space-y-4">
               {lessons.map((lesson) => {
-                const isUnlocked = lesson.is_preview || (enrollment && enrollment.status === 'active');
+                const isCompleted = courseProgress?.completed_lesson_ids?.includes(lesson.id) || false;
+                const isUnlocked = lesson.is_preview || (enrollment && (enrollment.status === 'active' || enrollment.status === 'completed')) || isCompleted;
                 return (
                   <div 
                     key={lesson.id}
@@ -407,7 +707,9 @@ export default function CourseDetailPage() {
                   >
                     <div className="flex items-start gap-3.5 flex-grow">
                       <div className="rounded-xl bg-primary-gold/10 p-2 text-primary-gold mt-0.5 shrink-0">
-                        {isUnlocked ? (
+                        {isCompleted ? (
+                          <CheckCircle className="h-5 w-5 text-[#556B2F]" />
+                        ) : isUnlocked ? (
                           <PlayCircle className="h-5 w-5 text-primary-gold" />
                         ) : (
                           <Lock className="h-5 w-5 text-[#7D7061]" />
@@ -421,6 +723,11 @@ export default function CourseDetailPage() {
                           {lesson.is_preview && (
                             <span className="bg-sage/15 text-[#556B2F] border border-sage/20 text-[9px] font-extrabold px-1.5 py-0.2 rounded uppercase">
                               Preview
+                            </span>
+                          )}
+                          {isCompleted && (
+                            <span className="bg-[#556B2F]/15 text-[#556B2F] border border-[#556B2F]/20 text-[9px] font-extrabold px-1.5 py-0.2 rounded uppercase">
+                              ✓ Completed
                             </span>
                           )}
                         </div>

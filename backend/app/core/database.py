@@ -38,14 +38,17 @@ class Database:
 
     @classmethod
     def is_connected(cls) -> bool:
-        if not cls.client or not cls.db:
-            # If we are using local JSON/mock database fallback, it is always healthy/connected
-            return True
+        if cls.client is None or cls.db is None:
+            return False
         try:
             cls.client.admin.command('ping')
             return True
         except Exception:
             return False
+
+    @classmethod
+    def is_fallback(cls) -> bool:
+        return cls.client is None or cls.db is None
 
     @classmethod
     def get_db(cls):

@@ -49,3 +49,27 @@ async def get_current_user(credentials: Optional[HTTPAuthorizationCredentials] =
         )
     
     return user
+
+
+async def get_current_user_optional(credentials: Optional[HTTPAuthorizationCredentials] = Depends(reusable_oauth2)) -> Optional[dict]:
+    """
+    Optional dependency that returns the current active user dict if a valid token is provided, otherwise returns None.
+    """
+    if not credentials:
+        return None
+    
+    token = credentials.credentials
+    payload = decode_access_token(token)
+    if not payload:
+        return None
+    
+    user_id = payload.get("sub")
+    if not user_id:
+        return None
+    
+    user = UserService.get_user_by_id(user_id)
+    if not user or not user.get("is_active", True):
+        return None
+        
+    return user
+

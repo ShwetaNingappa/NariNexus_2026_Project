@@ -4,15 +4,269 @@ import uuid
 from datetime import datetime
 from typing import Optional, List, Dict, Any
 from backend.app.core.database import db_instance
+import time
+
+_GEMINI_COOLDOWN_UNTIL = 0.0
 
 MOCK_COURSES_FILE = os.path.join(os.path.dirname(__file__), "mock_courses.json")
 MOCK_LESSONS_FILE = os.path.join(os.path.dirname(__file__), "mock_lessons.json")
 
 INITIAL_COURSES = [
+    # COURSE 1: Basic Tailoring & Stitching
     {
-        "id": "computer-basics-entrepreneurs",
-        "title": "Computer Basics for Women Entrepreneurs",
-        "description": "Master typing, folder organization, basic document editing, and online navigation to support your business operations.",
+        "id": "basic-tailoring-stitching",
+        "title": "Basic Tailoring & Stitching",
+        "description": "Learn the fundamentals of tailoring and stitching, including understanding sewing tools, fabric selection, basic measurements, cutting techniques, machine operation, and stitching simple garments. This course is designed to help rural rural women develop practical tailoring skills that can be used for employment, home-based work, or starting a small tailoring business.",
+        "skill_id": "basic-stitching",
+        "category_id": "tailoring-fashion",
+        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "beginner",
+        "duration": "12 Weeks",
+        "learning_mode": "hybrid",
+        "instructor": "Lakshmi Devendra",
+        "prerequisites": ["None"],
+        "career_outcomes": ["Home Tailor", "Boutique Owner", "Garment Assistant"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-yelahanka",
+        "online_training": {
+            "videos": [
+                {
+                    "title": "Basic Tailoring Class for Beginners",
+                    "youtube_url": "https://www.youtube.com/watch?v=5RBvvBcN0Z8",
+                    "description": "Beginner-friendly tailoring and stitching tutorial covering measurements, cutting, sewing-machine basics and garment stitching.",
+                    "order": 1
+                }
+            ]
+        },
+        "translations": {
+            "kn": {
+                "title": "ಮೂಲ ಹೊಲಿಗೆ ಮತ್ತು ಕತ್ತರಿಸುವುದು",
+                "description": "ಹೊಲಿಗೆ ಮತ್ತು ಕತ್ತರಿಸುವಿಕೆಯ ಮೂಲಭೂತ ಅಂಶಗಳನ್ನು ಕಲಿಯಿರಿ, ಉಡುಪುಗಳ ವಿನ್ಯಾಸ, ಹೊಲಿಗೆ ಯಂತ್ರ ಕಾರ್ಯಾಚರಣೆ ಮತ್ತು ಸರಳ ಉಡುಪುಗಳ ಹೊಲಿಗೆ ತರಬೇತಿ."
+            }
+        }
+    },
+    # COURSE 2: Advanced Dress Designing
+    {
+        "id": "advanced-dress-designing",
+        "title": "Advanced Dress Designing",
+        "description": "Develop advanced garment design skills including pattern preparation, neckline and sleeve designs, dress construction, finishing techniques, and basic fashion design principles.",
+        "skill_id": "blouse-salwar-stitching",
+        "category_id": "tailoring-fashion",
+        "thumbnail": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "intermediate",
+        "duration": "8 Weeks",
+        "learning_mode": "offline",
+        "instructor": "Priya Hegde",
+        "prerequisites": ["Basic Stitching & Alterations"],
+        "career_outcomes": ["Boutique Designer", "Pattern Cutter", "Independent Seamstress"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-mysuru-shakti",
+        "online_training": {
+            "videos": []
+        },
+        "translations": {
+            "kn": {
+                "title": "ಸುಧಾರಿತ ಉಡುಗೆ ವಿನ್ಯಾಸ",
+                "description": "ಮಾದರಿ ತಯಾರಿ, ಕತ್ತಿನ ಮತ್ತು ತೋಳಿನ ವಿನ್ಯಾಸಗಳು, ಉಡುಪುಗಳ ನಿರ್ಮಾಣ ಮತ್ತು ಸೃಜನಾತ್ಮಕ ವಿನ್ಯಾಸ ಸೇರಿದಂತೆ ಸುಧಾರಿತ ಉಡುಗೆ ವಿನ್ಯಾಸ ಕೌಶಲ್ಯಗಳನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿ."
+            }
+        }
+    },
+    # COURSE 3: Digital Literacy for Women
+    {
+        "id": "digital-literacy-women",
+        "title": "Digital Literacy for Women",
+        "description": "Learn essential digital skills including computer basics, internet usage, online communication, digital documents, safe browsing, and basic online services.",
+        "skill_id": "computer-literacy",
+        "category_id": "digital-skills",
+        "thumbnail": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "beginner",
+        "duration": "4 Weeks",
+        "learning_mode": "online",
+        "instructor": "Asha Kulkarni",
+        "prerequisites": ["None"],
+        "career_outcomes": ["Data Entry Specialist", "Office Assistant", "Smart Shop Operator"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-yelahanka",
+        "online_training": {
+            "videos": [
+                {
+                    "title": "Introduction to Computers & Digital Literacy – Beginner Course",
+                    "youtube_url": "https://www.youtube.com/watch?v=8fCQ_ZuL2TY",
+                    "description": "Beginner-friendly digital literacy training covering computers, internet, email, security and basic digital skills.",
+                    "order": 1
+                }
+            ]
+        },
+        "translations": {
+            "kn": {
+                "title": "ಮಹಿಳೆಯರಿಗಾಗಿ ಡಿಜಿಟಲ್ ಸಾಕ್ಷರತೆ",
+                "description": "ಕಂಪ್ಯೂಟರ್ ಮೂಲಗಳು, ಇಂಟರ್ನೆಟ್ ಬಳಕೆ, ಆನ್‌ಲೈನ್ ಸಂವಹನ, ಸುರಕ್ಷಿತ ಬ್ರೌಸಿಂಗ್ ಮತ್ತು ಡಿಜಿಟಲ್ ಸೇವೆಗಳು ಸೇರಿದಂತೆ ಅಗತ್ಯ ಡಿಜಿಟಲ್ ಕೌಶಲ್ಯಗಳನ್ನು ಕಲಿಯಿರಿ."
+            }
+        }
+    },
+    # COURSE 4: Mobile Payments & UPI Skills
+    {
+        "id": "mobile-payments-upi",
+        "title": "Mobile Payments & UPI Skills",
+        "description": "Learn how to safely use mobile payment applications, UPI, QR codes, bank transfers, transaction verification, and basic digital financial safety.",
+        "skill_id": "digital-payments",
+        "category_id": "digital-skills",
+        "thumbnail": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "beginner",
+        "duration": "2 Weeks",
+        "learning_mode": "online",
+        "instructor": "Deepika Rao",
+        "prerequisites": ["Basic Smartphone Usage"],
+        "career_outcomes": ["Digital Payments Facilitator", "Smart Retail Associate", "Community Payment Guide"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-yelahanka",
+        "online_training": {
+            "videos": []
+        },
+        "translations": {
+            "kn": {
+                "title": "ಮೊಬೈಲ್ ಪಾವತಿಗಳು ಮತ್ತು ಯುಪಿಐ ಕೌಶಲ್ಯಗಳು",
+                "description": "ಮೊಬೈಲ್ ಪಾವತಿ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು, ಯುಪಿಐ, ಕ್ಯೂಆರ್ ಕೋಡ್‌ಗಳು ಮತ್ತು ಸುರಕ್ಷಿತ ಡಿಜಿಟಲ್ ಪಾವತಿ ವಿಧಾನಗಳನ್ನು ಕಲಿಯಿರಿ."
+            }
+        }
+    },
+    # COURSE 5: Embroidery & Handicrafts
+    {
+        "id": "embroidery-handicrafts",
+        "title": "Embroidery & Handicrafts",
+        "description": "Learn traditional and modern embroidery techniques and create handmade products that can be sold locally or through online marketplaces.",
+        "skill_id": "embroidery-crochet",
+        "category_id": "handicrafts",
+        "thumbnail": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "beginner",
+        "duration": "6 Weeks",
+        "learning_mode": "hybrid",
+        "instructor": "Savitha Gowda",
+        "prerequisites": ["None"],
+        "career_outcomes": ["Handicraft Creator", "Embroidery Entrepreneur", "Home-based Crafter"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-mandya",
+        "online_training": {
+            "videos": [
+                {
+                    "title": "Hand Embroidery for Beginners - Part 1",
+                    "youtube_url": "https://www.youtube.com/watch?v=vf_jFr6sC-o",
+                    "description": "Beginner hand embroidery training covering preparation, embroidery tools, floss and starting stitches.",
+                    "order": 1
+                },
+                {
+                    "title": "Hand Embroidery for Beginners - Part 2: 10 Basic Stitches",
+                    "youtube_url": "https://www.youtube.com/watch?v=kKnBUa4l2k4",
+                    "description": "Introduction to ten foundational hand embroidery stitches.",
+                    "order": 2
+                }
+            ]
+        },
+        "translations": {
+            "kn": {
+                "title": "ಕಸೂತಿ ಮತ್ತು ಕರಕುಶಲ ಕಲೆ",
+                "description": "ಸಾಂಪ್ರದಾಯಿಕ ಮತ್ತು ಆಧುನಿಕ ಕಸೂತಿ ತಂತ್ರಗಳನ್ನು ಕಲಿಯಿರಿ ಮತ್ತು ಸ್ಥಳೀಯವಾಗಿ ಅಥವಾ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಮಾರಾಟ ಮಾಡಬಹುದಾದ ಕರಕುಶಲ ವಸ್ತುಗಳನ್ನು ರಚಿಸಿ."
+            }
+        }
+    },
+    # COURSE 6: Beauty & Personal Care
+    {
+        "id": "beauty-personal-care-course",
+        "title": "Beauty & Personal Care",
+        "description": "Learn basic beauty and personal-care skills including skincare, hair care, hygiene, basic makeup, and salon service fundamentals.",
+        "skill_id": "beauty-personal-care",
+        "category_id": "beauty-wellness",
+        "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "beginner",
+        "duration": "6 Weeks",
+        "learning_mode": "offline",
+        "instructor": "Reena D'Souza",
+        "prerequisites": ["None"],
+        "career_outcomes": ["Beautician", "Salon Assistant", "Freelance Beauty Stylist"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-bengaluru-shakti",
+        "online_training": {
+            "videos": []
+        },
+        "translations": {
+            "kn": {
+                "title": "ಸೌಂದರ್ಯ ಮತ್ತು ವೈಯಕ್ತಿಕ ಆರೈಕೆ",
+                "description": "ತ್ವಚೆಯ ಆರೈಕೆ, ಕೂದಲಿನ ಆರೈಕೆ, ನೈರ್ಮಲ್ಯ ಮತ್ತು ಮೂಲ ಮೇಕಪ್ ಸೇರಿದಂತೆ ಸೌಂದರ್ಯ ಕೌಶಲ್ಯಗಳನ್ನು ಕಲಿಯಿರಿ."
+            }
+        }
+    },
+    # COURSE 7: Small Business & Micro-Accounting
+    {
+        "id": "small-business-accounting",
+        "title": "Small Business & Micro-Accounting",
+        "description": "Learn the basics of managing a small business, maintaining simple financial records, calculating expenses and profits, managing inventory, and understanding basic business planning.",
+        "skill_id": "micro-bookkeeping",
+        "category_id": "entrepreneurship",
+        "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "intermediate",
+        "duration": "4 Weeks",
+        "learning_mode": "hybrid",
+        "instructor": "Mangala Gowri",
+        "prerequisites": ["Basic Math and Literacy"],
+        "career_outcomes": ["Micro-Enterprise Bookkeeper", "Small Business Owner", "Inventory Coordinator"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-tumakuru",
+        "online_training": {
+            "videos": [
+                {
+                    "title": "Bookkeeping Basics for Beginners",
+                    "youtube_url": "https://www.youtube.com/watch?v=pKpdibyljR4",
+                    "description": "Beginner bookkeeping tutorial explaining how financial transactions are recorded and organized for a small business.",
+                    "order": 1
+                }
+            ]
+        },
+        "translations": {
+            "kn": {
+                "title": "ಸಣ್ಣ ಉದ್ಯಮ ಮತ್ತು ಸೂಕ್ಷ್ಮ ಲೆಕ್ಕಪತ್ರ ನಿರ್ವಹಣೆ",
+                "description": "ಸಣ್ಣ ಉದ್ಯಮ ನಿರ್ವಹಣೆ, ಸರಳ ಹಣಕಾಸು ದಾಖಲೆಗಳ ನಿರ್ವಹಣೆ, ವೆಚ್ಚ ಮತ್ತು ಲಾಭದ ಲೆಕ್ಕಾಚಾರಗಳನ್ನು ಕಲಿಯಿರಿ."
+            }
+        }
+    },
+    # COURSE 8: Handmade Craft Entrepreneurship
+    {
+        "id": "handmade-craft-entrepreneurship",
+        "title": "Handmade Craft Entrepreneurship",
+        "description": "Learn how to turn handmade craft skills into a small income-generating business through product development, pricing, packaging, customer interaction, and local marketing.",
+        "skill_id": "online-shop-setup",
+        "category_id": "entrepreneurship",
+        "thumbnail": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=600&q=80",
+        "difficulty": "intermediate",
+        "duration": "6 Weeks",
+        "learning_mode": "offline",
+        "instructor": "Sudha Murthy",
+        "prerequisites": ["None"],
+        "career_outcomes": ["Handicrafts Business Owner", "Micro-Retailer", "Local Craft Marketer"],
+        "language": "en",
+        "is_active": True,
+        "centre_id": "centre-mysuru-mahila",
+        "online_training": {
+            "videos": []
+        },
+        "translations": {
+            "kn": {
+                "title": "ಕರಕುಶಲ ಉದ್ಯಮಶೀಲತೆ",
+                "description": "ಉತ್ಪನ್ನ ಅಭಿವೃದ್ಧಿ, ಬೆಲೆ ನಿಗದಿ, ಪ್ಯಾಕೇಜಿಂಗ್ ಮತ್ತು ಸ್ಥಳೀಯ ಮಾರ್ಕೆಟಿಂಗ್ ಮೂಲಕ ಕರಕುಶಲ ಕೌಶಲ್ಯಗಳನ್ನು ಆದಾಯ ಗಳಿಸುವ ವ್ಯವಹಾರವಾಗಿ ಪರಿವರ್ತಿಸುವುದು ಹೇಗೆ ಎಂದು ತಿಳಿಯಿರಿ."
+            }
+        }
+    },
+    # COURSE 9: Computer Basics for Beginners
+    {
+        "id": "computer-basics-beginners",
+        "title": "Computer Basics for Beginners",
+        "description": "Learn computer fundamentals, file management, typing, internet usage, online forms, email, and basic digital productivity tools.",
         "skill_id": "computer-literacy",
         "category_id": "digital-skills",
         "thumbnail": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
@@ -21,64 +275,32 @@ INITIAL_COURSES = [
         "learning_mode": "online",
         "instructor": "Kavitha Shridhar",
         "prerequisites": ["None"],
-        "career_outcomes": ["Office Assistant", "Data Entry Coordinator", "Smart Business Owner"],
+        "career_outcomes": ["Office Assistant", "Data Entry Coordinator", "Smart Business Assistant"],
         "language": "en",
         "is_active": True,
+        "centre_id": "centre-yelahanka",
+        "online_training": {
+            "videos": [
+                {
+                    "title": "Basic Computer Course – Full Course for Beginners",
+                    "youtube_url": "https://www.youtube.com/watch?v=kmmf-HdWark",
+                    "description": "Beginner computer course covering computer fundamentals, operating systems, file management, internet basics and essential computer skills.",
+                    "order": 1
+                }
+            ]
+        },
         "translations": {
             "kn": {
-                "title": "ಮಹಿಳಾ ಉದ್ಯಮಿಗಳಿಗಾಗಿ ಮೂಲ ಕಂಪ್ಯೂಟರ್ ಶಿಕ್ಷಣ",
-                "description": "ನಿಮ್ಮ ವ್ಯವಹಾರದ ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ಬೆಂಬಲಿಸಲು ಟೈಪಿಂಗ್, ಫೋಲ್ಡರ್ ನಿರ್ವಹಣೆ, ಮೂಲ ದಾಖಲೆ ಸಂಪಾದನೆ ಮತ್ತು ಆನ್‌ಲೈನ್ ನ್ಯಾವಿಗೇಷನ್ ಕರಗತ ಮಾಡಿಕೊಳ್ಳಿ."
+                "title": "ಆರಂಭಿಕರಿಗಾಗಿ ಕಂಪ್ಯೂಟರ್ ಮೂಲ ಶಿಕ್ಷಣ",
+                "description": "ಕಂಪ್ಯೂಟರ್ ಮೂಲಭೂತ ವಿಷಯಗಳು, ಫೈಲ್ ನಿರ್ವಹಣೆ, ಟೈಪಿಂಗ್, ಇಂಟರ್ನೆಟ್ ಮತ್ತು ಇಮೇಲ್ ಬಳಕೆಯನ್ನು ಕಲಿಯಿರಿ."
             }
         }
     },
+    # COURSE 10: Sewing Machine Operation
     {
-        "id": "secure-mobile-payments",
-        "title": "Secure Mobile Payments & Digital Wallets",
-        "description": "Learn how to use mobile payment platforms safely, set up UPI accounts, verify transfers, and protect your identity from cyber frauds.",
-        "skill_id": "digital-payments",
-        "category_id": "digital-skills",
-        "thumbnail": "https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "beginner",
-        "duration": "2 Weeks",
-        "learning_mode": "online",
-        "instructor": "Meera Naidu",
-        "prerequisites": ["None"],
-        "career_outcomes": ["Digital Commerce Assistant", "Smart Shop Operator", "Community Digital Guide"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ಸುರಕ್ಷಿತ ಮೊಬೈಲ್ ಪಾವತಿಗಳು ಮತ್ತು ಡಿಜಿಟಲ್ ವ್ಯಾಲೆಟ್‌ಗಳು",
-                "description": "ಮೊಬೈಲ್ ಪಾವತಿ ವೇದಿಕೆಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಬಳಸುವುದು, ಯುಪಿಐ ಖಾತೆಗಳನ್ನು ಹೊಂದಿಸುವುದು, ವರ್ಗಾವಣೆಗಳನ್ನು ಪರಿಶೀಲಿಸುವುದು ಹೇಗೆ ಎಂದು ತಿಳಿಯಿರಿ."
-            }
-        }
-    },
-    {
-        "id": "social-media-marketing-brands",
-        "title": "Social Media Marketing for Local Brands",
-        "description": "Grow your local customer base by marketing your stitching, handicraft, or food products on WhatsApp Business, Google Maps, and Instagram.",
-        "skill_id": "digital-marketing",
-        "category_id": "digital-skills",
-        "thumbnail": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "intermediate",
-        "duration": "6 Weeks",
-        "learning_mode": "hybrid",
-        "instructor": "Dr. Aruna Sen",
-        "prerequisites": ["Basic Computer Literacy"],
-        "career_outcomes": ["Social Media Business Promoter", "Online Store Coordinator", "Marketing Assistant"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ಸ್ಥಳೀಯ ಬ್ರ್ಯಾಂಡ್‌ಗಳಿಗಾಗಿ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಮಾರ್ಕೆಟಿಂಗ್",
-                "description": "ವಾಟ್ಸಾಪ್ ಬಿಸಿನೆಸ್, ಗೂಗಲ್ ಮ್ಯಾಪ್ಸ್ ಮತ್ತು ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಹೊಲಿಗೆ, ಕರಕುಶಲ ವಸ್ತುಗಳು ಅಥವಾ ಆಹಾರ ಉತ್ಪನ್ನಗಳನ್ನು ಪ್ರಚಾರ ಮಾಡಿ ಸ್ಥಳೀಯ ಗ್ರಾಹಕರನ್ನು ಹೆಚ್ಚಿಸಿ."
-            }
-        }
-    },
-    {
-        "id": "garment-alterations-basics",
-        "title": "Garment Alterations & Needlework Basics",
-        "description": "Learn sewing machine operation, straight stitches, button attachment, and professional hemline alterations for women's wear.",
+        "id": "sewing-machine-operation",
+        "title": "Sewing Machine Operation",
+        "description": "Learn how to safely operate and maintain a sewing machine and develop practical stitching skills.",
         "skill_id": "basic-stitching",
         "category_id": "tailoring-fashion",
         "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
@@ -87,311 +309,502 @@ INITIAL_COURSES = [
         "learning_mode": "offline",
         "instructor": "Shobha Devi",
         "prerequisites": ["None"],
-        "career_outcomes": ["Alterations Tailor", "Independent Sewist", "Garment Factory Operator"],
+        "career_outcomes": ["Sewing Machine Operator", "Alterations Specialist", "Factory Tailor"],
         "language": "en",
         "is_active": True,
+        "centre_id": "centre-bengaluru-tailoring",
+        "online_training": {
+            "videos": [
+                {
+                    "title": "How to Use a Sewing Machine From Scratch",
+                    "youtube_url": "https://www.youtube.com/watch?v=HhHLwCBFVqk",
+                    "description": "Beginner tutorial covering sewing-machine parts, threading, preparation, stitch control and basic sewing exercises.",
+                    "order": 1
+                }
+            ]
+        },
         "translations": {
             "kn": {
-                "title": "ಬಟ್ಟೆ ಮಾರ್ಪಾಡುಗಳು ಮತ್ತು ಮೂಲ ಹೊಲಿಗೆ ಕಲೆ",
-                "description": "ಮಹಿಳಾ ಉಡುಪುಗಳಿಗಾಗಿ ಹೊಲಿಗೆ ಯಂತ್ರ ಕಾರ್ಯಾಚರಣೆ, ನೇರ ಹೊಲಿಗೆಗಳು, ಗುಂಡಿ ಅಳವಡಿಕೆ ಮತ್ತು ವೃತ್ತಿಪರ ಮಾರ್ಪಾಡುಗಳನ್ನು ಕಲಿಯಿರಿ."
-            }
-        }
-    },
-    {
-        "id": "professional-blouse-cutting",
-        "title": "Professional Blouse Pattern Cutting & Stitching",
-        "description": "Master professional patterns, neck design styling, measurement cutting, and complete lining stitching for standard blouses and salwar suits.",
-        "skill_id": "blouse-salwar-stitching",
-        "category_id": "tailoring-fashion",
-        "thumbnail": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "intermediate",
-        "duration": "8 Weeks",
-        "learning_mode": "hybrid",
-        "instructor": "Rehana Banu",
-        "prerequisites": ["Basic Stitching & Alterations"],
-        "career_outcomes": ["Custom Blouse Designer", "Boutique Proprietor", "Lining Dress Specialist"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ವೃತ್ತಿಪರ ಬ್ಲೌಸ್ ಪ್ಯಾಟರ್ನ್ ಕತ್ತರಿಸುವುದು ಮತ್ತು ಹೊಲಿಯುವುದು",
-                "description": "ವೃತ್ತಿಪರ ಮಾದರಿಗಳು, ಕತ್ತಿನ ವಿನ್ಯಾಸ ಶೈಲಿ, ಅಳತೆ ಕತ್ತರಿಸುವುದು ಮತ್ತು ಲೈನಿಂಗ್ ಹೊಲಿಗೆಯನ್ನು ಕರಗತ ಮಾಡಿಕೊಳ್ಳಿ."
-            }
-        }
-    },
-    {
-        "id": "zardosi-bridal-embroidery",
-        "title": "Zardosi Hand Embroidery & Bridal Necklines",
-        "description": "Advanced wedding dressmaking, Zardosi gold thread stitching, bridal hand embroidery patterns, beads hooking, and custom boutique creations.",
-        "skill_id": "bridal-embroidery",
-        "category_id": "tailoring-fashion",
-        "thumbnail": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "advanced",
-        "duration": "12 Weeks",
-        "learning_mode": "offline",
-        "instructor": "Fatima Begum",
-        "prerequisites": ["Blouse & Salwar Stitching"],
-        "career_outcomes": ["Bridal Wear Specialist", "Boutique Entrepreneur", "Master Embroidery Designer"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ಜರ್ದೋಸಿ ಹ್ಯಾಂಡ್ ಎಂಬ್ರಾಯ್ಡರಿ ಮತ್ತು ವಧುವಿನ ನೆಕ್‌ಲೈನ್ಸ್",
-                "description": "ಸುಧಾರಿತ ಮದುವೆಯ ಉಡುಗೆ ತಯಾರಿಕೆ, ಜರ್ದೋಸಿ ಚಿನ್ನದ ದಾರದ ಹೊಲಿಗೆಗಳು, ವಧುವಿನ ಹ್ಯಾಂಡ್ ಎಂಬ್ರಾಯ್ಡರಿ ಮತ್ತು ಕಸ್ಟಮ್ ಬೊಟಿಕ್ ವಿನ್ಯಾಸಗಳು."
-            }
-        }
-    },
-    {
-        "id": "small-business-bookkeeping",
-        "title": "Simple Bookkeeping & Financial Health for Small Business",
-        "description": "Learn to track cash-flow, manage invoice registers, calculate profit & loss, and separate business funds from home expenses.",
-        "skill_id": "micro-bookkeeping",
-        "category_id": "entrepreneurship",
-        "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "beginner",
-        "duration": "4 Weeks",
-        "learning_mode": "online",
-        "instructor": "Sudha Murthy",
-        "prerequisites": ["None"],
-        "career_outcomes": ["Accounts Assistant", "Retail Manager", "Independent Business Owner"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ಸಣ್ಣ ಉದ್ಯಮಕ್ಕಾಗಿ ಸರಳ ಬುಕ್ಕೀಪಿಂಗ್ ಮತ್ತು ಹಣಕಾಸು ನಿರ್ವಹಣೆ",
-                "description": "ನಗದು ಹರಿವನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುವುದು, ಇನ್‌ವಾಯ್ಸ್ ನಿರ್ವಹಿಸುವುದು, ಲಾಭ ಮತ್ತು ನಷ್ಟ ಲೆಕ್ಕ ಹಾಕುವುದು ಮತ್ತು ಉದ್ಯಮ ಹಣವನ್ನು ಮನೆ ವೆಚ್ಚದಿಂದ ಬೇರ್ಪಡಿಸುವುದು ಕಲಿಯಿರಿ."
-            }
-        }
-    },
-    {
-        "id": "ecomm-setup-ondc",
-        "title": "Opening an E-commerce Store on ONDC",
-        "description": "List your handcrafted, stitched, or baked products online through the Open Network for Digital Commerce (ONDC) to find buyers across India.",
-        "skill_id": "online-shop-setup",
-        "category_id": "entrepreneurship",
-        "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "intermediate",
-        "duration": "6 Weeks",
-        "learning_mode": "online",
-        "instructor": "Rupa Kulkarni",
-        "prerequisites": ["Basic Computer Literacy", "Micro-Enterprise Bookkeeping"],
-        "career_outcomes": ["E-commerce Retailer", "Digital Operations Planner", "Store Catalog Specialist"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ONDC ಯಲ್ಲಿ ಆನ್‌ಲೈನ್ ಇ-ಕಾಮರ್ಸ್ ಸ್ಟೋರ್ ಸ್ಥಾಪನೆ",
-                "description": "ನಿಮ್ಮ ಕರಕುಶಲ ವಸ್ತುಗಳು, ಹೊಲಿಗೆ ಅಥವಾ ಬೇಕಿಂಗ್ ಉತ್ಪನ್ನಗಳನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ONDC ನೆಟ್‌ವರ್ಕ್ ಮೂಲಕ ಭಾರತದಾದ್ಯಂತ ಮಾರಾಟ ಮಾಡಿ."
-            }
-        }
-    },
-    {
-        "id": "crochet-home-decor",
-        "title": "Crochet Home Decor & Handmade Woolens",
-        "description": "Master beautiful crochet needle chains, woolen home-decor patterns, and handcrafted table mats for commercial selling.",
-        "skill_id": "embroidery-crochet",
-        "category_id": "handicrafts",
-        "thumbnail": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "beginner",
-        "duration": "4 Weeks",
-        "learning_mode": "offline",
-        "instructor": "Lakshmi Narayana",
-        "prerequisites": ["None"],
-        "career_outcomes": ["Crochet Crafter", "Handicrafts Teacher", "Boutique Decor Designer"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ಕ್ರೋಚೆಟ್ ಗೃಹಾಲಂಕಾರ ಮತ್ತು ಕೈಯಿಂದ ಮಾಡಿದ ಉಣ್ಣೆಯ ಕರಕುಶಲ",
-                "description": "ಸುಂದರವಾದ ಕ್ರೋಚೆಟ್ ಸೂಜಿ ಸರಪಳಿಗಳು, ಉಣ್ಣೆಯ ಅಲಂಕಾರಿಕ ಮಾದರಿಗಳು ಮತ್ತು ಟೇಬಲ್ ಮ್ಯಾಟ್‌ಗಳ ಕೈಯಿಂದ ತಯಾರಿಕೆ ಕಲಿಯಿರಿ."
-            }
-        }
-    },
-    {
-        "id": "home-baking-confectionery",
-        "title": "Home Baking: Teacakes, Cookies & Biscuits",
-        "description": "Learn standard measurement scales, oven operations, eggless baking recipes, professional icing, and food safety standards.",
-        "skill_id": "baking-confectionery",
-        "category_id": "food-catering",
-        "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "beginner",
-        "duration": "6 Weeks",
-        "learning_mode": "hybrid",
-        "instructor": "Chef Nupur Roy",
-        "prerequisites": ["None"],
-        "career_outcomes": ["Professional Home Baker", "Catering Assistant", "Bakery Stall Owner"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ಮನೆ ಬೇಕಿಂಗ್: ಟೀಕೇಕ್, ಕುಕೀಸ್ ಮತ್ತು ಬಿಸ್ಕತ್ತುಗಳು",
-                "description": "ಪ್ರಮಾಣಿತ ಅಳತೆಗಳು, ಓವನ್ ಕಾರ್ಯಾಚರಣೆ, ಮೊಟ್ಟೆಯಿಲ್ಲದ ಬೇಕಿಂಗ್ ಪಾಕವಿಧಾನಗಳು ಮತ್ತು ಸುರಕ್ಷತಾ ಮಾನದಂಡಗಳನ್ನು ಕಲಿಯಿರಿ."
-            }
-        }
-    },
-    {
-        "id": "kitchen-gardening-composting",
-        "title": "Organic Kitchen Gardening & Vermicomposting",
-        "description": "Create organic kitchen vegetable boxes, manage natural soil composting, make natural pesticides (Panchagavya), and increase crop yields.",
-        "skill_id": "organic-farming",
-        "category_id": "agriculture",
-        "thumbnail": "https://images.unsplash.com/photo-1464226184884-fa280b87c3a9?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "beginner",
-        "duration": "6 Weeks",
-        "learning_mode": "offline",
-        "instructor": "Radhamma Hegde",
-        "prerequisites": ["None"],
-        "career_outcomes": ["Organic Produce Vendor", "Farm Soil Consultant", "Bio-Fertilizer Supplier"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ಸಾವಯವ ಅಡುಗೆಮನೆ ತೋಟಗಾರಿಕೆ ಮತ್ತು ಎರೆಗೊಬ್ಬರ",
-                "description": "ಸಾವಯವ ಅಡುಗೆಮನೆ ತರಕಾರಿ ತೋಟಗಾರಿಕೆ, ನೈಸರ್ಗಿಕ ಮಣ್ಣು ಕಾಂಪೋಸ್ಟ್ ನಿರ್ವಹಣೆ ಮತ್ತು ಸಾವಯವ ಕೀಟನಾಶಕ ತಯಾರಿಕೆ."
-            }
-        }
-    },
-    {
-        "id": "elderly-nursing-firstaid",
-        "title": "Elderly Nursing Care & Emergency First Aid",
-        "description": "Learn vital blood pressure and sugar readings, elderly nutrition, home patient safety, and critical life-saving first aid techniques.",
-        "skill_id": "elder-care",
-        "category_id": "healthcare-caregiving",
-        "thumbnail": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80",
-        "difficulty": "beginner",
-        "duration": "8 Weeks",
-        "learning_mode": "hybrid",
-        "instructor": "Sister Mary Joseph",
-        "prerequisites": ["None"],
-        "career_outcomes": ["Geriatric Care Assistant", "Emergency First Responder", "Nursing Assistant"],
-        "language": "en",
-        "is_active": True,
-        "translations": {
-            "kn": {
-                "title": "ವೃದ್ಧರ ಆರೈಕೆ ಮತ್ತು ತುರ್ತು ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ",
-                "description": "ರಕ್ತದೊತ್ತಡ ಮತ್ತು ಸಕ್ಕರೆ ಪರೀಕ್ಷೆ, ವೃದ್ಧರ ಆಹಾರ ಮತ್ತು ಸುರಕ್ಷತೆ ಮತ್ತು ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ತಂತ್ರಗಳನ್ನು ಕಲಿಯಿರಿ."
+                "title": "ಹೊಲಿಗೆ ಯಂತ್ರ ಕಾರ್ಯಾಚರಣೆ ತರಬೇತಿ",
+                "description": "ಹೊಲಿಗೆ ಯಂತ್ರವನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ನಿರ್ವಹಿಸುವುದು, ನಿರ್ವಹಣೆ ಮಾಡುವುದು ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ಹೊಲಿಗೆ ಕೌಶಲ್ಯಗಳನ್ನು ಕಲಿಯಿರಿ."
             }
         }
     }
 ]
 
 INITIAL_LESSONS = [
-    # Lessons for computer-basics-entrepreneurs
+    # Lessons for Course 1: basic-tailoring-stitching (8 lessons)
     {
-        "id": "les-os-intro",
-        "course_id": "computer-basics-entrepreneurs",
-        "title": "Introduction to Operating Systems",
-        "description": "Understand what an operating system is, how computer interfaces work, and how to safely boot, sleep, and shut down systems.",
+        "id": "les-tailoring-1",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Introduction to Tailoring",
+        "description": "Welcome to tailoring! Learn about the industry, income opportunities, and basic goals of this vocational program.",
         "lesson_number": 1,
-        "content_type": "article",
-        "content": "### Welcome to Computer Basics\n\nIn this lesson, we will cover the fundamentals of a Computer Operating System (OS). \n\nAn Operating System is the software that manages your computer's hardware and makes it possible for you to click on applications, open internet browsers, and print invoices. The most common operating systems are **Windows** and **macOS** for laptops, and **Android** for mobile phones.\n\n#### Key Actions:\n1. **Booting up**: Press the physical Power button on your laptop. Wait for the loading screen.\n2. **The Desktop Screen**: This is your digital table. It contains icons (shortcuts to apps) and your Taskbar (the strip at the bottom showcasing opened apps).\n3. **Safe Shut Down**: Do NOT press and hold the power button to shut down. Go to the Start Menu, click Power, and select 'Shut Down' to protect your system files.",
-        "duration": "15 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=NVQVz4O6E6I",
+        "duration": "15 mins",
         "is_preview": True
     },
     {
-        "id": "les-kb-shortcuts",
-        "course_id": "computer-basics-entrepreneurs",
-        "title": "Keyboard Navigation & Shortcuts",
-        "description": "Learn basic typing principles and key shortcuts that will save you hours of work when managing business records.",
+        "id": "les-tailoring-2",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Sewing Tools and Equipment",
+        "description": "Get to know the essential tools: measuring tapes, chalks, fabric shears, pins, and thread spools.",
         "lesson_number": 2,
-        "content_type": "article",
-        "content": "### Keyboard Secrets\n\nTo manage an online enterprise, you need to navigate typing fields quickly. Here are the most essential keys:\n\n* **Shift**: Hold this and press any letter to make it UPPERCASE.\n* **Caps Lock**: Press once to type everything in UPPERCASE. Press again to turn it off.\n* **Backspace**: Deletes the character directly to the left of your cursor.\n* **Delete**: Deletes the character to the right of your cursor.\n\n#### Key Shortcuts:\n- **Copy**: `Ctrl + C` (copies highlighted text/files)\n- **Paste**: `Ctrl + V` (places copied content in selection)\n- **Undo**: `Ctrl + Z` (undoes your last mistake!)",
-        "duration": "20 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=18u8F9Gf8M0",
+        "duration": "12 mins",
         "is_preview": True
     },
     {
-        "id": "les-folder-mgt",
-        "course_id": "computer-basics-entrepreneurs",
-        "title": "Creating & Managing Folders",
-        "description": "Keep your client receipts, product catalog files, and license documents organized by mastering folder management.",
+        "id": "les-tailoring-3",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Taking Body Measurements",
+        "description": "Learn the step-by-step method to record correct body measurements for blouses, kurtis, and salwar suits.",
         "lesson_number": 3,
-        "content_type": "article",
-        "content": "### Stay Organized, Stay Smart\n\nWhen running a small boutique or tailoring store, disorganized files can lose you clients. Today we learn to create safe directories.\n\n1. **Right Click** on any empty desktop area.\n2. Select **New** -> **Folder**.\n3. Type a clear name like `Client_Receipts_2026`.\n4. Click **Enter** to save the folder.\n\nYou can drag-and-drop receipt images directly into this folder to back them up safely.",
-        "duration": "15 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=zPKeX0bS-iE",
+        "duration": "18 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-tailoring-4",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Fabric Selection",
+        "description": "Understand different fabric weaves (cotton, silk, synthetic) and how to select the right material for various garments.",
+        "lesson_number": 4,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=gS67xM2n8G8",
+        "duration": "10 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-tailoring-5",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Basic Cutting Techniques",
+        "description": "Master marking patterns on fabric and cutting them with high accuracy to minimize fabric waste.",
+        "lesson_number": 5,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=fpxnFfPZf-8",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-tailoring-6",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Sewing Machine Basics",
+        "description": "Learn bobbin winding, needle placement, threading path lines, and basic machine maintenance.",
+        "lesson_number": 6,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=SPh8W6p6l1c",
+        "duration": "20 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-tailoring-7",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Basic Stitching Techniques",
+        "description": "Practice straight seams, curved stitches, reverse sewing locks, and folding hemlines correctly.",
+        "lesson_number": 7,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=UscQf4XmE9U",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-tailoring-8",
+        "course_id": "basic-tailoring-stitching",
+        "title": "Making a Simple Garment",
+        "description": "Put everything together by designing, cutting, and stitching a basic baby frock or simple apron.",
+        "lesson_number": 8,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=N_p3A-Kx5tA",
+        "duration": "25 mins",
         "is_preview": False
     },
 
-    # Lessons for secure-mobile-payments
+    # Lessons for Course 3: digital-literacy-women (8 lessons)
     {
-        "id": "les-upi-setup",
-        "course_id": "secure-mobile-payments",
-        "title": "Setting up your UPI Account",
-        "description": "Step-by-step tutorial on linking your bank account to a Unified Payments Interface (UPI) app safely.",
+        "id": "les-digital-1",
+        "course_id": "digital-literacy-women",
+        "title": "Introduction to Computers",
+        "description": "Learn what computers are, identify the monitor, CPU, keyboard, mouse, and understand hardware vs software.",
         "lesson_number": 1,
-        "content_type": "article",
-        "content": "### What is UPI?\n\nUnified Payments Interface (UPI) is a real-time instant payment system developed by National Payments Corporation of India (NPCI). It allows you to transfer money instantly between bank accounts on your mobile phone.\n\n#### Checklist for UPI Setup:\n- A smartphone with internet\n- Your bank account linked to your mobile phone number\n- Your debit card handy\n\n#### Step-by-Step Setup:\n1. Download a certified app: BHIM, Google Pay, or PhonePe from the Google Play Store.\n2. Verify your mobile number using an automatic SMS verification.\n3. Select your Bank Name from the listing. The app will automatically find your account.\n4. Enter the last 6 digits of your debit card and expiration date to generate your unique **UPI PIN**.\n\n*CRITICAL SECURITY RULE:* Never share your UPI PIN with anyone, not even bank executives!",
-        "duration": "15 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=NVQVz4O6E6I",
+        "duration": "15 mins",
         "is_preview": True
     },
     {
-        "id": "les-pay-transfer",
-        "course_id": "secure-mobile-payments",
-        "title": "Making your First Digital Transfer",
-        "description": "Learn how to scanning QR codes and use mobile numbers to accept and send instant merchant payments.",
+        "id": "les-digital-2",
+        "course_id": "digital-literacy-women",
+        "title": "Keyboard and Mouse Skills",
+        "description": "Practice left and right clicking, drag-and-drop, and typing basic alphabets and numbers systematically.",
         "lesson_number": 2,
-        "content_type": "article",
-        "content": "### Making Payments Simpler\n\nThere are three ways to pay or receive payments using your newly setup UPI ID:\n\n1. **Scanning QR Codes**: Point your camera at a store's paper QR stand. Type the amount and input your secure UPI PIN.\n2. **Using Mobile Number**: Type the customer's linked mobile number, select the bank, and proceed with verification.\n3. **Requesting Money**: Only do this if a customer explicitly requested an invoice. Verify their name on screen before approving requests.",
-        "duration": "10 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=18u8F9Gf8M0",
+        "duration": "12 mins",
         "is_preview": True
     },
     {
-        "id": "les-anti-fraud",
-        "course_id": "secure-mobile-payments",
-        "title": "Avoiding Online Financial Frauds",
-        "description": "Crucial security guidelines on spotting online payment scams, phishing links, and fake screenshot receipts.",
+        "id": "les-digital-3",
+        "course_id": "digital-literacy-women",
+        "title": "Internet Basics",
+        "description": "Understand what the internet is, how to use Google Chrome, and search for information online.",
         "lesson_number": 3,
-        "content_type": "article",
-        "content": "### Protect Your Earnings\n\nAs a NariNexus learner, your financial safety is our highest priority. Scammers use tricks to pull money from your account. Memorize these golden rules:\n\n* **No UPI PIN is needed to RECEIVE money**: If someone tells you to enter your PIN to receive an advance, they are stealing your money.\n* **Double Check Fake Screenshots**: Customers might show you a green payment successful screenshot on their phone. Do NOT hand over products until you receive an SMS directly from your bank or see the transaction updated in your own UPI app history.",
-        "duration": "20 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=gS67xM2n8G8",
+        "duration": "10 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-digital-4",
+        "course_id": "digital-literacy-women",
+        "title": "Creating Digital Documents",
+        "description": "Learn how to open a word processor, type letters, format text sizes, and save documents safely in folders.",
+        "lesson_number": 4,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=fpxnFfPZf-8",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-digital-5",
+        "course_id": "digital-literacy-women",
+        "title": "Email Basics",
+        "description": "Create your first Gmail account, learn how to read emails, write subject lines, and compose reply messages.",
+        "lesson_number": 5,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=SPh8W6p6l1c",
+        "duration": "14 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-digital-6",
+        "course_id": "digital-literacy-women",
+        "title": "Online Safety",
+        "description": "Avoid digital threats: learn to identify secure websites (HTTPS), create strong passwords, and spot online scams.",
+        "lesson_number": 6,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=UscQf4XmE9U",
+        "duration": "12 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-digital-7",
+        "course_id": "digital-literacy-women",
+        "title": "Government Digital Services",
+        "description": "Access useful public services online: learn about Aadhaar details, Ration card portals, and utility bill payments.",
+        "lesson_number": 7,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=zPKeX0bS-iE",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-digital-8",
+        "course_id": "digital-literacy-women",
+        "title": "Digital Communication",
+        "description": "Learn to use WhatsApp Web, Google Meet, and online messaging tools to connect with family and clients.",
+        "lesson_number": 8,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=N_p3A-Kx5tA",
+        "duration": "10 mins",
         "is_preview": False
     },
 
-    # Lessons for garment-alterations-basics
+    # Lessons for Course 4: mobile-payments-upi (7 lessons)
     {
-        "id": "les-sewing-machine",
-        "course_id": "garment-alterations-basics",
-        "title": "Introduction to Sewing Machine Operations",
-        "description": "Learn the parts of a mechanical sewing machine, thread path loops, bobbin winding, and adjusting stitch length dials.",
+        "id": "les-payments-1",
+        "course_id": "mobile-payments-upi",
+        "title": "Introduction to Digital Payments",
+        "description": "Understand physical currency vs digital money and how mobile wallets are transforming trade in India.",
         "lesson_number": 1,
-        "content_type": "article",
-        "content": "### Getting to Know your Machine\n\nBefore you stitch fabrics, you must understand your tool. A standard sewing machine has several core components:\n\n1. **Flywheel (Handwheel)**: Located on the right. Always turn it TOWARDS you to raise or lower the needle manually.\n2. **Presser Foot**: The small metal clamp that holds the fabric flat against the needle plate. Lower it before stitching!\n3. **Bobbin Winder**: Winds the bottom thread. The bobbin sits underneath the needle and locks the stitch.\n\n#### Threading Steps:\n- Place thread spool on spindle.\n- Guide thread through tension disks.\n- Loop through the take-up lever.\n- Needle threading goes from left to right (or front to back depending on model).",
-        "duration": "25 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=NVQVz4O6E6I",
+        "duration": "10 mins",
         "is_preview": True
     },
     {
-        "id": "les-straight-stitch",
-        "course_id": "garment-alterations-basics",
-        "title": "Mastering the Straight Stitch",
-        "description": "Practical exercises on guided straight stitching, speed controls, and sewing borders on test cotton fabrics.",
+        "id": "les-payments-2",
+        "course_id": "mobile-payments-upi",
+        "title": "Understanding UPI",
+        "description": "What is the Unified Payments Interface? Learn how instant bank-to-bank transfers operate.",
         "lesson_number": 2,
-        "content_type": "article",
-        "content": "### Practice Straight Lines\n\nDo not worry if your first stitches are wavy! Everyone starts there. Follow these practice rules:\n\n* **Do not pull fabric**: Let the machine feed-dogs pull the fabric naturally. Just guide it gently with your fingers.\n* **Reverse Stitching**: Find the reverse lever (usually on the front right). Hold it down for 3 stitches at the start and end of your line to tie knots and lock your threads.",
-        "duration": "30 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=18u8F9Gf8M0",
+        "duration": "11 mins",
         "is_preview": True
+    },
+    {
+        "id": "les-payments-3",
+        "course_id": "mobile-payments-upi",
+        "title": "Creating a UPI Payment",
+        "description": "Step-by-step setup on BHIM or Google Pay, setting your secure UPI PIN, and checking balance.",
+        "lesson_number": 3,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=zPKeX0bS-iE",
+        "duration": "15 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-payments-4",
+        "course_id": "mobile-payments-upi",
+        "title": "Scanning QR Codes",
+        "description": "Learn how to use your phone's camera to scan shop QR codes and verify the merchant name on screen.",
+        "lesson_number": 4,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=gS67xM2n8G8",
+        "duration": "10 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-payments-5",
+        "course_id": "mobile-payments-upi",
+        "title": "Checking Transactions",
+        "description": "Verify transfers in history feeds and learn how bank SMS statements prove payments were received.",
+        "lesson_number": 5,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=fpxnFfPZf-8",
+        "duration": "12 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-payments-6",
+        "course_id": "mobile-payments-upi",
+        "title": "Avoiding Digital Payment Fraud",
+        "description": "Golden rules: No UPI PIN is needed to receive money, avoid clicking suspicious SMS claim links.",
+        "lesson_number": 6,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=SPh8W6p6l1c",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-payments-7",
+        "course_id": "mobile-payments-upi",
+        "title": "Safe Banking Practices",
+        "description": "Protect your mobile: set screen locks, hide passwords, and contact your bank if you lose your phone.",
+        "lesson_number": 7,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=UscQf4XmE9U",
+        "duration": "10 mins",
+        "is_preview": False
     },
 
-    # Lessons for small-business-bookkeeping
+    # Lessons for Course 5: embroidery-handicrafts (6 lessons)
     {
-        "id": "les-inc-exp",
-        "course_id": "small-business-bookkeeping",
-        "title": "Understanding Income & Expenses",
-        "description": "Identify basic transaction entries and learn how to segregate business accounts from personal household bills.",
+        "id": "les-embroidery-1",
+        "course_id": "embroidery-handicrafts",
+        "title": "Introduction to Embroidery",
+        "description": "Learn about the heritage of local hand embroidery, product types, and marketing handcrafted goods.",
         "lesson_number": 1,
-        "content_type": "article",
-        "content": "### Financial Discipline\n\nMany small ventures fail because owners mix family cash with business revenues. Today you learn to separate them.\n\n* **Business Income**: Money earned from selling stitched garments, baked breads, or craft work.\n* **Business Expenses**: Money spent on fabrics, needles, flour, mobile phone internet bills, or stall rent.\n* **Personal Expenses**: Family milk, school fees, personal clothes. Do NOT record these in your business ledger!\n\n#### Rule of Thumb:\nHave a dedicated cash pouch for your business. When you make a sale, put the money there. When buying raw material, pay from that pouch. Never borrow from it for grocery bills.",
-        "duration": "15 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=NVQVz4O6E6I",
+        "duration": "15 mins",
         "is_preview": True
     },
     {
-        "id": "les-sales-register",
-        "course_id": "small-business-bookkeeping",
-        "title": "Creating your Daily Sales Register",
-        "description": "Learn how to record transactions in a simple paperback notebook or mobile journal app systematically.",
+        "id": "les-embroidery-2",
+        "course_id": "embroidery-handicrafts",
+        "title": "Tools and Materials",
+        "description": "Explore embroidery hoops, needles sizes, colorful skeins of threads, fabric bases, and designs copying paper.",
         "lesson_number": 2,
-        "content_type": "article",
-        "content": "### The Notebook Ledger\n\nDraw five columns in a clean notebook:\n\n| Date | Description | Category | Cash In (+) | Cash Out (-) |\n|------|-------------|----------|-------------|--------------|\n| 2026-08-01 | Opening Balance | Setup | 500.00 | - |\n| 2026-08-01 | Bought Cotton Thread | Raw Material | - | 45.00 |\n| 2026-08-02 | Salwar Stitching Sale | Income | 350.00 | - |\n\nSum your totals at the end of each week to see exactly how much cash is remaining.",
-        "duration": "20 Mins",
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=18u8F9Gf8M0",
+        "duration": "10 mins",
         "is_preview": True
+    },
+    {
+        "id": "les-embroidery-3",
+        "course_id": "embroidery-handicrafts",
+        "title": "Basic Embroidery Stitches",
+        "description": "Practice the running stitch, back stitch, split stitch, and stem stitch on test cotton fabric.",
+        "lesson_number": 3,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=zPKeX0bS-iE",
+        "duration": "20 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-embroidery-4",
+        "course_id": "embroidery-handicrafts",
+        "title": "Floral Designs",
+        "description": "Stitch beautiful lazy daisy petals, french knots, and satin stitch leaves to create flowers.",
+        "lesson_number": 4,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=gS67xM2n8G8",
+        "duration": "18 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-embroidery-5",
+        "course_id": "embroidery-handicrafts",
+        "title": "Decorative Patterns",
+        "description": "Stitch border patterns: learn the chain stitch, blanket stitch, and herringbone styles for dress necklines.",
+        "lesson_number": 5,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=fpxnFfPZf-8",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-embroidery-6",
+        "course_id": "embroidery-handicrafts",
+        "title": "Product Finishing",
+        "description": "Learn washing, ironing, hiding rear knots, and framing or stitching embroidered fabrics into sellable pillow covers.",
+        "lesson_number": 6,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=SPh8W6p6l1c",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+
+    # Lessons for Course 7: small-business-accounting (6 lessons)
+    {
+        "id": "les-accounting-1",
+        "course_id": "small-business-accounting",
+        "title": "Introduction to Small Business",
+        "description": "Understand core enterprise traits, planning raw material cycles, and setting healthy business goals.",
+        "lesson_number": 1,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=NVQVz4O6E6I",
+        "duration": "15 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-accounting-2",
+        "course_id": "small-business-accounting",
+        "title": "Understanding Income and Expenses",
+        "description": "Learn to classify raw materials, transport, packaging vs customer fees and stitching charges.",
+        "lesson_number": 2,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=18u8F9Gf8M0",
+        "duration": "12 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-accounting-3",
+        "course_id": "small-business-accounting",
+        "title": "Maintaining Daily Records",
+        "description": "Create a daily ledger notebook: track physical cash inflows and cash outflows systematically.",
+        "lesson_number": 3,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=zPKeX0bS-iE",
+        "duration": "18 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-accounting-4",
+        "course_id": "small-business-accounting",
+        "title": "Calculating Profit",
+        "description": "Formulas to find net profit: subtract raw materials and logistics costs from overall receipts.",
+        "lesson_number": 4,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=gS67xM2n8G8",
+        "duration": "14 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-accounting-5",
+        "course_id": "small-business-accounting",
+        "title": "Inventory Management",
+        "description": "Learn to log thread cones, fabric meters, and sewing needles to prevent running out of stock mid-project.",
+        "lesson_number": 5,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=fpxnFfPZf-8",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-accounting-6",
+        "course_id": "small-business-accounting",
+        "title": "Basic Business Planning",
+        "description": "Plan your monthly budget, save reserves for machine repairs, and set aside funds for local stall stalls.",
+        "lesson_number": 6,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=SPh8W6p6l1c",
+        "duration": "20 mins",
+        "is_preview": False
+    },
+
+    # Lessons for Course 9: computer-basics-beginners (7 lessons)
+    {
+        "id": "les-comp-1",
+        "course_id": "computer-basics-beginners",
+        "title": "Computer Fundamentals",
+        "description": "Learn how computers boot up, how to interact with screen desktops, and locate storage drives.",
+        "lesson_number": 1,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=NVQVz4O6E6I",
+        "duration": "15 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-comp-2",
+        "course_id": "computer-basics-beginners",
+        "title": "Keyboard and Mouse",
+        "description": "Master typing layout, left-click, right-click, scrolling, and safe device handling.",
+        "lesson_number": 2,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=18u8F9Gf8M0",
+        "duration": "10 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-comp-3",
+        "course_id": "computer-basics-beginners",
+        "title": "Files and Folders",
+        "description": "Organize your business files: create folders, rename documents, and move client files successfully.",
+        "lesson_number": 3,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=zPKeX0bS-iE",
+        "duration": "15 mins",
+        "is_preview": True
+    },
+    {
+        "id": "les-comp-4",
+        "course_id": "computer-basics-beginners",
+        "title": "Internet Basics",
+        "description": "How to search using Google, bookmark useful portals, and access basic web resources safely.",
+        "lesson_number": 4,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=gS67xM2n8G8",
+        "duration": "12 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-comp-5",
+        "course_id": "computer-basics-beginners",
+        "title": "Email",
+        "description": "Setup an email account, receive customer attachments, and send professional email invoices.",
+        "lesson_number": 5,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=fpxnFfPZf-8",
+        "duration": "18 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-comp-6",
+        "course_id": "computer-basics-beginners",
+        "title": "Online Forms",
+        "description": "Learn to fill online registrations, apply for state enterprise licenses, and type details in web forms.",
+        "lesson_number": 6,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=SPh8W6p6l1c",
+        "duration": "15 mins",
+        "is_preview": False
+    },
+    {
+        "id": "les-comp-7",
+        "course_id": "computer-basics-beginners",
+        "title": "Digital Safety",
+        "description": "Learn about strong passwords, OTP safety rules, and never sharing account details with strangers.",
+        "lesson_number": 7,
+        "content_type": "video",
+        "content": "https://www.youtube.com/watch?v=UscQf4XmE9U",
+        "duration": "15 mins",
+        "is_preview": False
     }
 ]
 
@@ -478,10 +891,13 @@ class CourseService:
                 query["category_id"] = category_id
             if skill_id:
                 query["skill_id"] = skill_id
+            import re
             if difficulty:
-                query["difficulty"] = {"$regex": f"^{difficulty}$", "$options": "i"}
+                safe_difficulty = re.escape(str(difficulty).strip())
+                query["difficulty"] = {"$regex": f"^{safe_difficulty}$", "$options": "i"}
             if learning_mode:
-                query["learning_mode"] = {"$regex": f"^{learning_mode}$", "$options": "i"}
+                safe_learning_mode = re.escape(str(learning_mode).strip())
+                query["learning_mode"] = {"$regex": f"^{safe_learning_mode}$", "$options": "i"}
 
             db_courses = list(db["courses"].find(query))
             for c in db_courses:
@@ -516,10 +932,18 @@ class CourseService:
             sq = search_query.strip().lower()
             filtered_courses = []
             for c in processed_courses:
-                name_match = sq in c.get("title", "").lower()
-                desc_match = sq in c.get("description", "").lower()
-                inst_match = sq in c.get("instructor", "").lower()
-                outcome_match = any(sq in outcome.lower() for outcome in c.get("career_outcomes", []))
+                title_val = str(c.get("title") or "").lower()
+                desc_val = str(c.get("description") or "").lower()
+                inst_val = str(c.get("instructor") or "").lower()
+                
+                name_match = sq in title_val
+                desc_match = sq in desc_val
+                inst_match = sq in inst_val
+                
+                outcomes = c.get("career_outcomes") or []
+                if isinstance(outcomes, str):
+                    outcomes = [outcomes]
+                outcome_match = any(sq in str(outcome).lower() for outcome in outcomes) if outcomes else False
 
                 if name_match or desc_match or inst_match or outcome_match:
                     filtered_courses.append(c)
@@ -603,62 +1027,406 @@ class CourseService:
     @classmethod
     def get_personalized_recommendations(cls, profile: Dict[str, Any], lang: Optional[str] = "en") -> List[Dict[str, Any]]:
         """
-        Calculates preliminary personalized course recommendations matching learner's profile parameters.
+        Calculates highly personalized course recommendations matching learner's profile parameters using Gemini.
+        Avoids recommending courses that the learner has already completed or is currently enrolled in,
+        and provides localized explanations (English, Kannada, or Hindi).
         """
-        all_courses = cls.get_courses(lang=lang)
-        recommended = []
+        user_id = profile.get("id") or profile.get("user_id")
+        user_name = profile.get("name") or "Learner"
+        interests = profile.get("learning_interests", [])
+        existing_skills = profile.get("existing_skills", [])
+        experience_level = profile.get("experience_level") or profile.get("skill_level") or "Beginner"
+        career_goal = profile.get("career_goal") or ""
+        active_lang = lang or profile.get("preferred_language") or "en"
 
-        interests = [i.strip().lower() for i in profile.get("learning_interests" or [], [])]
+        completed_course_ids = []
+        enrolled_course_ids = []
+        enroll_str = ""
+        
+        if user_id:
+            try:
+                from backend.app.services.enrollment_service import EnrollmentService
+                from backend.app.services.progress_service import ProgressService
+                enrollments = EnrollmentService.get_learner_enrollments(user_id)
+                if enrollments:
+                    for e in enrollments:
+                        c_id = e.get("course_id")
+                        status = e.get("status")
+                        prog = ProgressService.get_course_progress(user_id, c_id)
+                        percent = prog.get("progress_percentage", 0)
+                        
+                        if status == "completed" or percent >= 100:
+                            completed_course_ids.append(c_id)
+                        else:
+                            enrolled_course_ids.append(c_id)
+                            
+                        enroll_str += f"- Course: {e.get('course_title')} (ID: {c_id}), Progress: {percent}%, Status: {status}\n"
+                else:
+                    enroll_str = "- Not enrolled in any courses yet.\n"
+            except Exception as e_err:
+                enroll_str = f"Error loading enrollment context: {str(e_err)}\n"
+
+        rec_skills_str = ""
+        try:
+            from backend.app.services.skill_service import SkillService
+            rec_skills = SkillService.get_rule_based_recommendations(profile, lang=active_lang)
+            if rec_skills:
+                rec_skills_str = ", ".join([s.get("name") for s in rec_skills])
+        except Exception:
+            pass
+
+        all_courses = cls.get_courses(lang=active_lang)
+        courses_pool = []
+        for c in all_courses:
+            c_id = c.get("id")
+            # Filter out already completed courses to prevent recommending them again
+            if c_id in completed_course_ids:
+                continue
+            courses_pool.append({
+                "id": c_id,
+                "title": c.get("title"),
+                "description": c.get("description"),
+                "skill_id": c.get("skill_id"),
+                "category_id": c.get("category_id"),
+                "difficulty": c.get("difficulty"),
+                "duration": c.get("duration"),
+                "prerequisites": c.get("prerequisites", [])
+            })
+
+        try:
+            global _GEMINI_COOLDOWN_UNTIL
+            now = time.time()
+            if now < _GEMINI_COOLDOWN_UNTIL:
+                logger.warning(f"Gemini API is in cooldown state due to prior rate limits. Skipping to deterministic fallback.")
+                raise RuntimeError("Gemini in active cooldown")
+
+            from backend.app.services.ai_service import AIService
+            from google.genai import types
+            client = AIService.get_client()
+            if client:
+                # Optimized failover sequence: primary gemini-3.1-flash-lite, fall back to gemini-3.5-flash
+                models_to_try = ["gemini-3.1-flash-lite", "gemini-3.5-flash"]
+                ai_response_text = None
+
+                system_instruction = (
+                    "You are the NariNexus Personalized Course Recommendation Assistant, an AI matching system for rural women.\n"
+                    "Your task is to recommend exactly 3 suitable courses from the actual provided Courses Pool based on the learner's profile.\n"
+                    "Your response must be a valid raw JSON array containing exactly 3 objects. Do not include any extra text."
+                )
+
+                config = types.GenerateContentConfig(
+                    system_instruction=system_instruction,
+                    temperature=0.2,
+                    response_mime_type="application/json"
+                )
+
+                prompt = (
+                    f"Return exactly 3 personalized course recommendations as a JSON array of objects matching the specified schema.\n"
+                    f"Learner Profile:\n"
+                    f"- Name: {user_name}\n"
+                    f"- Preferred Language: {active_lang}\n"
+                    f"- Interests: {interests}\n"
+                    f"- Existing Skills: {existing_skills}\n"
+                    f"- Skill Level: {experience_level}\n"
+                    f"- Goals/Career: {career_goal}\n"
+                    f"- Recommended Skills: {rec_skills_str}\n"
+                    f"- Current Enrollments & Progress:\n{enroll_str}\n\n"
+                    f"Courses Pool:\n{json.dumps(courses_pool)}\n\n"
+                    f"JSON schema to return:\n"
+                    f"[\n"
+                    f"  {{\n"
+                    f"    \"course_id\": \"course-id\",\n"
+                    f"    \"reason\": \"Why this course is recommended in preferred language: {active_lang}\",\n"
+                    f"    \"benefit\": \"Livelihood potential / benefit in preferred language: {active_lang}\",\n"
+                    f"    \"relevance\": \"High\" or \"Medium\"\n"
+                    f"  }}\n"
+                    "]"
+                )
+
+                for model_name in models_to_try:
+                    try:
+                        response = client.models.generate_content(
+                            model=model_name,
+                            contents=prompt,
+                            config=config
+                        )
+                        if response and response.text:
+                            ai_response_text = response.text.strip()
+                            break
+                    except Exception as err:
+                        err_msg = str(err).upper()
+                        if "RESOURCE" in err_msg or "429" in err_msg or "QUOTA" in err_msg:
+                            logger.error(f"Gemini 429 Rate Limit hit on {model_name}. Cooldown activated. Error: {str(err)}")
+                            _GEMINI_COOLDOWN_UNTIL = time.time() + 30.0
+                            break
+                        else:
+                            logger.error(f"Gemini exception on {model_name}: {str(err)}")
+                            break
+
+                if ai_response_text:
+                    if ai_response_text.startswith("```json"):
+                        ai_response_text = ai_response_text[7:]
+                    if ai_response_text.endswith("```"):
+                        ai_response_text = ai_response_text[:-3]
+                    ai_response_text = ai_response_text.strip()
+
+                    rec_list = json.loads(ai_response_text)
+                    if isinstance(rec_list, list):
+                        from backend.app.services.ai_safety_service import AISafetyService
+                        validated_res = AISafetyService.validate_ai_response(
+                            {"recommended_courses": rec_list},
+                            "course_recommendation",
+                            user_id=user_id
+                        )
+                        rec_list = validated_res.get("recommended_courses", [])
+
+                        final_recommendations = []
+                        for r in rec_list:
+                            # Try mapping from both ID formats
+                            c_id = r.get("id") or r.get("course_id")
+                            course_obj = cls.get_course_by_id(c_id, lang=active_lang)
+                            if course_obj:
+                                if c_id in completed_course_ids:
+                                    continue
+                                course_obj["reason"] = r.get("reason") or f"Recommended based on your alignment with {experience_level} modules."
+                                course_obj["benefit"] = r.get("benefit") or "Provides real-world practical skills to start local self-employment."
+                                course_obj["relevance"] = r.get("relevance") or "High"
+                                final_recommendations.append(course_obj)
+                        if final_recommendations:
+                            return final_recommendations[:3]
+        except Exception:
+            pass
+
+        # Fallback implementation
+        rule_recs = []
+        interests_lower = [i.strip().lower() for i in interests]
         preferred_mode = (profile.get("learning_preference") or "online").lower()
-        career_goal = (profile.get("career_goal") or "").lower()
+        career_goal_lower = career_goal.lower()
 
         for c in all_courses:
+            c_id = c.get("id")
+            if c_id in completed_course_ids:
+                continue
+
             score = 0
             title_lower = c.get("title", "").lower()
             desc_lower = c.get("description", "").lower()
             cat_id = c.get("category_id", "").lower()
             mode = c.get("learning_mode", "").lower()
 
-            # 1. Matching learning mode preference
             if preferred_mode == mode:
                 score += 3
             elif preferred_mode == "hybrid" and mode in ["online", "offline"]:
                 score += 1
 
-            # 2. Matching selected interest domains
-            for interest in interests:
+            for interest in interests_lower:
                 if interest in title_lower or interest in desc_lower or interest in cat_id:
                     score += 4
 
-            # 3. Match career goal phrases
-            if "entrepreneur" in career_goal or "business" in career_goal:
+            if "entrepreneur" in career_goal_lower or "business" in career_goal_lower:
                 if cat_id in ["entrepreneurship", "tailoring-fashion", "food-catering"]:
                     score += 2
                 if "basics" in title_lower or "setup" in title_lower:
                     score += 1
-            elif "freelance" in career_goal:
-                if cat_id in ["tailoring-fashion", "handicrafts", "beauty-wellness"]:
-                    score += 2
-            elif "employment" in career_goal or "job" in career_goal:
-                if cat_id in ["digital-skills", "healthcare-caregiving"]:
-                    score += 2
 
-            if score > 0:
-                recommended.append((c, score))
+            if rec_skills_str:
+                for skill_name in rec_skills_str.split(", "):
+                    if skill_name.lower() in title_lower or skill_name.lower() in desc_lower:
+                        score += 5
 
-        recommended.sort(key=lambda x: x[1], reverse=True)
-        return [item[0] for item in recommended[:3]]
+            if score > 0 or len(rule_recs) < 3:
+                rule_recs.append((c, score))
+
+        rule_recs.sort(key=lambda x: x[1], reverse=True)
+        final_fallback = []
+        for c, score in rule_recs[:3]:
+            c_title = c.get("title")
+            if active_lang == "kn":
+                c["reason"] = f"ನಿಮ್ಮ ಆಸಕ್ತಿಗಳು ಮತ್ತು ಪ್ರೊಫೈಲ್ ಆಧರಿಸಿ ಈ {c_title} ಕೋರ್ಸ್ ಅನ್ನು ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ."
+                c["benefit"] = "ಸ್ಥಳೀಯವಾಗಿ ಉದ್ಯೋಗ ಪಡೆಯಲು ಅಥವಾ ಸ್ವಯಂ ಉದ್ಯೋಗ ಹೊಂದಲು ಇದು ಸಹಕಾರಿಯಾಗಿದೆ."
+                c["relevance"] = "High"
+            elif active_lang == "hi":
+                c["reason"] = f"आपकी रुचियों और प्रोफाइल के आधार पर {c_title} कोर्स की सिफारिश की जाती है।"
+                c["benefit"] = "यह आपको स्थानीय स्तर पर स्वरोजगार या सूक्ष्म उद्यम शुरू करने में सक्षम बनाएगा।"
+                c["relevance"] = "High"
+            else:
+                c["reason"] = f"This course is recommended for you as it directly aligns with your interest in {c_title}."
+                c["benefit"] = "Provides practical skills that help build micro-enterprise or local income streams."
+                c["relevance"] = "High"
+            final_fallback.append(c)
+        return final_fallback[:3]
 
     @staticmethod
     def _apply_course_translation(course: Dict[str, Any], lang: Optional[str]) -> Dict[str, Any]:
         if not lang or lang == "en":
             return course
         
-        translations = course.get("translations", {})
-        if lang in translations:
+        translations = course.get("translations") or {}
+        if isinstance(translations, dict) and lang in translations:
             lang_data = translations[lang]
             translated_course = dict(course)
             for k, v in lang_data.items():
                 translated_course[k] = v
             return translated_course
         return course
+
+    @classmethod
+    def get_courses_by_centre(cls, centre_id: str) -> List[Dict[str, Any]]:
+        """
+        Retrieve all courses created by/associated with a specific Training Centre (both active and inactive).
+        """
+        cls.initialize_database()
+        db = db_instance.get_db()
+        courses = []
+
+        if db is not None:
+            db_courses = list(db["courses"].find({"centre_id": centre_id}))
+            for c in db_courses:
+                c["id"] = str(c.get("id") or c.get("_id"))
+                if "_id" in c:
+                    del c["_id"]
+                if "created_at" in c and isinstance(c["created_at"], datetime):
+                    c["created_at"] = c["created_at"].isoformat()
+                if "updated_at" in c and isinstance(c["updated_at"], datetime):
+                    c["updated_at"] = c["updated_at"].isoformat()
+                courses.append(c)
+        else:
+            all_courses = load_mock_data(MOCK_COURSES_FILE)
+            for c in all_courses:
+                if c.get("centre_id") == centre_id:
+                    courses.append(c)
+        return courses
+
+    @classmethod
+    def get_course_by_id_and_centre(cls, course_id: str, centre_id: str) -> Optional[Dict[str, Any]]:
+        """
+        Retrieve a specific course by ID, validating ownership by a specific Training Centre.
+        """
+        cls.initialize_database()
+        db = db_instance.get_db()
+        course = None
+
+        if db is not None:
+            course = db["courses"].find_one({"id": course_id, "centre_id": centre_id})
+            if course:
+                course["id"] = str(course.get("id") or course.get("_id"))
+                if "_id" in course:
+                    del course["_id"]
+                if "created_at" in course and isinstance(course["created_at"], datetime):
+                    course["created_at"] = course["created_at"].isoformat()
+                if "updated_at" in course and isinstance(course["updated_at"], datetime):
+                    course["updated_at"] = course["updated_at"].isoformat()
+        else:
+            all_courses = load_mock_data(MOCK_COURSES_FILE)
+            for c in all_courses:
+                if c.get("id") == course_id and c.get("centre_id") == centre_id:
+                    course = c
+                    break
+        return course
+
+    @classmethod
+    def create_course_by_centre(cls, centre_id: str, course_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Create a new course associated with the specified Training Centre. Validates skill existence.
+        """
+        cls.initialize_database()
+        
+        # Skill ID validation
+        from backend.app.services.skill_service import SkillService
+        skill_id = course_data.get("skill_id")
+        skill = SkillService.get_skill_by_id(skill_id)
+        if not skill:
+            raise ValueError(f"Referenced skill_id '{skill_id}' does not exist.")
+
+        # Assign unique id and ownership fields
+        course_id = f"course-centre-{uuid.uuid4().hex[:8]}"
+        doc = dict(course_data)
+        doc["id"] = course_id
+        doc["centre_id"] = centre_id
+        
+        # Handle visual status mapping for regression compatibility: status 'active' is is_active=True
+        status_val = doc.get("status", "active")
+        doc["is_active"] = (status_val == "active")
+
+        db = db_instance.get_db()
+        if db is not None:
+            doc["created_at"] = datetime.utcnow()
+            doc["updated_at"] = datetime.utcnow()
+            db["courses"].insert_one(doc)
+            doc["id"] = str(doc.get("id") or doc.get("_id"))
+            if "_id" in doc:
+                del doc["_id"]
+            if isinstance(doc["created_at"], datetime):
+                doc["created_at"] = doc["created_at"].isoformat()
+            if isinstance(doc["updated_at"], datetime):
+                doc["updated_at"] = doc["updated_at"].isoformat()
+        else:
+            all_courses = load_mock_data(MOCK_COURSES_FILE)
+            doc["created_at"] = datetime.utcnow().isoformat()
+            doc["updated_at"] = datetime.utcnow().isoformat()
+            all_courses.append(doc)
+            save_mock_data(MOCK_COURSES_FILE, all_courses)
+        
+        return doc
+
+    @classmethod
+    def update_course_by_centre(cls, course_id: str, centre_id: str, update_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """
+        Update an existing course's details. Implements course ownership verification and skill validation.
+        """
+        cls.initialize_database()
+        
+        # Verify ownership
+        existing = cls.get_course_by_id_and_centre(course_id, centre_id)
+        if not existing:
+            return None
+
+        # Validate skill if changed
+        if "skill_id" in update_data:
+            from backend.app.services.skill_service import SkillService
+            skill_id = update_data["skill_id"]
+            skill = SkillService.get_skill_by_id(skill_id)
+            if not skill:
+                raise ValueError(f"Referenced skill_id '{skill_id}' does not exist.")
+
+        # Filter immutable parameters
+        cleaned_update = dict(update_data)
+        cleaned_update.pop("id", None)
+        cleaned_update.pop("centre_id", None)
+        cleaned_update.pop("created_at", None)
+
+        if "status" in cleaned_update:
+            cleaned_update["is_active"] = (cleaned_update["status"] == "active")
+
+        db = db_instance.get_db()
+        if db is not None:
+            cleaned_update["updated_at"] = datetime.utcnow()
+            db["courses"].update_one({"id": course_id, "centre_id": centre_id}, {"$set": cleaned_update})
+            updated = db["courses"].find_one({"id": course_id, "centre_id": centre_id})
+            if updated:
+                updated["id"] = str(updated.get("id") or updated.get("_id"))
+                if "_id" in updated:
+                    del updated["_id"]
+                if "created_at" in updated and isinstance(updated["created_at"], datetime):
+                    updated["created_at"] = updated["created_at"].isoformat()
+                if "updated_at" in updated and isinstance(updated["updated_at"], datetime):
+                    updated["updated_at"] = updated["updated_at"].isoformat()
+                return updated
+        else:
+            all_courses = load_mock_data(MOCK_COURSES_FILE)
+            for i, c in enumerate(all_courses):
+                if c.get("id") == course_id and c.get("centre_id") == centre_id:
+                    cleaned_update["updated_at"] = datetime.utcnow().isoformat()
+                    all_courses[i].update(cleaned_update)
+                    save_mock_data(MOCK_COURSES_FILE, all_courses)
+                    return all_courses[i]
+        return None
+
+    @classmethod
+    def toggle_course_status_by_centre(cls, course_id: str, centre_id: str, status: str) -> Optional[Dict[str, Any]]:
+        """
+        Safely transition a center course's status and is_active flag.
+        """
+        if status not in ["active", "inactive", "draft"]:
+            raise ValueError("Status must be 'active', 'inactive', or 'draft'")
+        return cls.update_course_by_centre(course_id, centre_id, {"status": status})

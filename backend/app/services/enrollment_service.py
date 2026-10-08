@@ -179,6 +179,37 @@ class EnrollmentService:
         return cls._serialize_enrollment(enrollment_doc)
 
     @classmethod
+    def update_enrollment_status(cls, enrollment_id: str, status: str) -> Optional[Dict[str, Any]]:
+        now = datetime.utcnow()
+        db = db_instance.get_db()
+        if db is not None:
+            from bson import ObjectId
+            query = {"id": enrollment_id}
+            try:
+                if len(enrollment_id) == 24:
+                    query = {"$or": [{"id": enrollment_id}, {"_id": ObjectId(enrollment_id)}]}
+            except Exception:
+                pass
+            db["enrollments"].update_one(
+                query,
+                {"$set": {
+                    "status": status,
+                    "updated_at": now
+                }}
+            )
+            updated = db["enrollments"].find_one(query)
+            return cls._serialize_enrollment(updated)
+        else:
+            enrollments = load_mock_enrollments()
+            for e in enrollments:
+                if e.get("id") == enrollment_id:
+                    e["status"] = status
+                    e["updated_at"] = now.isoformat()
+                    save_mock_enrollments(enrollments)
+                    return cls._serialize_enrollment(e)
+            return None
+
+    @classmethod
     def cancel_enrollment(cls, enrollment_id: str, learner_id: str) -> Dict[str, Any]:
         enrollment = cls.get_enrollment_by_id(enrollment_id)
         if not enrollment:
@@ -193,14 +224,21 @@ class EnrollmentService:
         now = datetime.utcnow()
         db = db_instance.get_db()
         if db is not None:
+            from bson import ObjectId
+            query = {"id": enrollment_id}
+            try:
+                if len(enrollment_id) == 24:
+                    query = {"$or": [{"id": enrollment_id}, {"_id": ObjectId(enrollment_id)}]}
+            except Exception:
+                pass
             db["enrollments"].update_one(
-                {"id": enrollment_id},
+                query,
                 {"$set": {
                     "status": "cancelled",
                     "updated_at": now
                 }}
             )
-            updated = db["enrollments"].find_one({"id": enrollment_id})
+            updated = db["enrollments"].find_one(query)
             return cls._serialize_enrollment(updated)
         else:
             enrollments = load_mock_enrollments()

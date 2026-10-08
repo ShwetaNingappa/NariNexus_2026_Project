@@ -5,16 +5,19 @@ from backend.app.api.endpoints.profile import router as profile_router
 from backend.app.api.endpoints.catalog import router as catalog_router
 from backend.app.api.endpoints.courses import router as real_courses_router
 from backend.app.api.endpoints.enrollments import router as real_enrollments_router
+from backend.app.api.endpoints.progress import router as progress_router
+from backend.app.api.endpoints.centres import router as real_centres_router
+from backend.app.api.endpoints.opportunities import router as opportunities_router
 from backend.app.api.endpoints.modules import (
     users_router,
-    centres_router,
-    progress_router,
     attendance_router,
     rewards_router,
-    notifications_router,
     ai_router,
-    admin_router,
 )
+from backend.app.api.endpoints.notifications import router as notifications_router
+
+from backend.app.api.endpoints.admin import router as admin_router
+
 
 api_router = APIRouter()
 
@@ -25,9 +28,10 @@ api_router.include_router(profile_router, prefix="/profile", tags=["Profile"])
 api_router.include_router(catalog_router, prefix="", tags=["Skill Catalogue"])
 api_router.include_router(real_courses_router, prefix="", tags=["Courses"])
 api_router.include_router(users_router, prefix="/users", tags=["Users"])
-api_router.include_router(centres_router, prefix="/centres", tags=["Coaching Centres"])
+api_router.include_router(real_centres_router, prefix="/centres", tags=["Coaching Centres"])
 api_router.include_router(real_enrollments_router, prefix="", tags=["Enrollments"])
 api_router.include_router(progress_router, prefix="/progress", tags=["Progress Tracking"])
+api_router.include_router(opportunities_router, prefix="/opportunities", tags=["AI Opportunities"])
 api_router.include_router(attendance_router, prefix="/attendance", tags=["Attendance"])
 api_router.include_router(rewards_router, prefix="/rewards", tags=["Rewards & Gamification"])
 api_router.include_router(notifications_router, prefix="/notifications", tags=["Notifications"])

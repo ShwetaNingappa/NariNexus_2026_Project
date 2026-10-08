@@ -77,11 +77,23 @@ class UserService:
         db = db_instance.get_db()
         if db is not None:
             from bson import ObjectId
+            if len(user_id) == 24:
+                try:
+                    user = db["users"].find_one({"_id": ObjectId(user_id)})
+                    if user:
+                        return cls._serialize_user(user)
+                except Exception:
+                    pass
             try:
-                user = db["users"].find_one({"_id": ObjectId(user_id)})
-                return cls._serialize_user(user) if user else None
+                user = db["users"].find_one({"_id": user_id})
+                if user:
+                    return cls._serialize_user(user)
+                user = db["users"].find_one({"id": user_id})
+                if user:
+                    return cls._serialize_user(user)
             except Exception:
-                return None
+                pass
+            return None
         else:
             users = load_mock_users()
             user = users.get(user_id)
@@ -104,7 +116,11 @@ class UserService:
             "phone": user_create.phone,
             "password_hash": hash_password(user_create.password),
             "role": role_val,
-            "preferred_language": user_create.preferred_language,
+            "preferred_language": (
+                user_create.preferred_language.lower().strip() 
+                if user_create.preferred_language and user_create.preferred_language.lower().strip() in ["en", "kn", "hi", "te", "ta"]
+                else "en"
+            ),
             "profile_completed": user_create.profile_completed,
             "is_verified": False,
             "is_active": True,

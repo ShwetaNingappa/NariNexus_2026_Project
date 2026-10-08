@@ -18,6 +18,21 @@ export default defineConfig(() => {
         '/api': {
           target: 'http://127.0.0.1:8001',
           changeOrigin: true,
+          configure: (proxy) => {
+            proxy.on('error', (err, _req, res) => {
+              // Gracefully handle backend startup connection delays without logging errors
+              if (!res.headersSent) {
+                res.writeHead(503, {
+                  'Content-Type': 'application/json',
+                });
+                res.end(JSON.stringify({
+                  success: false,
+                  message: 'Service starting up...',
+                  database: 'failed'
+                }));
+              }
+            });
+          }
         },
       },
       // HMR is disabled in AI Studio via DISABLE_HMR env var.

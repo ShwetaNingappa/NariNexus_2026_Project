@@ -49,7 +49,14 @@ async def get_profile(current_user: dict = Depends(get_current_user)):
             "learning_preference": current_user.get("learning_preference"),
             "career_goal": current_user.get("career_goal"),
             "profile_completed": current_user.get("profile_completed", False),
-            "completion_percentage": completion_pct
+            "completion_percentage": completion_pct,
+            "village": current_user.get("village", ""),
+            "city": current_user.get("city", ""),
+            "district": current_user.get("district", ""),
+            "state": current_user.get("state", ""),
+            "pincode": current_user.get("pincode", ""),
+            "latitude": current_user.get("latitude"),
+            "longitude": current_user.get("longitude")
         }
     }
 
@@ -73,6 +80,14 @@ async def update_profile(
     # Convert incoming data to a dict of non-None values
     update_data = profile_in.model_dump(exclude_unset=True)
     
+    # Language Security & Normalization
+    if "preferred_language" in update_data and update_data["preferred_language"]:
+        requested_lang = str(update_data["preferred_language"]).lower().strip()
+        supported_langs = ["en", "kn", "hi", "te", "ta"]
+        if requested_lang not in supported_langs:
+            # Normalize unauthorized/malformed language codes to default 'en'
+            update_data["preferred_language"] = "en"
+            
     # Merge values temporarily to compute completion state
     temp_user = {**current_user, **update_data}
     completion_pct = calculate_profile_completion(temp_user)
